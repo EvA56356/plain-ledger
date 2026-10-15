@@ -1,0 +1,45 @@
+# Local databases and financial data
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+*.db
+*.db-*
+preview-test-state.json
+*backup*.json
+*备份*.json
+*流水*.csv
+*.csv
+*.tsv
+
+# Credentials and signing materials
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+*credentials*.json
+*token*.txt
+local.properties
+local.config.ps1
+
+# Generated files, development tools and external artifacts
+/build/
+/dist/
+/analysis/
+/tools/
+*.apk
+*.aab
+*.jar
+*.zip
+*.log
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
