@@ -14,3 +14,7 @@
 #addTop{display:none}
 .ledger-empty{display:none}
 @media(min-width:651px){.floating{display:block;position:fixed;bottom:30px;right:34px;border:0;border-radius:50%;width:56px;height:56px;background:var(--green);color:#fff;font-size:28px;padding:0;box-shadow:0 5px 18px #214e4330;z-index:4}}
+.calendar-controls .calendar-arrow{width:46px;height:46px;font-size:32px}
+.calendar-controls{gap:8px}
+.calendar-today{min-height:44px}
+@media(max-width:650px){.calendar-top{flex-wrap:wrap}.calendar-controls{margin-left:auto;gap:6px}.calendar-controls .calendar-arrow{width:44px;height:44px;font-size:30px}.calendar-today{font-size:12px;min-height:44px}}
