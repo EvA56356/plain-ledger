@@ -1,0 +1,22 @@
+select.plain-native-select{position:absolute!important;opacity:0!important;pointer-events:none!important;width:1px!important;height:1px!important;min-width:0!important;padding:0!important;margin:0!important;border:0!important;overflow:hidden!important}
+.plain-select{position:relative;display:inline-flex;min-width:0;max-width:100%;vertical-align:middle;font-size:inherit;color:var(--ink)}
+.plain-select-trigger{display:flex;align-items:center;justify-content:space-between;gap:15px;width:100%;min-height:44px;padding:10px 14px;border:1px solid #dce5dc;border-radius:15px;background:var(--paper);color:var(--ink);text-align:left;font:inherit;box-shadow:0 1px 2px #214e4303;transition:border-color .15s,background .15s,box-shadow .15s}
+.plain-select-trigger:hover{background:#f8faf6;border-color:#bacdbd}
+.plain-select-trigger.is-open,.plain-select-trigger:focus-visible{outline:none;border-color:#83a78d;box-shadow:0 0 0 3px #81a98c20;background:#f7faf5}
+.plain-select-trigger:disabled{opacity:.5;cursor:default}
+.plain-select-value{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.plain-select-chevron{width:7px;height:7px;flex:none;border-right:1.5px solid #6d8673;border-bottom:1.5px solid #6d8673;transform:rotate(45deg);margin-top:-4px;margin-right:2px;transition:transform .15s}
+.plain-select-trigger.is-open .plain-select-chevron{transform:rotate(225deg);margin-top:3px}
+.plain-select-menu{position:fixed;z-index:1000;display:flex;flex-direction:column;gap:3px;padding:7px;background:#fff;border:1px solid #e5ebe1;border-radius:18px;box-shadow:0 12px 36px #243c3020,0 2px 6px #243c3008;overflow-y:auto;overscroll-behavior:contain;color:var(--ink);font:13px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}
+.plain-select-option{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-shrink:0;width:100%;min-height:42px;padding:10px 12px;border:0;border-radius:12px;background:transparent;text-align:left;font:inherit;color:var(--ink)}
+.plain-select-option:hover,.plain-select-option:focus-visible{background:#f1f5ec;outline:none}
+.plain-select-option[aria-selected="true"]{background:#eaf2e8;color:#285c45;font-weight:500}
+.plain-select-option:disabled{opacity:.45;cursor:default}
+.plain-select-check{width:15px;flex:none;color:#61836a;font-size:13px}
+.plain-select-mobile{display:none}
+.workspace .plain-select{display:flex;width:100%;margin-top:10px}
+.workspace .plain-select-trigger{background:#edf3eb;font-weight:500}
+.filters .plain-select{min-width:118px;font-size:12px}
+form label>.plain-select{display:flex;width:100%;margin-top:7px;color:var(--ink)}
+input[type="date"],input[type="month"]{border-radius:15px;border-color:#dce5dc;min-height:44px;background-color:var(--paper)}
+@media(max-width:650px){.plain-select-mobile{display:flex;margin-top:9px;max-width:210px;min-width:120px}.plain-select-mobile .plain-select-trigger{background:#edf3eb;font-size:13px;min-height:40px;padding:8px 12px;border-radius:14px;color:var(--green)}.filters .plain-select{min-width:110px;max-width:130px}.plain-select-menu{font-size:13px}.plain-select-option{min-height:44px}.header-actions input[type="month"]{border-radius:14px}}
