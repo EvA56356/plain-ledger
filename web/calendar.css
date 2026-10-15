@@ -34,3 +34,8 @@
 .book-card-actions{display:flex;justify-content:space-between;align-items:center;gap:8px;border-top:1px solid var(--line);margin-top:20px;padding-top:14px}.book-card-actions button{padding:7px 10px;font-size:12px;margin-left:5px}
 .navigation-options{display:flex;flex-wrap:wrap;gap:12px}.navigation-options label{display:flex;align-items:center;gap:10px;background:var(--bg);border-radius:14px;padding:14px 18px;cursor:pointer}.navigation-options input{accent-color:var(--green);width:18px;height:18px;margin:0}
 @media(max-width:650px){.book-cards{grid-template-columns:1fr;gap:15px}.book-card{padding:18px}.book-info strong{font-size:20px}.books-heading strong{font-size:22px}.books-heading button{padding:12px}.navigation-options{display:grid;grid-template-columns:1fr 1fr}.navigation-options label{padding:13px 10px}nav button span{white-space:nowrap;font-size:9px}}
+.calendar-month-title{border:0;background:transparent;font:inherit;letter-spacing:inherit;font-weight:inherit;padding:0;min-height:44px;text-align:left;color:inherit}
+.calendar-month-title span{font-size:16px;color:var(--muted);margin-left:5px}
+.ledger-view #pageTitle,.ledger-view header .eyebrow,.ledger-view .header-actions{display:none}
+.ledger-view header{margin-bottom:18px}
+@media(max-width:650px){.ledger-view header .plain-select-mobile{margin-top:0}.ledger-view header{margin-bottom:18px}}

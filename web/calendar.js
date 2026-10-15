@@ -23,7 +23,7 @@ function calendar(){
     const description=d.current?`${d.date}${v?`，收入 ${money(v.income)} 元，支出 ${money(v.expense)} 元，净收支 ${money(net)} 元`:'，无记录'}`:d.date;
     return `<button type="button" class="calendar-day ${d.current?'':'outside'} ${v?'has-records':''} ${selected?'selected':''} ${isToday?'is-today':''}" ${d.current?`data-cal-day="${d.date}"`:'disabled'} aria-label="${esc(description)}" aria-pressed="${selected}" title="${esc(description)}"><span class="day-number">${String(d.day).padStart(2,'0')}${isToday?'<i>今</i>':''}</span><span class="day-amount ${net<0?'negative':'positive'}">${v?(net>0?'＋':net<0?'−':'')+money(Math.abs(net)):''}</span></button>`;
   }).join('');
-  return `<section class="calendar-panel" aria-label="月度收支日历"><div class="calendar-top"><div><span class="eyebrow">YOUR DAYS, AT A GLANCE</span><h2>${Number(month.slice(0,4))}年 ${Number(month.slice(5))}月</h2></div><div class="calendar-controls"><button type="button" class="calendar-today" data-cal-today>今天</button><button type="button" class="calendar-arrow" data-cal-move="-1" aria-label="上个月">‹</button><button type="button" class="calendar-arrow" data-cal-move="1" aria-label="下个月">›</button></div></div><div class="calendar-weekdays" aria-hidden="true">${['日','一','二','三','四','五','六'].map(w=>`<span>${w}</span>`).join('')}</div><div class="calendar-days">${cells}</div><div class="calendar-footer"><span>本月收入 <strong class="income">¥ ${money(sum.income)}</strong></span><span>本月支出 <strong class="expense">¥ ${money(sum.expense)}</strong></span></div><div class="calendar-caption"><span>日期下方为当天净收支（收入 − 支出）</span><span>点击日期查看明细</span></div></section>`;
+  return `<section class="calendar-panel" aria-label="月度收支日历"><div class="calendar-top"><div><span class="eyebrow">YOUR DAYS, AT A GLANCE</span><h2><button class="calendar-month-title" data-month-picker aria-label="选择年月">${Number(month.slice(0,4))}年 ${Number(month.slice(5))}月 <span aria-hidden="true">⌄</span></button></h2></div><div class="calendar-controls"><button type="button" class="calendar-today" data-cal-today>今天</button><button type="button" class="calendar-arrow" data-cal-move="-1" aria-label="上个月">‹</button><button type="button" class="calendar-arrow" data-cal-move="1" aria-label="下个月">›</button></div></div><div class="calendar-weekdays" aria-hidden="true">${['日','一','二','三','四','五','六'].map(w=>`<span>${w}</span>`).join('')}</div><div class="calendar-days">${cells}</div><div class="calendar-footer"><span>本月收入 <strong class="income">¥ ${money(sum.income)}</strong></span><span>本月支出 <strong class="expense">¥ ${money(sum.expense)}</strong></span></div><div class="calendar-caption"><span>日期下方为当天净收支（收入 − 支出）</span><span>点击日期查看明细</span></div></section>`;
 }
 function moveCalendarMonth(delta){
   const [y,m]=$('#month').value.split('-').map(Number),d=new Date(Date.UTC(y,m-1+delta,1,12));
@@ -32,9 +32,19 @@ function moveCalendarMonth(delta){
   $('#month').value=month;selectedDay=month===today().slice(0,7)?today():null;render();
 }
 function bindCalendar(){
+  $$('[data-month-picker]').forEach(b=>b.onclick=openMonthPicker);
   $$('[data-cal-day]').forEach(b=>b.onclick=()=>{selectedDay=b.dataset.calDay;render()});
   $$('[data-cal-move]').forEach(b=>b.onclick=()=>moveCalendarMonth(Number(b.dataset.calMove)));
   const reset=$('[data-cal-all]');if(reset)reset.onclick=()=>{selectedDay=null;render()};
   const now=$('[data-cal-today]');if(now)now.onclick=()=>{$('#month').value=today().slice(0,7);selectedDay=today();render()};
   $$('[data-book-use]').forEach(b=>b.onclick=()=>{book=b.dataset.bookUse;page='ledger';render()});
+}
+function openMonthPicker(){
+  const [year,month]=$('#month').value.split('-').map(Number);
+  manage('选择年月',`<div class="formrow"><label>年份<input name="year" type="number" min="1900" max="9999" value="${year}" required></label><label>月份<select name="month">${Array.from({length:12},(_,i)=>`<option value="${i+1}" ${i+1===month?'selected':''}>${i+1}月</option>`).join('')}</select></label></div>`,async f=>{
+    const y=Number(f.get('year')),m=Number(f.get('month'));
+    if(!Number.isInteger(y)||y<1900||y>9999||!Number.isInteger(m)||m<1||m>12)throw Error('请选择有效的年份和月份');
+    $('#month').value=String(y).padStart(4,'0')+'-'+String(m).padStart(2,'0');
+    selectedDay=$('#month').value===today().slice(0,7)?today():null;render();
+  });
 }
