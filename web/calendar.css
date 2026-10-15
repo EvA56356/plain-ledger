@@ -18,3 +18,7 @@
 .calendar-controls{gap:8px}
 .calendar-today{min-height:44px}
 @media(max-width:650px){.calendar-top{flex-wrap:wrap}.calendar-controls{margin-left:auto;gap:6px}.calendar-controls .calendar-arrow{width:44px;height:44px;font-size:30px}.calendar-today{font-size:12px;min-height:44px}}
+.category-more-link{font-size:11px;color:#768b78;margin-top:9px;padding:7px 0}
+.category-grid .category-more{font-size:11px;justify-content:center;background:#f3f6ef;border:1px dashed #cdd9cd;border-radius:9px;min-height:60px;color:#607c65}
+.mobile-book-select{display:none}
+@media(max-width:650px){.mobile-book-select{display:block;margin-top:9px;max-width:210px;min-width:120px;padding:7px 28px 7px 10px;background:#eaf1eb;border:0;font-size:13px;font-weight:500;color:var(--green)}header>.header-actions{align-self:flex-start;margin-top:24px}}
