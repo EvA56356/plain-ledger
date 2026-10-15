@@ -41,9 +41,9 @@ function bindCalendar(){
 }
 function openMonthPicker(){
   const [year,month]=$('#month').value.split('-').map(Number);
-  manage('选择年月',`<div class="formrow"><label>年份<input name="year" type="number" min="1900" max="9999" value="${year}" required></label><label>月份<select name="month">${Array.from({length:12},(_,i)=>`<option value="${i+1}" ${i+1===month?'selected':''}>${i+1}月</option>`).join('')}</select></label></div>`,async f=>{
+  manage('选择年月',`<div class="formrow"><label>年份<select name="year">${Array.from({length:201},(_,i)=>1900+i).map(y=>`<option value="${y}" ${y===year?'selected':''}>${y}年</option>`).join('')}</select></label><label>月份<select name="month">${Array.from({length:12},(_,i)=>`<option value="${i+1}" ${i+1===month?'selected':''}>${i+1}月</option>`).join('')}</select></label></div>`,async f=>{
     const y=Number(f.get('year')),m=Number(f.get('month'));
-    if(!Number.isInteger(y)||y<1900||y>9999||!Number.isInteger(m)||m<1||m>12)throw Error('请选择有效的年份和月份');
+    if(!Number.isInteger(y)||y<1900||y>2100||!Number.isInteger(m)||m<1||m>12)throw Error('请选择有效的年份和月份');
     $('#month').value=String(y).padStart(4,'0')+'-'+String(m).padStart(2,'0');
     selectedDay=$('#month').value===today().slice(0,7)?today():null;render();
   });
