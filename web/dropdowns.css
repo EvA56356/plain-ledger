@@ -20,3 +20,5 @@ select.plain-native-select{position:absolute!important;opacity:0!important;point
 form label>.plain-select{display:flex;width:100%;margin-top:7px;color:var(--ink)}
 input[type="date"],input[type="month"]{border-radius:15px;border-color:#dce5dc;min-height:44px;background-color:var(--paper)}
 @media(max-width:650px){.plain-select-mobile{display:flex;margin-top:9px;max-width:210px;min-width:120px}.plain-select-mobile .plain-select-trigger{background:#edf3eb;font-size:13px;min-height:40px;padding:8px 12px;border-radius:14px;color:var(--green)}.filters .plain-select{min-width:110px;max-width:130px}.plain-select-menu{font-size:13px}.plain-select-option{min-height:44px}.header-actions input[type="month"]{border-radius:14px}}
+.workspace .plain-select-trigger{font-size:17px;min-height:52px;padding:13px 16px}
+@media(max-width:650px){.plain-select-mobile{min-width:154px;max-width:250px}.plain-select-mobile .plain-select-trigger{font-size:18px;min-height:52px;padding:12px 17px;border-radius:16px;font-weight:500}}
