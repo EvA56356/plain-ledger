@@ -17,6 +17,7 @@ import java.nio.charset.StandardCharsets;
 public class MainActivity extends Activity {
  private WebView web;
  private CloudTransport cloud;
+ private final java.util.concurrent.ExecutorService cloudIO=java.util.concurrent.Executors.newSingleThreadExecutor();
  private SQLiteDatabase db;
  private String pendingExport;
  private static final int EXPORT=41, IMPORT=42;
@@ -45,7 +46,7 @@ public class MainActivity extends Activity {
   web.loadUrl("file:///android_asset/index.html");
  }
  public class Store {
-  @JavascriptInterface public String cloudRequest(String method,String path,String body){return cloud.request(method,path,body);}
+  @JavascriptInterface public void cloudRequestAsync(String requestId,String method,String path,String body){if(!requestId.matches("[0-9]{1,24}"))return;cloudIO.execute(()->{String result=cloud.request(method,path,body);runOnUiThread(()->{if(!isFinishing()&&!isDestroyed()&&web!=null)web.evaluateJavascript("window.__cloudResult&&window.__cloudResult("+JSONObject.quote(requestId)+","+JSONObject.quote(result)+")",null);});});}
   @JavascriptInterface public String cloudEndpoint(){return cloud.endpoint();}
   @JavascriptInterface public String setCloudEndpoint(String address){return cloud.configure(address);}
 
@@ -66,5 +67,5 @@ public class MainActivity extends Activity {
  @Override protected void onActivityResult(int request,int result,Intent data){super.onActivityResult(request,result,data);if(result!=RESULT_OK||data==null||data.getData()==null)return;Uri uri=data.getData();try{if(request==EXPORT){try(OutputStream out=getContentResolver().openOutputStream(uri)){if(out==null)throw new IOException();out.write(pendingExport.getBytes(StandardCharsets.UTF_8));}pendingExport=null;notice("备份已保存");}else if(request==IMPORT){ByteArrayOutputStream buf=new ByteArrayOutputStream();try(InputStream in=getContentResolver().openInputStream(uri)){byte[] block=new byte[8192];int n;while((n=in.read(block))!=-1){if(buf.size()+n>10000000)throw new IOException("文件过大");buf.write(block,0,n);}}String text=buf.toString("UTF-8");web.evaluateJavascript("window.receiveBackup("+JSONObject.quote(text)+").catch(function(){})",null);}}catch(Exception e){notice("文件操作失败："+e.getMessage());}}
  @Override protected void onResume(){super.onResume();if(web!=null)web.evaluateJavascript("window.Cloud&&window.Cloud.sync(false)",null);}
  @Override public void onBackPressed(){web.evaluateJavascript("(function(){var d=document.querySelector('dialog[open]');if(d){var c=d.querySelector('[data-cloud-close]');if(d.id==='cloudDialog'&&c&&c.hidden)return false;d.close();return true}return false})()",r->{if(!"true".equals(r))new AlertDialog.Builder(this).setMessage("退出简账？记录已保存在本地。").setPositiveButton("退出",(d,w)->finish()).setNegativeButton("继续记账",null).show();});}
- @Override protected void onDestroy(){if(web!=null){web.removeJavascriptInterface("Android");web.destroy();}if(db!=null)db.close();super.onDestroy();}
+ @Override protected void onDestroy(){cloudIO.shutdownNow();if(web!=null){web.removeJavascriptInterface("Android");web.destroy();}if(db!=null)db.close();super.onDestroy();}
 }
