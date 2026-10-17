@@ -13,6 +13,9 @@ def connect():
     c.execute('CREATE TABLE IF NOT EXISTS entries(id TEXT PRIMARY KEY,type TEXT NOT NULL,amount INTEGER NOT NULL,category TEXT NOT NULL,account TEXT NOT NULL,book TEXT NOT NULL,date TEXT NOT NULL,note TEXT NOT NULL)')
     return c
 class Handler(http.server.SimpleHTTPRequestHandler):
+    def end_headers(self):
+        self.send_header("Cache-Control","no-store")
+        super().end_headers()
     def log_message(self,format,*args): pass
     def __init__(self,*args,**kwargs): super().__init__(*args,directory=str(ROOT/'web'),**kwargs)
     def do_GET(self):
@@ -23,7 +26,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         else: super().do_GET()
     def do_POST(self):
         if self.path!='/api/state': self.send_error(404); return
-        if self.headers.get('Origin') not in (None,'http://127.0.0.1:8765','http://localhost:8765'): self.send_error(403); return
+        if self.headers.get('Origin') not in (None,f'http://127.0.0.1:{self.server.server_port}',f'http://localhost:{self.server.server_port}'): self.send_error(403); return
         size=int(self.headers.get('Content-Length','0'))
         if size<1 or size>10_000_000: self.send_error(413); return
         try:
@@ -39,5 +42,6 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         except (ValueError,KeyError,AssertionError): self.send_error(400); return
         self.send_response(200); self.send_header('Content-Type','application/json'); self.end_headers(); self.wfile.write(b'{"ok":true}')
 if __name__=='__main__':
+    parser=argparse.ArgumentParser();parser.add_argument('--port',type=int,default=8765);args=parser.parse_args()
     connect().close()
-    http.server.ThreadingHTTPServer(('127.0.0.1',8765),Handler).serve_forever()
+    http.server.ThreadingHTTPServer(('127.0.0.1',args.port),Handler).serve_forever()
