@@ -16,11 +16,12 @@ import java.nio.charset.StandardCharsets;
 
 public class MainActivity extends Activity {
  private WebView web;
+ private CloudTransport cloud;
  private SQLiteDatabase db;
  private String pendingExport;
  private static final int EXPORT=41, IMPORT=42;
  public void onCreate(Bundle saved){
-  super.onCreate(saved);
+  super.onCreate(saved);cloud=new CloudTransport(this);
   db=openOrCreateDatabase("ledger.sqlite3",MODE_PRIVATE,null);
   db.enableWriteAheadLogging();
   db.execSQL("CREATE TABLE IF NOT EXISTS state(id INTEGER PRIMARY KEY CHECK(id=1),payload TEXT NOT NULL)");
@@ -44,6 +45,10 @@ public class MainActivity extends Activity {
   web.loadUrl("file:///android_asset/index.html");
  }
  public class Store {
+  @JavascriptInterface public String cloudRequest(String method,String path,String body){return cloud.request(method,path,body);}
+  @JavascriptInterface public String cloudEndpoint(){return cloud.endpoint();}
+  @JavascriptInterface public String setCloudEndpoint(String address){return cloud.configure(address);}
+
   @JavascriptInterface public String autoBillStatus(){boolean connected=false;android.view.accessibility.AccessibilityManager manager=(android.view.accessibility.AccessibilityManager)getSystemService(ACCESSIBILITY_SERVICE);for(android.accessibilityservice.AccessibilityServiceInfo info:manager.getEnabledAccessibilityServiceList(-1))if(info.getResolveInfo().serviceInfo.packageName.equals(getPackageName()))connected=true;return "{\"enabled\":"+getSharedPreferences("auto_bill",0).getBoolean("enabled",false)+",\"connected\":"+connected+"}";}
   @JavascriptInterface public void configureAutoBill(boolean enabled){if(!enabled)getSharedPreferences("auto_bill",0).edit().putBoolean("enabled",false).apply();if(enabled)runOnUiThread(()->new AlertDialog.Builder(MainActivity.this).setTitle("开启离线自动记账").setMessage("仅读取支付宝、微信的页面文字来识别支付成功金额。不截图、不联网、不操作付款。识别后仍需核对并保存。请在下一页手动开启简账的无障碍服务。开启前请确认你同意上述读取范围。").setPositiveButton("同意，前往系统设置",(d,w)->{getSharedPreferences("auto_bill",0).edit().putBoolean("enabled",true).apply();startActivity(new Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS));}).setNegativeButton("取消",(d,w)->getSharedPreferences("auto_bill",0).edit().putBoolean("enabled",false).apply()).show());}
   @JavascriptInterface public String takeAutoDraft(){android.content.SharedPreferences p=getSharedPreferences("auto_bill",0);String draft=p.getString("draft", "null");p.edit().remove("draft").apply();return draft;}
@@ -59,6 +64,7 @@ public class MainActivity extends Activity {
  }
  private void notice(String s){Toast.makeText(this,s,Toast.LENGTH_LONG).show();}
  @Override protected void onActivityResult(int request,int result,Intent data){super.onActivityResult(request,result,data);if(result!=RESULT_OK||data==null||data.getData()==null)return;Uri uri=data.getData();try{if(request==EXPORT){try(OutputStream out=getContentResolver().openOutputStream(uri)){if(out==null)throw new IOException();out.write(pendingExport.getBytes(StandardCharsets.UTF_8));}pendingExport=null;notice("备份已保存");}else if(request==IMPORT){ByteArrayOutputStream buf=new ByteArrayOutputStream();try(InputStream in=getContentResolver().openInputStream(uri)){byte[] block=new byte[8192];int n;while((n=in.read(block))!=-1){if(buf.size()+n>10000000)throw new IOException("文件过大");buf.write(block,0,n);}}String text=buf.toString("UTF-8");web.evaluateJavascript("window.receiveBackup("+JSONObject.quote(text)+").catch(function(){})",null);}}catch(Exception e){notice("文件操作失败："+e.getMessage());}}
- @Override public void onBackPressed(){web.evaluateJavascript("(function(){var d=document.querySelector('dialog[open]');if(d){d.close();return true}return false})()",r->{if(!"true".equals(r))new AlertDialog.Builder(this).setMessage("退出简账？记录已保存在本地。").setPositiveButton("退出",(d,w)->finish()).setNegativeButton("继续记账",null).show();});}
+ @Override protected void onResume(){super.onResume();if(web!=null)web.evaluateJavascript("window.Cloud&&window.Cloud.sync(false)",null);}
+ @Override public void onBackPressed(){web.evaluateJavascript("(function(){var d=document.querySelector('dialog[open]');if(d){var c=d.querySelector('[data-cloud-close]');if(d.id==='cloudDialog'&&c&&c.hidden)return false;d.close();return true}return false})()",r->{if(!"true".equals(r))new AlertDialog.Builder(this).setMessage("退出简账？记录已保存在本地。").setPositiveButton("退出",(d,w)->finish()).setNegativeButton("继续记账",null).show();});}
  @Override protected void onDestroy(){if(web!=null){web.removeJavascriptInterface("Android");web.destroy();}if(db!=null)db.close();super.onDestroy();}
 }
