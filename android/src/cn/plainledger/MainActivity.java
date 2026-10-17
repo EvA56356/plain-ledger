@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
   db.execSQL("CREATE TABLE IF NOT EXISTS state(id INTEGER PRIMARY KEY CHECK(id=1),payload TEXT NOT NULL)");
   db.execSQL("CREATE TABLE IF NOT EXISTS entries(id TEXT PRIMARY KEY,type TEXT NOT NULL,amount INTEGER NOT NULL,category TEXT NOT NULL,account TEXT NOT NULL,book TEXT NOT NULL,date TEXT NOT NULL,note TEXT NOT NULL)");
   web=new WebView(this);web.setBackgroundColor(Color.rgb(245,246,243));
-  web.getSettings().setJavaScriptEnabled(true);web.getSettings().setDomStorageEnabled(false);
+  web.getSettings().setJavaScriptEnabled(true);web.getSettings().setDomStorageEnabled(true);
   web.getSettings().setAllowFileAccess(true);web.getSettings().setAllowContentAccess(false);
   web.getSettings().setAllowFileAccessFromFileURLs(false);web.getSettings().setAllowUniversalAccessFromFileURLs(false);
   web.getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
@@ -44,6 +44,12 @@ public class MainActivity extends Activity {
   web.loadUrl("file:///android_asset/index.html");
  }
  public class Store {
+  @JavascriptInterface public String autoBillStatus(){boolean connected=false;android.view.accessibility.AccessibilityManager manager=(android.view.accessibility.AccessibilityManager)getSystemService(ACCESSIBILITY_SERVICE);for(android.accessibilityservice.AccessibilityServiceInfo info:manager.getEnabledAccessibilityServiceList(-1))if(info.getResolveInfo().serviceInfo.packageName.equals(getPackageName()))connected=true;return "{\"enabled\":"+getSharedPreferences("auto_bill",0).getBoolean("enabled",false)+",\"connected\":"+connected+"}";}
+  @JavascriptInterface public void configureAutoBill(boolean enabled){if(!enabled)getSharedPreferences("auto_bill",0).edit().putBoolean("enabled",false).apply();if(enabled)runOnUiThread(()->new AlertDialog.Builder(MainActivity.this).setTitle("开启离线自动记账").setMessage("仅读取支付宝、微信的页面文字来识别支付成功金额。不截图、不联网、不操作付款。识别后仍需核对并保存。请在下一页手动开启简账的无障碍服务。开启前请确认你同意上述读取范围。").setPositiveButton("同意，前往系统设置",(d,w)->{getSharedPreferences("auto_bill",0).edit().putBoolean("enabled",true).apply();startActivity(new Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS));}).setNegativeButton("取消",(d,w)->getSharedPreferences("auto_bill",0).edit().putBoolean("enabled",false).apply()).show());}
+  @JavascriptInterface public String takeAutoDraft(){android.content.SharedPreferences p=getSharedPreferences("auto_bill",0);String draft=p.getString("draft", "null");p.edit().remove("draft").apply();return draft;}
+  @JavascriptInterface public void rememberBook(String book){getSharedPreferences("auto_bill",0).edit().putString("book",book).apply();}
+  @JavascriptInterface public String activeBook(){return getSharedPreferences("auto_bill",0).getString("book", "daily");}
+
   @JavascriptInterface public synchronized String load(){try(Cursor c=db.rawQuery("SELECT payload FROM state WHERE id=1",null)){return c.moveToFirst()?c.getString(0):"null";}}
   @JavascriptInterface public synchronized String save(String text){
    try{if(text.length()>10000000)throw new Exception("数据超过容量限制");JSONObject data=new JSONObject(text);JSONArray entries=data.getJSONArray("entries");if(data.getInt("version")!=1)throw new Exception("数据版本不支持");db.beginTransaction();try{db.execSQL("INSERT OR REPLACE INTO state(id,payload) VALUES(1,?)",new Object[]{text});db.delete("entries",null,null);for(int i=0;i<entries.length();i++){JSONObject e=entries.getJSONObject(i);long amount=e.getLong("amount");if(amount<=0)throw new Exception("金额无效");db.execSQL("INSERT INTO entries VALUES(?,?,?,?,?,?,?,?)",new Object[]{e.getString("id"),e.getString("type"),amount,e.getString("category"),e.getString("account"),e.getString("book"),e.getString("date"),e.getString("note")});}db.setTransactionSuccessful();}finally{db.endTransaction();}return "{\"ok\":true}";}catch(Exception e){return "{\"ok\":false,\"error\":"+JSONObject.quote("本地数据库保存失败："+e.getMessage())+"}";}
