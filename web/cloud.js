@@ -1,11 +1,13 @@
 'use strict';
 const Cloud=(()=>{
  let me=null,space=null,revision=0,busy=false,deferred=false,lastSync=null,lastError='',pendingState=null,config={devSms:false};
- const native=()=>!!window.Android?.cloudRequest;
+ const native=()=>!!window.Android?.cloudRequestAsync;
+ let nativeSequence=0;const nativeEpoch=String(Date.now());const nativeCallbacks=new Map();
+ window.__cloudResult=(id,text)=>{const done=nativeCallbacks.get(id);if(done){nativeCallbacks.delete(id);done(text)}};
  const csrf={'Content-Type':'application/json','X-Requested-With':'PlainLedger'};
  async function request(path,method='GET',body){
   let status,data;
-  if(native()){const r=JSON.parse(Android.cloudRequest(method,path,body?JSON.stringify(body):''));status=r.status;data=r.data;}
+  if(native()){const r=await new Promise((resolve,reject)=>{const id=nativeEpoch+String(++nativeSequence),timer=setTimeout(()=>{nativeCallbacks.delete(id);reject(Error('连接超时，请稍后重试并核对服务器数据'))},35000);nativeCallbacks.set(id,text=>{clearTimeout(timer);try{resolve(JSON.parse(text))}catch(e){reject(Error('服务器返回格式无效'))}});try{Android.cloudRequestAsync(id,method,path,body?JSON.stringify(body):'')}catch(e){clearTimeout(timer);nativeCallbacks.delete(id);reject(Error('网络请求启动失败'))}});status=r.status;data=r.data;}
   else{const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),15000);try{const r=await fetch(path,{method,credentials:'same-origin',headers:csrf,body:body?JSON.stringify(body):undefined,signal:abort.signal});status=r.status;try{data=await r.json()}catch(e){throw Error('服务器返回格式无效')}}catch(e){throw Error(e.name==='AbortError'?'连接超时，请检查网络后重试':'网络不可用，请检查服务器地址和连接')}finally{clearTimeout(timer)}}
   if(status<200||status>=300){const e=Error(data?.error||'服务暂时不可用');e.status=status;throw e}return data;
  }
