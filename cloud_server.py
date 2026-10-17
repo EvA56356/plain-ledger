@@ -201,7 +201,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     state=validate_state(d.get('state'),bool(s['shared']))
     if type(d.get('revision')) is not int or d['revision']!=s['revision']:fail(409,'其他成员已更新账本。你的修改尚未保存，请导出待保存副本后刷新，再重新应用修改。')
     if s['shared'] and state['books'][0]['id']!=sid:fail(400,'共享账本编号不能改变')
-    c.execute('UPDATE spaces SET payload=?,name=?,revision=revision+1 WHERE id=? AND revision=?',(json.dumps(state,ensure_ascii=False),state['books'][0]['name'] if s['shared'] else s['name'],sid,s['revision']));c.execute('INSERT INTO audit VALUES(?,?,?,?,?)',(secrets.token_hex(16),sid,uid,'save',now()));return {'revision':s['revision']+1},None
+    updated=c.execute('UPDATE spaces SET payload=?,name=?,revision=revision+1 WHERE id=? AND revision=?',(json.dumps(state,ensure_ascii=False),state['books'][0]['name'] if s['shared'] else s['name'],sid,s['revision']))
+    if updated.rowcount!=1:fail(409,'账本版本已改变，请保留副本后刷新')
+    c.execute('INSERT INTO audit VALUES(?,?,?,?,?)',(secrets.token_hex(16),sid,uid,'save',now()));return {'revision':s['revision']+1},None
    if action=='members' and method=='GET':
     members=[{'id':r['id'],'name':r['name'],'phone':r['phone'] if s['owner']==uid or r['id']==uid else r['phone'][:3]+'****'+r['phone'][-4:],'role':r['role']} for r in c.execute('SELECT u.id,u.name,u.phone,m.role FROM users u JOIN members m ON u.id=m.user WHERE m.space=?',(sid,))]
     pending=[{'id':r['id'],'phone':r['phone'],'role':r['role'],'expires':r['expires']} for r in c.execute("SELECT * FROM invites WHERE space=? AND status='pending' AND expires>?",(sid,now()))] if s['owner']==uid else []
