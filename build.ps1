@@ -21,7 +21,7 @@ Copy-Item "$appRoot/web/*" "$buildRoot/assets" -Force
 function Run-Checked([string]$exe,[string[]]$arguments){ & $exe @arguments; if($LASTEXITCODE -ne 0){throw "Build failed: $exe"} }
 Run-Checked "$buildTools/aapt2.exe" @('compile','--dir',"$appRoot/android/res",'-o',"$buildRoot/resources.zip")
 Run-Checked "$buildTools/aapt2.exe" @('link','-o',"$buildRoot/base.apk",'-I',$platformJar,'--manifest',"$appRoot/android/AndroidManifest.xml",'-A',"$buildRoot/assets",'--auto-add-overlay',"$buildRoot/resources.zip")
-Run-Checked "$javaRoot/javac.exe" @('-encoding','UTF-8','-source','8','-target','8','-classpath',$platformJar,'-d',"$buildRoot/classes","$appRoot/android/src/cn/plainledger/MainActivity.java")
+Run-Checked "$javaRoot/javac.exe" @('-encoding','UTF-8','-source','8','-target','8','-classpath',$platformJar,'-d',"$buildRoot/classes","$appRoot/android/src/cn/plainledger/MainActivity.java","$appRoot/android/src/cn/plainledger/PaymentParser.java","$appRoot/android/src/cn/plainledger/AutoBillService.java")
 $classFiles=@(Get-ChildItem "$buildRoot/classes" -Recurse -Filter '*.class' | ForEach-Object {$_.FullName})
 Run-Checked "$javaRoot/java.exe" (@('-cp',"$buildTools/lib/d8.jar",'com.android.tools.r8.D8','--lib',$platformJar,'--min-api','26','--output',"$buildRoot/dex")+$classFiles)
 Copy-Item "$buildRoot/base.apk" "$buildRoot/unsigned.apk" -Force
