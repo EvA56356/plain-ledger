@@ -43,3 +43,8 @@ __pycache__/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Server secrets and account data
+*.secret
+*.secret.*
+/snapshots/

@@ -21,7 +21,7 @@ Copy-Item "$appRoot/web/*" "$buildRoot/assets" -Force
 function Run-Checked([string]$exe,[string[]]$arguments){ & $exe @arguments; if($LASTEXITCODE -ne 0){throw "Build failed: $exe"} }
 Run-Checked "$buildTools/aapt2.exe" @('compile','--dir',"$appRoot/android/res",'-o',"$buildRoot/resources.zip")
 Run-Checked "$buildTools/aapt2.exe" @('link','-o',"$buildRoot/base.apk",'-I',$platformJar,'--manifest',"$appRoot/android/AndroidManifest.xml",'-A',"$buildRoot/assets",'--auto-add-overlay',"$buildRoot/resources.zip")
-Run-Checked "$javaRoot/javac.exe" @('-encoding','UTF-8','-source','8','-target','8','-classpath',$platformJar,'-d',"$buildRoot/classes","$appRoot/android/src/cn/plainledger/MainActivity.java","$appRoot/android/src/cn/plainledger/PaymentParser.java","$appRoot/android/src/cn/plainledger/AutoBillService.java")
+Run-Checked "$javaRoot/javac.exe" @('-encoding','UTF-8','-source','8','-target','8','-classpath',$platformJar,'-d',"$buildRoot/classes","$appRoot/android/src/cn/plainledger/MainActivity.java","$appRoot/android/src/cn/plainledger/PaymentParser.java","$appRoot/android/src/cn/plainledger/AutoBillService.java","$appRoot/android/src/cn/plainledger/CloudTransport.java")
 $classFiles=@(Get-ChildItem "$buildRoot/classes" -Recurse -Filter '*.class' | ForEach-Object {$_.FullName})
 Run-Checked "$javaRoot/java.exe" (@('-cp',"$buildTools/lib/d8.jar",'com.android.tools.r8.D8','--lib',$platformJar,'--min-api','26','--output',"$buildRoot/dex")+$classFiles)
 Copy-Item "$buildRoot/base.apk" "$buildRoot/unsigned.apk" -Force
@@ -31,6 +31,6 @@ try{[System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($archive,"$bu
 Run-Checked "$buildTools/zipalign.exe" @('-f','4',"$buildRoot/unsigned.apk","$buildRoot/aligned.apk")
 $keyPath=Join-Path $appRoot 'local-debug.keystore'
 if(!(Test-Path $keyPath)){Run-Checked "$javaRoot/keytool.exe" @('-genkeypair','-keystore',$keyPath,'-storepass','android','-keypass','android','-alias','plainledger','-keyalg','RSA','-keysize','2048','-validity','10000','-dname','CN=Plain Ledger Local Development')}
-Run-Checked "$javaRoot/java.exe" @('-jar',"$buildTools/lib/apksigner.jar",'sign','--ks',$keyPath,'--ks-pass','pass:android','--key-pass','pass:android','--out',"$appRoot/dist/简账-1.0.0.apk","$buildRoot/aligned.apk")
-Run-Checked "$javaRoot/java.exe" @('-jar',"$buildTools/lib/apksigner.jar",'verify','--verbose',"$appRoot/dist/简账-1.0.0.apk")
-Write-Output "APK: $appRoot/dist/简账-1.0.0.apk"
+Run-Checked "$javaRoot/java.exe" @('-jar',"$buildTools/lib/apksigner.jar",'sign','--ks',$keyPath,'--ks-pass','pass:android','--key-pass','pass:android','--out',"$appRoot/dist/简账-协作版-1.0.0.apk","$buildRoot/aligned.apk")
+Run-Checked "$javaRoot/java.exe" @('-jar',"$buildTools/lib/apksigner.jar",'verify','--verbose',"$appRoot/dist/简账-协作版-1.0.0.apk")
+Write-Output "APK: $appRoot/dist/简账-协作版-1.0.0.apk"
