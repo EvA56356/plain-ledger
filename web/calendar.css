@@ -115,3 +115,5 @@
 
 .calendar-controls .calendar-arrow{display:grid;place-items:center;padding:0;line-height:1}
 .calendar-arrow svg{display:block;width:20px;height:20px;flex:none}
+
+body:not(.ledger-view) #mobileAdd{display:none!important}
