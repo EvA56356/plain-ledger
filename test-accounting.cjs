@@ -2,6 +2,7 @@ const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
 const source=fs.readFileSync(__dirname+'/web/app.js','utf8').split("$('#entryForm').onsubmit=")[0];
 const context=vm.createContext({console,document:{querySelector:()=>({value:'2026-10'})},window:{},setTimeout,clearTimeout});
 vm.runInContext(fs.readFileSync(__dirname+'/web/categories.js','utf8'),context);
+vm.runInContext(fs.readFileSync(__dirname+'/web/projects.js','utf8'),context);
 vm.runInContext(source,context);
 let count=0;
 function test(name,fn){fn();count++;console.log('PASS '+name)}

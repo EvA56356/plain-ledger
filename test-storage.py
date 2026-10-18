@@ -13,7 +13,7 @@ class StorageTest(unittest.TestCase):
                 req=urllib.request.Request(url,json.dumps(data).encode(),{'Content-Type':'application/json'},method='POST')
                 return urllib.request.urlopen(req).read()
             try:
-                data={'version':1,'entries':[{'id':'x','type':'expense','amount':1234,'category':'e0','account':'cash','book':'daily','date':'2026-10-15','note':'test'}]}
+                data={'version':1,'entries':[{'id':'x','type':'expense','amount':1234,'category':'e0','account':'cash','book':'daily','date':'2026-10-15','note':'test','projectId':'dalian'}],'projects':[{'id':'travel','name':'Travel','book':'daily'},{'id':'dalian','name':'Dalian','book':'daily','parentId':'travel','dropdownVisible':False}]}
                 post(data)
                 self.assertEqual(json.load(urllib.request.urlopen(url)),data)
                 with server.connect() as c:self.assertEqual(c.execute('SELECT amount FROM entries').fetchone()[0],1234)
