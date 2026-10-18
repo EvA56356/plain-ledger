@@ -61,3 +61,19 @@
 .day-amount-value{display:inline-block;white-space:nowrap;transform-origin:center;font-variant-numeric:tabular-nums;letter-spacing:-.2px}
 
 .settings-view header .header-actions{display:none}
+
+/* Shared mobile header: book and month selectors share one row. */
+@media(max-width:650px){
+ header{display:grid;grid-template-columns:minmax(0,1fr) minmax(116px,.85fr);grid-template-areas:"eyebrow eyebrow" "title title" "book month";gap:8px 10px;align-items:center}
+ header>div:first-child{display:contents}
+ header .eyebrow{grid-area:eyebrow}
+ header #pageTitle{grid-area:title;margin:0 0 5px}
+ header .plain-select-mobile,header .mobile-book-select{grid-area:book;display:flex;min-width:0;max-width:100%;width:100%;margin:0}
+ header .plain-select-mobile .plain-select-trigger{width:100%;min-width:0;min-height:42px;font-size:15px;padding:8px 10px}
+ header>.header-actions{grid-area:month;align-self:center;margin:0;min-width:0;width:100%}
+ header .header-actions input[type="month"]{width:100%;max-width:none;min-height:48px;padding:8px;font-size:13px}
+ .ledger-view header,.settings-view header{grid-template-areas:"eyebrow eyebrow" "title title" "book month"}
+ .ledger-view header{grid-template-areas:"book month"}
+}
+
+@media(max-width:650px){header .plain-select-mobile{max-width:180px}header .header-actions input[type="month"]{min-height:42px}}
