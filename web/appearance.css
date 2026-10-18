@@ -26,3 +26,7 @@ input,select,dialog,.panel{background:var(--paper)}
 .storage-notice,.ledger-toolbar h2{color:var(--muted)}
 .entry:hover{background:var(--soft)}.entry{border-bottom-color:var(--line)}
 #toast{background:var(--green)}
+
+.plain-select-trigger,.plain-select-menu,input[type="date"],input[type="month"]{border-color:var(--line)}
+.plain-select-menu{background:var(--paper)}
+nav button,.sidefoot,.calendar-footer,.calendar-caption{color:var(--muted)}
