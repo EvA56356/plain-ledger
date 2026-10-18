@@ -5,7 +5,14 @@
 点击版本展开下载，选择需要的界面风格。
 
 <details>
-<summary>1.2.2 · 最新 · 记账按钮仅在收支明细显示</summary>
+<summary>1.3.0 · 最新 · 我的项目、账本和项目显示设置</summary>
+
+[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.0/plain-ledger-green-1.3.0.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.0/plain-ledger-paper-1.3.0.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.0/plain-ledger-sky-1.3.0.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.0/plain-ledger-shared-1.3.0.apk)
+
+</details>
+
+<details>
+<summary>1.2.2 · 记账按钮仅在收支明细显示</summary>
 
 [绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.2/plain-ledger-green-1.2.2.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.2/plain-ledger-paper-1.2.2.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.2/plain-ledger-sky-1.2.2.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.2/plain-ledger-shared-1.2.2.apk)
 
@@ -18,16 +25,10 @@
 
 </details>
 
-<details>
-<summary>1.2.0 · 二级分类、纯文字分类</summary>
-
-[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-green-1.2.0.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-paper-1.2.0.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-sky-1.2.0.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-shared-1.2.0.apk)
-
-</details>
-
 [查看历史 APK →](docs/APK_HISTORY.md)
 
 ---
+
 
 ## 最近功能
 
@@ -168,3 +169,11 @@ UI、业务计算和存储为重新实现；本仓库不包含第三方应用 AP
 ## APK 下载
 
 四种风格/用途的安装包统一发布在 [GitHub Releases](https://github.com/EvA56356/plain-ledger/releases/latest)，可分别安装，不通过源码文件上传页下载。发布附件不包含个人数据库、备份、会话或签名私钥。
+
+## 我的项目
+
+“我的项目”位于收支明细和我的账本之间。先建立“旅游”等大类，再建立“大连”等具体项目；每个项目归属当前账本，可设置预算、起止日期和备注，查看收支、分类统计及完整账单，支持归档和恢复。
+
+记账时可选择项目大类和具体项目，也可不关联。项目详情中“记一笔”会自动带入当前项目；原有账单可编辑关联、更换或解除关联。一笔账单只关联一个具体项目，不重复计入收支。删除项目只解除关联，保留账单。
+
+设置 → 账本和项目设置：用开关控制全部账本、大类和具体项目是否出现在下拉选项中；隐藏不删除数据，不改变项目统计。隐藏大类会同时隐藏其下项目；归档项目不参与新记账选择。JSON 备份和共享服务器保留项目、预算、关联及显示偏好，CSV 导出包含项目路径。
