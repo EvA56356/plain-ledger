@@ -39,3 +39,86 @@
 .ledger-view #pageTitle,.ledger-view header .eyebrow,.ledger-view .header-actions{display:none}
 .ledger-view header{margin-bottom:18px}
 @media(max-width:650px){.ledger-view header .plain-select-mobile{margin-top:0}.ledger-view header{margin-bottom:18px}}
+
+/* Compact phone calendar: month and navigation stay on one row. */
+@media(max-width:650px){
+ .calendar-panel{padding-top:14px}
+ .calendar-top{flex-wrap:nowrap;gap:6px;margin:0 2px 12px}
+ .calendar-top>div:first-child{min-width:0;flex:1}
+ .calendar-top .eyebrow{display:none}
+ .calendar-top h2{font-size:clamp(15px,4.6vw,19px);letter-spacing:0;margin:0;white-space:nowrap}
+ .calendar-month-title{white-space:nowrap;min-height:42px}
+ .calendar-month-title span{font-size:12px;margin-left:2px}
+ .calendar-controls{flex:none;margin-left:0;gap:4px}
+ .calendar-controls .calendar-arrow{width:40px;height:42px;font-size:28px}
+ .calendar-today{min-height:42px;padding:6px 8px;font-size:12px}
+ .calendar-weekdays{margin-bottom:4px}
+ .calendar-days .calendar-day{height:54px;padding:6px 1px 4px;gap:2px}
+ .calendar-footer{padding-top:12px;margin-top:12px}
+}
+
+.calendar-day .day-amount{width:100%;max-width:100%;overflow:visible;text-overflow:clip;white-space:nowrap;text-align:center}
+.day-amount-value{display:inline-block;white-space:nowrap;transform-origin:center;font-variant-numeric:tabular-nums;letter-spacing:-.2px}
+
+.settings-view header .header-actions{display:none}
+
+/* Shared mobile header: book and month selectors share one row. */
+@media(max-width:650px){
+ header{display:grid;grid-template-columns:minmax(0,1fr) minmax(116px,.85fr);grid-template-areas:"eyebrow eyebrow" "title title" "book month";gap:8px 10px;align-items:center}
+ header>div:first-child{display:contents}
+ header .eyebrow{grid-area:eyebrow}
+ header #pageTitle{grid-area:title;margin:0 0 5px}
+ header .plain-select-mobile,header .mobile-book-select{grid-area:book;display:flex;min-width:0;max-width:100%;width:100%;margin:0}
+ header .plain-select-mobile .plain-select-trigger{width:100%;min-width:0;min-height:42px;font-size:15px;padding:8px 10px}
+ header>.header-actions{grid-area:month;align-self:center;margin:0;min-width:0;width:100%}
+ header .header-actions input[type="month"]{width:100%;max-width:none;min-height:48px;padding:8px;font-size:13px}
+ .ledger-view header,.settings-view header{grid-template-areas:"eyebrow eyebrow" "title title" "book month"}
+ .ledger-view header{grid-template-areas:"book month"}
+}
+
+@media(max-width:650px){header .plain-select-mobile{max-width:180px}header .header-actions input[type="month"]{min-height:42px}}
+
+.category-manager .category-manager-heading{flex-direction:row;align-items:center;justify-content:space-between;margin:0 0 12px;gap:8px}
+.category-manager-heading h2{margin:0;white-space:nowrap}.category-manager-heading>button{flex:none;padding:8px 12px;font-size:13px;white-space:nowrap}
+.category-tree{border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0}.category-tree summary{cursor:pointer;font-size:14px;font-weight:500}.category-tree summary small{font-size:11px;color:var(--muted);margin-left:10px;font-weight:400}.category-tree-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.category-tree-actions button{font-size:12px;padding:7px 10px}.subcategory-picker{grid-column:1/-1;border-top:1px solid var(--line);padding-top:10px;margin-top:8px}.subcategory-picker>strong{font-size:12px}.subcategory-options{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}.category-grid .subcategory-options button{border:1px solid var(--line);padding:8px 12px;background:var(--paper)}.category-grid .subcategory-options button.active{background:var(--soft);border-color:var(--green)}.category-grid{max-height:290px}
+
+.category-icon{display:none!important}.category-grid>button{min-height:42px;justify-content:center;font-size:13px}.category-grid>button>span{display:none}.category-tree summary{list-style-position:inside}.entry-main{gap:0}
+
+/* A square calendar card on phones; weeks share the remaining height. */
+@media(max-width:650px){
+ .calendar-panel{aspect-ratio:1/1;display:flex;flex-direction:column;min-height:0;padding:12px}
+ .calendar-top{flex:none;margin:0 0 4px}
+ .calendar-top h2{font-size:clamp(15px,4.3vw,18px)}
+ .calendar-controls .calendar-arrow{width:36px;height:38px;font-size:26px}
+ .calendar-today,.calendar-month-title{min-height:38px}
+ .calendar-weekdays{flex:none;font-size:12px;margin:0 0 3px}
+ .calendar-weekdays span{padding:2px 0}
+ .calendar-days{flex:1;min-height:0;grid-template-rows:repeat(var(--calendar-weeks),minmax(0,1fr));gap:3px}
+ .calendar-days .calendar-day{height:100%;min-height:0;padding:3px 1px 2px;gap:0;justify-content:space-between}
+ .calendar-day .day-number{font-size:14px;line-height:1.2}
+ .calendar-day .day-amount{font-size:10px;line-height:1.1;min-height:11px}
+ .calendar-footer{flex:none;align-items:center;padding-top:7px;margin:7px 0 0;gap:6px;font-size:9px}
+ .calendar-footer strong{font-size:11px;margin-left:2px}
+ .calendar-caption{display:none}
+}
+
+@media(max-width:650px){
+ .calendar-days[style*="--calendar-weeks:6"] .calendar-day{padding:1px 1px}
+ .calendar-days[style*="--calendar-weeks:6"] .day-number{font-size:12px;line-height:1}
+ .calendar-days[style*="--calendar-weeks:6"] .day-amount{font-size:9px;line-height:1;min-height:9px}
+}
+@media(max-width:360px){
+ .calendar-days[style*="--calendar-weeks:6"] .calendar-day{padding:0 1px}
+ .calendar-days[style*="--calendar-weeks:6"] .day-number{font-size:11px}
+ .calendar-days[style*="--calendar-weeks:6"] .day-amount{font-size:8px;min-height:8px}
+}
+
+.calendar-controls .calendar-arrow{display:grid;place-items:center;padding:0;line-height:1}
+.calendar-arrow svg{display:block;width:20px;height:20px;flex:none}
+
+body:not(.ledger-view) #mobileAdd{display:none!important}
+
+.project-toolbar{flex-direction:row;align-items:center;margin:16px 0;gap:8px}.project-toolbar h2{margin:0}.project-toolbar>button{flex:none;padding:9px 12px;font-size:13px}.project-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.project-card{display:flex;flex-direction:column;align-items:flex-start;gap:7px;text-align:left;padding:18px;background:var(--soft);border-radius:16px}.project-card strong{font-size:18px}.project-card b{font-size:22px}.project-card span,.project-card small{font-size:11px;color:var(--muted)}.project-totals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.project-totals small,.project-totals strong{display:block;overflow-wrap:anywhere}.project-totals strong{font-size:18px}.project-entry{display:flex;width:100%;align-items:center;justify-content:space-between;gap:12px;text-align:left;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:16px 0}.project-entry small{display:block;color:var(--muted);font-size:11px}.project-entry strong{white-space:nowrap}.project-archive-filter{display:flex;align-items:center;gap:8px;margin-bottom:18px}.visibility-row{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding:15px 0}.visibility-row small{display:block;font-size:11px;color:var(--muted)}.visibility-row input{appearance:none;flex:none;width:42px;height:24px;border:0;border-radius:20px;background:var(--line);padding:3px;cursor:pointer;position:relative}.visibility-row input:before{content:"";position:absolute;width:18px;height:18px;top:3px;left:3px;background:white;border-radius:50%;transition:left .15s}.visibility-row input:checked{background:var(--green)}.visibility-row input:checked:before{left:21px}.visibility-child{padding-left:20px}.visibility-group{margin-bottom:14px}.project-view header .header-actions{display:none}.project-view .barrow{grid-template-columns:minmax(70px,1fr) 1fr 85px}.project-view .section{overflow-wrap:anywhere}
+@media(max-width:650px){nav button span{font-size:9px}.project-cards{grid-template-columns:1fr}.project-totals strong{font-size:16px}.project-group .rowactions{flex-wrap:wrap;justify-content:flex-end}.project-group .toolbar>div:first-child{min-width:0}.project-entry strong{font-size:14px}.project-toolbar h2{font-size:17px}}
+
+.project-entry-label{display:block;color:var(--green);font-size:10px}.visibility-row input:focus-visible{outline:2px solid var(--green);outline-offset:3px}
