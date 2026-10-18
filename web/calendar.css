@@ -39,3 +39,23 @@
 .ledger-view #pageTitle,.ledger-view header .eyebrow,.ledger-view .header-actions{display:none}
 .ledger-view header{margin-bottom:18px}
 @media(max-width:650px){.ledger-view header .plain-select-mobile{margin-top:0}.ledger-view header{margin-bottom:18px}}
+
+/* Compact phone calendar: month and navigation stay on one row. */
+@media(max-width:650px){
+ .calendar-panel{padding-top:14px}
+ .calendar-top{flex-wrap:nowrap;gap:6px;margin:0 2px 12px}
+ .calendar-top>div:first-child{min-width:0;flex:1}
+ .calendar-top .eyebrow{display:none}
+ .calendar-top h2{font-size:clamp(15px,4.6vw,19px);letter-spacing:0;margin:0;white-space:nowrap}
+ .calendar-month-title{white-space:nowrap;min-height:42px}
+ .calendar-month-title span{font-size:12px;margin-left:2px}
+ .calendar-controls{flex:none;margin-left:0;gap:4px}
+ .calendar-controls .calendar-arrow{width:40px;height:42px;font-size:28px}
+ .calendar-today{min-height:42px;padding:6px 8px;font-size:12px}
+ .calendar-weekdays{margin-bottom:4px}
+ .calendar-days .calendar-day{height:54px;padding:6px 1px 4px;gap:2px}
+ .calendar-footer{padding-top:12px;margin-top:12px}
+}
+
+.calendar-day .day-amount{width:100%;max-width:100%;overflow:visible;text-overflow:clip;white-space:nowrap;text-align:center}
+.day-amount-value{display:inline-block;white-space:nowrap;transform-origin:center;font-variant-numeric:tabular-nums;letter-spacing:-.2px}
