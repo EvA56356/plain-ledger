@@ -1,0 +1,32 @@
+/* Shared by the browser and Android WebView; platform layout stays responsive. */
+:root{--accent-border:#83a996;--accent-hover:#326454;--income:#3b8a6b;--expense:#ab6253}
+button.primary:hover{background:var(--accent-hover);border-color:var(--accent-hover)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline-color:var(--accent-border)}
+input,select,dialog,.panel{background:var(--paper)}
+.income{color:var(--income)}.expense{color:var(--expense)}
+.category-icon,.chip,.notice,.category-grid .category-more{background:var(--soft);color:var(--green)}
+.category-grid button.active{background:var(--soft);border-color:var(--accent-border)}
+.category-more-link{color:var(--green)}.category-grid .category-more{border-color:var(--accent-border)}
+.barfill,.trend>div{background:var(--green)}
+.featured .stat-label,.featured .stat-hint{color:#ffffffcc}.featured .stat-sign{color:#ffffff99}
+.budget-progress{background:var(--soft)}
+.tag{background:var(--soft);color:var(--green)}
+.book-card.is-current{border-color:var(--accent-border)}
+.book-card{background:var(--paper)}
+.calendar-day.has-records{background:var(--soft)}.calendar-day.is-today{border-color:var(--accent-border)}
+.day-number i,.day-heading-mark{color:var(--green)}.day-heading-mark{background:var(--accent-border)}
+.calendar-day .day-amount.negative{color:var(--expense)}.calendar-day .day-amount.positive{color:var(--income)}
+.calendar-day.selected .day-amount,.calendar-day.selected .day-number i{color:#fff}
+.plain-select-chevron{border-color:var(--muted)}
+.plain-select-trigger:hover{background:var(--soft);border-color:var(--accent-border)}
+.plain-select-trigger.is-open,.plain-select-trigger:focus-visible{background:var(--paper);border-color:var(--accent-border);box-shadow:0 0 0 3px var(--soft)}
+.plain-select-option:hover,.plain-select-option:focus-visible,.plain-select-option[aria-selected="true"]{background:var(--soft);color:var(--green)}
+.plain-select-check{color:var(--green)}
+.segmented{background:var(--soft)}.segmented button.active{background:var(--paper)}
+.storage-notice,.ledger-toolbar h2{color:var(--muted)}
+.entry:hover{background:var(--soft)}.entry{border-bottom-color:var(--line)}
+#toast{background:var(--green)}
+
+.plain-select-trigger,.plain-select-menu,input[type="date"],input[type="month"]{border-color:var(--line)}
+.plain-select-menu{background:var(--paper)}
+nav button,.sidefoot,.calendar-footer,.calendar-caption{color:var(--muted)}
