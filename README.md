@@ -12,7 +12,7 @@
 
 ## 分支预览
 
-[版本与分支说明](docs/BRANCHES.md)：`ui/paper` 纸感、`ui/mono` 黑白、`ui/sky` 蓝色；`feature/shared-ledger` 基于当前 UI 增加账号和共享服务器。离线 main 保持本地存储。
+[版本与分支说明](docs/BRANCHES.md)：`ui/paper` 纸感、`ui/sky` 蓝色；`feature/shared-ledger` 基于当前 UI 增加账号和共享服务器。离线 main 保持本地存储。
 
 ## 功能
 
