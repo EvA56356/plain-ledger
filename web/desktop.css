@@ -6,3 +6,5 @@ body.web-app{font-size:15px}.web-app main{max-width:1800px}.web-app .section{bor
 
 @media(min-width:1100px){.web-app .calendar-days .calendar-day{padding:10px 2px 7px}.web-app .calendar-day .day-amount{font-size:12px;letter-spacing:-.2px}}
 .report-donut>div{max-height:300px;overflow:auto;padding-right:5px}
+
+.legend-income{background:var(--income)}.legend-expense{background:var(--expense)}
