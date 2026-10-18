@@ -37,9 +37,9 @@ public class AutoBillService extends AccessibilityService {
  }
  private void show(long amount,String source){
   LinearLayout box=new LinearLayout(this);box.setOrientation(1);int pad=(int)(20*getResources().getDisplayMetrics().density);box.setPadding(pad,pad,pad,pad);
-  android.graphics.drawable.GradientDrawable bg=new android.graphics.drawable.GradientDrawable();bg.setColor(Color.WHITE);bg.setCornerRadius(pad);box.setBackground(bg);box.setElevation(12);
-  TextView title=new TextView(this);title.setText("识别到"+source+"支出 ¥ "+String.format(java.util.Locale.ROOT,"%.2f",amount/100.0)+"\n请核对后保存，尚未写入账本");title.setTextColor(Color.rgb(33,78,67));title.setTextSize(18);box.addView(title);
-  Button confirm=new Button(this);confirm.setText("核对并记账");box.addView(confirm);Button cancel=new Button(this);cancel.setText("忽略");box.addView(cancel);
+  android.graphics.drawable.GradientDrawable bg=new android.graphics.drawable.GradientDrawable();bg.setColor(MainActivity.uiColor(this,"paper",Color.WHITE));bg.setCornerRadius(MainActivity.uiRadius(this));box.setBackground(bg);box.setElevation(12);
+  TextView title=new TextView(this);title.setText("识别到"+source+"支出 ¥ "+String.format(java.util.Locale.ROOT,"%.2f",amount/100.0)+"\n请核对后保存，尚未写入账本");title.setTextColor(MainActivity.uiColor(this,"ink",Color.rgb(33,78,67)));title.setTextSize(18);box.addView(title);
+  Button confirm=new Button(this);confirm.setText("核对并记账");confirm.setBackgroundTintList(android.content.res.ColorStateList.valueOf(MainActivity.uiColor(this,"primary",Color.rgb(33,78,67))));confirm.setTextColor(Color.WHITE);box.addView(confirm);Button cancel=new Button(this);cancel.setText("忽略");cancel.setBackgroundTintList(android.content.res.ColorStateList.valueOf(MainActivity.uiColor(this,"soft",Color.LTGRAY)));cancel.setTextColor(MainActivity.uiColor(this,"primary",Color.rgb(33,78,67)));box.addView(cancel);
   confirm.setOnClickListener(v->{try{JSONObject draft=new JSONObject();draft.put("amount",amount);draft.put("source",source);draft.put("created",System.currentTimeMillis());prefs().edit().putString("draft",draft.toString()).commit();dismiss();startActivity(new Intent(this,MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_SINGLE_TOP));}catch(Exception ignored){dismiss();}});
   cancel.setOnClickListener(v->dismiss());
   WindowManager.LayoutParams lp=new WindowManager.LayoutParams(-1,-2,WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY,WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,android.graphics.PixelFormat.TRANSLUCENT);lp.gravity=Gravity.BOTTOM;lp.y=pad*3;
