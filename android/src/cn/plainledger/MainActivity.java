@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
   db.enableWriteAheadLogging();
   db.execSQL("CREATE TABLE IF NOT EXISTS state(id INTEGER PRIMARY KEY CHECK(id=1),payload TEXT NOT NULL)");
   db.execSQL("CREATE TABLE IF NOT EXISTS entries(id TEXT PRIMARY KEY,type TEXT NOT NULL,amount INTEGER NOT NULL,category TEXT NOT NULL,account TEXT NOT NULL,book TEXT NOT NULL,date TEXT NOT NULL,note TEXT NOT NULL)");
-  web=new WebView(this);web.setBackgroundColor(Color.rgb(245,246,243));
+  web=new WebView(this);web.setBackgroundColor(uiColor(this,"background",Color.rgb(245,246,243)));
   web.getSettings().setJavaScriptEnabled(true);web.getSettings().setDomStorageEnabled(true);
   web.getSettings().setAllowFileAccess(true);web.getSettings().setAllowContentAccess(false);
   web.getSettings().setAllowFileAccessFromFileURLs(false);web.getSettings().setAllowUniversalAccessFromFileURLs(false);
@@ -63,6 +63,8 @@ public class MainActivity extends Activity {
   @JavascriptInterface public void exportFile(String name,String mime,String text){runOnUiThread(()->{pendingExport=text;Intent intent=new Intent(Intent.ACTION_CREATE_DOCUMENT);intent.addCategory(Intent.CATEGORY_OPENABLE);intent.setType(mime);intent.putExtra(Intent.EXTRA_TITLE,name);try{startActivityForResult(intent,EXPORT);}catch(Exception e){notice("此设备没有文件保存组件");}});}
   @JavascriptInterface public void importBackup(){runOnUiThread(()->{Intent intent=new Intent(Intent.ACTION_OPEN_DOCUMENT);intent.addCategory(Intent.CATEGORY_OPENABLE);intent.setType("*/*");try{startActivityForResult(intent,IMPORT);}catch(Exception e){notice("此设备没有文件选择组件");}});}
  }
+ public static int uiColor(Context c,String name,int fallback){int id=c.getResources().getIdentifier("ledger_"+name,"color",c.getPackageName());return id==0?fallback:c.getResources().getColor(id,c.getTheme());}
+ public static float uiRadius(Context c){int id=c.getResources().getIdentifier("ledger_radius","dimen",c.getPackageName());return id==0?20*c.getResources().getDisplayMetrics().density:c.getResources().getDimension(id);}
  private void notice(String s){Toast.makeText(this,s,Toast.LENGTH_LONG).show();}
  @Override protected void onActivityResult(int request,int result,Intent data){super.onActivityResult(request,result,data);if(result!=RESULT_OK||data==null||data.getData()==null)return;Uri uri=data.getData();try{if(request==EXPORT){try(OutputStream out=getContentResolver().openOutputStream(uri)){if(out==null)throw new IOException();out.write(pendingExport.getBytes(StandardCharsets.UTF_8));}pendingExport=null;notice("备份已保存");}else if(request==IMPORT){ByteArrayOutputStream buf=new ByteArrayOutputStream();try(InputStream in=getContentResolver().openInputStream(uri)){byte[] block=new byte[8192];int n;while((n=in.read(block))!=-1){if(buf.size()+n>10000000)throw new IOException("文件过大");buf.write(block,0,n);}}String text=buf.toString("UTF-8");web.evaluateJavascript("window.receiveBackup("+JSONObject.quote(text)+").catch(function(){})",null);}}catch(Exception e){notice("文件操作失败："+e.getMessage());}}
  @Override protected void onResume(){super.onResume();if(web!=null)web.evaluateJavascript("window.Cloud&&window.Cloud.sync(false)",null);}
