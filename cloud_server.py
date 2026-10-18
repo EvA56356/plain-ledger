@@ -85,8 +85,34 @@ def validate_state(d,shared=False):
   parent=cat.get('parentId')
   if parent is not None and not isinstance(parent,str):fail(400,'上级分类编号无效')
   if parent and (parent not in cats or parent==cat['id'] or cats[parent].get('parentId') or cats[parent].get('type')!=cat.get('type')):fail(400,'分类仅支持同类型的两级结构')
+ projects=d.get('projects',[])
+ if not isinstance(projects,list) or len(projects)>50000:fail(400,'项目格式无效')
+ project_map={}
+ for book in d['books']:
+  if 'dropdownVisible' in book and type(book['dropdownVisible']) is not bool:fail(400,'账本显示设置无效')
+ for p in projects:
+  if not isinstance(p,dict) or not isinstance(p.get('id'),str) or not 1<=len(p['id'])<=100 or p['id'] in project_map or p.get('book') not in ids['books'] or not isinstance(p.get('name'),str) or not 1<=len(p['name'].strip())<=40:fail(400,'项目编号、名称或账本无效')
+  project_map[p['id']]=p
+  for key in ('archived','dropdownVisible'):
+   if key in p and type(p[key]) is not bool:fail(400,'项目状态无效')
+  if 'parentId' in p and not isinstance(p['parentId'],str):fail(400,'项目大类无效')
+  if 'budget' in p and (type(p['budget']) is not int or not 0<=p['budget']<=99999999999):fail(400,'项目预算无效')
+  if 'note' in p and (not isinstance(p['note'],str) or len(p['note'])>120):fail(400,'项目备注无效')
+  for key in ('start','end'):
+   if key in p and not isinstance(p[key],str):fail(400,'项目日期无效')
+   if p.get(key):
+    try:datetime.date.fromisoformat(p[key])
+    except (ValueError,TypeError):fail(400,'项目日期无效')
+  if p.get('start') and p.get('end') and p['start']>p['end']:fail(400,'项目日期范围无效')
+ for p in projects:
+  if p.get('parentId'):
+   parent=project_map.get(p['parentId'])
+   if not parent or parent.get('parentId') or parent['book']!=p['book']:fail(400,'项目仅支持同账本的两级结构')
  for e in d['entries']:
   if type(e.get('amount')) is not int or not 0<e['amount']<=99999999999 or e.get('type') not in ('expense','income'):fail(400,'账单金额或类型无效')
+  if 'projectId' in e and e['projectId']!='':
+   p=project_map.get(e['projectId']) if isinstance(e['projectId'],str) else None
+   if not p or not p.get('parentId') or p['book']!=e.get('book'):fail(400,'账单项目无效或跨账本')
   if e.get('book') not in ids['books'] or e.get('account') not in ids['accounts'] or e.get('category') not in ids['categories'] or cats[e['category']]['type']!=e['type']:fail(400,'账单引用无效')
   try:datetime.date.fromisoformat(e['date'])
   except (ValueError,TypeError,KeyError):fail(400,'日期无效')
