@@ -1,5 +1,44 @@
 # 晴空 · 清透蓝色
 
+## 最新三个版本
+
+点击版本展开下载，选择需要的界面风格。
+
+<details>
+<summary>1.3.0 · 最新 · 我的项目、账本和项目显示设置</summary>
+
+[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.0/plain-ledger-green-1.3.0.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.0/plain-ledger-paper-1.3.0.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.0/plain-ledger-sky-1.3.0.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.0/plain-ledger-shared-1.3.0.apk)
+
+</details>
+
+<details>
+<summary>1.2.2 · 记账按钮仅在收支明细显示</summary>
+
+[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.2/plain-ledger-green-1.2.2.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.2/plain-ledger-paper-1.2.2.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.2/plain-ledger-sky-1.2.2.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.2/plain-ledger-shared-1.2.2.apk)
+
+</details>
+
+<details>
+<summary>1.2.1 · 正方形日历、箭头居中</summary>
+
+[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-green-1.2.1.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-paper-1.2.1.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-sky-1.2.1.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-shared-1.2.1.apk)
+
+</details>
+
+[查看历史 APK →](docs/APK_HISTORY.md)
+
+---
+
+
+## 最近功能
+
+- 分类采用纯文字，两级结构；每个一级分类有预设二级分类，可在设置中添加、改名。
+- 旅行包含交通、住宿、餐饮、购物、门票；账单显示完整分类路径。
+- 旧账单继续关联原分类，不自动改分类、不改变金额。备份和协作同步保留层级。
+- 手机端分类管理标题与添加按钮保持同一行。
+- APK 下载见 [Releases](https://github.com/EvA56356/plain-ledger/releases/latest)。
+
+
 仅改变视觉与导航布局，功能及数据格式与 main 一致。
 
 # 简账 · Plain Ledger
@@ -16,7 +55,7 @@
 
 ## 分支预览
 
-[版本与分支说明](docs/BRANCHES.md)：`ui/paper` 纸感、`ui/mono` 黑白、`ui/sky` 蓝色；`feature/shared-ledger` 基于当前 UI 增加账号和共享服务器。离线 main 保持本地存储。
+[版本与分支说明](docs/BRANCHES.md)：`ui/paper` 纸感、`ui/sky` 蓝色；`feature/shared-ledger` 基于当前 UI 增加账号和共享服务器。离线 main 保持本地存储。
 
 ## 功能
 
@@ -71,7 +110,7 @@ $env:ANDROID_SDK_ROOT = '<你的 Android SDK 目录>'
 ./build.ps1
 ```
 
-产物位于 `dist/简账-1.0.0.apk`。脚本会在本机生成开发签名密钥，**不会将密钥纳入 Git**。它用于本地测试，不是商店发布签名方案；保留自己的密钥以便后续覆盖升级。
+产物位于 `dist/简账-sky-1.1.0.apk`。脚本会在本机生成开发签名密钥，**不会将密钥纳入 Git**。它用于本地测试，不是商店发布签名方案；保留自己的密钥以便后续覆盖升级。
 
 非标准 SDK 目录也可显式指定：
 
@@ -125,8 +164,22 @@ test-storage.py           SQLite 集成测试
 
 ## 当前范围
 
-当前为 1.0.0 可用首版，采用人民币单币种。借入、借出、还款是普通收支分类，尚无独立债权债务台账；转账支持新增与查看，暂不支持编辑或撤销。
+当前为 1.1.0 可用首版，采用人民币单币种。借入、借出、还款是普通收支分类，尚无独立债权债务台账；转账支持新增与查看，暂不支持编辑或撤销。
 
 暂未加入 OCR、语音、后台定时账单、多币种、图片附件和复杂储蓄计划。广告、宠物养成、商城、会员、福利活动、AI 和云服务不在本项目范围内。
 
 UI、业务计算和存储为重新实现；本仓库不包含第三方应用 APK、反编译代码、加固载荷或第三方品牌素材。
+
+本分支 Android 包名 `cn.plainledger.sky`，显示为“简账蓝色”，可以与其他版本同时安装。各自数据库独立，需通过备份手动迁移，不自动复制个人账单。
+
+## APK 下载
+
+四种风格/用途的安装包统一发布在 [GitHub Releases](https://github.com/EvA56356/plain-ledger/releases/latest)，可分别安装，不通过源码文件上传页下载。发布附件不包含个人数据库、备份、会话或签名私钥。
+
+## 我的项目
+
+“我的项目”位于收支明细和我的账本之间。先建立“旅游”等大类，再建立“大连”等具体项目；每个项目归属当前账本，可设置预算、起止日期和备注，查看收支、分类统计及完整账单，支持归档和恢复。
+
+记账时可选择项目大类和具体项目，也可不关联。项目详情中“记一笔”会自动带入当前项目；原有账单可编辑关联、更换或解除关联。一笔账单只关联一个具体项目，不重复计入收支。删除项目只解除关联，保留账单。
+
+设置 → 账本和项目设置：用开关控制全部账本、大类和具体项目是否出现在下拉选项中；隐藏不删除数据，不改变项目统计。隐藏大类会同时隐藏其下项目；归档项目不参与新记账选择。JSON 备份和共享服务器保留项目、预算、关联及显示偏好，CSV 导出包含项目路径。
