@@ -1,6 +1,35 @@
 # 简账协作版 · Shared Ledger
 
-## 1.2.0 更新
+## 最新三个版本
+
+点击版本展开下载，选择需要的界面风格。
+
+<details>
+<summary>1.2.2 · 最新 · 记账按钮仅在收支明细显示</summary>
+
+[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.2/plain-ledger-green-1.2.2.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.2/plain-ledger-paper-1.2.2.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.2/plain-ledger-sky-1.2.2.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.2/plain-ledger-shared-1.2.2.apk)
+
+</details>
+
+<details>
+<summary>1.2.1 · 正方形日历、箭头居中</summary>
+
+[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-green-1.2.1.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-paper-1.2.1.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-sky-1.2.1.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-shared-1.2.1.apk)
+
+</details>
+
+<details>
+<summary>1.2.0 · 二级分类、纯文字分类</summary>
+
+[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-green-1.2.0.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-paper-1.2.0.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-sky-1.2.0.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-shared-1.2.0.apk)
+
+</details>
+
+[查看历史 APK →](docs/APK_HISTORY.md)
+
+---
+
+## 最近功能
 
 - 分类采用纯文字，两级结构；每个一级分类有预设二级分类，可在设置中添加、改名。
 - 旅行包含交通、住宿、餐饮、购物、门票；账单显示完整分类路径。
