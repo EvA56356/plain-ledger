@@ -15,6 +15,12 @@ class Client:
   status,r=self.call('/api/auth/register',{'phone':number,'code':r['devCode'],'password':'Sufficient-Test-Password1','name':'Tester'});assert status==200,r
   return r['user']['id']
 class CloudTests(unittest.TestCase):
+ def test_two_level_categories(self):
+  d=fresh();d['categories'].append({'id':'lunch','name':'Lunch','type':'expense','parentId':'food'})
+  server.validate_state(d)
+  for parent in ('missing','lunch'):
+   bad=copy.deepcopy(d);bad['categories'].append({'id':'bad','name':'Bad','type':'expense','parentId':parent})
+   with self.assertRaises(Exception):server.validate_state(bad)
  @classmethod
  def setUpClass(cls):
   cls.temp=tempfile.TemporaryDirectory();server.DB=pathlib.Path(cls.temp.name)/'cloud.sqlite3';server.DEV_SMS=True;server.SECRET=b'test-secret-not-for-production';server.PUBLIC_URL='';server.LIMITS.clear();server.initialize();cls.http=server.http.server.ThreadingHTTPServer(('127.0.0.1',0),server.Handler);cls.thread=threading.Thread(target=cls.http.serve_forever,daemon=True);cls.thread.start();cls.url='http://127.0.0.1:'+str(cls.http.server_port)

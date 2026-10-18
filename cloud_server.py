@@ -82,6 +82,9 @@ def validate_state(d,shared=False):
   if type(a.get('opening')) is not int or abs(a['opening'])>10**14:fail(400,'初始余额无效')
  for cat in d['categories']:
   if cat.get('type') not in ('income','expense'):fail(400,'分类类型无效')
+  parent=cat.get('parentId')
+  if parent is not None and not isinstance(parent,str):fail(400,'上级分类编号无效')
+  if parent and (parent not in cats or parent==cat['id'] or cats[parent].get('parentId') or cats[parent].get('type')!=cat.get('type')):fail(400,'分类仅支持同类型的两级结构')
  for e in d['entries']:
   if type(e.get('amount')) is not int or not 0<e['amount']<=99999999999 or e.get('type') not in ('expense','income'):fail(400,'账单金额或类型无效')
   if e.get('book') not in ids['books'] or e.get('account') not in ids['accounts'] or e.get('category') not in ids['categories'] or cats[e['category']]['type']!=e['type']:fail(400,'账单引用无效')
