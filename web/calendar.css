@@ -83,3 +83,35 @@
 .category-tree{border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0}.category-tree summary{cursor:pointer;font-size:14px;font-weight:500}.category-tree summary small{font-size:11px;color:var(--muted);margin-left:10px;font-weight:400}.category-tree-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.category-tree-actions button{font-size:12px;padding:7px 10px}.subcategory-picker{grid-column:1/-1;border-top:1px solid var(--line);padding-top:10px;margin-top:8px}.subcategory-picker>strong{font-size:12px}.subcategory-options{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}.category-grid .subcategory-options button{border:1px solid var(--line);padding:8px 12px;background:var(--paper)}.category-grid .subcategory-options button.active{background:var(--soft);border-color:var(--green)}.category-grid{max-height:290px}
 
 .category-icon{display:none!important}.category-grid>button{min-height:42px;justify-content:center;font-size:13px}.category-grid>button>span{display:none}.category-tree summary{list-style-position:inside}.entry-main{gap:0}
+
+/* A square calendar card on phones; weeks share the remaining height. */
+@media(max-width:650px){
+ .calendar-panel{aspect-ratio:1/1;display:flex;flex-direction:column;min-height:0;padding:12px}
+ .calendar-top{flex:none;margin:0 0 4px}
+ .calendar-top h2{font-size:clamp(15px,4.3vw,18px)}
+ .calendar-controls .calendar-arrow{width:36px;height:38px;font-size:26px}
+ .calendar-today,.calendar-month-title{min-height:38px}
+ .calendar-weekdays{flex:none;font-size:12px;margin:0 0 3px}
+ .calendar-weekdays span{padding:2px 0}
+ .calendar-days{flex:1;min-height:0;grid-template-rows:repeat(var(--calendar-weeks),minmax(0,1fr));gap:3px}
+ .calendar-days .calendar-day{height:100%;min-height:0;padding:3px 1px 2px;gap:0;justify-content:space-between}
+ .calendar-day .day-number{font-size:14px;line-height:1.2}
+ .calendar-day .day-amount{font-size:10px;line-height:1.1;min-height:11px}
+ .calendar-footer{flex:none;align-items:center;padding-top:7px;margin:7px 0 0;gap:6px;font-size:9px}
+ .calendar-footer strong{font-size:11px;margin-left:2px}
+ .calendar-caption{display:none}
+}
+
+@media(max-width:650px){
+ .calendar-days[style*="--calendar-weeks:6"] .calendar-day{padding:1px 1px}
+ .calendar-days[style*="--calendar-weeks:6"] .day-number{font-size:12px;line-height:1}
+ .calendar-days[style*="--calendar-weeks:6"] .day-amount{font-size:9px;line-height:1;min-height:9px}
+}
+@media(max-width:360px){
+ .calendar-days[style*="--calendar-weeks:6"] .calendar-day{padding:0 1px}
+ .calendar-days[style*="--calendar-weeks:6"] .day-number{font-size:11px}
+ .calendar-days[style*="--calendar-weeks:6"] .day-amount{font-size:8px;min-height:8px}
+}
+
+.calendar-controls .calendar-arrow{display:grid;place-items:center;padding:0;line-height:1}
+.calendar-arrow svg{display:block;width:20px;height:20px;flex:none}
