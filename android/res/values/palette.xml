@@ -1,0 +1,1 @@
+<resources><color name="ledger_primary">#5669b2</color><color name="ledger_background">#f0f3fa</color><color name="ledger_paper">#ffffff</color><color name="ledger_ink">#2a3553</color><color name="ledger_soft">#e9edf9</color><dimen name="ledger_radius">24dp</dimen></resources>
