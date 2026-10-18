@@ -31,6 +31,6 @@ try{[System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($archive,"$bu
 Run-Checked "$buildTools/zipalign.exe" @('-f','4',"$buildRoot/unsigned.apk","$buildRoot/aligned.apk")
 $keyPath=Join-Path $appRoot 'local-debug.keystore'
 if(!(Test-Path $keyPath)){Run-Checked "$javaRoot/keytool.exe" @('-genkeypair','-keystore',$keyPath,'-storepass','android','-keypass','android','-alias','plainledger','-keyalg','RSA','-keysize','2048','-validity','10000','-dname','CN=Plain Ledger Local Development')}
-Run-Checked "$javaRoot/java.exe" @('-jar',"$buildTools/lib/apksigner.jar",'sign','--ks',$keyPath,'--ks-pass','pass:android','--key-pass','pass:android','--out',"$appRoot/dist/简账-协作版-1.2.1.apk","$buildRoot/aligned.apk")
-Run-Checked "$javaRoot/java.exe" @('-jar',"$buildTools/lib/apksigner.jar",'verify','--verbose',"$appRoot/dist/简账-协作版-1.2.1.apk")
-Write-Output "APK: $appRoot/dist/简账-协作版-1.2.1.apk"
+Run-Checked "$javaRoot/java.exe" @('-jar',"$buildTools/lib/apksigner.jar",'sign','--ks',$keyPath,'--ks-pass','pass:android','--key-pass','pass:android','--out',"$appRoot/dist/简账-协作版-1.2.2.apk","$buildRoot/aligned.apk")
+Run-Checked "$javaRoot/java.exe" @('-jar',"$buildTools/lib/apksigner.jar",'verify','--verbose',"$appRoot/dist/简账-协作版-1.2.2.apk")
+Write-Output "APK: $appRoot/dist/简账-协作版-1.2.2.apk"
