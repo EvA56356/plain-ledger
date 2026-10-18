@@ -59,3 +59,5 @@
 
 .calendar-day .day-amount{width:100%;max-width:100%;overflow:visible;text-overflow:clip;white-space:nowrap;text-align:center}
 .day-amount-value{display:inline-block;white-space:nowrap;transform-origin:center;font-variant-numeric:tabular-nums;letter-spacing:-.2px}
+
+.settings-view header .header-actions{display:none}
