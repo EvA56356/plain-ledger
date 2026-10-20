@@ -11,7 +11,9 @@ const Cloud=(()=>{
   else{const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),15000);try{const r=await fetch(path,{method,credentials:'same-origin',headers:csrf,body:body?JSON.stringify(body):undefined,signal:abort.signal});status=r.status;try{data=await r.json()}catch(e){throw Error('服务器返回格式无效')}}catch(e){throw Error(e.name==='AbortError'?'连接超时，请检查网络后重试':'网络不可用，请检查服务器地址和连接')}finally{clearTimeout(timer)}}
   if(status<200||status>=300){const e=Error(data?.error||'服务暂时不可用');e.status=status;throw e}return data;
  }
- function dialog(title,html){let d=document.getElementById('cloudDialog');if(!d){d=document.createElement('dialog');d.id='cloudDialog';document.body.appendChild(d)}if(d.open)d.close();d.innerHTML=`<div class="modalhead"><h2>${esc(title)}</h2><button type="button" data-cloud-close aria-label="关闭">×</button></div>${html}<p id="cloudError" class="form-error" role="alert"></p>`;d.querySelector('[data-cloud-close]').onclick=()=>d.close();d.showModal();return d;}
+ const dialogTrail=[];let dialogTitle='';
+ function back(){const d=document.getElementById('cloudDialog');if(!d?.open||!dialogTrail.length)return false;const prev=dialogTrail.pop();dialogTitle=prev.title;d.replaceChildren(...prev.nodes);d.oncancel=prev.cancel;return true}
+ function dialog(title,html){let d=document.getElementById('cloudDialog');if(!d){d=document.createElement('dialog');d.id='cloudDialog';document.body.appendChild(d)}if(d.open&&dialogTitle!==title)dialogTrail.push({title:dialogTitle,nodes:[...d.childNodes],cancel:d.oncancel});if(!d.open)dialogTrail.length=0;dialogTitle=title;d.oncancel=null;d.innerHTML=`<div class="modalhead"><h2>${esc(title)}</h2><button type="button" data-cloud-close aria-label="返回上级">×</button></div>${html}<p id="cloudError" class="form-error" role="alert"></p>`;d.querySelector('[data-cloud-close]').onclick=()=>{if(!back())d.close()};if(!d.open)d.showModal();return d;}
  function showError(e){const el=document.getElementById('cloudError');if(el)el.textContent=e.message;}
  const active=()=>!native()||(localStorage.getItem('plain-ledger-cloud-enabled')==='true'&&!!Android.cloudEndpoint());
  function settings(){return `<section class="section"><h2>联网与同步</h2><p>${active()?'当前使用服务器账本。':'当前使用本地账本，可随时开启联网协作。'}</p><div class="settings-actions"><button data-cloud-settings>服务器与账号设置</button></div></section>`}
@@ -52,6 +54,6 @@ const Cloud=(()=>{
   }catch(e){toast(e.message)}}
  document.addEventListener('close',()=>{if(deferred){deferred=false;sync(false)}},true);
  window.addEventListener('online',()=>sync(false));window.addEventListener('focus',()=>sync(false));document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')sync(false)});
- return {active,load,save,sync,settings,bindSettings};
+ return {active,load,save,sync,settings,bindSettings,back};
 })();
 window.Cloud=Cloud;
