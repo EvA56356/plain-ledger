@@ -5,7 +5,14 @@
 点击版本展开下载，选择需要的界面风格。
 
 <details>
-<summary>1.3.2 · 最新 · 项目计入账本统计开关</summary>
+<summary>1.3.3 · 最新 · 自动记账触发与弹窗修复</summary>
+
+[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.3/plain-ledger-green-1.3.3.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.3/plain-ledger-paper-1.3.3.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.3/plain-ledger-sky-1.3.3.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.3/plain-ledger-shared-1.3.3.apk)
+
+</details>
+
+<details>
+<summary>1.3.2 · 项目计入账本统计开关</summary>
 
 [绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.2/plain-ledger-green-1.3.2.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.2/plain-ledger-paper-1.3.2.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.2/plain-ledger-sky-1.3.2.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.2/plain-ledger-shared-1.3.2.apk)
 
@@ -18,12 +25,7 @@
 
 </details>
 
-<details>
-<summary>1.3.0 · 我的项目、账本和项目显示设置</summary>
 
-[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.0/plain-ledger-green-1.3.0.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.0/plain-ledger-paper-1.3.0.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.0/plain-ledger-sky-1.3.0.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.0/plain-ledger-shared-1.3.0.apk)
-
-</details>
 
 
 
@@ -33,6 +35,10 @@
 
 ---
 
+
+## 自动记账排查
+
+1.3.3 修复扫描调度、窗口读取和核对窗口投递，并提供识别状态与虚构草稿测试。见 [调查、排查步骤与验证限制](docs/AUTO_BILL.md)。仅本机处理，不自动保存账单；小米真机兼容性仍需实际复测。
 
 ## 项目统计开关
 
@@ -77,6 +83,7 @@ Android 协作版包名 `cn.plainledger.shared`，可与离线版同时安装。
 python test-cloud.py
 node test-reports.cjs
 node test-accounting.cjs
+node test-auto-bill.cjs
 node test-calendar.cjs
 ```
 
