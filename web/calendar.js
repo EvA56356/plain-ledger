@@ -17,7 +17,7 @@ function monthGrid(month){
   });
 }
 function calendar(){
-  const month=$('#month').value,es=monthEntries(),days=dailyTotals(es),sum=totals(es);
+  const month=$('#month').value,es=monthStatisticsEntries(),days=dailyTotals(es),sum=totals(es);
   const cells=monthGrid(month).map(d=>{
     const v=days[d.date],net=v?v.income-v.expense:0,selected=d.date===selectedDay,isToday=d.date===today();
     const description=d.current?`${d.date}${v?`，收入 ${money(v.income)} 元，支出 ${money(v.expense)} 元，净收支 ${money(net)} 元`:'，无记录'}`:d.date;
