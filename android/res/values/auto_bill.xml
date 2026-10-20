@@ -1,1 +1,1 @@
-<resources><string name="auto_bill_description">仅在开启离线自动记账后读取支付宝、微信、美团提供的页面文字，识别支付成功金额并提示核对。不截图、不读取密码、不联网、不操作付款。确认保存后才写入账本，可随时关闭。</string></resources>
+<resources><string name="auto_bill_description">开启后在后台监听支付宝、微信、美团的页面变化，先读取文字，必要时自动截图并在本机 OCR。非付款页也可能参与本机判断。截图和页面原文不保存、不上传，不读取密码、不操作付款；核对保存后才入账。一次授权后无需每笔付款操作开关，可随时暂停。</string></resources>
