@@ -122,3 +122,5 @@ body:not(.ledger-view) #mobileAdd{display:none!important}
 @media(max-width:650px){nav button span{font-size:9px}.project-cards{grid-template-columns:1fr}.project-totals strong{font-size:16px}.project-group .rowactions{flex-wrap:wrap;justify-content:flex-end}.project-group .toolbar>div:first-child{min-width:0}.project-entry strong{font-size:14px}.project-toolbar h2{font-size:17px}}
 
 .project-entry-label{display:block;color:var(--green);font-size:10px}.visibility-row input:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+
+.project-card-item{display:flex;flex-direction:column;min-width:0}.project-card-item>.project-card{width:100%;flex:1}.project-stats-toggle{font-size:12px;margin:8px 0 0;padding:12px 4px}.project-stats-help{font-size:11px}

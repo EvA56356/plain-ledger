@@ -25,6 +25,10 @@ class CloudTests(unittest.TestCase):
   d=fresh();d['projects']=[{'id':'travel','name':'Travel','book':'daily'},{'id':'dalian','name':'Dalian','book':'daily','parentId':'travel','budget':10000,'dropdownVisible':False}]
   d['entries']=[{'id':'e','type':'expense','amount':123,'category':'food','account':'cash','book':'daily','date':'2026-10-18','note':'test','projectId':'dalian'}]
   server.validate_state(d)
+  d['projects'][1]['includeInBookStats']=False
+  server.validate_state(d)
+  bad=copy.deepcopy(d);bad['projects'][1]['includeInBookStats']='false'
+  with self.assertRaises(Exception):server.validate_state(bad)
   for target in ('travel','missing'):
    bad=copy.deepcopy(d);bad['entries'][0]['projectId']=target
    with self.assertRaises(Exception):server.validate_state(bad)

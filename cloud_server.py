@@ -93,7 +93,7 @@ def validate_state(d,shared=False):
  for p in projects:
   if not isinstance(p,dict) or not isinstance(p.get('id'),str) or not 1<=len(p['id'])<=100 or p['id'] in project_map or p.get('book') not in ids['books'] or not isinstance(p.get('name'),str) or not 1<=len(p['name'].strip())<=40:fail(400,'项目编号、名称或账本无效')
   project_map[p['id']]=p
-  for key in ('archived','dropdownVisible'):
+  for key in ('archived','dropdownVisible','includeInBookStats'):
    if key in p and type(p[key]) is not bool:fail(400,'项目状态无效')
   if 'parentId' in p and not isinstance(p['parentId'],str):fail(400,'项目大类无效')
   if 'budget' in p and (type(p['budget']) is not int or not 0<=p['budget']<=99999999999):fail(400,'项目预算无效')
