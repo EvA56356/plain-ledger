@@ -16,36 +16,44 @@ public class AutoBillService extends AccessibilityService {
  private final Map<String,Long> recent=new HashMap<>();
  private final Runnable scan=()->{queued=false;scanPage();};
  private SharedPreferences prefs(){return getSharedPreferences("auto_bill",0);}
- private boolean paymentApp(String p){return "com.eg.android.AlipayGphone".equals(p)||"com.tencent.mm".equals(p);}
+ private boolean paymentApp(String p){return "com.eg.android.AlipayGphone".equals(p)||"com.tencent.mm".equals(p)||"com.sankuai.meituan".equals(p)||"com.sankuai.meituan.takeoutnew".equals(p);}
  private final SharedPreferences.OnSharedPreferenceChangeListener changes=(p,key)->{
   if("enabled".equals(key)&&!p.getBoolean("enabled",false)){handler.removeCallbacks(scan);queued=false;dismiss();status("应用内识别已暂停");}
   if("draft_opened".equals(key))dismiss();
   if("test_request".equals(key))handler.postDelayed(()->{if(prefs().getBoolean("enabled",false))recognize(1234,"测试",true);},3000);
  };
- protected void onServiceConnected(){super.onServiceConnected();connected=true;prefs().registerOnSharedPreferenceChangeListener(changes);status(prefs().getBoolean("enabled",false)?"服务已连接，等待支付宝或微信页面":"系统服务已连接，但应用内识别已暂停");}
+ protected void onServiceConnected(){super.onServiceConnected();connected=true;prefs().registerOnSharedPreferenceChangeListener(changes);status(prefs().getBoolean("enabled",false)?"服务已连接，等待支付宝、微信或美团页面":"系统服务已连接，但应用内识别已暂停");}
  private void status(String text){if(!text.equals(prefs().getString("status","")))prefs().edit().putString("status",text).putLong("status_at",System.currentTimeMillis()).apply();}
  public void onAccessibilityEvent(AccessibilityEvent event){
   if(!prefs().getBoolean("enabled",false))return;String pkg=String.valueOf(event.getPackageName());if(!paymentApp(pkg))return;
   if(!pkg.equals(pendingPackage)){handler.removeCallbacks(scan);queued=false;eventText="";pendingPackage=pkg;}
-  AccessibilityNodeInfo source=event.getSource();if(source!=null)try{StringBuilder out=new StringBuilder();collect(source,out,0,new int[]{0});eventText=out.toString();eventTextAt=SystemClock.elapsedRealtime();}catch(Exception ignored){}finally{source.recycle();}
-  retries=0;status("已收到"+(pkg.equals("com.tencent.mm")?"微信":"支付宝")+"页面事件，正在读取");schedule(180);
+  StringBuilder out=new StringBuilder();
+  // Some payment views expose event text but no readable source/root node.
+  if(!event.isPassword()){for(CharSequence t:event.getText())if(t!=null&&out.length()<30000)out.append(t).append('\n');CharSequence d=event.getContentDescription();if(d!=null&&out.length()<30000)out.append(d).append('\n');}
+  AccessibilityNodeInfo source=event.getSource();if(source!=null)try{collect(source,out,0,new int[]{0});}catch(Exception ignored){}finally{source.recycle();}
+  eventText=out.toString();eventTextAt=SystemClock.elapsedRealtime();
+  retries=0;status("已收到"+sourceName(pkg)+"页面事件，正在读取");schedule(180);
  }
  // Do not restart this delay on every event: animated payment pages can starve a trailing debounce.
  private void schedule(long delay){if(!queued){queued=true;handler.postDelayed(scan,delay);}}
  private void scanPage(){
-  if(!prefs().getBoolean("enabled",false)||!paymentApp(pendingPackage))return;StringBuilder text=new StringBuilder();
-  try{
-   AccessibilityNodeInfo root=getRootInActiveWindow();if(root!=null)try{if(pendingPackage.equals(String.valueOf(root.getPackageName())))collect(root,text,0,new int[]{0});}finally{root.recycle();}
-   for(AccessibilityWindowInfo w:getWindows())try{AccessibilityNodeInfo n=w.getRoot();if(n!=null)try{if(pendingPackage.equals(String.valueOf(n.getPackageName())))collect(n,text,0,new int[]{0});}finally{n.recycle();}}finally{w.recycle();}
-   if(SystemClock.elapsedRealtime()-eventTextAt<2000&&text.length()<30000)text.append('\n').append(eventText);
-  }catch(Exception e){status("页面读取失败，请重新连接无障碍服务");return;}
-  if(text.length()==0){status("已收到页面事件，但系统未提供可读文字");if(retries++<4)schedule(450);return;}
-  PaymentParser.Result result=PaymentParser.inspect(text.toString());status(result.status);
-  if(result.amount==0){if(retries++<4)schedule(450);return;}
+  if(!prefs().getBoolean("enabled",false)||!paymentApp(pendingPackage))return;
+  List<String> snapshots=new ArrayList<>();
+  try{AccessibilityNodeInfo root=getRootInActiveWindow();if(root!=null)try{snapshot(root,snapshots);}finally{root.recycle();}}catch(Exception ignored){}
+  try{for(AccessibilityWindowInfo w:getWindows())try{AccessibilityNodeInfo n=w.getRoot();if(n!=null)try{snapshot(n,snapshots);}finally{n.recycle();}}catch(Exception ignored){}finally{w.recycle();}}catch(Exception ignored){}
+  if(SystemClock.elapsedRealtime()-eventTextAt<2000&&!eventText.trim().isEmpty())snapshots.add(eventText);
+  if(snapshots.isEmpty()){status("已收到页面事件，但系统未提供可读文字；请确认支付页仍在前台，系统隐藏的文字无法识别");if(retries++<4)schedule(450);return;}
+  // Keep window boundaries: an unrelated background window must not contaminate a payment sheet.
+  PaymentParser.Result result=null;Set<Long> values=new HashSet<>();
+  for(String text:snapshots){PaymentParser.Result candidate=PaymentParser.inspect(text);if(candidate.amount>0){values.add(candidate.amount);result=candidate;}else if(result==null)result=candidate;}
+  if(values.size()>1){status("不同窗口提供了不同金额，请手动核对，未自动选择");if(retries++<4)schedule(450);return;}
+  status(result.status);if(result.amount==0){if(retries++<4)schedule(450);return;}
   handler.removeCallbacks(scan);queued=false;long now=SystemClock.elapsedRealtime();String key=pendingPackage+":"+result.amount;Long prev=recent.get(key);
   if(prev!=null&&now-prev<90000){status("同一来源和金额在 90 秒内已提示，已忽略重复页面");return;}
-  recent.entrySet().removeIf(e->now-e.getValue()>90000);if(recognize(result.amount,pendingPackage.equals("com.tencent.mm")?"微信":"支付宝",false))recent.put(key,now);
+  recent.entrySet().removeIf(e->now-e.getValue()>90000);if(recognize(result.amount,sourceName(pendingPackage),false))recent.put(key,now);
  }
+ private String sourceName(String pkg){return pkg.equals("com.tencent.mm")?"微信":pkg.equals("com.eg.android.AlipayGphone")?"支付宝":"美团";}
+ private void snapshot(AccessibilityNodeInfo n,List<String> snapshots){if(!pendingPackage.equals(String.valueOf(n.getPackageName())))return;StringBuilder text=new StringBuilder();collect(n,text,0,new int[]{0});if(!text.toString().trim().isEmpty())snapshots.add(text.toString());}
  private void collect(AccessibilityNodeInfo n,StringBuilder out,int depth,int[] count){
   if(depth>28||count[0]++>700||out.length()>30000||n.isPassword())return;
   if(n.isVisibleToUser()){CharSequence t=n.getText(),d=n.getContentDescription();if(t!=null)out.append(t).append('\n');if(d!=null&&!d.equals(t))out.append(d).append('\n');}
@@ -65,7 +73,7 @@ public class AutoBillService extends AccessibilityService {
   android.graphics.drawable.GradientDrawable bg=new android.graphics.drawable.GradientDrawable();bg.setColor(MainActivity.uiColor(this,"paper",Color.WHITE));bg.setCornerRadius(MainActivity.uiRadius(this));box.setBackground(bg);box.setElevation(12);
   TextView title=new TextView(this);title.setText((test?"测试弹窗 · 虚构金额":"识别到"+source+"支出")+" ¥ "+String.format(java.util.Locale.ROOT,"%.2f",amount/100.0)+"\n核对后保存，尚未写入账本");title.setTextColor(MainActivity.uiColor(this,"ink",Color.rgb(33,78,67)));title.setTextSize(18);box.addView(title);
   Button confirm=new Button(this);confirm.setText("打开记账核对");confirm.setBackgroundTintList(android.content.res.ColorStateList.valueOf(MainActivity.uiColor(this,"primary",Color.rgb(33,78,67))));confirm.setTextColor(Color.WHITE);box.addView(confirm);
-  Button cancel=new Button(this);cancel.setText("忽略这笔");cancel.setTextColor(MainActivity.uiColor(this,"primary",Color.rgb(33,78,67)));box.addView(cancel);
+  Button cancel=new Button(this);cancel.setText("忽略这笔");cancel.setBackgroundTintList(android.content.res.ColorStateList.valueOf(MainActivity.uiColor(this,"soft",Color.LTGRAY)));cancel.setTextColor(MainActivity.uiColor(this,"primary",Color.rgb(33,78,67)));box.addView(cancel);
   confirm.setOnClickListener(v->openDraft());cancel.setOnClickListener(v->{prefs().edit().remove("draft").apply();dismiss();status("已忽略识别账单");});
   WindowManager.LayoutParams lp=new WindowManager.LayoutParams(-1,-2,WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY,WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,android.graphics.PixelFormat.TRANSLUCENT);lp.gravity=Gravity.BOTTOM;lp.y=pad*3;
   try{((WindowManager)getSystemService(WINDOW_SERVICE)).addView(box,lp);overlay=box;handler.postDelayed(()->{if(overlay==box)dismiss();},30000);}catch(Exception e){status("无法显示悬浮提示，草稿已保留，可打开简账核对");}
