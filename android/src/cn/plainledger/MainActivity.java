@@ -16,6 +16,7 @@ import java.nio.charset.StandardCharsets;
 
 public class MainActivity extends Activity {
  private WebView web;
+ private volatile boolean resumed;
  private SQLiteDatabase db;
  private String pendingExport;
  private static final int EXPORT=41, IMPORT=42;
@@ -43,10 +44,20 @@ public class MainActivity extends Activity {
   if(Build.VERSION.SDK_INT>=30){getWindow().setDecorFitsSystemWindows(false);container.setOnApplyWindowInsetsListener((v,insets)->{android.graphics.Insets i=insets.getInsets(WindowInsets.Type.systemBars()|WindowInsets.Type.ime());v.setPadding(i.left,i.top,i.right,i.bottom);return insets;});}
   web.loadUrl("file:///android_asset/index.html");
  }
+ private void deliverAutoDraft(){if(web!=null)web.postDelayed(()->{if(resumed)web.evaluateJavascript("if(window.receiveAutoDraft)window.receiveAutoDraft()",null);},200);}
+ @Override protected void onResume(){super.onResume();resumed=true;if(web!=null){web.onResume();deliverAutoDraft();}}
+ @Override protected void onPause(){resumed=false;if(web!=null)web.onPause();super.onPause();}
+ @Override protected void onNewIntent(Intent intent){super.onNewIntent(intent);setIntent(intent);deliverAutoDraft();}
  public class Store {
-  @JavascriptInterface public String autoBillStatus(){boolean connected=false;android.view.accessibility.AccessibilityManager manager=(android.view.accessibility.AccessibilityManager)getSystemService(ACCESSIBILITY_SERVICE);for(android.accessibilityservice.AccessibilityServiceInfo info:manager.getEnabledAccessibilityServiceList(-1))if(info.getResolveInfo().serviceInfo.packageName.equals(getPackageName()))connected=true;return "{\"enabled\":"+getSharedPreferences("auto_bill",0).getBoolean("enabled",false)+",\"connected\":"+connected+"}";}
+  @JavascriptInterface public boolean isAppForeground(){return resumed;}
+  @JavascriptInterface public String autoBillStatus(){try{boolean systemEnabled=false;android.view.accessibility.AccessibilityManager manager=(android.view.accessibility.AccessibilityManager)getSystemService(ACCESSIBILITY_SERVICE);for(android.accessibilityservice.AccessibilityServiceInfo info:manager.getEnabledAccessibilityServiceList(-1))if(info.getResolveInfo().serviceInfo.packageName.equals(getPackageName()))systemEnabled=true;android.content.SharedPreferences p=getSharedPreferences("auto_bill",0);JSONObject d=new JSONObject();d.put("enabled",p.getBoolean("enabled",false));d.put("systemEnabled",systemEnabled);d.put("connected",AutoBillService.isConnected());d.put("status",p.getString("status","尚未收到支付页面事件"));d.put("statusAt",p.getLong("status_at",0));return d.toString();}catch(Exception e){return "{}";}}
+  @JavascriptInterface public void openAutoBillSystemSettings(){runOnUiThread(()->startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,Uri.parse("package:"+getPackageName()))));}
+  @JavascriptInterface public void testAutoBill(){if(!AutoBillService.isConnected()||!getSharedPreferences("auto_bill",0).getBoolean("enabled",false)){notice("请先开启应用内识别并连接系统无障碍服务");return;}getSharedPreferences("auto_bill",0).edit().putLong("test_request",System.currentTimeMillis()).apply();notice("3 秒后显示虚构金额测试窗口，不会自动保存账单");}
+
   @JavascriptInterface public void configureAutoBill(boolean enabled){if(!enabled)getSharedPreferences("auto_bill",0).edit().putBoolean("enabled",false).apply();if(enabled)runOnUiThread(()->new AlertDialog.Builder(MainActivity.this).setTitle("开启离线自动记账").setMessage("仅读取支付宝、微信的页面文字来识别支付成功金额。不截图、不联网、不操作付款。识别后仍需核对并保存。请在下一页手动开启简账的无障碍服务。开启前请确认你同意上述读取范围。").setPositiveButton("同意，前往系统设置",(d,w)->{getSharedPreferences("auto_bill",0).edit().putBoolean("enabled",true).apply();startActivity(new Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS));}).setNegativeButton("取消",(d,w)->getSharedPreferences("auto_bill",0).edit().putBoolean("enabled",false).apply()).show());}
-  @JavascriptInterface public String takeAutoDraft(){android.content.SharedPreferences p=getSharedPreferences("auto_bill",0);String draft=p.getString("draft", "null");p.edit().remove("draft").apply();return draft;}
+  @JavascriptInterface public String takeAutoDraft(){if(!resumed)return "null";return getSharedPreferences("auto_bill",0).getString("draft","null");}
+  @JavascriptInterface public void ackAutoDraft(String id){android.content.SharedPreferences p=getSharedPreferences("auto_bill",0);try{JSONObject d=new JSONObject(p.getString("draft","null"));if(id.equals(d.optString("id",String.valueOf(d.optLong("created"))))){p.edit().remove("draft").putString("draft_opened",id).putString("status","核对窗口已打开，等待手动保存").putLong("status_at",System.currentTimeMillis()).apply();}}catch(Exception ignored){}}
+
   @JavascriptInterface public void rememberBook(String book){getSharedPreferences("auto_bill",0).edit().putString("book",book).apply();}
   @JavascriptInterface public String activeBook(){return getSharedPreferences("auto_bill",0).getString("book", "daily");}
 
