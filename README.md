@@ -5,7 +5,14 @@
 点击版本展开下载，选择需要的界面风格。
 
 <details>
-<summary>1.3.0 · 最新 · 我的项目、账本和项目显示设置</summary>
+<summary>1.3.1 · 最新 · 项目筛选、返回导航和分类删除修复</summary>
+
+[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.1/plain-ledger-green-1.3.1.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.1/plain-ledger-paper-1.3.1.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.1/plain-ledger-sky-1.3.1.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.1/plain-ledger-shared-1.3.1.apk)
+
+</details>
+
+<details>
+<summary>1.3.0 · 我的项目、账本和项目显示设置</summary>
 
 [绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.0/plain-ledger-green-1.3.0.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.0/plain-ledger-paper-1.3.0.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.0/plain-ledger-sky-1.3.0.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.0/plain-ledger-shared-1.3.0.apk)
 
@@ -18,17 +25,20 @@
 
 </details>
 
-<details>
-<summary>1.2.1 · 正方形日历、箭头居中</summary>
 
-[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-green-1.2.1.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-paper-1.2.1.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-sky-1.2.1.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.0/plain-ledger-shared-1.2.1.apk)
-
-</details>
 
 [查看历史 APK →](docs/APK_HISTORY.md)
 
 ---
 
+
+## 1.3.1 修复
+
+- 我的项目顶部下拉仅展示项目大类与具体项目，支持全部项目，不再列出账本。
+- 手机返回键先关闭下拉或弹窗，再返回设置上级页面；顶层直接退出，不再弹退出确认。
+- 项目大类、项目和账单删除确认始终位于最上层；修复确认后项目删除失败的问题。
+- 一级分类可直接删除，连同二级分类一起处理。已有账单自动转入同类型“其它”，保留所有金额、日期和备注。
+- 绿色、纸感、蓝色、协作四个分支同时更新，保留原有风格与本地数据。
 
 ## 最近功能
 
