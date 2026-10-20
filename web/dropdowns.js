@@ -6,6 +6,7 @@
   const {trigger,menu}=opened;opened=null;menu.remove();trigger.setAttribute('aria-expanded','false');trigger.classList.remove('is-open');
   if(focus&&trigger.isConnected)trigger.focus();
  }
+ window.closePlainDropdown=()=>{if(!opened)return false;close(true);return true};
  function labelFor(select){
   if(select.getAttribute('aria-label'))return select.getAttribute('aria-label');
   const label=select.labels?.[0];
@@ -29,7 +30,7 @@
    trigger.onkeydown=e=>{if(['ArrowDown','ArrowUp','Enter',' '].includes(e.key)){e.preventDefault();open(select,trigger)}};
    select.addEventListener('change',()=>refresh(select));
   }
-  const trigger=select.parentElement.querySelector('.plain-select-trigger');
+  const trigger=select.parentElement.querySelector('.plain-select-trigger');trigger.setAttribute('aria-label',labelFor(select));
   trigger.querySelector('.plain-select-value').textContent=select.selectedOptions[0]?.textContent||'请选择';trigger.disabled=select.disabled;
  }
  function open(select,trigger){

@@ -25,12 +25,12 @@ Run-Checked "$javaRoot/javac.exe" @('-encoding','UTF-8','-source','8','-target',
 $classFiles=@(Get-ChildItem "$buildRoot/classes" -Recurse -Filter '*.class' | ForEach-Object {$_.FullName})
 Run-Checked "$javaRoot/java.exe" (@('-cp',"$buildTools/lib/d8.jar",'com.android.tools.r8.D8','--lib',$platformJar,'--min-api','26','--output',"$buildRoot/dex")+$classFiles)
 Copy-Item "$buildRoot/base.apk" "$buildRoot/unsigned.apk" -Force
-Add-Type -AssemblyName System.IO.Compression.FileSystem
+Add-Type -AssemblyName System.IO.Compression,System.IO.Compression.FileSystem
 $archive=[System.IO.Compression.ZipFile]::Open("$buildRoot/unsigned.apk",[System.IO.Compression.ZipArchiveMode]::Update)
 try{[System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($archive,"$buildRoot/dex/classes.dex",'classes.dex') | Out-Null}finally{$archive.Dispose()}
 Run-Checked "$buildTools/zipalign.exe" @('-f','4',"$buildRoot/unsigned.apk","$buildRoot/aligned.apk")
 $keyPath=Join-Path $appRoot 'local-debug.keystore'
 if(!(Test-Path $keyPath)){Run-Checked "$javaRoot/keytool.exe" @('-genkeypair','-keystore',$keyPath,'-storepass','android','-keypass','android','-alias','plainledger','-keyalg','RSA','-keysize','2048','-validity','10000','-dname','CN=Plain Ledger Local Development')}
-Run-Checked "$javaRoot/java.exe" @('-jar',"$buildTools/lib/apksigner.jar",'sign','--ks',$keyPath,'--ks-pass','pass:android','--key-pass','pass:android','--out',"$appRoot/dist/简账-sky-1.3.0.apk","$buildRoot/aligned.apk")
-Run-Checked "$javaRoot/java.exe" @('-jar',"$buildTools/lib/apksigner.jar",'verify','--verbose',"$appRoot/dist/简账-sky-1.3.0.apk")
-Write-Output "APK: $appRoot/dist/简账-sky-1.3.0.apk"
+Run-Checked "$javaRoot/java.exe" @('-jar',"$buildTools/lib/apksigner.jar",'sign','--ks',$keyPath,'--ks-pass','pass:android','--key-pass','pass:android','--out',"$appRoot/dist/简账-sky-1.3.1.apk","$buildRoot/aligned.apk")
+Run-Checked "$javaRoot/java.exe" @('-jar',"$buildTools/lib/apksigner.jar",'verify','--verbose',"$appRoot/dist/简账-sky-1.3.1.apk")
+Write-Output "APK: $appRoot/dist/简账-sky-1.3.1.apk"
