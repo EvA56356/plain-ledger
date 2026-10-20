@@ -87,10 +87,18 @@ public class AutoBillService extends AccessibilityService {
  }
 
  private void offerOcr(){
-  if(!prefs().getBoolean("ocr",false)||Build.VERSION.SDK_INT<30||ocrBusy||!samePaymentForeground(pendingPackage))return;
+  if(!prefs().getBoolean("ocr",false))return;
+  if(Build.VERSION.SDK_INT<30){ocrSkipped("系统版本不支持无障碍截图");return;}
+  if(ocrBusy)return;
+  if(!samePaymentForeground(pendingPackage)){ocrSkipped("前台校验未通过，未申请截图");return;}
   if(statistics[4]>0||pendingClass.toLowerCase(java.util.Locale.ROOT).matches(".*(login|password|verify|authentication|security).*")){status("登录、密码或验证界面已跳过自动 OCR");return;}
-  try{for(AccessibilityWindowInfo w:getWindows())try{if(w.getType()==AccessibilityWindowInfo.TYPE_INPUT_METHOD)return;}finally{w.recycle();}}catch(Exception ignored){}
+  try{for(AccessibilityWindowInfo w:getWindows())try{if(w.getType()==AccessibilityWindowInfo.TYPE_INPUT_METHOD){ocrSkipped("检测到输入法窗口，暂不截图");return;}}finally{w.recycle();}}catch(Exception ignored){}
   capture();
+ }
+ private void ocrSkipped(String reason){
+  prefs().edit().putString("capture_status",reason).apply();
+  try{JSONObject d=new JSONObject(prefs().getString("diagnostic","{}"));d.put("ocrSkip",reason);d.put("foregroundPackage",foregroundPackage);d.put("serviceFlags",getServiceInfo().flags);d.put("screenInteractive",((PowerManager)getSystemService(POWER_SERVICE)).isInteractive());d.put("keyguardLocked",((android.app.KeyguardManager)getSystemService(KEYGUARD_SERVICE)).isKeyguardLocked());prefs().edit().putString("diagnostic",d.toString()).apply();}catch(Exception ignored){}
+  status(reason);
  }
  private void capture(){
   if(Build.VERSION.SDK_INT<30||ocrBusy||!prefs().getBoolean("enabled",false)||!prefs().getBoolean("ocr",false))return;
