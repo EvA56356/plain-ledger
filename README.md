@@ -1,102 +1,87 @@
-# 简账协作版 · Shared Ledger
+# 简账 · Plain Ledger
 
-## 最新三个版本
+把生活记清楚。一个简洁的 Android 记账应用，支持本地离线记账与电脑端使用，也提供按需启用的共享协作版。
 
-点击版本展开下载，选择需要的界面风格。
+[下载最新版](https://github.com/EvA56356/plain-ledger/releases/latest) · [安装包索引](docs/DOWNLOADS.md) · [版本记录](CHANGELOG.md) · [开发指南](docs/DEVELOPMENT.md)
 
-<details>
-<summary>1.3.3 · 最新 · 自动记账触发与弹窗修复</summary>
+当前分支：`feature/shared-ledger`，可选联网协作版。
 
-[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.3/plain-ledger-green-1.3.3.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.3/plain-ledger-paper-1.3.3.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.3/plain-ledger-sky-1.3.3.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.3/plain-ledger-shared-1.3.3.apk)
+## 主要功能
 
-</details>
+| 功能 | 支持内容 |
+| --- | --- |
+| 日历与明细 | 每日净收支、年月选择、按日与按月查看、搜索与收支筛选 |
+| 日常记账 | 新增、编辑和删除收支，记录金额、日期、分类、账户、备注及关联项目 |
+| 分类管理 | 一级、二级分类，预设子分类与自定义分类；删除分类时保留已有账单 |
+| 多账本 | 新建、切换、改名，查看笔数与结余，设置下拉选项是否显示 |
+| 我的项目 | “旅游 / 大连”等两级项目，独立预算、收支和分类统计、归档与恢复 |
+| 项目统计开关 | 按项目决定是否计入账本汇总，保留项目自身统计和实际账户余额 |
+| 账户与预算 | 初始余额、账户间转账、月度预算、剩余额度与超支提示 |
+| 收支统计 | App 提供月度分析；网页提供日期范围对比、走势、分类环图、热力和大额排行 |
+| 备份与迁移 | JSON 全量备份与恢复、CSV 流水导出 |
+| 离线自动记账 | 经授权读取支付宝、微信付款成功页面，在本机识别并打开核对窗口，手动保存 |
+| 界面设置 | 统一圆角选择框，按需显示底部导航；每个分支的 App 与网页保持同一主题 |
+| 可选共享协作 | 协作版支持手机号账号、密码管理、邀请、成员权限及自动与手动同步 |
 
-<details>
-<summary>1.3.2 · 项目计入账本统计开关</summary>
+## 选择版本
 
-[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.2/plain-ledger-green-1.3.2.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.2/plain-ledger-paper-1.3.2.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.2/plain-ledger-sky-1.3.2.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.2/plain-ledger-shared-1.3.2.apk)
+| 版本 | 风格与用途 | 源码分支 |
+| --- | --- | --- |
+| 绿色版 | 绿色简洁界面，本地离线使用 | [main](https://github.com/EvA56356/plain-ledger/tree/main) |
+| 纸感版 | 米色纸感界面，本地离线使用 | [ui/paper](https://github.com/EvA56356/plain-ledger/tree/ui/paper) |
+| 蓝色版 | 蓝色圆润界面，本地离线使用 | [ui/sky](https://github.com/EvA56356/plain-ledger/tree/ui/sky) |
+| 协作版 | 以绿色界面为基础，离线使用或连接自己的协作服务器 | [feature/shared-ledger](https://github.com/EvA56356/plain-ledger/tree/feature/shared-ledger) |
 
-</details>
+四个版本可以同时安装，数据彼此独立。离线版无需账号、不申请联网权限；协作版默认进入本地账本，联网为可选功能。[更多分支说明](docs/BRANCHES.md)
 
-<details>
-<summary>1.3.1 · 项目筛选、返回导航和分类删除修复</summary>
+## 安装 Android 版
 
-[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.1/plain-ledger-green-1.3.1.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.1/plain-ledger-paper-1.3.1.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.1/plain-ledger-sky-1.3.1.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.1/plain-ledger-shared-1.3.1.apk)
+支持 **Android 8.0 及以上**。
 
-</details>
+1. 打开 [最新发布页](https://github.com/EvA56356/plain-ledger/releases/latest)，在 Assets 中下载需要的 APK；也可使用 [最新三个版本索引](docs/DOWNLOADS.md)。
+2. 在手机上安装对应版本。已有应用使用同一版本类型的 APK 覆盖升级，保留原有数据。
+3. 首次打开即可建立账本并记账。迁移设备或卸载前，在设置中导出 JSON 备份。
 
+需要旧安装包时，查看 [历史 APK](docs/APK_HISTORY.md)。从源码构建见 [开发指南](docs/DEVELOPMENT.md)。
 
+## 开始使用
 
+- **日常记录**：选择账本，在收支明细中点击右下角“＋”，填写金额、分类、账户和日期后保存。
+- **专项记账**：进入“我的项目”，建立大类与具体项目，再从项目中记账或给已有账单关联项目。一笔账单只关联一个具体项目；删除项目会解除关联，账单继续保留。
+- **统计范围**：项目的“计入账本统计”默认开启。关闭后，其金额不计入账本日历、收支统计、结余和月度预算，项目统计与实际账户余额不变。
+- **自动记账**：在“设置 → 离线自动记账”开启并授权无障碍服务；可以先使用虚构金额测试窗口。真实支付页面和手机系统兼容性仍需验证，详见 [自动记账使用与排查](docs/AUTO_BILL.md)。
+- **共享协作**：在协作版“设置 → 联网与同步 → 服务器与账号设置”配置自己的服务器，再登录和邀请成员。可关闭窗口继续离线使用，详见 [协作部署与使用](https://github.com/EvA56356/plain-ledger/blob/feature/shared-ledger/docs/SERVER.md)。
 
+## 电脑端使用
 
+协作网页需要启动协作服务（Python 3.9 或以上）：
 
-
-[查看历史 APK →](docs/APK_HISTORY.md)
-
----
-
-
-## 自动记账排查
-
-1.3.3 修复扫描调度、窗口读取和核对窗口投递，并提供识别状态与虚构草稿测试。见 [调查、排查步骤与验证限制](docs/AUTO_BILL.md)。仅本机处理，不自动保存账单；小米真机兼容性仍需实际复测。
-
-## 项目统计开关
-
-项目卡片、详情、编辑和设置页可控制“计入账本统计”，默认开启。关闭后账本统计排除此项目，项目统计、账单和实际账户余额保留，重新开启立即恢复。备份和协作同步保留此设置。
-
-## 1.3.1 修复
-
-- 我的项目顶部下拉仅展示项目大类与具体项目，支持全部项目，不再列出账本。
-- 手机返回键先关闭下拉或弹窗，再返回设置上级页面；顶层直接退出，不再弹退出确认。
-- 项目大类、项目和账单删除确认始终位于最上层；修复确认后项目删除失败的问题。
-- 一级分类可直接删除，连同二级分类一起处理。已有账单自动转入同类型“其它”，保留所有金额、日期和备注。
-- 绿色、纸感、蓝色、协作四个分支同时更新，保留原有风格与本地数据。
-
-## 最近功能
-
-- 分类采用纯文字，两级结构；每个一级分类有预设二级分类，可在设置中添加、改名。
-- 旅行包含交通、住宿、餐饮、购物、门票；账单显示完整分类路径。
-- 旧账单继续关联原分类，不自动改分类、不改变金额。备份和协作同步保留层级。
-- 手机端分类管理标题与添加按钮保持同一行。
-- APK 下载见 [Releases](https://github.com/EvA56356/plain-ledger/releases/latest)。
-
-
-基于绿色 main UI 的独立协作分支，不依赖其他 UI 分支。具备原有记账、分类、账户、预算、备份与网页增强统计，并加入手机号账号、密码管理、共享账本和同步。
-
-## 本机体验
-
-```powershell
+```bash
+git clone --branch feature/shared-ledger https://github.com/EvA56356/plain-ledger.git
+cd plain-ledger
 python cloud_server.py --dev-sms --port 8766
 ```
 
-打开 http://127.0.0.1:8766/ 。开发验证码显示在页面，未发送真实短信。真实短信、公网域名与 HTTPS 尚需部署者配置。
+打开 `http://127.0.0.1:8766/`。开发模式在页面显示虚构测试验证码，不发送真实短信；真实短信和公网 HTTPS 部署见 [服务器指南](docs/SERVER.md)。
 
-[服务器配置、使用流程与限制](docs/SERVER.md) · [协作版隐私说明](docs/PRIVACY_SHARED.md)
+App 与电脑端共用界面逻辑，但离线数据库相互独立。两端迁移使用设置中的 JSON 备份与恢复。
 
-创建账号后，顶部“账号与共享”可以修改昵称和密码、新建共享账本及邀请已注册用户。对方接受邀请后，共享成员可编辑或只读访问。打开或回到客户端时自动同步，也可点击刷新图标。版本冲突会保留待保存副本供下载，避免覆盖别人修改。
+## 数据与范围
 
-Android 协作版包名 `cn.plainledger.shared`，可与离线版同时安装。使用 Android SDK Platform 35、Build Tools 35、JDK 17+，运行 `./build.ps1`；产物 `dist/简账-协作版-1.1.0.apk`。首次启动填写 HTTPS 服务器地址，本机模拟器可通过 adb reverse 使用回环地址。详细构建参数与原版相同。
+- 离线版数据保存在本机 SQLite；默认不上传账单。协作版启用联网后，协作数据保存在自行配置的服务器。
+- JSON 备份包含账本、项目、分类、账户、预算、收支和转账；CSV 用于查看流水，不能代替完整备份。恢复备份会替换现有数据。
+- 当前使用人民币单币种；借入、借出、还款为普通分类，尚无独立债权债务台账。转账支持新增和查看，暂不支持编辑或撤销。
+- 尚未提供 OCR、语音、多币种、图片附件和应用锁；数据库未额外加密。仓库不包含个人账单、凭据、私有签名密钥或第三方 APK。
 
-## 验证
+详见 [隐私与仓库内容说明](docs/PRIVACY.md)。协作数据与会话边界见 [服务器指南](https://github.com/EvA56356/plain-ledger/blob/feature/shared-ledger/docs/SERVER.md)。
 
-```powershell
-python test-cloud.py
-node test-reports.cjs
-node test-accounting.cjs
-node test-auto-bill.cjs
-node test-calendar.cjs
-```
+## 文档
 
-服务器数据、验证码密钥、签名密钥和个人账单不会纳入 Git。当前未做真实短信或公网部署验证；网络中断时不支持离线写入队列。每个共享空间对应一个账本，可新建多个空间。
-
-## APK 下载
-
-四种风格/用途的安装包统一发布在 [GitHub Releases](https://github.com/EvA56356/plain-ledger/releases/latest)，可分别安装，不通过源码文件上传页下载。发布附件不包含个人数据库、备份、会话或签名私钥。
-
-## 我的项目
-
-“我的项目”位于收支明细和我的账本之间。先建立“旅游”等大类，再建立“大连”等具体项目；每个项目归属当前账本，可设置预算、起止日期和备注，查看收支、分类统计及完整账单，支持归档和恢复。
-
-记账时可选择项目大类和具体项目，也可不关联。项目详情中“记一笔”会自动带入当前项目；原有账单可编辑关联、更换或解除关联。一笔账单只关联一个具体项目，不重复计入收支。删除项目只解除关联，保留账单。
-
-设置 → 账本和项目设置：用开关控制全部账本、大类和具体项目是否出现在下拉选项中；隐藏不删除数据，不改变项目统计。隐藏大类会同时隐藏其下项目；归档项目不参与新记账选择。JSON 备份和共享服务器保留项目、预算、关联及显示偏好，CSV 导出包含项目路径。
+| 文档 | 内容 |
+| --- | --- |
+| [版本记录](CHANGELOG.md) | 每个版本的功能变化、修复和重要验证边界 |
+| [下载索引](docs/DOWNLOADS.md) | 最新三个版本的 APK 与安装说明 |
+| [历史 APK](docs/APK_HISTORY.md) | 早期安装包归档 |
+| [开发指南](docs/DEVELOPMENT.md) | 构建、预览、检查与文档维护 |
+| [分支说明](docs/BRANCHES.md) | 四个分支的用途与主题关系 |
+| [自动记账](docs/AUTO_BILL.md) | 授权流程、识别状态和排查方法 |

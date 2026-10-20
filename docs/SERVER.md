@@ -12,7 +12,7 @@ python cloud_server.py --port 8766 --dev-sms
 
 打开 http://127.0.0.1:8766/ 。开发模式不发送短信，会在验证码响应及页面显示测试码。请使用虚构测试号码；不要将该模式通过代理暴露到公网。服务始终绑定回环地址。数据库 `cloud.sqlite3` 和同目录 `cloud.secret` 自动生成，均禁止提交。服务器未运行时，页面显示连接错误与重试提示。
 
-Android 协作版包名 `cn.plainledger.shared`，与原离线版独立安装。首次打开输入自己的服务器地址。公网服务器必须 HTTPS；HTTP 仅允许 `127.0.0.1` / `localhost`。模拟器本机联调可使用：
+Android 协作版包名 `cn.plainledger.shared`，与原离线版独立安装。默认启动进入本地账本，无需填写地址或登录。需要联网时，在“设置 → 联网与同步 → 服务器与账号设置”填写自己的服务器地址，选择连接并登录；可关闭配置窗口继续离线使用。公网服务器必须 HTTPS；HTTP 仅允许 `127.0.0.1` / `localhost`。模拟器本机联调可使用：
 
 ```powershell
 adb reverse tcp:8766 tcp:8766
