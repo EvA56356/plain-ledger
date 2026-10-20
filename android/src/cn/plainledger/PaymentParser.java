@@ -10,6 +10,8 @@ public final class PaymentParser {
  private static final Pattern EXCLUDE=Pattern.compile("退款成功|退款中|退款金额|退回金额|转账|收款成功|收钱到账|支付失败|付款失败|等待支付|待支付");
  private static final Pattern PAID=Pattern.compile("(?:实际支付(?:金额)?|实付(?:金额|款)?|支付金额|付款金额)\\s*[:：]?\\s*(?:人民币\\s*)?[¥￥]?\\s*"+NUM);
  private static final Pattern MONEY=Pattern.compile("[¥￥]\\s*"+NUM+"|"+NUM+"\\s*元");
+ private static final Pattern HEADING=Pattern.compile("(?:支付成功|付款成功|交易成功)[ \t:：]*[¥￥][ \t]*"+NUM);
+ private static final Pattern DEBIT=Pattern.compile("(?m)^\\s*[-−－]\\s*([0-9]{1,9}\\.[0-9]{2})\\s*$");
  private static final Pattern ISOLATED=Pattern.compile("(?m)^\\s*([0-9]{1,9}\\.[0-9]{2})\\s*$");
  public static long parse(String text){return inspect(text).amount;}
  public static Result inspect(String text){
@@ -19,6 +21,15 @@ public final class PaymentParser {
   if(!SUCCESS.matcher(text).find())return new Result(0,"已读取页面，等待支付成功标记");
   if(EXCLUDE.matcher(text).find())return new Result(0,"退款、转账、收款或未完成支付页面不识别");
   Set<Long> amounts=amounts(PAID,text);if(!amounts.isEmpty())return choose(amounts);
+  // A success heading with its own amount is distinct from reward/product prices below it.
+  amounts=amounts(HEADING,text);if(!amounts.isEmpty())return choose(amounts);
+  // Receipt layout: the payment section ends at the payment-method label.
+  int method=text.indexOf("付款方式");if(method<0)method=text.indexOf("支付方式");
+  if(method>=0){String receipt=text.substring(0,method);if(SUCCESS.matcher(receipt).find()){amounts=amounts(MONEY,receipt);if(!amounts.isEmpty())return choose(amounts);}}
+  // A negative standalone amount is an expense only on a completed bill-detail page.
+  if(Pattern.compile("当前状态\\s*支付成功").matcher(text).find()&&text.contains("支付时间")&&text.contains("交易单号")){
+   amounts=amounts(DEBIT,text);if(!amounts.isEmpty())return choose(amounts);
+  }
   amounts=amounts(MONEY,text);return choose(amounts.isEmpty()?amounts(ISOLATED,text):amounts);
  }
  private static Set<Long> amounts(Pattern p,String text){Set<Long> values=new HashSet<>();Matcher m=p.matcher(text);while(m.find())for(int i=1;i<=m.groupCount();i++)if(m.group(i)!=null)try{long n=new BigDecimal(m.group(i).replace(",","")).movePointRight(2).longValueExact();if(n>0&&n<=99999999999L)values.add(n);}catch(Exception ignored){}return values;}
