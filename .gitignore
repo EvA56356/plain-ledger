@@ -48,3 +48,5 @@ Thumbs.db
 *.secret
 *.secret.*
 /snapshots/
+
+.gradle/
