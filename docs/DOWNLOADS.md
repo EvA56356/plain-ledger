@@ -4,19 +4,21 @@
 
 ## 最新三个版本
 
+1.4.0 为无感自动 OCR 测试版，真机兼容性待复测；下方提供明确版本的下载入口。“最新发布页”指向正式稳定版。
+
 首次使用可直接打开 [最新发布页](https://github.com/EvA56356/plain-ledger/releases/latest)，在 Assets 中选择需要的 APK。
 
 | 版本 | 绿色版 | 纸感版 | 蓝色版 | 协作版 |
 | --- | --- | --- | --- | --- |
+| [1.4.0](https://github.com/EvA56356/plain-ledger/releases/tag/v1.4.0) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.4.0/plain-ledger-green-1.4.0.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.4.0/plain-ledger-paper-1.4.0.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.4.0/plain-ledger-sky-1.4.0.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.4.0/plain-ledger-shared-1.4.0.apk) |
 | [1.3.4](https://github.com/EvA56356/plain-ledger/releases/tag/v1.3.4) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.4/plain-ledger-green-1.3.4.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.4/plain-ledger-paper-1.3.4.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.4/plain-ledger-sky-1.3.4.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.4/plain-ledger-shared-1.3.4.apk) |
 | [1.3.3](https://github.com/EvA56356/plain-ledger/releases/tag/v1.3.3) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.3/plain-ledger-green-1.3.3.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.3/plain-ledger-paper-1.3.3.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.3/plain-ledger-sky-1.3.3.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.3/plain-ledger-shared-1.3.3.apk) |
-| [1.3.2](https://github.com/EvA56356/plain-ledger/releases/tag/v1.3.2) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.2/plain-ledger-green-1.3.2.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.2/plain-ledger-paper-1.3.2.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.2/plain-ledger-sky-1.3.2.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.2/plain-ledger-shared-1.3.2.apk) |
 
 绿色、纸感、蓝色是离线版；协作版可离线使用，按需连接自己的服务器。四个安装包可以同时安装，数据库彼此独立。
 
 ## 安装与升级
 
-支持 Android 8.0 及以上。下载 `.apk` 后在手机上安装；更新已有应用时使用对应版本的 APK 覆盖安装，保留原有应用数据。卸载会清除应用数据，迁移前请从设置导出 JSON 备份。
+支持 Android 8.0 及以上；自动截图 OCR 需要 Android 11 及以上。中文模型随安装包内置，运行时无需下载。下载 `.apk` 后在手机上安装；更新已有应用时使用对应版本的 APK 覆盖安装，保留原有应用数据。卸载会清除应用数据，迁移前请从设置导出 JSON 备份。
 
 需要旧版本时查看 [历史 APK](APK_HISTORY.md)。部分早期补丁只发布了部分风格，表中的“—”表示未提供对应安装包。
 

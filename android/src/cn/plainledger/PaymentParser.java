@@ -14,6 +14,25 @@ public final class PaymentParser {
  private static final Pattern DEBIT=Pattern.compile("(?m)^\\s*[-−－]\\s*([0-9]{1,9}\\.[0-9]{2})\\s*$");
  private static final Pattern ISOLATED=Pattern.compile("(?m)^\\s*([0-9]{1,9}\\.[0-9]{2})\\s*$");
  public static long parse(String text){return inspect(text).amount;}
+ public static Result inspectOcr(String text){
+  if(text==null)return new Result(0,"页面文字不可用");
+  // Observed Chinese-font OCR confusion; still require the receipt structure below.
+  text=text.replaceAll("(支付|付款|交易)戌功","$1成功");
+  if(!Pattern.compile("付款方式|支付方式|返回商家|回首页|当前状态[\\s\\S]{0,40}支付成功").matcher(text).find())
+   return new Result(0,"未确认支付完成页，不生成账单");
+  if(Pattern.compile("按住说话|切换到按住说话|发送给朋友").matcher(text).find())
+   return new Result(0,"当前为聊天或分享页面，不生成账单");
+  // The bundled Chinese model can read the large yuan glyph as an asterisk.
+  // Restrict correction to a standalone amount row on an already-confirmed receipt.
+  text=text.replaceAll("(?m)^\\s*\\*\\s*([0-9]{1,9}\\.[0-9]{2})\\s*$","¥$1\n");
+  return inspect(text);
+ }
+ public static long parseNotification(String text){
+  if(text==null||text.length()>10000||EXCLUDE.matcher(text).find())return 0;
+  long paid=parse(text);if(paid>0)return paid;
+  if(!Pattern.compile("支出|消费|向[^\\n]{1,80}付款").matcher(text).find())return 0;
+  return choose(amounts(MONEY,text)).amount;
+ }
  public static Result inspect(String text){
   if(text==null||text.length()>65000)return new Result(0,"页面文字不可用");StringBuilder b=new StringBuilder();
   for(char c:text.toCharArray())b.append(c>='０'&&c<='９'?(char)(c-'０'+'0'):c=='．'?'.':c=='\u00a0'||c=='\u3000'?' ':c);
