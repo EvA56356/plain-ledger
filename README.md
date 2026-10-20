@@ -5,7 +5,14 @@
 点击版本展开下载，选择需要的界面风格。
 
 <details>
-<summary>1.3.1 · 最新 · 项目筛选、返回导航和分类删除修复</summary>
+<summary>1.3.2 · 最新 · 项目计入账本统计开关</summary>
+
+[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.2/plain-ledger-green-1.3.2.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.2/plain-ledger-paper-1.3.2.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.2/plain-ledger-sky-1.3.2.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.2/plain-ledger-shared-1.3.2.apk)
+
+</details>
+
+<details>
+<summary>1.3.1 · 项目筛选、返回导航和分类删除修复</summary>
 
 [绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.1/plain-ledger-green-1.3.1.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.1/plain-ledger-paper-1.3.1.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.1/plain-ledger-sky-1.3.1.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.1/plain-ledger-shared-1.3.1.apk)
 
@@ -18,12 +25,7 @@
 
 </details>
 
-<details>
-<summary>1.2.2 · 记账按钮仅在收支明细显示</summary>
 
-[绿色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.2/plain-ledger-green-1.2.2.apk) · [纸感版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.2/plain-ledger-paper-1.2.2.apk) · [蓝色版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.2/plain-ledger-sky-1.2.2.apk) · [协作版](https://github.com/EvA56356/plain-ledger/releases/download/v1.2.2/plain-ledger-shared-1.2.2.apk)
-
-</details>
 
 
 
@@ -31,6 +33,10 @@
 
 ---
 
+
+## 项目统计开关
+
+项目卡片、详情、编辑和设置页可控制“计入账本统计”，默认开启。关闭后账本统计排除此项目，项目统计、账单和实际账户余额保留，重新开启立即恢复。备份和协作同步保留此设置。
 
 ## 1.3.1 修复
 
