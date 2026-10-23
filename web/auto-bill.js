@@ -1,4 +1,5 @@
 'use strict';
+let autoDraftActive=null,autoDraftFinish=null,autoDraftAwaitingClose=false,autoDraftIgnoreClose=false,autoDraftHooks=false;
 function autoBillState(){try{return window.Android?.autoBillStatus?JSON.parse(Android.autoBillStatus()):{}}catch(e){return {}}}
 function autoBillStatusText(s){return !s.enabled?(s.systemEnabled||s.connected?'系统无障碍已开，但应用内识别已暂停':'应用内识别未开启'):s.connected?'应用内识别已开 · 无障碍服务已连接':s.systemEnabled?'系统已授权，但服务未连接，请关闭后重新开启无障碍':'应用内识别已开，等待系统无障碍授权'}
 function autoBillCounts(s){try{const d=JSON.parse(s.diagnostic||'{}');return d.package?`窗口 ${d.windows||0} · 节点 ${d.nodes||0} · 可见 ${d.visible||0} · 文字 ${d.textChars||0} 字 · 描述 ${d.descriptionChars||0} 字 · 读取异常 ${d.readErrors||0} · ${s.capture||"尚未截图"}`:'尚无读取诊断'}catch(e){return '尚无读取诊断'}}
@@ -9,16 +10,52 @@ function autoBillSettings(){const s=autoBillState();return `<section class="sect
 <h3>最近识别状态</h3><p data-auto-diagnostic role="status" aria-live="polite">${esc(s.status||'尚未收到支付页面事件')}${s.statusAt?' · '+esc(new Date(s.statusAt).toLocaleTimeString('zh-CN')):''}</p><p data-auto-counts>${esc(autoBillCounts(s))}</p>
 <div class="settings-actions"><button data-auto-copy>复制诊断</button><button data-auto-test>测试记账窗口</button><button data-auto-system>应用系统设置</button></div>
 <h3>通知补充识别（可选）</h3><p data-auto-notice>${s.notifications?(s.notificationGranted?'支付通知补充已授权':'已开启，等待系统通知读取授权'):'未开启；自动 OCR 不依赖此项'}</p><div class="settings-actions"><button data-auto-notifications>${s.notifications?'关闭通知补充':'开启通知补充'}</button><button data-auto-image>识别已有截图（可选）</button></div>
-<p>自动 OCR 只在支付宝、微信、美团及美团外卖位于前台且页面变化时运行。为判断是否付款页，非付款页面也可能短暂参与本机识别；图片和原文只在内存处理，不保存、不上传。非付款页不生成账单。</p>
+<p>自动 OCR 只在支付宝、微信、美团及美团外卖位于前台，且文字为空或出现支付线索（含付款界面）时运行。页面变化后会在有限时间内补扫；明确的聊天、分享、失败和退款转账页面会跳过。为判断是否付款页，非付款页面仍可能短暂参与本机识别；图片和原文只在内存处理，不保存、不上传。非付款页不生成账单。</p>
 <p>小米 / HyperOS 首次配置：开启无障碍，允许后台弹出界面、自启动与后台运行，建议将应用后台锁定。完成后日常付款无需再打开简账。系统主动强停、撤销权限或禁止截图时仍会影响自动识别。</p>
-<p>测试窗口使用 12.34 元虚构草稿，只验证弹出链路。页面、OCR 与通知同来源同金额 90 秒内去重；未处理草稿不会覆盖。无法判断类别时默认餐饮，核对时可修改。</p>`:'<p>此功能需要 Android APK；网页版支持手动记账和统计。</p>'}</section>`}
+<p>测试窗口使用 12.34 元虚构草稿，只验证弹出链路。页面、OCR 与通知同来源同金额 90 秒内去重；短时间内两笔真实同额消费仍可能合并。最多保留 20 笔待核对草稿，已有编辑保存或取消后依次显示；未保存即退出时保留草稿，重新打开可继续核对。未展示的测试草稿不会阻挡真实付款。无法判断类别时默认餐饮，核对时可修改。</p>`:'<p>此功能需要 Android APK；网页版支持手动记账和统计。</p>'}</section>`}
 function bindAutoBill(){const yes=$('[data-auto-enable]'),no=$('[data-auto-disable]'),test=$('[data-auto-test]'),system=$('[data-auto-system]'),copy=$('[data-auto-copy]'),image=$('[data-auto-image]'),notifications=$('[data-auto-notifications]');if(yes)yes.onclick=()=>Android.configureAutoBill(true);if(no)no.onclick=()=>{Android.configureAutoBill(false);render();toast('自动识别已暂停')};if(test)test.onclick=()=>Android.testAutoBill?.();if(system)system.onclick=()=>Android.openAutoBillSystemSettings?.();if(copy)copy.onclick=()=>Android.copyAutoBillDiagnostic?.();if(image)image.onclick=()=>Android.readReceiptScreenshot?.();if(notifications)notifications.onclick=()=>{Android.configurePaymentNotifications?.(!autoBillState().notifications);render()}}
 function refreshAutoBillStatus(){if(typeof page==='undefined'||page!=='settings'||!window.Android)return;const s=autoBillState(),status=$('[data-auto-status]'),detail=$('[data-auto-diagnostic]'),counts=$('[data-auto-counts]'),mode=$('[data-auto-mode]');if(status)status.textContent=autoBillStatusText(s);if(detail)detail.textContent=(s.status||'尚未收到支付页面事件')+(s.statusAt?' · '+new Date(s.statusAt).toLocaleTimeString('zh-CN'):'');if(counts)counts.textContent=autoBillCounts(s);if(mode)mode.textContent=s.ocr?(s.sdk<30?'当前 Android 不支持自动截屏，页面文字与选图识别可用':'自动 OCR 已开启 · 模型已随安装包内置'):'自动 OCR 未开启；首次开启无感模式后生效';const notice=$('[data-auto-notice]'),enable=$('[data-auto-enable]'),notifications=$('[data-auto-notifications]');if(notice)notice.textContent=s.notifications?(s.notificationGranted?'支付通知补充已授权':'已开启，等待系统通知读取授权'):'未开启；自动 OCR 不依赖此项';if(enable)enable.textContent=s.enabled&&s.ocr?'管理 / 恢复系统授权':'开启无感自动记账';if(notifications)notifications.textContent=s.notifications?'关闭通知补充':'开启通知补充'}
+function retryAutoDraftFinish(){
+ if(!autoDraftFinish)return true;
+ try{if(Android.finishAutoDraft?.(autoDraftFinish.id,autoDraftFinish.saved)!==true)return false;autoDraftFinish=null;return true}catch(e){return false}
+}
+function finishAutoDraft(saved){
+ if(!autoDraftActive)return;
+ autoDraftFinish={id:autoDraftActive.id,saved};autoDraftActive=null;
+ if(!retryAutoDraftFinish())toast(saved?'账单已保存，草稿完成确认将重试':'取消确认暂未完成，草稿仍保留');
+}
+function bindAutoDraftReview(){
+ if(autoDraftHooks)return;
+ const dialog=$('#entryDialog');if(!dialog?.addEventListener)return;
+ autoDraftHooks=true;
+ dialog.addEventListener('close',()=>{
+  autoDraftAwaitingClose=false;
+  if(autoDraftIgnoreClose){autoDraftIgnoreClose=false;return}
+  finishAutoDraft(false);
+ });
+}
+// The entry form owns validation and persistence. These hooks run only for an automatic review.
+window.autoDraftEntryId=()=>autoDraftActive?'auto-'+autoDraftActive.id:'';
+window.autoDraftEntryMeta=()=>autoDraftActive?{autoSource:autoDraftActive.source}:{};
+window.autoDraftSaved=()=>{if(autoDraftActive){autoDraftAwaitingClose=true;finishAutoDraft(true)}};
 function receiveAutoDraft(){
- if(!window.Android?.takeAutoDraft||typeof state==='undefined'||!state||document.visibilityState==='hidden'||(Android.isAppForeground&&!Android.isAppForeground())||document.querySelector('dialog[open]'))return;
- try{const d=JSON.parse(Android.takeAutoDraft());if(!d)return;const id=String(d.id||d.created);if(Date.now()-d.created>300000||!Number.isSafeInteger(d.amount)||d.amount<=0){Android.ackAutoDraft?.(id);return}
- selectedDay=today();$('#month').value=today().slice(0,7);page='ledger';render();openEntry();const f=$('#entryForm');f.elements.amount.value=(d.amount/100).toFixed(2);f.elements.date.value=today();f.elements.note.value=d.test?'自动记账测试（虚构金额，请勿作为真实账单保存）':d.source+'支付（自动识别，请核对）';const a=state.accounts.find(a=>a.name===d.source);if(a)f.elements.account.value=a.id;selectedCategory=state.categories.find(c=>c.type==='expense'&&!c.parentId&&c.name==='餐饮')?.id||state.categories.find(c=>c.type==='expense'&&!c.parentId)?.id||selectedCategory;categoryButtons();$('#entryTitle').textContent=d.test?'测试记账窗口 · 虚构金额':'核对识别账单';$('#entryError').textContent=d.test?'这是测试草稿，未写入账本。可直接取消。':'未判断类别时默认餐饮；请核对金额、分类、账户和账本，点击保存才会记账。';Android.ackAutoDraft?.(id);
- }catch(e){toast('识别草稿暂未打开，已保留，请重新进入简账')}
+ if(!window.Android?.takeAutoDraft||typeof state==='undefined'||!state||document.visibilityState==='hidden'||(Android.isAppForeground&&!Android.isAppForeground()))return false;
+ bindAutoDraftReview();
+ if(!retryAutoDraftFinish()||autoDraftAwaitingClose)return false;
+ let opened=false;
+ try{
+  // Presentation acknowledgement is independent of completing or replacing the editor.
+  if(autoDraftActive){if(!autoDraftActive.acknowledged)autoDraftActive.acknowledged=Android.ackAutoDraft?.(autoDraftActive.id)===true;return false}
+  if(document.querySelector('dialog[open]'))return false;
+  const d=JSON.parse(Android.takeAutoDraft());if(!d)return false;const id=String(d.id||d.created);
+  // The database can commit just before a process dies, leaving its preference receipt pending.
+  if(state.entries?.some(entry=>entry.id==='auto-'+id)){autoDraftFinish={id,saved:true};retryAutoDraftFinish();return false}
+  if(!Number.isSafeInteger(d.amount)||d.amount<=0){autoDraftFinish={id,saved:false};retryAutoDraftFinish();toast('识别草稿金额无效，请手动核对');return false}
+  const created=new Date(Number(d.created)),draftDay=Number.isFinite(created.getTime())&&created.getTime()>0?created.getFullYear()+'-'+String(created.getMonth()+1).padStart(2,'0')+'-'+String(created.getDate()).padStart(2,'0'):today();
+  selectedDay=draftDay;$('#month').value=draftDay.slice(0,7);page='ledger';render();openEntry();opened=true;const f=$('#entryForm');f.elements.amount.value=(d.amount/100).toFixed(2);f.elements.date.value=draftDay;f.elements.note.value=d.test?'自动记账测试（虚构金额，请勿作为真实账单保存）':d.source+'支付（自动识别，请核对）';const a=state.accounts.find(a=>a.name===d.source);if(a)f.elements.account.value=a.id;selectedCategory=state.categories.find(c=>c.type==='expense'&&!c.parentId&&c.name==='餐饮')?.id||state.categories.find(c=>c.type==='expense'&&!c.parentId)?.id||selectedCategory;categoryButtons();$('#entryTitle').textContent=d.test?'测试记账窗口 · 虚构金额':'核对识别账单';$('#entryError').textContent=d.test?'这是测试草稿，未写入账本。可直接取消。':(Date.now()-d.created>300000?'该草稿已等待超过 5 分钟，请核对原付款日期。':'')+'未判断类别时默认餐饮；请核对金额、分类、账户和账本，点击保存才会记账。';
+  if(!d.test&&state.entries?.some(entry=>String(entry.id).startsWith('auto-')&&entry.amount===d.amount&&entry.date===draftDay&&entry.autoSource===d.source))$('#entryError').textContent='当天已有同来源同金额的自动账单，可能重复；如为另一笔真实消费，可核对后保存。'+$('#entryError').textContent;
+  autoDraftActive={id,source:d.source,acknowledged:false};autoDraftActive.acknowledged=Android.ackAutoDraft?.(id)===true;return true;
+ }catch(e){if(opened&&!autoDraftActive){autoDraftIgnoreClose=true;autoDraftAwaitingClose=true;$('#entryDialog')?.close?.()}toast(autoDraftActive?'记账窗口已打开，展示确认将自动重试':'识别草稿暂未打开，已保留，请重新进入简账');return false}
 }
 setInterval(()=>{receiveAutoDraft();refreshAutoBillStatus()},1000);
 window.addEventListener('focus',()=>{receiveAutoDraft();refreshAutoBillStatus()});

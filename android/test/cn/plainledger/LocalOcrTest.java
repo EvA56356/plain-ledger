@@ -32,6 +32,10 @@ public class LocalOcrTest {
   assertEquals(0,PaymentParser.inspectOcr("确认付款\n¥19.90\n付款方式 测试账户").amount);
   assertEquals(0,PaymentParser.inspectOcr("支付成功\n¥19.90\n发送给朋友\n返回商家").amount);
  }
+ @Test public void completedReceiptWithDiscountAndOnlyDoneButton()throws Exception{
+  Bitmap image=Bitmap.createBitmap(800,1000,Bitmap.Config.ARGB_8888);Canvas canvas=new Canvas(image);canvas.drawColor(Color.WHITE);Paint paint=new Paint(Paint.ANTI_ALIAS_FLAG);paint.setColor(Color.BLACK);paint.setTextSize(60);canvas.drawText("支付成功",80,140,paint);paint.setTextSize(90);canvas.drawText("¥19.90",80,320,paint);paint.setTextSize(48);canvas.drawText("优惠 ¥1.00",80,500,paint);paint.setTextSize(60);canvas.drawText("完成",80,760,paint);
+  CountDownLatch latch=new CountDownLatch(1);long[] amount={-1};LocalOcr.read(InstrumentationRegistry.getInstrumentation().getTargetContext(),image,new LocalOcr.Callback(){public void done(String text,long elapsed){amount[0]=PaymentParser.inspectOcr(text).amount;latch.countDown();}public void failed(String reason){latch.countDown();}});assertTrue(latch.await(30,TimeUnit.SECONDS));assertEquals(1990,amount[0]);
+ }
  @Test public void channelsSharePendingDraftAndFingerprint()throws Exception{
   android.content.Context c=InstrumentationRegistry.getInstrumentation().getTargetContext();
   c.getSharedPreferences("auto_bill",0).edit().clear().commit();
