@@ -19,6 +19,6 @@ class ThemeTests(unittest.TestCase):
   if (ROOT/'web/theme.css').exists():self.assertLess(html.index('appearance.css'),html.index('theme.css'))
   self.assertIn('uiColor(this,"background"',(ROOT/'android/src/cn/plainledger/MainActivity.java').read_text(encoding='utf-8'))
   overlay=(ROOT/'android/src/cn/plainledger/AutoBillService.java').read_text(encoding='utf-8')
-  for key in ['paper','ink','primary','soft']:self.assertIn('uiColor(this,"'+key+'"',overlay)
+  for key in ['paper','ink','primary','soft']:self.assertRegex(overlay,r'uiColor\(\s*this\s*,\s*"'+key+'"')
   self.assertIn('MainActivity.uiRadius(this)',overlay)
 if __name__=='__main__':unittest.main()

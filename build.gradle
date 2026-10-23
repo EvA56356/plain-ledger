@@ -6,15 +6,36 @@ def code = ((original =~ /versionCode="([^"]+)"/)[0][1]) as int
 def generated = file('build/generated/ledger/AndroidManifest.xml')
 generated.parentFile.mkdirs()
 generated.setText(original.replaceFirst(/ package="[^"]+"/, ''), 'UTF-8')
+def releaseSigning = [
+ key: providers.gradleProperty('ledgerKey').orElse(providers.environmentVariable('LEDGER_KEY')),
+ storePassword: providers.gradleProperty('ledgerStorePassword').orElse(providers.environmentVariable('LEDGER_STORE_PASSWORD')),
+ keyAlias: providers.gradleProperty('ledgerKeyAlias').orElse(providers.environmentVariable('LEDGER_KEY_ALIAS')),
+ keyPassword: providers.gradleProperty('ledgerKeyPassword').orElse(providers.environmentVariable('LEDGER_KEY_PASSWORD'))
+]
 android {
  namespace 'cn.plainledger'
  compileSdk 35
  defaultConfig { applicationId appId; minSdk 26; targetSdk 35; versionCode code; versionName appVersion; testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner' }
  sourceSets { main { manifest.srcFile generated; java.srcDirs = ['android/src']; res.srcDirs = ['android/res']; assets.srcDirs = ['web'] } }
  compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
- signingConfigs { local { storeFile file(providers.gradleProperty('ledgerKey').getOrElse('local-debug.keystore')); storePassword 'android'; keyAlias 'plainledger'; keyPassword 'android' } }
- buildTypes { debug { applicationIdSuffix '.ocrtest'; signingConfig signingConfigs.local }; release { minifyEnabled false; signingConfig signingConfigs.local } }
+ signingConfigs {
+  development { storeFile file('local-debug.keystore'); storePassword 'android'; keyAlias 'plainledger'; keyPassword 'android' }
+  release {
+   if(releaseSigning.key.isPresent()) storeFile file(releaseSigning.key.get())
+   if(releaseSigning.storePassword.isPresent()) storePassword releaseSigning.storePassword.get()
+   if(releaseSigning.keyAlias.isPresent()) keyAlias releaseSigning.keyAlias.get()
+   if(releaseSigning.keyPassword.isPresent()) keyPassword releaseSigning.keyPassword.get()
+  }
+ }
+ buildTypes { debug { applicationIdSuffix '.ocrtest'; signingConfig signingConfigs.development }; release { minifyEnabled false; signingConfig signingConfigs.release } }
  sourceSets { androidTest { java.srcDirs = ['android/test']; assets.srcDirs = ['build/private-test-images'] } }
  packaging { resources.excludes += ['META-INF/DEPENDENCIES','META-INF/LICENSE*','META-INF/NOTICE*'] }
+}
+gradle.taskGraph.whenReady { graph ->
+ if(graph.allTasks.any { it.project==project && it.name.toLowerCase().contains('release') }) {
+  def missing=releaseSigning.findAll { name,value -> !value.isPresent() || value.get().trim().isEmpty() }.keySet()
+  if(!missing.isEmpty()) throw new GradleException('Release signing is not configured: '+missing.join(', ')+'. Set ledgerKey/ledgerStorePassword/ledgerKeyAlias/ledgerKeyPassword in local Gradle properties or their LEDGER_* environment variables; a development key is never selected automatically.')
+  if(!file(releaseSigning.key.get()).isFile()) throw new GradleException('The configured release keystore does not exist. Provide the existing release certificate; this build does not create or replace it.')
+ }
 }
 dependencies { implementation 'com.google.mlkit:text-recognition-chinese:16.0.1'; androidTestImplementation 'androidx.test:runner:1.6.2'; androidTestImplementation 'androidx.test.ext:junit:1.2.1' }

@@ -50,9 +50,10 @@ class CloudTests(unittest.TestCase):
   self.assertEqual(b.call(base+'/state')[0],404)
   invite=b.call('/api/me')[1]['invitations'][0]['id'];self.assertEqual(c.call('/api/invitations/respond',{'id':invite,'accept':True})[0],404)
   self.assertEqual(b.call('/api/invitations/respond',{'id':invite,'accept':True})[0],200)
-  snapshot=b.call(base+'/state')[1];changed=copy.deepcopy(snapshot['state']);changed['entries']=[{'id':'entry1','type':'expense','amount':1234,'category':'food','account':'cash','book':code,'date':'2026-10-18','note':'Synthetic test'}]
+  snapshot=b.call(base+'/state')[1];changed=copy.deepcopy(snapshot['state']);changed['entries']=[{'id':'auto-synthetic','type':'expense','amount':1234,'category':'food','account':'cash','book':code,'date':'2026-10-18','note':'Synthetic test','autoSource':'synthetic source'}]
   self.assertEqual(b.call(base+'/state',{'state':changed,'revision':snapshot['revision']},'PUT')[0],200)
   self.assertEqual(a.call(base+'/state')[1]['state']['entries'][0]['amount'],1234)
+  self.assertEqual(a.call(base+'/state')[1]['state']['entries'][0]['autoSource'],'synthetic source')
   self.assertEqual(a.call(base+'/state',{'state':snapshot['state'],'revision':snapshot['revision']},'PUT')[0],409)
   bad=copy.deepcopy(changed);bad['entries'][0]['amount']=-1;self.assertEqual(b.call(base+'/state',{'state':bad,'revision':1},'PUT')[0],400)
   self.assertEqual(b.call(base+'/invite',{'phone':'13800000003','role':'editor'})[0],403)
