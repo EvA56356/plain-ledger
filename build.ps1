@@ -4,7 +4,9 @@ param(
  [string]$GradleHome=$env:GRADLE_HOME,
  [string]$BuildToolsVersion='35.0.0',
  [string]$BuildToolsDirectory,
- [string]$AndroidJar
+ [string]$AndroidJar,
+ [string]$KeyStore,
+ [string]$KeyAlias
 )
 $ErrorActionPreference='Stop'
 $appRoot=$PSScriptRoot
@@ -24,12 +26,12 @@ if(!$GradleHome){
   Expand-Archive -LiteralPath $zip -DestinationPath $cache -Force
  }
 }
-$keyPath=Join-Path $appRoot 'local-debug.keystore'
-if(!(Test-Path -LiteralPath $keyPath)){
- & "$env:JAVA_HOME/bin/keytool.exe" -genkeypair -keystore $keyPath -storepass android -keypass android -alias plainledger -keyalg RSA -keysize 2048 -validity 10000 -dname 'CN=Plain Ledger Local Development'
- if($LASTEXITCODE){throw 'Development signing key generation failed'}
-}
-& "$GradleHome/bin/gradle.bat" -p $appRoot assembleRelease "-PledgerKey=$keyPath" --console=plain
+$gradleArgs=@('-p',$appRoot,'assembleRelease','--console=plain')
+if($KeyStore){$gradleArgs+="-PledgerKey=$KeyStore"}
+if($KeyAlias){$gradleArgs+="-PledgerKeyAlias=$KeyAlias"}
+# Passwords are read by Gradle from local properties or LEDGER_* environment
+# variables, so they do not appear in this script's process arguments or logs.
+& "$GradleHome/bin/gradle.bat" @gradleArgs
 if($LASTEXITCODE){throw 'Android build failed'}
 $manifestText=[IO.File]::ReadAllText((Join-Path $appRoot 'android/AndroidManifest.xml'))
 $version=[regex]::Match($manifestText,'versionName="([^"]+)"').Groups[1].Value
