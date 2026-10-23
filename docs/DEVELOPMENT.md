@@ -32,6 +32,7 @@ Get-ChildItem -File -Filter 'test-*.cjs' | ForEach-Object {
 }
 python test-storage.py
 python test-theme.py
+python test-preview-security.py
 ```
 
 协作版另运行 `python test-cloud.py`；其 `test-native-cloud.cjs` 已包含在上述 JavaScript 全套命令中。
@@ -54,7 +55,7 @@ java -cp build/java-tests cn.plainledger.PaymentScanSessionTest
 if ($LASTEXITCODE -ne 0) { throw '补扫会话测试失败' }
 ```
 
-预期分别输出 `53 payment recognition checks passed` 和 `57 observation, window ownership, event-storm, OCR freshness and delivery suppression scenarios passed`。
+预期分别输出 `53 payment recognition checks passed` 和 `68 observation, window ownership, event-storm, OCR freshness and delivery suppression scenarios passed`。
 
 ### Android instrumentation
 
@@ -63,6 +64,7 @@ if ($LASTEXITCODE -ne 0) { throw '补扫会话测试失败' }
 - `LocalOcrTest`：合成图片 OCR（含优惠及“完成”布局）、聊天和未完成付款排除、多渠道草稿及去重，以及可选的私有截图布局。
 - `AutoBillDraftQueueTest`：顺序交付、跨渠道去重、旧草稿兼容、90 秒后同额付款、20 笔容量上限、并发入队与完成确认；展示不消费、重建后继续核对、测试草稿让位、已提交固定账单 ID 的完成回执恢复。
 - `PaymentNodePrivacyTest`：隐藏密码节点不误阻止识别，可见密码节点阻止识别，两者均不采集密码文字；可见内容描述可以提供金额。
+- `AutoBillActivityFlowTest`：实际随包 WebView 离线加载、展示后重开保留草稿、保存幂等及明确取消不入账；只允许隔离测试包运行。
 - `PendingExportTest`：文件选择期间缓存及目标 URI 恢复、UTF-8 字节 10MB 上限、未完成导出不被新内容覆盖、中断后重写及失败后重新导出；全新 Activity 仅清理没有目标 URI 的遗留等待状态，恢复中的 Activity 和已选择目标的写入状态保留。缓存被系统回收或目标文档权限失效时仍需重新导出。
 
 先配置 JDK、SDK 和 Gradle。debug 仅使用本机开发密钥；新检出目录可运行下方 `keytool` 命令生成开发密钥，不能将其作为正式签名。以下使用 `build.ps1` 默认的 Gradle 缓存路径，使用自备 Gradle 时修改 `$gradle`。`JAVA_HOME` 需指向 JDK，`local.properties` 需已配置 SDK 路径，`adb` 需加入 `PATH`，多设备时为每条命令加 `-s <设备序列号>`。
@@ -99,7 +101,7 @@ debug 使用 `.ocrtest` 包名后缀，不覆盖正式版本。上述命令从�
 - 已通过：JavaScript 全套与本地预览专项；包括保存失败不完成草稿、固定账单 ID、已提交保存恢复、同日同来源同金额重复提示、CSV 及请求校验回归。
 - 已通过：53 项 Java 金额规则及 68 项会话/窗口/事件风暴/OCR 时序场景。
 - Android instrumentation 报告 `OK (23 tests)`；其中 `privateReceiptLayouts` 缺少私有图片输入，由 `Assume` 跳过，另外 22 项执行通过。实际随包 WebView 已验证禁用文件访问后离线加载、已展示草稿重开后保留、保存一次及明确取消不入账。
-- 已通过：MuMu 的 7 项真实无障碍事件合成页面场景；正例均自动打开金额正确的核对窗口，反例均未生成草稿。四分支构建、签名及源码一致性检查待本轮收尾记录。Android 13 及以上返回回调已编译，尚未在相应系统实机验证；实际文档选择器中的进程死亡恢复仍需单独测试，不能用缓存类回归代替。
+- 已通过：MuMu 的 7 项真实无障碍事件合成页面场景；正例均自动打开金额正确的核对窗口，反例均未生成草稿。四分支 Release 构建通过，包名与风格保留；WebView 资源逐字节与源码一致，共同 native 代码一致（协作版仅保留 CloudTransport 增量），模型及 4 个 ABI 库完整，未包含测试钩子、已知私有图片、密钥或数据库；四份证书均与对应旧版 APK 一致。离线三个包无 INTERNET，协作版保留该权限。此次仅构建验证，未分发同版号 APK。Android 13 及以上返回回调已编译，尚未在相应系统实机验证；实际文档选择器中的进程死亡恢复仍需单独测试，不能用缓存类回归代替。
 - 尚未验证：小米真机、真实支付、厂商后台策略和本次系统截图兼容性。历史 MuMu 黑帧与私有截图回放不能替代本次真机验证；合成页面通过也不能证明真实支付应用全部兼容。90 秒同来源同金额去重仍可能合并短时间内两笔真实同额付款。
 
 ## 发布检查
