@@ -4,15 +4,15 @@
 
 ## 最新三个版本
 
-1.4.1 / 1.4.0 为无感自动 OCR 测试版，真机兼容性待复测；下方提供明确版本的下载入口。“最新发布页”指向正式稳定版。
+1.4.2（2026-10-24）是 GitHub prerelease 测试版，包含支付页面补扫、草稿恢复及代码审查修复。1.4.2 / 1.4.1 / 1.4.0 均保留自动 OCR 测试边界，真实手机支付及系统截图兼容性待复测；不标记为稳定版。
 
-首次使用可直接打开 [最新发布页](https://github.com/EvA56356/plain-ledger/releases/latest)，在 Assets 中选择需要的 APK。
+下载本次版本请打开 [1.4.2 测试发布页](https://github.com/EvA56356/plain-ledger/releases/tag/v1.4.2)，或使用下表四个 APK 的直接下载入口。[稳定版发布页](https://github.com/EvA56356/plain-ledger/releases/latest) 不会指向 prerelease 测试版。
 
 | 版本 | 绿色版 | 纸感版 | 蓝色版 | 协作版 |
 | --- | --- | --- | --- | --- |
+| [1.4.2（测试版）](https://github.com/EvA56356/plain-ledger/releases/tag/v1.4.2) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.4.2/plain-ledger-green-1.4.2.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.4.2/plain-ledger-paper-1.4.2.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.4.2/plain-ledger-sky-1.4.2.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.4.2/plain-ledger-shared-1.4.2.apk) |
 | [1.4.1](https://github.com/EvA56356/plain-ledger/releases/tag/v1.4.1) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.4.1/plain-ledger-green-1.4.1.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.4.1/plain-ledger-paper-1.4.1.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.4.1/plain-ledger-sky-1.4.1.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.4.1/plain-ledger-shared-1.4.1.apk) |
 | [1.4.0](https://github.com/EvA56356/plain-ledger/releases/tag/v1.4.0) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.4.0/plain-ledger-green-1.4.0.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.4.0/plain-ledger-paper-1.4.0.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.4.0/plain-ledger-sky-1.4.0.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.4.0/plain-ledger-shared-1.4.0.apk) |
-| [1.3.4](https://github.com/EvA56356/plain-ledger/releases/tag/v1.3.4) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.4/plain-ledger-green-1.3.4.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.4/plain-ledger-paper-1.3.4.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.4/plain-ledger-sky-1.3.4.apk) | [下载](https://github.com/EvA56356/plain-ledger/releases/download/v1.3.4/plain-ledger-shared-1.3.4.apk) |
 
 绿色、纸感、蓝色是离线版；协作版可离线使用，按需连接自己的服务器。四个安装包可以同时安装，数据库彼此独立。
 
