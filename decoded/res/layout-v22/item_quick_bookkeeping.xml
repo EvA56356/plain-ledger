@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/rl_item" android:layout_width="322.0dp" android:layout_height="148.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+    <GridView android:id="@id/grid_view" android:background="@mipmap/ic_widget_no_data_middle_quick_bookkeeping" android:paddingLeft="31.0dp" android:paddingTop="62.0dp" android:paddingRight="31.0dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="4" android:layout_alignTop="@id/iv_bg" android:layout_alignBottom="@id/iv_bg" android:overScrollMode="never" android:paddingHorizontal="31.0dp" />
+</RelativeLayout>

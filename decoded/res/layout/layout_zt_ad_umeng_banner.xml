@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.umeng.union.widget.UMNativeLayout android:id="@id/umnl_layout" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="84.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_zt_img" android:layout_width="150.0dp" android:layout_height="84.0dp" android:scaleType="fitXY" />
+        <TextView android:textSize="14.0sp" android:textColor="#000000" android:ellipsize="end" android:id="@id/tv_zt_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_alignTop="@id/iv_zt_img" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp" android:layout_toEndOf="@id/iv_zt_img" />
+        <TextView android:textSize="13.0sp" android:textColor="#666666" android:ellipsize="end" android:id="@id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:maxLines="2" android:includeFontPadding="false" android:layout_below="@id/tv_zt_title" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp" android:layout_toEndOf="@id/iv_zt_img" />
+        <ImageView android:layout_gravity="end" android:id="@id/iv_zt_close" android:padding="5.0dp" android:layout_width="25.0dp" android:layout_height="25.0dp" android:src="@mipmap/ic_zt_config_ad_close" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</com.umeng.union.widget.UMNativeLayout>

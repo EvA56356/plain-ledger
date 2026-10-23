@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/flRoot" android:background="@color/color_32302E" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tvAlpha" android:layout_width="match_parent" android:layout_height="0.0dp" />
+    <FrameLayout android:id="@id/flTarotShuffle" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="10.0dp" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center" android:id="@id/ivButtonShadow" android:layout_width="45.0dp" android:layout_height="104.0dp" android:layout_marginTop="88.0dp" android:src="@drawable/tarot_icon_card_projection" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/flBottomView" android:layout_width="match_parent" android:layout_height="140.0dp" app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/clStartQuestion" android:background="@color/col_3C3A38" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="27.0dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toTopOf="@id/llButton" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+            <LinearLayout android:gravity="center" android:id="@id/llButton" android:background="@drawable/tarot_adapter_bg_from_item" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginTop="14.0dp" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/recyclerView">
+                <EditText android:textSize="15.0dp" android:textColor="@color/col_d7d6d3" android:textColorHint="@color/col_444444" android:id="@id/etInputProblem" android:background="@null" android:layout_width="0.0dp" android:layout_height="match_parent" android:hint="输入问题，寻找宇宙的解答" android:layout_weight="1.0" android:textCursorDrawable="@drawable/sh_cursor_drawable" android:paddingStart="20.0dp" />
+                <ImageView android:id="@id/ivSend" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@drawable/tarot_icon_problem_send" android:layout_marginEnd="6.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/clAgainQuestion" android:background="@color/col_3C3A38" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="15.0dp" android:paddingEnd="15.0dp">
+            <TextView android:textSize="15.0dp" android:textStyle="bold" android:textColor="@color/col_FFE19E" android:gravity="center" android:id="@id/tvStartDrawCard" android:background="@drawable/tarot_adapter_bg_from_item" android:layout_width="match_parent" android:layout_height="60.0dp" android:text="开始抽牌" />
+            <TextView android:textSize="12.0dp" android:textColor="@color/col_C5C4C4" android:id="@id/tvAgainQuestion" android:paddingTop="15.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重新提问" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

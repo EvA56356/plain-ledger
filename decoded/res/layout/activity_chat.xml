@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.lanniser.kittykeeping.view.chat.ChatBackgroundView android:id="@id/bg_cat" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:id="@id/rl_content_root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="11.0sp" android:textColor="@color/color_6d" android:id="@id/tv_ai_hint" android:layout_width="12.0dp" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:text="@string/message_is_generated_by_ai" android:layout_below="@id/ll_title" android:layout_marginStart="17.0dp" />
+        <View android:id="@id/view_bottom" android:background="@mipmap/bg_chat_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-41.0dp" android:layout_alignTop="@id/rl_chat_msg" android:layout_alignBottom="@id/rl_chat_msg" />
+        <View android:id="@id/view_bg" android:background="@drawable/shape_rectangle_4d000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <View android:id="@id/toolbarView" android:layout_width="wrap_content" android:layout_height="0.0dp" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbarView">
+            <ImageView android:id="@id/exit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back_sl" android:layout_marginStart="18.0dp" />
+            <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_bill" android:layout_width="52.0dp" android:layout_height="wrap_content">
+                <ImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@mipmap/ic_chat_bill" />
+                <com.lanniser.kittykeeping.view.StrokeTextView android:textSize="11.0sp" android:textColor="@color/color_2a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:text="@string/chat_bill" android:includeFontPadding="false" app:stroke_width="3.0dp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_history" android:layout_width="52.0dp" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_history" android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@mipmap/ic_chat_msg_history_expand" />
+                <com.lanniser.kittykeeping.view.StrokeTextView android:textSize="11.0sp" android:textColor="@color/color_2a" android:id="@id/tv_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:text="@string/expand_history" android:includeFontPadding="false" app:stroke_width="3.0dp" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_more" android:layout_width="52.0dp" android:layout_height="wrap_content" android:layout_marginEnd="7.0dp">
+                <ImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@mipmap/ic_chat_more" />
+                <com.lanniser.kittykeeping.view.StrokeTextView android:textSize="11.0sp" android:textColor="@color/color_2a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:text="@string/more" android:includeFontPadding="false" app:stroke_width="3.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rl_chat_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="118.0dp" android:layout_alignParentBottom="true">
+            <FrameLayout android:id="@id/fl_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp" android:layout_marginStart="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent">
+                <ImageView android:id="@id/iv_type" android:paddingLeft="6.0dp" android:paddingTop="3.0dp" android:paddingRight="6.0dp" android:paddingBottom="3.0dp" android:visibility="gone" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@mipmap/ic_chat_voice" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/fl_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp" android:layout_marginEnd="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent">
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/color_2b" android:gravity="center" android:id="@id/tv_send" android:background="@mipmap/btn_msg_send" android:visibility="gone" android:layout_width="55.0dp" android:layout_height="45.0dp" android:layout_marginBottom="2.0dp" android:text="@string/send" android:layout_marginEnd="6.0dp" />
+                <ImageView android:id="@id/iv_camera" android:paddingLeft="6.0dp" android:paddingTop="3.0dp" android:paddingRight="6.0dp" android:paddingBottom="3.0dp" android:visibility="gone" android:layout_width="48.0dp" android:layout_height="48.0dp" android:src="@mipmap/ic_chat_picture" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/fl_content_bottom" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp" android:layout_marginBottom="24.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/fl_right" app:layout_constraintStart_toEndOf="@id/fl_left">
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/color_19" android:gravity="center" android:id="@id/tv_voice" android:background="@mipmap/bg_chat_msg_input" android:paddingLeft="15.0dp" android:paddingTop="16.0dp" android:paddingRight="15.0dp" android:paddingBottom="16.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/long_press_to_send_voice" />
+                <com.lanniser.kittykeeping.view.AppEditText android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/color_19" android:textColorHint="@color/color_8c" android:id="@id/et_msg" android:background="@mipmap/bg_chat_msg_input" android:paddingLeft="15.0dp" android:paddingTop="16.0dp" android:paddingRight="15.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/chat_msg_hint" android:inputType="textMultiLine" />
+            </FrameLayout>
+            <HorizontalScrollView android:id="@id/scroll_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="33.0dp" android:layout_marginBottom="15.0dp" android:overScrollMode="never" app:layout_constraintBottom_toTopOf="@id/fl_content_bottom" app:layout_constraintStart_toStartOf="parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingEnd="9.0dp">
+                    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/color_1f" android:gravity="center" android:id="@id/tv_bookkeeping" android:background="@mipmap/btn_bg_chat_choose" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/manual_bookkeeping" android:layout_marginStart="18.0dp" />
+                    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/color_1f" android:gravity="center" android:id="@id/tv_book" android:background="@mipmap/btn_bg_chat_choose" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawablePadding="5.0dp" android:layout_marginStart="9.0dp" app:drawableEndCompat="@mipmap/ic_chat_choose_arrow" />
+                    <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/color_1f" android:textColorHint="@color/color_1f" android:gravity="center" android:id="@id/tv_asset" android:background="@mipmap/btn_bg_chat_choose" android:layout_width="wrap_content" android:layout_height="match_parent" android:hint="@string/assets_account" android:drawablePadding="5.0dp" android:layout_marginStart="9.0dp" app:drawableEndCompat="@mipmap/ic_chat_choose_arrow" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout android:id="@id/rl_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20.0dp" android:layout_marginBottom="10.0dp" android:layout_above="@id/rl_chat_msg" android:layout_below="@id/ll_title">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="bottom" android:id="@id/rv_chat" android:paddingLeft="18.0dp" android:paddingRight="18.0dp" android:layout_width="match_parent" android:layout_height="152.0dp" android:layout_alignParentBottom="true" android:overScrollMode="never" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

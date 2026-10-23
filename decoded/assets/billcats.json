@@ -1,0 +1,402 @@
+{
+        "appear":  [
+            {
+                "id": "餐饮",
+                "key": "canyin",
+                "title": "餐饮",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_canyin",
+                "icon": "records_type_canyin"
+            },
+            {
+                "id": "购物",
+                "key": "gouwu",
+                "title": "购物",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_gouwu",
+                "icon": "records_type_gouwu"
+            },
+            {
+                "id": "日用",
+                "key": "riyong",
+                "title": "日用",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_riyong",
+                "icon": "records_type_riyong"
+            },
+            {
+                "id": "交通",
+                "key": "jiaotong",
+                "title": "交通",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_jiaotong",
+                "icon": "records_type_jiaotong"
+            },
+            {
+                "id": "蔬菜",
+                "key": "shucai",
+                "title": "蔬菜",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_shucai",
+                "icon": "records_type_shucai"
+            },
+            {
+                "id": "水果",
+                "key": "shuiguo",
+                "title": "水果",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_shuiguo",
+                "icon": "records_type_shuiguo"
+            },
+            {
+                "id": "零食",
+                "key": "lingshi",
+                "title": "零食",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_lingshi",
+                "icon": "records_type_lingshi"
+            },
+            {
+                "id": "运动",
+                "key": "yundong",
+                "title": "运动",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_yundong",
+                "icon": "records_type_yundong"
+            },
+            {
+                "id": "娱乐",
+                "key": "yule",
+                "title": "娱乐",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_yule",
+                "icon": "records_type_yule"
+            },
+            {
+                "id": "通讯",
+                "key": "tongxun",
+                "title": "通讯",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_tongxun",
+                "icon": "records_type_tongxun"
+            },
+            {
+                "id": "服饰",
+                "key": "fushi",
+                "title": "服饰",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_fushi",
+                "icon": "records_type_fushi"
+            },
+            {
+                "id": "美容",
+                "key": "meirong",
+                "title": "美容",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_meirong",
+                "icon": "records_type_meirong"
+            },
+            {
+                "id": "住房",
+                "key": "zhufang",
+                "title": "住房",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_zhufang",
+                "icon": "records_type_zhufang"
+            },
+            {
+                "id": "家庭",
+                "key": "jiating",
+                "title": "家庭",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_jiating",
+                "icon": "records_type_jiating"
+            },
+            {
+                "id": "社交",
+                "key": "shejiao",
+                "title": "社交",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_shejiao",
+                "icon": "records_type_shejiao"
+            },
+            {
+                "id": "旅行",
+                "key": "lvxing",
+                "title": "旅行",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_lvxing",
+                "icon": "records_type_lvxing"
+            },
+            {
+                "id": "烟酒",
+                "key": "yanjiu",
+                "title": "烟酒",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_yanjiu",
+                "icon": "records_type_yanjiu"
+            },
+            {
+                "id": "数码",
+                "key": "shuma",
+                "title": "数码",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_shuma",
+                "icon": "records_type_shuma"
+            },
+            {
+                "id": "汽车",
+                "key": "qiche",
+                "title": "汽车",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_qiche",
+                "icon": "records_type_qiche"
+            },
+            {
+                "id": "医疗",
+                "key": "yiliao",
+                "title": "医疗",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_yiliao",
+                "icon": "records_type_yiliao"
+            },
+            {
+                "id": "书籍",
+                "key": "shuji",
+                "title": "书籍",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_shuji",
+                "icon": "records_type_shuji"
+            },
+            {
+                "id": "学习",
+                "key": "xuexi",
+                "title": "学习",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_xuexi",
+                "icon": "records_type_xuexi"
+            },
+            {
+                "id": "宠物",
+                "key": "chongwu",
+                "title": "宠物",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_chongwu",
+                "icon": "records_type_chongwu"
+            },
+            {
+                "id": "礼金",
+                "key": "lijin",
+                "title": "礼金",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_lijin",
+                "icon": "records_type_lijin"
+            },
+            {
+                "id": "礼品",
+                "key": "lipin",
+                "title": "礼品",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_lipin",
+                "icon": "records_type_lipin"
+            },
+            {
+                "id": "办公",
+                "key": "bangong",
+                "title": "办公",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_bangong",
+                "icon": "records_type_bangong"
+            },
+            {
+                "id": "维修",
+                "key": "weixiu",
+                "title": "维修",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_weixiu",
+                "icon": "records_type_weixiu"
+            },
+            {
+                "id": "捐赠",
+                "key": "juanzeng",
+                "title": "捐赠",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_juanzeng",
+                "icon": "records_type_juanzeng"
+            },
+            {
+                "id": "彩票",
+                "key": "caipiao",
+                "title": "彩票",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_caipiao",
+                "icon": "records_type_caipiao"
+            },
+            {
+                "id": "红包",
+                "key": "hongbao",
+                "title": "红包",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_hongbao",
+                "icon": "records_type_hongbao"
+            },
+            {
+                "id": "快递",
+                "key": "kuaidi",
+                "title": "快递",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_kuaidi",
+                "icon": "records_type_kuaidi"
+            },
+            {
+                "id": "其它",
+                "key": "qita",
+                "title": "其它",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_qita",
+                "icon": "records_type_qita"
+            },
+            {
+                "id": "还款",
+                "key": "huankuan",
+                "title": "还款",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_huankuan",
+                "icon": "records_type_huankuan"
+            },
+            {
+                "id": "借出",
+                "key": "jiechu",
+                "title": "借出",
+                "isCustom": false,
+                "type": 1,
+                "icon0": "statistics_type_jiechu",
+                "icon": "records_type_jiechu"
+            }
+        ],
+        "income":  [
+            {
+                "id": "工资",
+                "key": "gongzi",
+                "title": "工资",
+                "isCustom": false,
+                "type": 2,
+                "icon0": "statistics_shouru_gongzi",
+                "icon": "records_shouru_gongzi"
+            },
+            {
+                "id": "红包",
+                "key": "hongbao",
+                "title": "红包",
+                "isCustom": false,
+                "type": 2,
+                "icon0": "statistics_shouru_hongbao",
+                "icon": "records_shouru_hongbao"
+            },
+            {
+                "id": "租金",
+                "key": "zujin",
+                "title": "租金",
+                "isCustom": false,
+                "type": 2,
+                "icon0": "statistics_shouru_zujin",
+                "icon": "records_shouru_zujin"
+            },
+            {
+                "id": "礼金",
+                "key": "lijin",
+                "title": "礼金",
+                "isCustom": false,
+                "type": 2,
+                "icon0": "statistics_shouru_lijin",
+                "icon": "records_shouru_lijin"
+            },
+            {
+                "id": "分红",
+                "key": "fenhong",
+                "title": "分红",
+                "isCustom": false,
+                "type": 2,
+                "icon0": "statistics_shouru_fenhong",
+                "icon": "records_shouru_fenhong"
+            },
+            {
+                "id": "理财",
+                "key": "licai",
+                "title": "理财",
+                "isCustom": false,
+                "type": 2,
+                "icon0": "statistics_shouru_licai",
+                "icon": "records_shouru_licai"
+            },
+            {
+                "id": "年终奖",
+                "key": "nianzhongjiang",
+                "title": "年终奖",
+                "isCustom": false,
+                "type": 2,
+                "icon0": "statistics_shouru_nianzhongjiang",
+                "icon": "records_shouru_nianzhongjiang"
+            },
+            {
+                "id": "其它",
+                "key": "qita",
+                "title": "其它",
+                "isCustom": false,
+                "type": 2,
+                "icon0": "statistics_shouru_qita",
+                "icon": "records_shouru_qita"
+            },
+            {
+                "id": "借入",
+                "key": "jieru",
+                "title": "借入",
+                "isCustom": false,
+                "type": 2,
+                "icon0": "statistics_shouru_jieru",
+                "icon": "records_shouru_jieru"
+            },
+            {
+                "id": "收款",
+                "key": "shoukuan",
+                "title": "收款",
+                "isCustom": false,
+                "type": 2,
+                "icon0": "statistics_shouru_shoukuan",
+                "icon": "records_shouru_shoukuan"
+            }
+        ]
+    }

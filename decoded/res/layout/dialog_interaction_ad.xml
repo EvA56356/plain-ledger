@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/vs_video" android:layout="@layout/layout_interaction_video_ad" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+    <ViewStub android:id="@id/vs_image" android:layout="@layout/layout_interaction_image_ad" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_ad_tag" android:background="#80000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dp" android:layout_marginBottom="5.0dp" android:layout_alignParentBottom="true" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_pangle" android:visibility="gone" android:layout_width="27.0dp" android:layout_height="15.0dp" android:src="@mipmap/ic_pangle_logo" app:tint="@color/white" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_kuaishou" android:padding="3.0dp" android:visibility="gone" android:layout_width="15.0dp" android:layout_height="15.0dp" android:src="@mipmap/ic_kuaishou_logo" app:tint="@color/white" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/white" android:id="@id/tv_ad_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="广告" android:layout_marginEnd="3.0dp" />
+    </LinearLayout>
+</RelativeLayout>

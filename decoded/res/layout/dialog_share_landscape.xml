@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:background="#fed55e" android:layout_width="50.0dp" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/imageView48" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rotation="90.0" app:srcCompat="@drawable/ic_share_wechat" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/imageView49" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rotation="90.0" app:srcCompat="@drawable/ic_share_qq" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/imageView51" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rotation="90.0" app:srcCompat="@drawable/ic_share_circle" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/imageView53" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rotation="90.0" app:srcCompat="@drawable/ic_share_local" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

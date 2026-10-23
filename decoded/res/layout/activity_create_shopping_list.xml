@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/repeat_bg2" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbarView" layout="@layout/layout_common_title" />
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/toolbarView">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/tv_shopping_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:text="设置购物清单" android:layout_marginStart="20.0dp" />
+            <RelativeLayout android:id="@id/rl_name" android:background="@mipmap/ic_create_plan_name_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="18.0dp" android:layout_marginRight="20.0dp" android:layout_below="@id/tv_shopping_title">
+                <TextView android:textSize="12.0sp" android:textColor="#787878" android:id="@id/tv_name_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dp" android:text="新建购物清单名称" android:layout_marginStart="18.0dp" />
+                <View android:background="#fecf53" android:layout_width="wrap_content" android:layout_height="2.0dp" android:layout_below="@id/tv_name_hint" android:layout_alignStart="@id/tv_name_hint" android:layout_alignEnd="@id/tv_name_hint" />
+                <com.lanniser.kittykeeping.view.AppEditText android:textSize="15.0sp" android:textColor="@color/colorBlack" android:textColorHint="#d7d7d7" android:id="@id/et_list_name" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="18.0dp" android:hint="在此输入清单名称（限12个汉字）" android:maxLines="1" android:layout_below="@id/tv_name_hint" android:textCursorDrawable="@null" android:drawableEnd="@drawable/ic_mine_edit" />
+                <View android:background="@drawable/ic_mine_diveder" android:layout_width="wrap_content" android:layout_height="1.0dp" android:layout_marginTop="4.0dp" android:layout_below="@id/et_list_name" android:layout_alignStart="@id/et_list_name" android:layout_alignEnd="@id/et_list_name" />
+            </RelativeLayout>
+            <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_plan_cover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:text="选择清单封面" android:layout_below="@id/rl_name" android:layout_marginStart="20.0dp" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rlv_plan_cover" android:layout_width="match_parent" android:layout_height="154.0dp" android:layout_marginTop="19.0dp" android:layout_below="@id/tv_plan_cover" />
+            <com.lanniser.kittykeeping.widget.Indicator android:id="@id/rlv_indicator" android:layout_width="match_parent" android:layout_height="7.0dp" android:layout_marginTop="16.0dp" android:layout_below="@id/rlv_plan_cover" app:indicatorStyle="custom" app:selectedRes="@drawable/ic_pager_indicator_sel" app:space="5.0dp" app:unselectedRes="@drawable/ic_pager_indicator_nor" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_submit" android:background="@mipmap/bg_btn_theme_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="确认" android:layout_below="@id/rlv_indicator" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

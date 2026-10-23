@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="272.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/ic_main_menu_new_bg" android:layout_width="match_parent" android:layout_height="360.0dp">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="53.0dp" android:layout_marginTop="4.0dp" android:text="下次可以在这里找到我哦~" />
+        <ImageView android:id="@id/iv_main" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="center" app:srcCompat="@mipmap/ic_finish_hint_auto_bill" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn_know" android:background="@mipmap/ic_bg_know_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dp" android:text="我知道啦" />
+</LinearLayout>

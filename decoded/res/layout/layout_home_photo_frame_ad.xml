@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="130.0dp" android:layout_height="88.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_bg" android:background="@mipmap/iv_home_photo_frame_placeholder" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

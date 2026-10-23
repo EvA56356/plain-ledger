@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/repeat_bg2" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbarView" layout="@layout/layout_common_title" />
+    <LinearLayout android:id="@id/ll_hint" android:background="@mipmap/bg_hint_desc" android:layout_width="312.0dp" android:layout_height="96.0dp" android:layout_alignParentBottom="true" android:paddingStart="14.0dp" android:paddingEnd="33.0dp" android:layout_alignParentEnd="true">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="工资? 房租? 生活费? 只要是每月、每周或每天的固定收支，都可以使用【定时记账】，让喵喵帮你记下来！" android:lineSpacingExtra="3.0dp" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rlv_timed_bill" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/ll_hint" android:layout_below="@id/toolbarView" android:layout_marginStart="22.0dp" android:layout_marginEnd="22.0dp" />
+</RelativeLayout>

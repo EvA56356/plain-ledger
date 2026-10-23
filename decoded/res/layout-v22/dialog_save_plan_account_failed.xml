@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_line_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_dialog_cat_top_bg" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-0.5dp" android:layout_below="@id/iv_line_bg">
+        <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="#f6657d" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开户失败" android:layout_marginStart="22.0dp" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="21.0dp" android:text="嗷呜，开户失败！您可继续完成开户以享受安全便捷的攒钱计划~" android:layout_marginHorizontal="21.0dp" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rlv_advantage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_go_save" android:background="@mipmap/ic_calendar_confirm" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dp" android:text="开始攒钱" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/rl_only_record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="25.0dp">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/color_8" android:id="@id/tv_only" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="转为仅打卡计划" />
+            <View android:background="@color/color_8" android:layout_width="wrap_content" android:layout_height="1.0dp" android:layout_below="@id/tv_only" android:layout_centerHorizontal="true" android:layout_alignStart="@id/tv_only" android:layout_alignEnd="@id/tv_only" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

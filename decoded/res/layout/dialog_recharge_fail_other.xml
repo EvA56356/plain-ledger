@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_layout" android:background="@mipmap/bg_recharge_fail" android:layout_width="269.0dp" android:layout_height="385.0dp">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#f96e88" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginTop="93.0dp" android:layout_marginRight="30.0dp" android:text="@string/recharge_fail_hint" android:includeFontPadding="false" />
+        <com.lanniser.kittykeeping.view.AppEditText android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:textColorHint="#d7d7d7" android:gravity="top" android:id="@id/et_info" android:background="@mipmap/bg_recharge_fail_other" android:paddingLeft="15.0dp" android:paddingTop="14.0dp" android:paddingRight="15.0dp" android:paddingBottom="14.0dp" android:layout_width="214.0dp" android:layout_height="152.0dp" android:layout_marginTop="12.0dp" android:hint="@string/other_option_hint" android:includeFontPadding="false" android:maxLength="100" android:textCursorDrawable="@drawable/custom_cursor" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_confirm" android:background="@mipmap/ic_bg_know_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="确认" />
+    </LinearLayout>
+    <ImageView android:id="@id/close" android:layout_width="43.0dp" android:layout_height="43.0dp" android:layout_marginTop="24.0dp" app:srcCompat="@drawable/ic_dialog_close" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/chat_role_config_selector" android:ellipsize="end" android:gravity="center" android:id="@id/cb_content" android:background="@drawable/bg_chat_role_config_selector" android:clickable="false" android:layout_width="match_parent" android:layout_height="46.0dp" android:layout_marginTop="5.0dp" android:button="@null" android:maxLines="1" android:lines="1" android:layout_marginEnd="10.0dp" />
+    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_vip" android:background="@drawable/shape_circle_f6657d" android:paddingLeft="9.0dp" android:paddingTop="4.0dp" android:paddingRight="9.0dp" android:paddingBottom="4.0dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SVIP" android:includeFontPadding="false" android:layout_alignParentEnd="true" />
+</RelativeLayout>

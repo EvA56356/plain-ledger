@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:background="@drawable/kitty_calendar_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="80.0dp">
+        <LinearLayout android:orientation="horizontal" android:id="@id/rg_year_or_month" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dp" android:layout_marginTop="36.0dp" android:layout_marginRight="30.0dp">
+            <RelativeLayout android:orientation="vertical" android:id="@id/rl_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按周" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/iv_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:src="@drawable/tab_item_line" android:scaleType="centerCrop" android:layout_below="@id/tv_week" android:layout_alignStart="@id/tv_week" android:layout_alignEnd="@id/tv_week" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/rl_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#888888" android:id="@id/tv_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按月" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/iv_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:src="@drawable/tab_item_line" android:scaleType="centerCrop" android:layout_below="@id/tv_month" android:layout_alignStart="@id/tv_month" android:layout_alignEnd="@id/tv_month" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/rl_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#888888" android:id="@id/tv_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按年" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/iv_year" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:src="@drawable/tab_item_line" android:scaleType="centerCrop" android:layout_below="@id/tv_year" android:layout_alignStart="@id/tv_year" android:layout_alignEnd="@id/tv_year" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/rl_custom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#888888" android:id="@id/tv_custom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自定义" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/iv_custom" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:src="@drawable/tab_item_line" android:scaleType="centerCrop" android:layout_below="@id/tv_custom" android:layout_alignStart="@id/tv_custom" android:layout_alignEnd="@id/tv_custom" />
+            </RelativeLayout>
+        </LinearLayout>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/view_pager" android:layout_width="match_parent" android:layout_height="356.0dp" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_cat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kitty_calendar_search_cat" android:layout_marginEnd="40.0dp" android:layout_alignParentEnd="true" app:layout_constraintEnd_toEndOf="parent" />
+</RelativeLayout>

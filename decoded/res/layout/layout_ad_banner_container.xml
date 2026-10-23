@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:id="@id/fl_banner" android:paddingLeft="2.0dp" android:paddingTop="3.0dp" android:paddingRight="2.0dp" android:paddingBottom="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-20.0dp" android:layout_below="@id/fl_top" />
+    <FrameLayout android:id="@id/fl_top" android:background="@mipmap/bg_ad_yellow_cat" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="21.0dp" android:src="@mipmap/ic_ad_close_yellow" android:layout_alignBottom="@id/fl_top" android:layout_marginEnd="6.0dp" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25.0dp" android:includeFontPadding="false" android:layout_alignBottom="@id/fl_top" android:layout_marginEnd="35.0dp" android:layout_toStartOf="@id/iv_close" android:layout_alignParentEnd="true" />
+    <View android:background="@mipmap/bg_ad_bottom_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/fl_top" android:layout_alignBottom="@id/fl_banner" />
+</RelativeLayout>

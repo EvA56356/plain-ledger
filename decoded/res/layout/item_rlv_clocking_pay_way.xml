@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/ll_pay" android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/pay_way_text_color" android:gravity="center" android:id="@id/cb_choose" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/selector_clocking_pay_way" android:text="@string/pay_alipay" android:includeFontPadding="false" android:paddingStart="8.0dp" />
+</LinearLayout>

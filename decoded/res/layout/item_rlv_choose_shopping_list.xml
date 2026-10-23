@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_shopping_list" android:layout_width="match_parent" android:layout_height="60.0dp">
+        <ImageView android:id="@id/iv_cover" android:padding="1.0dp" android:layout_width="38.0dp" android:layout_height="38.0dp" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_cover_bg" android:background="@mipmap/bg_shopping_list_temp_cover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/iv_cover" android:layout_alignBottom="@id/iv_cover" android:layout_alignStart="@id/iv_cover" android:layout_alignEnd="@id/iv_cover" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_17221d" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_cover" android:layout_centerVertical="true" android:layout_marginStart="15.0dp" />
+        <ImageView android:id="@id/iv_checked" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_save_money_wish" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <View android:background="@drawable/layer_user_info" android:layout_width="match_parent" android:layout_height="1.5dp" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

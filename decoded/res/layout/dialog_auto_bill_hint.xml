@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_dialog_line_bg" android:scaleType="fitXY" android:layout_alignTop="@id/rl_content" />
+    <View android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="-2.0dp" android:layout_below="@id/iv_top" android:layout_alignBottom="@id/rl_content" />
+    <RelativeLayout android:id="@id/rl_content" android:paddingLeft="22.0dp" android:paddingRight="22.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:layout_marginBottom="20.0dp" android:text="温馨提示" android:includeFontPadding="false" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/iv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_auto_bill_hint" android:layout_below="@id/tv_title" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dp" android:layout_marginBottom="29.0dp" android:layout_below="@id/iv_content" android:layout_alignStart="@id/iv_content" android:layout_alignEnd="@id/iv_content">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_left" android:background="@mipmap/bg_introduce_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="放弃" />
+            <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_right" android:background="@mipmap/bg_introduce_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启自动记账" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

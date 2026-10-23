@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_choose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_save_money_wish" android:scaleType="center" android:layout_alignTop="@id/tv_name" android:layout_alignBottom="@id/tv_name" android:layout_alignParentEnd="true" />
+    <ImageView android:background="@drawable/ic_mine_diveder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17.0dp" android:layout_below="@id/tv_name" />
+</RelativeLayout>

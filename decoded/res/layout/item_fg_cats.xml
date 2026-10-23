@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lanniser.kittykeeping.view.SquareImageView android:id="@id/avatar" android:background="@drawable/ic_field_guild_selected_bg" android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_canyin_mao" />
+    <TextView android:textSize="12.0sp" android:textColor="#1d2b23" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+</LinearLayout>

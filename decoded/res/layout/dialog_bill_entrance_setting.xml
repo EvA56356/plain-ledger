@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_dialog_line_bg" android:scaleType="fitXY" android:layout_alignTop="@id/ll_content" />
+    <View android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/iv_top" android:layout_alignBottom="@id/ll_content" />
+    <RelativeLayout android:id="@id/ll_content" android:paddingTop="28.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@id/view_center" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_pet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="28.0dp" android:layout_marginEnd="11.0dp" android:layout_toStartOf="@id/view_center" android:layout_alignParentStart="true">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_pet_chat_bookkeeping_preview" />
+            <CheckBox android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/chat_role_config_selector" android:gravity="center_horizontal" android:id="@id/cb_chat" android:background="@android:color/transparent" android:paddingTop="20.0dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@null" android:text="@string/pet_chat_and_accounting" android:drawableBottom="@drawable/selector_bill_book" android:drawablePadding="15.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_manual" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="11.0dp" android:layout_marginEnd="28.0dp" android:layout_toEndOf="@id/view_center" android:layout_alignParentEnd="true">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_manual_bookkeeping_preview" />
+            <CheckBox android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/chat_role_config_selector" android:gravity="center_horizontal" android:id="@id/cb_manual" android:background="@android:color/transparent" android:paddingTop="20.0dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/manual_bookkeeping" android:drawableBottom="@drawable/selector_bill_book" android:drawablePadding="15.0dp" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_confirm" android:background="@mipmap/btn_full_confirm_red" android:paddingBottom="3.0dp" android:layout_width="317.0dp" android:layout_height="42.0dp" android:layout_marginTop="24.0dp" android:layout_marginBottom="24.0dp" android:text="@string/ok" android:layout_below="@id/ll_pet" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_cat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-82.0dp" android:src="@drawable/kitty_calendar_search_cat" android:layout_alignTop="@id/ll_content" android:layout_marginEnd="40.0dp" android:layout_alignEnd="@id/ll_content" />
+</RelativeLayout>

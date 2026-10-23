@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hiad_dismiss_dilaog">
+        <item quantity="one">Fereastra se va închide în %1$s secundă.</item>
+        <item quantity="few">Fereastra se va închide în %1$s secunde.</item>
+        <item quantity="other">Fereastra se va închide în %1$s secunde.</item>
+    </plurals>
+    <plurals name="hiad_no_prompt_in_days">
+        <item quantity="one">Rețineți alegerea timp de %1$s zi</item>
+        <item quantity="few">Rețineți alegerea timp de %1$s zile</item>
+        <item quantity="other">Rețineți alegerea timp de %1$s zile</item>
+    </plurals>
+    <plurals name="hiad_reward_countdown">
+        <item quantity="one">%1$d s</item>
+        <item quantity="few">%1$d s</item>
+        <item quantity="other">%1$d s</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item quantity="one">mâine</item>
+        <item quantity="other">în %d (de) zile</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item quantity="one">în 1 oră</item>
+        <item quantity="other">în %d (de) ore</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item quantity="one">în 1 min.</item>
+        <item quantity="other">în %d (de) min.</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item quantity="one">în 1 sec.</item>
+        <item quantity="other">în %d (de) sec.</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item quantity="one">ieri</item>
+        <item quantity="other">cu %d (de) zile în urmă</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item quantity="one">cu 1 oră în urmă</item>
+        <item quantity="other">cu %d (de) ore în urmă</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item quantity="one">cu 1 min. în urmă</item>
+        <item quantity="other">cu %d (de) min. în urmă</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item quantity="one">cu 1 sec. în urmă</item>
+        <item quantity="other">cu %d (de) secunde în urmă</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item quantity="one">O oră</item>
+        <item quantity="other">%d (de) ore</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item quantity="one">Un minut</item>
+        <item quantity="other">%d (de) minute</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item quantity="one">O secundă</item>
+        <item quantity="other">%d (de) secunde</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item quantity="one">mâine</item>
+        <item quantity="other">în %d (de) zile</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item quantity="one">în 1 oră</item>
+        <item quantity="other">în %d (de) ore</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item quantity="one">în 1 minut</item>
+        <item quantity="other">în %d (de) minute</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item quantity="one">într-o secundă</item>
+        <item quantity="other">în %d (de) secunde</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item quantity="one">ieri</item>
+        <item quantity="other">cu %d (de) zile în urmă</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item quantity="one">cu 1 oră în urmă</item>
+        <item quantity="other">cu %d (de) ore în urmă</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item quantity="one">cu 1 minut în urmă</item>
+        <item quantity="other">cu %d (de) minute în urmă</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item quantity="one">cu 1 secundă în urmă</item>
+        <item quantity="other">cu %d (de) secunde în urmă</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notificare nouă</item>
+        <item quantity="few">%d notificări noi</item>
+        <item quantity="other">%d de notificări noi</item>
+    </plurals>
+</resources>

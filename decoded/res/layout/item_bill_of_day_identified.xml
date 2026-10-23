@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginBottom="5.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/frontBlack" android:gravity="center_vertical" android:id="@id/tvDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12.12" />
+    <View android:id="@id/view_line" android:background="#fecf53" android:layout_width="wrap_content" android:layout_height="2.0dp" android:layout_marginTop="-3.0dp" android:layout_below="@id/tvDate" android:layout_alignStart="@id/tvDate" android:layout_alignEnd="@id/tvDate" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:gravity="end|center" android:id="@id/tvTotalOfDay" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" android:layout_alignTop="@id/tvDate" android:layout_alignBottom="@id/tvDate" android:layout_marginStart="8.0dp" android:layout_toEndOf="@id/tvDate" android:layout_alignParentEnd="true" app:autoSizeMaxTextSize="14.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" />
+</RelativeLayout>

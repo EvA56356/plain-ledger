@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_line_first" android:layout_width="match_parent" android:layout_height="3.0dp" android:layout_marginLeft="17.0dp" android:layout_marginRight="17.0dp" android:scaleType="fitXY" app:srcCompat="@mipmap/ic_ticket_divider" />
+    <LinearLayout android:gravity="end" android:orientation="vertical" android:id="@id/ll_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:layout_below="@id/iv_line_first" android:layout_marginEnd="1.0dp" android:layout_alignEnd="@id/iv_line_first">
+        <TextView android:id="@id/tv_total_consumption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" android:maxLines="1" android:includeFontPadding="false" style="@style/TodayBillTextStyle" />
+        <TextView android:id="@id/tv_income_today" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:text="0.00" android:maxLines="1" android:includeFontPadding="false" style="@style/TodayBillTextStyle" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#fd6d71" android:id="@id/tv_today_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:text="0.00" android:maxLines="1" android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/ll_money" android:layout_toStartOf="@id/ll_money">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消费合计：" android:includeFontPadding="false" style="@style/TodayBillTextStyle" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:text="今日收入：" android:includeFontPadding="false" style="@style/TodayBillTextStyle" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#fd6d71" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:text="今日结余：" android:includeFontPadding="false" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_line_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginBottom="32.0dp" android:layout_below="@id/ll_money" android:layout_marginEnd="4.0dp" android:layout_alignParentEnd="true" app:srcCompat="@mipmap/ic_ticket_line" />
+</RelativeLayout>

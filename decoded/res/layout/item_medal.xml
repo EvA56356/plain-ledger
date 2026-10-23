@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/iv_medal" android:layout_width="129.0dp" android:layout_height="124.0dp" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/colorBlack" android:gravity="center|bottom" android:layout_gravity="center" android:id="@id/textView" android:paddingBottom="26.0dp" android:layout_width="129.0dp" android:layout_height="124.0dp" />
+</FrameLayout>

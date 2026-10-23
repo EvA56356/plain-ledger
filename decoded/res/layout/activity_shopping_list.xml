@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/repeat_bg2" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbarView" layout="@layout/layout_common_title" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/rg_title" android:background="@mipmap/ic_switch_title_bg" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="35.0dp" android:layout_marginTop="18.0dp" android:layout_below="@id/toolbarView" android:layout_centerHorizontal="true">
+        <RadioButton android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/shop_tab_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/rb_want" android:background="@drawable/selector_switch_rb_bg" android:layout_width="0.0dp" android:layout_height="41.0dp" android:checked="true" android:button="@null" android:text="欲购清单" android:layout_weight="1.0" />
+        <RadioButton android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/shop_tab_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/rb_purchased" android:background="@drawable/selector_switch_rb_bg" android:layout_width="0.0dp" android:layout_height="41.0dp" android:button="@null" android:text="已购清单" android:layout_weight="1.0" />
+    </RadioGroup>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="22.0dp" android:layout_below="@id/rg_title" />
+</RelativeLayout>

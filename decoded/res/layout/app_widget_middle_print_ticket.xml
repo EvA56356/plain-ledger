@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/rl_main" android:layout_width="322.0dp" android:layout_height="118.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:background="@mipmap/ic_widget_no_data_middle_print_ticket" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#888888" android:id="@id/tv_exp_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dp" android:text="今日支出" android:layout_marginStart="23.0dp" />
+        <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#f77088" android:id="@id/tv_exp" android:layout_width="72.0dp" android:layout_height="wrap_content" android:layout_below="@id/tv_exp_title" android:layout_alignStart="@id/tv_exp_title" />
+        <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#888888" android:id="@id/tv_income_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="今日收入" android:layout_alignTop="@id/tv_exp_title" android:layout_marginStart="10.0dp" android:layout_toEndOf="@id/tv_exp" />
+        <TextView android:textSize="12.0dp" android:textStyle="bold" android:textColor="#f77088" android:id="@id/tv_income" android:layout_width="72.0dp" android:layout_height="wrap_content" android:layout_below="@id/tv_income_title" android:layout_alignStart="@id/tv_income_title" />
+        <ImageView android:id="@id/iv_print_ticket" android:paddingTop="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_print_ticket" android:layout_centerVertical="true" android:layout_marginEnd="23.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

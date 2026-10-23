@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mlethe.library.recyclerview.layout.SwipeItemLayout android:layout_width="match_parent" android:layout_height="70.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_main" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/iv_cate" android:layout_width="44.0dp" android:layout_height="44.0dp" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#1b2620" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_alignTop="@id/iv_cate" android:layout_marginStart="12.0dp" android:layout_toEndOf="@id/iv_cate" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#1b2620" android:id="@id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/tv_name" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#5e5e5e" android:ellipsize="end" android:id="@id/tv_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:layout_below="@id/tv_name" android:layout_alignStart="@id/tv_name" android:layout_alignEnd="@id/tv_money" />
+        <ImageView android:layout_width="match_parent" android:layout_height="1.5dp" android:src="@drawable/ic_mine_diveder" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:layout_alignStart="@id/iv_cate" android:layout_alignEnd="@id/tv_money" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="82.0dp" android:layout_height="70.0dp" android:paddingStart="20.0dp">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_delete" android:background="@drawable/selector_delete_bill_bg" android:layout_width="62.0dp" android:layout_height="match_parent" android:text="删除" />
+    </LinearLayout>
+</com.mlethe.library.recyclerview.layout.SwipeItemLayout>

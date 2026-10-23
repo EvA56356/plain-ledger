@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_line_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="64.0dp" android:src="@mipmap/ic_dialog_line_bg" android:scaleType="fitXY" />
+    <ImageView android:id="@id/iv_cat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_save_money_cat" android:layout_marginEnd="32.0dp" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38.0dp" android:layout_marginBottom="5.0dp" android:text="选择计划类型" android:layout_alignTop="@id/iv_line_bg" android:layout_marginStart="22.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rlv_plan_type" android:background="@color/colorWhite" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:paddingBottom="32.0dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-20.0dp" android:layout_below="@id/iv_line_bg" android:overScrollMode="never" />
+    <ImageView android:id="@id/iv_xhb_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_below="@id/iv_cat" android:layout_marginEnd="12.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

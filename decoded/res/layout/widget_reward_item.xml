@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="167.0dp" android:layout_height="108.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/themeImg" android:paddingTop="3.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8.0dp" android:layout_marginBottom="5.0dp" android:src="@drawable/ic_theme_default" android:scaleType="centerCrop" android:paddingStart="3.0dp" android:paddingEnd="3.0dp" />
+    <View android:background="@drawable/shape_reward_bg" android:paddingTop="3.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="5.0dp" android:scaleType="centerCrop" android:paddingStart="3.0dp" android:paddingEnd="3.0dp" />
+    <FrameLayout android:id="@id/signContainer" android:background="@drawable/ic_sign_gift" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="11.0sp" android:textColor="@color/colorWhite" android:layout_gravity="center_horizontal" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="场景礼包" />
+        <ImageView android:layout_gravity="center" android:id="@id/coinsImg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sign_20_normal" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/colorBlack" android:layout_gravity="center|bottom" android:id="@id/coinsNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:text="喵饼*30" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sign_locked" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="86.0dp" android:layout_height="120.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/view_food" android:background="@drawable/shape_food_bottom_use" android:layout_width="62.0dp" android:layout_height="62.0dp" android:layout_marginTop="24.0dp" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_food" android:layout_width="62.0dp" android:layout_height="62.0dp" android:layout_alignTop="@id/view_food" android:layout_alignStart="@id/view_food" android:tintMode="src_atop" />
+    <com.lanniser.kittykeeping.view.StrokeTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@id/tv_num" android:padding="1.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dp" android:text="x2" android:layout_alignTop="@id/view_food" android:layout_alignEnd="@id/view_food" app:stroke_color="@color/colorBlack" app:stroke_width="3.0dp" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/colorBlack" android:gravity="center_vertical" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1.0dp" android:lines="1" android:layout_below="@id/view_food" android:layout_centerHorizontal="true" app:autoSizeMaxTextSize="12.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" app:drawableStartCompat="@mipmap/ic_favorite" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_day" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4" android:layout_marginTop="@dimen/dp_11" android:layout_marginRight="@dimen/dp_4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_day_bg" android:background="@drawable/wz_shape_rectangle_corner_10_ffe0ea" android:layout_width="match_parent" android:layout_height="@dimen/dp_67">
+        <ImageView android:id="@id/iv_day" android:layout_width="wrap_content" android:layout_height="@dimen/dp_34" android:src="@mipmap/wz_ic_red_package2" />
+        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/color_FD4C87" android:id="@id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/wz_cash_red_package" android:includeFontPadding="false" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fl_day7_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_67">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/wz_ic_mystery_gift" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tv_money_day7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="@string/wz_mysterious_gift" android:includeFontPadding="false" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/black" android:id="@id/tv_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/wz_day_5" android:includeFontPadding="false" />
+</LinearLayout>

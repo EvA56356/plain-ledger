@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer android:layout_gravity="center_horizontal" android:id="@id/video_view" android:layout_width="325.0dp" android:layout_height="695.0dp" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_btn" android:visibility="gone" android:layout_width="325.0dp" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_below="@id/video_view" android:layout_centerHorizontal="true" android:layout_alignStart="@id/video_view" android:layout_alignEnd="@id/video_view">
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_cancel" android:background="@mipmap/btn_bg_border_white" android:layout_width="76.0dp" android:layout_height="42.0dp" android:text="@string/cancel" />
+        <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_go" android:background="@mipmap/btn_bg_open_red" android:layout_width="wrap_content" android:layout_height="42.0dp" android:text="@string/confirm" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_close" android:layout_width="45.0dp" android:layout_height="45.0dp" android:layout_marginTop="20.0dp" android:src="@drawable/ic_dialog_close" android:layout_below="@id/video_view" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_i_know" android:background="@mipmap/btn_bg_border_white" android:layout_width="76.0dp" android:layout_height="42.0dp" android:layout_marginTop="20.0dp" android:text="@string/string_i_know" android:layout_below="@id/video_view" android:layout_centerHorizontal="true" />
+</RelativeLayout>

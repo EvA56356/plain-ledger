@@ -1,0 +1,14 @@
+*.apk
+*.aab
+*.dex
+*.so
+*.jar
+*.bin
+*.bks
+*.keystore
+*.jks
+*.db
+*.sqlite*
+.env*
+keys.txt
+__pycache__/

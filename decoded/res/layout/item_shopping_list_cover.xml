@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_cover" android:padding="1.0dp" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_cover_bg" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_centerInParent="true" />
+</RelativeLayout>

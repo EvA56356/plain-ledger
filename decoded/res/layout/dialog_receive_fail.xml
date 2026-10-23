@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_layout" android:background="@mipmap/bg_skin_receive_fail" android:layout_width="260.0dp" android:layout_height="232.0dp">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#f96e88" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="93.0dp" android:text="抱歉" android:includeFontPadding="false" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="领取失败喵~" android:includeFontPadding="false" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_confirm" android:background="@mipmap/ic_bg_know_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="确认" />
+    </LinearLayout>
+    <ImageView android:id="@id/close" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="37.5dp" app:srcCompat="@drawable/ic_dialog_close" />
+</LinearLayout>

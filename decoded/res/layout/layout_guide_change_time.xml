@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_arraw" android:layout_width="23.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_big_arraw" android:rotation="270.0" android:layout_marginStart="2.0dp" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/iv_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginBottom="39.0dp" android:src="@mipmap/bg_change_time_guide" android:layout_below="@id/iv_arraw" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#494949" android:id="@id/tv_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:text="@string/today_bill_guide_one" android:singleLine="true" android:layout_alignTop="@id/iv_bg" android:layout_marginStart="20.0dp" android:layout_alignStart="@id/iv_bg" />
+</RelativeLayout>

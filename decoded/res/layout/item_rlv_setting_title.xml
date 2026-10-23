@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#1b2620" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="辅助功能" />
+    <View android:background="#fecf53" android:layout_width="wrap_content" android:layout_height="2.0dp" android:layout_marginTop="3.0dp" android:layout_marginBottom="6.0dp" android:layout_below="@id/tv_title" android:layout_alignStart="@id/tv_title" android:layout_alignEnd="@id/tv_title" />
+</RelativeLayout>

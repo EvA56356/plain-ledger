@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="85.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_35" android:id="@id/tv_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/color_a8" android:id="@id/tv_hour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dp" android:layout_below="@id/tv_day" />
+    <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_toEndOf="@id/tv_day">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_35" android:gravity="end" android:id="@id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_status" android:background="@mipmap/ic_new_year_claimed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dp" />
+    </LinearLayout>
+</RelativeLayout>

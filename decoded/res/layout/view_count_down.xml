@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="end|bottom" android:id="@id/progressBar" android:layout_width="80.0dp" android:layout_height="70.0px" android:layout_marginBottom="20.0px" android:progress="100" android:layout_marginEnd="13.0px" style="@style/ProgressBar_Sand_Clock" />
+    <TextView android:textSize="16.0sp" android:textColor="#16231a" android:gravity="end|bottom" android:id="@id/time" android:background="@drawable/ic_operation_menu_count" android:paddingBottom="7.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="28.0dp" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_layout" android:background="@mipmap/ic_guide_today_bill_bg" android:layout_width="282.0dp" android:layout_height="130.0dp" android:layout_marginTop="200.0dp" android:layout_centerHorizontal="true">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#494949" android:id="@id/tv_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:singleLine="true" android:layout_marginStart="20.0dp" android:layout_marginEnd="60.0dp" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#494949" android:id="@id/tv_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:singleLine="true" android:layout_below="@id/tv_one" android:layout_marginEnd="60.0dp" android:layout_alignStart="@id/tv_one" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_gif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dp" android:src="@mipmap/ic_ticket_hint" android:layout_below="@id/rl_layout" android:layout_centerHorizontal="true" android:paddingStart="20.0dp" />
+</RelativeLayout>

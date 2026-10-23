@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@mipmap/bg_month_report" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbarView" layout="@layout/layout_common_title" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rlv_report" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/toolbarView" />
+    <ImageView android:id="@id/iv_up" android:layout_width="23.0dp" android:layout_height="13.0dp" android:layout_marginBottom="10.0dp" android:src="@mipmap/ic_report_up" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

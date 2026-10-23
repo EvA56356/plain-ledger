@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/repeat_bg2" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbarView" layout="@layout/layout_common_title" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/tv_save" android:layout_below="@id/toolbarView">
+        <RelativeLayout android:paddingBottom="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+            <ImageView android:id="@id/iv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="21.0dp" android:src="@mipmap/ic_be_happy" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#b3b3b3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="数款可爱喵喵贴纸，快去装扮你的桌面吧~" android:layout_below="@id/iv_content" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:id="@id/rl_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dp" android:layout_marginTop="84.0dp" android:layout_marginRight="21.0dp" android:layout_below="@id/iv_content">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择贴纸" android:layout_centerVertical="true" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_8" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择贴纸" android:drawablePadding="12.0dp" android:layout_centerVertical="true" android:drawableEnd="@mipmap/ic_arrow_gray" android:layout_alignParentEnd="true" />
+                <ImageView android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="14.0dp" android:src="@drawable/ic_mine_diveder" android:scaleType="fitXY" android:layout_below="@id/tv_name" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_save" android:background="@mipmap/ic_bill_detail_modify_bg" android:layout_width="match_parent" android:layout_height="58.0dp" android:text="保存到我的组件" android:layout_alignParentBottom="true" android:layout_marginStart="-3.0dp" />
+    <LinearLayout android:id="@id/rl_edit" android:visibility="gone" android:layout_width="match_parent" android:layout_height="58.0dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_delete" android:background="@mipmap/ic_bill_detail_delete_bg" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="删除" android:layout_weight="1.0" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_edit_save" android:background="@mipmap/ic_bill_detail_modify_bg" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="保存" android:layout_weight="1.0" android:layout_marginStart="-3.0dp" />
+    </LinearLayout>
+</RelativeLayout>

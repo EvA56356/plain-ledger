@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="61.5dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/ic_exchange_rate_twd" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#1b2620" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.5dp" android:text="新台币" android:layout_toRightOf="@id/imageView" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#1b2620" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:text="TWD" android:layout_toRightOf="@id/textView" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/imageView2" android:layout_width="8.0dp" android:layout_height="10.0dp" android:layout_marginLeft="12.0dp" android:src="@drawable/ic_mine_arraw" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#6b6b6b" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.2304" android:layout_toLeftOf="@id/imageView2" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/imageView4" android:layout_width="match_parent" android:layout_height="1.5dp" android:src="@drawable/ic_mine_diveder" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+</RelativeLayout>

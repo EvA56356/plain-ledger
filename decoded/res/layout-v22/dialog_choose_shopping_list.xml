@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/iv_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="88.0dp" android:src="@mipmap/ic_dialog_line_bg" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:background="@color/colorWhite" android:paddingLeft="21.0dp" android:paddingRight="21.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-50.0dp" android:layout_below="@id/iv_top" android:paddingHorizontal="21.0dp">
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_f6657d" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_move_shopping_list" />
+            <com.lanniser.kittykeeping.view.recyclerview.MaxHeightRecyclerView android:id="@id/rlv_shopping_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" app:maxHeight="340.0dp" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_f6657d" android:gravity="center" android:id="@id/tv_add" android:layout_width="match_parent" android:layout_height="60.0dp" android:text="+ 添加" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-88.0dp" android:src="@mipmap/ic_shopping_cat" android:layout_alignTop="@id/iv_top" android:layout_marginEnd="37.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dp" android:textColor="@color/col_A9A6A1" android:gravity="center" android:id="@id/tvContent" android:background="@drawable/tarot_adapter_bg_from_item_353230" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="27.0dp" android:text="我能悄悄的心里骂人吗" android:paddingStart="14.0dp" android:paddingEnd="14.0dp" android:layout_marginStart="3.0dp" android:layout_marginEnd="3.0dp" />
+</LinearLayout>

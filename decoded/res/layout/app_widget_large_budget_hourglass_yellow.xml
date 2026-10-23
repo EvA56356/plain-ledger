@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="322.0dp" android:layout_height="322.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shape_widget_bg_feda69" />
+    <View android:background="@mipmap/bg_hourglass_yellow" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.lanniser.kittykeeping.widget.HourglassView android:id="@id/hv_view" android:layout_width="125.5dp" android:layout_height="wrap_content" android:layout_marginTop="75.0dp" android:layout_marginStart="26.0dp" />
+    <ImageView android:layout_width="52.0dp" android:layout_height="41.0dp" android:layout_marginTop="39.0dp" android:src="@mipmap/ic_hourglass_gold_ingot" android:layout_marginStart="39.0dp" />
+    <View android:id="@id/bg_content" android:background="@mipmap/bg_hourglass_content_yellow" android:layout_width="157.0dp" android:layout_height="65.0dp" android:layout_marginTop="53.0dp" android:layout_marginEnd="22.0dp" android:layout_alignParentEnd="true" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_272727" android:gravity="center" android:id="@id/tv_balance" android:layout_width="match_parent" android:layout_height="54.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:layout_marginBottom="2.0dp" android:text="总预算：¥ 0.00" android:maxLines="1" android:lines="1" android:includeFontPadding="false" android:layout_alignTop="@id/bg_content" android:layout_alignStart="@id/bg_content" android:layout_alignEnd="@id/bg_content" app:autoSizeMaxTextSize="16.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8.0dp" android:src="@mipmap/bg_hourglass_tulip" android:layout_alignTop="@id/bg_content" android:layout_marginEnd="1.0dp" android:layout_alignEnd="@id/bg_content" />
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hiad_dismiss_dilaog">
+        <item quantity="one">Вікно закриється через %1$s секунду.</item>
+        <item quantity="few">Вікно закриється через %1$s секунди.</item>
+        <item quantity="many">Вікно закриється через %1$s секунд.</item>
+        <item quantity="other">Вікно закриється через %1$s секунди.</item>
+    </plurals>
+    <plurals name="hiad_no_prompt_in_days">
+        <item quantity="one">Запам’ятати вибір на %1$s день</item>
+        <item quantity="few">Запам’ятати вибір на %1$s дні</item>
+        <item quantity="many">Запам’ятати вибір на %1$s дн.</item>
+        <item quantity="other">Запам’ятати вибір на %1$s днів</item>
+    </plurals>
+    <plurals name="hiad_reward_countdown">
+        <item quantity="one">%1$d секунда</item>
+        <item quantity="few">%1$d секунди</item>
+        <item quantity="many">%1$d секунд</item>
+        <item quantity="other">%1$d секунди</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item quantity="one">завтра</item>
+        <item quantity="other">через %d дн.</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item quantity="one">через 1 год.</item>
+        <item quantity="other">через %d год.</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item quantity="one">через 1 хв.</item>
+        <item quantity="other">через %d хв.</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item quantity="one">через 1 с.</item>
+        <item quantity="other">через %d сек.</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item quantity="one">учора</item>
+        <item quantity="other">%d дн. тому</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item quantity="one">1 годину тому</item>
+        <item quantity="other">%d год. тому</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item quantity="one">1 хв. тому</item>
+        <item quantity="other">%d хв. тому</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item quantity="one">1 сек. тому</item>
+        <item quantity="other">%d сек. тому</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item quantity="one">1 год</item>
+        <item quantity="other">%d год</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item quantity="one">1 хв</item>
+        <item quantity="other">%d хв</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item quantity="one">1 с</item>
+        <item quantity="other">%d с</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item quantity="one">завтра</item>
+        <item quantity="other">через %d дн.</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item quantity="one">через 1 год.</item>
+        <item quantity="other">через %d год.</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item quantity="one">через 1 хв.</item>
+        <item quantity="other">через %d хв.</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item quantity="one">через 1 сек.</item>
+        <item quantity="other">через %d сек.</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item quantity="one">учора</item>
+        <item quantity="other">%d дн. тому</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item quantity="one">1 год. тому</item>
+        <item quantity="other">%d год. тому</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item quantity="one">1 хвилину тому</item>
+        <item quantity="other">%d хв. тому</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item quantity="one">1 сек. тому</item>
+        <item quantity="other">%d сек. тому</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d нове сповіщення</item>
+        <item quantity="few">%d нові сповіщення</item>
+        <item quantity="many">%d нових сповіщень</item>
+        <item quantity="other">%d нового сповіщення</item>
+    </plurals>
+</resources>

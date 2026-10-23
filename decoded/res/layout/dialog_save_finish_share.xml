@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_share" android:background="#fed55e" android:layout_width="match_parent" android:layout_height="50.0dp" app:layout_constraintBottom_toBottomOf="parent">
+        <ImageView android:id="@id/imageView48" android:layout_width="0.0dp" android:layout_height="match_parent" android:src="@drawable/ic_share_wechat" android:scaleType="center" android:layout_weight="1.0" />
+        <ImageView android:id="@id/imageView49" android:layout_width="0.0dp" android:layout_height="match_parent" android:src="@drawable/ic_share_qq" android:scaleType="center" android:layout_weight="1.0" />
+        <ImageView android:id="@id/imageView51" android:layout_width="0.0dp" android:layout_height="match_parent" android:src="@drawable/ic_share_circle" android:scaleType="center" android:layout_weight="1.0" />
+        <ImageView android:id="@id/imageView53" android:layout_width="0.0dp" android:layout_height="match_parent" android:src="@drawable/ic_share_local" android:scaleType="center" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:background="@mipmap/ic_save_finish_share_dialog_bg" android:layout_width="280.0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/ll_share" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout android:id="@id/ll_head" android:layout_width="wrap_content" android:layout_height="55.0dp">
+            <com.mlethe.library.widget.roundimage.RoundImageView android:id="@id/iv_head" android:layout_width="29.0dp" android:layout_height="29.0dp" android:layout_marginBottom="9.0dp" android:layout_alignParentBottom="true" android:layout_marginStart="19.0dp" app:radius="14.5dp" />
+            <ImageView android:id="@id/iv_border" android:layout_width="31.0dp" android:layout_height="31.0dp" android:layout_marginBottom="8.0dp" android:src="@mipmap/ic_share_head_bg" android:layout_alignParentBottom="true" android:layout_marginStart="18.0dp" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#1d2b23" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/iv_head" android:layout_marginStart="6.0dp" android:layout_toEndOf="@id/iv_head" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#424242" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="攒钱成就" android:layout_below="@id/tv_name" android:layout_marginStart="6.0dp" android:layout_toEndOf="@id/iv_head" />
+        </RelativeLayout>
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#010101" android:layout_gravity="center_horizontal" android:id="@id/tv_save_clock_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="206.0dp" android:text="成功完成攒钱计划" android:drawablePadding="16.0dp" app:drawableEndCompat="@mipmap/ic_rating_save_day" app:drawableStartCompat="@mipmap/ic_rating_save_day" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="22.0dp">
+            <RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#424242" android:gravity="center_horizontal" android:id="@id/tv_save_days" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="坚持天数" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#2c2c2c" android:gravity="center" android:id="@id/tv_save_day_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_below="@id/tv_save_days" android:layout_alignStart="@id/tv_save_days" android:layout_alignEnd="@id/tv_save_days" />
+            </RelativeLayout>
+            <View android:background="@mipmap/ic_plan_money_currency" android:layout_width="2.0dp" android:layout_height="match_parent" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" />
+            <RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#424242" android:gravity="center_horizontal" android:id="@id/tv_save_clock" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="累计打卡" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#2c2c2c" android:gravity="center" android:id="@id/tv_save_clock_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_below="@id/tv_save_clock" android:layout_alignStart="@id/tv_save_clock" android:layout_alignEnd="@id/tv_save_clock" />
+            </RelativeLayout>
+            <View android:id="@id/view_divider" android:background="@mipmap/ic_plan_money_currency" android:layout_width="2.0dp" android:layout_height="match_parent" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" />
+            <RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#424242" android:gravity="center_horizontal" android:id="@id/tv_save_money" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="攒入总额" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#2c2c2c" android:gravity="center" android:id="@id/tv_save_money_num" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_below="@id/tv_save_money" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dp">
+            <ImageView android:id="@id/iv_logo" android:layout_width="36.0dp" android:layout_height="36.0dp" android:layout_marginTop="15.0dp" android:src="@drawable/ic_about_app_loge" android:layout_marginStart="18.0dp" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/app_label_name" android:layout_alignTop="@id/iv_logo" android:layout_marginStart="8.0dp" android:layout_toEndOf="@id/iv_logo" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#424242" android:id="@id/textView35" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:text="敲可爱的萌宠记账APP" android:layout_alignBottom="@id/iv_logo" android:layout_toEndOf="@id/iv_logo" android:layout_alignStart="@id/tv_app_name" />
+            <ImageView android:id="@id/imageView78" android:layout_width="36.0dp" android:layout_height="36.0dp" android:src="@drawable/ic_micro_qr" android:layout_alignTop="@id/iv_logo" android:layout_marginEnd="17.0dp" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

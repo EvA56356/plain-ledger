@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_layout" android:paddingTop="14.0dp" android:paddingBottom="14.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="23.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已购买" android:includeFontPadding="false" />
+    <ImageView android:id="@id/iv_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_more_close" android:layout_marginStart="8.0dp" />
+</LinearLayout>

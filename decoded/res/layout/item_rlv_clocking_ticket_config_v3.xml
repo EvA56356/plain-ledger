@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_main" android:background="@mipmap/bg_clocking_ticket_checked_v3" android:layout_width="match_parent" android:layout_height="86.0dp" android:layout_marginTop="14.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="19.0dp">
+        <com.lanniser.kittykeeping.view.NoPaddingTextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/color_403f3a" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.lanniser.kittykeeping.view.NoPaddingTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/color_91908d" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="24.0dp" android:layout_alignParentEnd="true">
+        <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="@color/color_fe7f19" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_91908d" android:id="@id/tv_original_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </LinearLayout>
+</RelativeLayout>

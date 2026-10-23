@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rv_root" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_main" android:background="@drawable/ic_mailbox_item_bg" android:layout_width="360.0dp" android:layout_height="wrap_content" android:layout_marginTop="1.0px" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@id/cl_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_img" android:background="@drawable/ic_mailbox_img_bg" android:padding="2.0dp" android:layout_width="288.0dp" android:layout_height="115.0dp" android:layout_marginTop="6.0dp" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:layout_marginBottom="10.0dp" android:layout_below="@id/iv_img" android:layout_marginStart="6.0dp" android:layout_alignStart="@id/iv_img" />
+            <ImageView android:id="@id/iv_expanded" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_mailbox_expand" android:scaleType="center" android:layout_alignTop="@id/tv_title" android:layout_alignBottom="@id/tv_title" android:layout_marginEnd="6.0dp" android:layout_alignEnd="@id/iv_img" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-8.0dp" android:src="@drawable/ic_mailbox_postmark" android:layout_alignBottom="@id/iv_img" android:layout_marginEnd="4.0dp" android:layout_alignEnd="@id/iv_img" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/cl_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/cl_title" android:layout_marginStart="22.0dp" android:layout_marginEnd="22.0dp">
+            <TextView android:textSize="11.0sp" android:textColor="#888888" android:id="@id/tv_detail" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_get" android:background="@drawable/ic_mailbox_get" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="收下礼物" android:layout_below="@id/tv_detail" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/iv_line" android:background="@drawable/ic_mailbox_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:layout_below="@id/tv_get" />
+            <ImageView android:id="@id/iv_head" android:layout_width="25.0dp" android:layout_height="25.0dp" android:layout_marginTop="9.0dp" android:layout_marginBottom="11.0dp" android:layout_below="@id/iv_line" />
+            <TextView android:textSize="10.0sp" android:textColor="#888888" android:gravity="center" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_head" android:layout_alignTop="@id/iv_head" android:layout_alignBottom="@id/iv_head" android:layout_marginStart="4.0dp" />
+            <TextView android:textSize="10.0sp" android:textColor="#888888" android:gravity="center" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/tv_name" android:layout_alignBottom="@id/tv_name" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_mailbox_new" android:layout_alignTop="@id/rl_main" android:layout_alignStart="@id/rl_main" />
+</RelativeLayout>

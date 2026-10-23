@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/ll_top" android:background="@mipmap/bg_ai_operation_3" android:paddingLeft="2.0dp" android:paddingRight="2.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/color_19" android:gravity="center" android:id="@id/tv_copy" android:padding="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/copy" android:includeFontPadding="false" />
+        <View android:id="@id/view_first" android:background="@drawable/shape_circle_e6" android:visibility="gone" android:layout_width="2.0dp" android:layout_height="8.0dp" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/color_19" android:gravity="center" android:id="@id/tv_report" android:padding="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report" android:includeFontPadding="false" />
+        <View android:id="@id/view_second" android:background="@drawable/shape_circle_e6" android:visibility="gone" android:layout_width="2.0dp" android:layout_height="8.0dp" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/color_f87189" android:gravity="center" android:id="@id/tv_delete" android:padding="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete" android:includeFontPadding="false" />
+    </LinearLayout>
+</RelativeLayout>

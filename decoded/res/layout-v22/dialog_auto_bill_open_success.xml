@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_dialog_line_bg" android:scaleType="fitXY" android:layout_alignTop="@id/v_space" />
+    <ImageView android:layout_width="86.0dp" android:layout_height="106.0dp" android:src="@drawable/kitty_calendar_search_cat" android:layout_marginEnd="40.0dp" android:layout_alignParentEnd="true" />
+    <View android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="-2.0dp" android:layout_below="@id/iv_top" android:layout_alignBottom="@id/v_space_bottom" />
+    <View android:id="@id/v_space" android:layout_width="match_parent" android:layout_height="25.0dp" android:layout_marginTop="77.0dp" />
+    <ImageView android:id="@id/iv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_auto_bill_success" android:layout_below="@id/v_space" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#f35a72" android:gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="自动记账开启成功" android:layout_below="@id/iv_title" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dp" android:layout_marginTop="19.0dp" android:layout_marginRight="28.0dp" android:text="@string/auto_bill_open_success_msg" android:layout_below="@id/tv_title" android:lineSpacingExtra="3.0dp" android:layout_marginHorizontal="28.0dp" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_i_known" android:background="@mipmap/bg_auto_bill_i_known" android:layout_width="match_parent" android:layout_height="51.0dp" android:layout_marginLeft="28.0dp" android:layout_marginTop="25.0dp" android:layout_marginRight="28.0dp" android:layout_below="@id/tv_content" android:layout_marginHorizontal="28.0dp">
+        <ImageView android:id="@id/iv_gift_pack" android:layout_width="33.0dp" android:layout_height="33.0dp" android:src="@mipmap/ic_gift_pack" android:layout_marginEnd="13.0dp" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@id/tv_i_known" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启神秘礼包" />
+    </LinearLayout>
+    <View android:id="@id/v_space_bottom" android:layout_width="match_parent" android:layout_height="34.0dp" android:layout_below="@id/ll_i_known" />
+</RelativeLayout>

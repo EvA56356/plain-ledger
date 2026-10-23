@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black_alpha_25" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_bg" android:background="@mipmap/wz_ic_cash_reward_bg_finish" android:paddingLeft="@dimen/dp_27" android:paddingRight="@dimen/dp_27" android:layout_width="wrap_content" android:layout_height="@dimen/dp_265" android:layout_marginTop="@dimen/dp_42" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/iv_banner">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_43" android:src="@mipmap/wz_ic_right_big" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/color_36" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/wz_one_click_collection" android:includeFontPadding="false" />
+            <LinearLayout android:gravity="center" android:id="@id/ll_appointment" android:background="@mipmap/wz_ic_reward_btn_red" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:minHeight="@dimen/dp_50">
+                <TextView android:textSize="@dimen/sp_15" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_to_earn_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wz_i_see" android:includeFontPadding="false" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/iv_banner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_25" android:src="@mipmap/wz_ic_bg_banner" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/fl_close" />
+        <TextView android:textSize="@dimen/sp_18" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_28" android:text="@string/wz_reservation_successful" app:layout_constraintBottom_toBottomOf="@id/iv_banner" app:layout_constraintEnd_toEndOf="@id/iv_banner" app:layout_constraintStart_toStartOf="@id/iv_banner" />
+        <com.ioio.rewardhub.ui.widget.DialogNativeAdView android:id="@id/rl_ad_container" android:visibility="invisible" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="-7.0dp" android:layout_below="@id/ll_bg" android:layout_alignStart="@id/ll_bg" android:layout_alignEnd="@id/ll_bg" app:layout_constraintEnd_toEndOf="@id/ll_bg" app:layout_constraintStart_toStartOf="@id/ll_bg" app:layout_constraintTop_toBottomOf="@id/ll_bg" />
+        <FrameLayout android:id="@id/fl_close" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationX="-18.0dp" app:layout_constraintStart_toEndOf="@id/ll_bg" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wz_ic_close_round" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

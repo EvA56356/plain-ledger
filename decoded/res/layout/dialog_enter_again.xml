@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="66.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/linearLayout" android:background="@drawable/ic_enter_again_bg" android:layout_width="257.0dp" android:layout_height="310.0dp">
+        <com.lanniser.kittykeeping.view.AlignTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#000000" android:gravity="fill_horizontal" android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dp" android:text="@string/enter_again" android:lineSpacingExtra="2.0dp" android:layout_marginStart="26.0dp" android:layout_marginEnd="26.0dp" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/textView43" android:background="@mipmap/ic_evaluate_btn_bg" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="44.0dp" android:layout_marginTop="25.0dp" android:text="再次查看" android:includeFontPadding="false" android:layout_below="@id/content" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#c2c2c2" android:id="@id/textView40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:text="放弃使用" android:layout_below="@id/textView43" android:layout_centerHorizontal="true" />
+        <View android:background="#c2c2c2" android:layout_width="wrap_content" android:layout_height="1.0dp" android:layout_marginTop="-1.0dp" android:layout_below="@id/textView40" android:layout_alignStart="@id/textView40" android:layout_alignEnd="@id/textView40" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/shape_rectangle_circle_ff80ac" android:layout_width="5.0dp" android:layout_height="5.0dp" android:layout_marginTop="5.0dp" android:layout_marginStart="17.0dp" />
+    <com.lanniser.kittykeeping.view.NoPaddingTextView android:textSize="13.0sp" android:textColor="@color/color_403f3a" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dp" android:layout_marginStart="9.0dp" android:layout_marginEnd="17.0dp" />
+</LinearLayout>

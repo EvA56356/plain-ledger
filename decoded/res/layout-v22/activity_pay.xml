@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@mipmap/bg_dialog_pay" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/colorWhite" android:paddingLeft="22.0dp" android:paddingRight="22.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="22.0dp">
+        <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="#09181f" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/choose_pay_way" android:layout_weight="1.0" />
+        <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="#f4647b" android:id="@id/price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+    </LinearLayout>
+    <View android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="8.0dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_pay_way" android:background="@color/colorWhite" android:paddingLeft="22.0dp" android:paddingRight="22.0dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingHorizontal="22.0dp" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/colorWhite" android:paddingLeft="20.0dp" android:paddingTop="24.0dp" android:paddingRight="20.0dp" android:paddingBottom="33.0dp" android:layout_width="match_parent" android:layout_height="102.0dp" android:paddingHorizontal="20.0dp">
+        <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@id/cancel_btn" android:background="@mipmap/bg_btn_pay_cancel" android:paddingBottom="3.0dp" android:layout_width="154.0dp" android:layout_height="45.0dp" android:text="@string/cancel" />
+        <View android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@id/pay_btn" android:background="@mipmap/bg_btn_pay" android:paddingBottom="3.0dp" android:layout_width="154.0dp" android:layout_height="45.0dp" android:text="@string/immediate_payment" />
+    </LinearLayout>
+</LinearLayout>

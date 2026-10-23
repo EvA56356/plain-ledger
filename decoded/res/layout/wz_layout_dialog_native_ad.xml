@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_ad_container" android:background="@drawable/wz_shape_rectangle_corner_12_white" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="105.0dp" android:layout_marginTop="-7.0dp" android:layout_below="@id/iv_line" />
+    <ImageView android:id="@id/iv_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wz_ic_link_ad" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_content" android:background="@mipmap/bg_widget_video_xiaomi" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="108.0dp" android:text="请选择您的系统版本对应的视频教程哦～" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_miui" android:background="@mipmap/bg_btn_pay" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dp" android:text="MIUI13" android:layout_below="@id/tv_title" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_miui_low" android:background="@mipmap/bg_btn_pay" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="MIUI13以下" android:layout_below="@id/tv_miui" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" android:src="@drawable/ic_dialog_close" android:layout_below="@id/rl_content" android:layout_centerHorizontal="true" />
+</RelativeLayout>

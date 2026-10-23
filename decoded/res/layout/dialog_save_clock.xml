@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:background="@mipmap/ic_save_clock_dialog_bg" android:layout_width="280.0dp" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_cat" android:layout_width="162.0dp" android:layout_height="137.0dp" android:layout_marginTop="29.0dp" />
+            <TextView android:textSize="13.0sp" android:textColor="#424242" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:text="今天是坚持攒钱的" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#010101" android:layout_gravity="center_horizontal" android:id="@id/tv_save_clock_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:drawablePadding="16.0dp" android:drawableStart="@mipmap/ic_rating_save_day" android:drawableEnd="@mipmap/ic_rating_save_day" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="53.0dp">
+                <TextView android:textSize="13.0sp" android:textColor="#424242" android:gravity="center_horizontal" android:id="@id/tv_save_clock" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="累计打卡" android:layout_toStartOf="@id/view_divider" />
+                <TextView android:textSize="13.0sp" android:textColor="#2c2c2c" android:gravity="center" android:id="@id/tv_save_clock_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_below="@id/tv_save_clock" android:layout_alignStart="@id/tv_save_clock" android:layout_alignEnd="@id/tv_save_clock" />
+                <View android:id="@id/view_divider" android:background="@mipmap/ic_plan_money_currency" android:layout_width="2.0dp" android:layout_height="wrap_content" android:layout_alignTop="@id/tv_save_clock" android:layout_alignBottom="@id/tv_save_clock_num" android:layout_centerHorizontal="true" />
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignStart="@id/view_divider">
+                    <CheckBox android:textSize="14.0sp" android:textColor="#424242" android:gravity="center_horizontal" android:id="@id/cb_eye_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="攒入总额" android:drawablePadding="6.0dp" android:layout_centerHorizontal="true" android:drawableEnd="@drawable/layer_save_money_eye" android:paddingStart="16.0dp" />
+                    <TextView android:textSize="13.0sp" android:textColor="#2c2c2c" android:gravity="center" android:id="@id/tv_save_money_num" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_below="@id/cb_eye_icon" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_share" android:background="@mipmap/ic_share_save_achievement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33.0dp" />
+    </LinearLayout>
+</RelativeLayout>

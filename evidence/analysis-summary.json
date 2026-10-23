@@ -1,0 +1,46 @@
+{
+  "package": "com.youqi.miaomiao",
+  "version_name": "5.1.6",
+  "version_code": 516,
+  "min_sdk": 21,
+  "target_sdk": 35,
+  "apk_sha256": "e1fb3f4433a1494f26bba8b8e95feeb15adad77875d2aeccd4ebd637bb09777f",
+  "apk_bytes": 154416947,
+  "archive_entries": 6798,
+  "standard_dex_class_definitions": 5,
+  "java_files": 7,
+  "smali_files": 5,
+  "resource_xml_files": 3356,
+  "business_code_recovered": false,
+  "native_source_recovered": false,
+  "runtime_verified": false,
+  "rebuild_verified": false,
+  "rea_evidence": [
+    {
+      "id": "ev_c489921daddd90accbd61d3542e942066d21809c062c4cb7ec9ee1f7b03aeaf0",
+      "operation": "inspect_android_package",
+      "provider": "JADX headless",
+      "version": "0.7.1",
+      "authority": "shipped-artifact",
+      "reported_class_count": 7
+    },
+    {
+      "id": "ev_066ba32033b5e587b3dfdc38ec446ad78c3a42274f59bbafdf97bc90616e2788",
+      "operation": "inspect_artifact",
+      "authority": "shipped-artifact"
+    },
+    {
+      "id": "ev_d980ee3e94c52ba084a34c0ad38659bf0a1f5c7b71b5c30e0e5d24e6bda01cce",
+      "operation": "inventory_artifact",
+      "authority": "shipped-artifact"
+    }
+  ],
+  "evidence_note": "References identify earlier local REA records. This is a sanitized analytical summary, not the original signed or byte-exact Evidence record.",
+  "limitations": [
+    "SecNeo wrapper exposes five standard DEX classes only.",
+    "R.java is generated resource IDs; DebugProbesKt is library code, not bookkeeping logic.",
+    "Native libraries and encrypted payloads were not decompiled to business source.",
+    "Static declarations and resource labels do not prove runtime behavior.",
+    "Sensitive embedded service values are removed; resource images/binaries are indexed but not published."
+  ]
+}

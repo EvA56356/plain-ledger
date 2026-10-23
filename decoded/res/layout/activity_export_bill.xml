@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/repeat_bg2" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbarView" layout="@layout/layout_common_title" />
+    <RelativeLayout android:id="@id/rl_bill_book" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="16.0dp" android:layout_below="@id/toolbarView" android:layout_marginStart="22.0dp" android:layout_marginEnd="22.0dp">
+        <TextView android:textSize="15.0sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/export_bill_book" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_bill_book_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_mine_arraw" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="13.0dp" android:textColor="#505050" android:id="@id/tv_bill_book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="13.0dp" android:layout_toStartOf="@id/iv_bill_book_next" />
+        <ImageView android:id="@id/iv_line_one" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_mine_diveder" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_start_time" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_below="@id/rl_bill_book" android:layout_marginStart="22.0dp" android:layout_marginEnd="22.0dp">
+        <TextView android:textSize="15.0sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/export_start_time" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_start_time_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_mine_arraw" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="13.0dp" android:textColor="#505050" android:id="@id/tv_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="13.0dp" android:layout_toStartOf="@id/iv_start_time_next" />
+        <ImageView android:id="@id/iv_line_two" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_mine_diveder" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_end_time" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_below="@id/rl_start_time" android:layout_marginStart="22.0dp" android:layout_marginEnd="22.0dp">
+        <TextView android:textSize="15.0sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/export_end_time" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_end_time_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_mine_arraw" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="13.0dp" android:textColor="#505050" android:id="@id/tv_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="13.0dp" android:layout_toStartOf="@id/iv_end_time_next" />
+        <ImageView android:id="@id/iv_line_three" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_mine_diveder" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_submit" android:background="@mipmap/accountbook_btn_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="82.0dp" android:text="@string/export_submit" android:layout_below="@id/rl_end_time" android:layout_centerHorizontal="true" />
+    <LinearLayout android:id="@id/ll_hint" android:background="@mipmap/bg_hint_desc" android:layout_width="312.0dp" android:layout_height="96.0dp" android:layout_alignParentBottom="true" android:paddingStart="14.0dp" android:paddingEnd="33.0dp" android:layout_alignParentEnd="true">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="可将账单导出为表格，单次导出的账单周期需要小 于一年，周期超过一年的账单可分多次导出哦喵~" android:lineSpacingExtra="3.0dp" />
+    </LinearLayout>
+</RelativeLayout>

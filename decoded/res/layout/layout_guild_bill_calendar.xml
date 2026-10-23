@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_guide_today_bill_new_bg" android:layout_marginEnd="30.0dp" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#494949" android:id="@id/tv_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="左滑即可删除账单" android:singleLine="true" android:layout_alignTop="@id/iv_bg" android:layout_marginStart="20.0dp" android:layout_alignStart="@id/iv_bg" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#494949" android:id="@id/tv_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="点击即可对账单详情进行查看和编辑~" android:singleLine="true" android:layout_below="@id/tv_one" android:layout_alignStart="@id/tv_one" />
+    <ImageView android:id="@id/iv_arraw" android:layout_width="29.0dp" android:layout_height="37.0dp" android:layout_marginTop="-36.0dp" android:src="@drawable/ic_big_arraw" android:layout_below="@id/iv_bg" android:layout_marginStart="32.0dp" />
+</RelativeLayout>

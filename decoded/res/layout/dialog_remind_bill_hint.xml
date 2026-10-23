@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mlethe.library.widget.layout.RatioLinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/rll_layout" android:background="@drawable/bg_wind_doubt" android:layout_width="272.0dp" android:layout_height="381.0dp">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="50.0dp" android:layout_marginTop="3.0dp" android:text="·记账提醒·" />
+        <ImageView android:id="@id/iv_main" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" app:srcCompat="@mipmap/remind_bill_hint" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/go_setting" android:background="@mipmap/ic_bg_know_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去开启" />
+    </com.mlethe.library.widget.layout.RatioLinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29.0dp" android:src="@drawable/ic_dialog_close" />
+</LinearLayout>

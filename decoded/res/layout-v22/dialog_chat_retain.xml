@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_content" android:background="@mipmap/bg_chat_guide_retain" android:layout_width="323.0dp" android:layout_height="233.0dp" android:layout_marginTop="66.0dp" android:layout_centerHorizontal="true">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_14" android:gravity="center" android:id="@id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="130.0dp" android:layout_marginRight="20.0dp" android:text="@string/chat_guide_retain_content" android:layout_marginHorizontal="20.0dp" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_give_up" android:background="@mipmap/ic_chat_guide_retain_grey" android:layout_width="107.0dp" android:layout_height="40.0dp" android:layout_marginTop="20.0dp" android:text="@string/endure_give_up" android:layout_below="@id/tv_content" android:layout_marginStart="22.0dp" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_ok" android:background="@mipmap/ic_chat_guide_retain_red" android:layout_width="155.0dp" android:layout_height="40.0dp" android:text="@string/alright" android:layout_alignTop="@id/tv_give_up" android:layout_marginEnd="22.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ImageView android:layout_width="183.0dp" android:layout_height="189.0dp" android:layout_marginTop="-66.0dp" android:src="@mipmap/ic_chat_guide_retain" android:layout_alignTop="@id/rl_content" android:layout_marginStart="69.0dp" android:layout_alignStart="@id/rl_content" />
+</RelativeLayout>

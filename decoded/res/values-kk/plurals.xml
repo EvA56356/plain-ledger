@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hiad_dismiss_dilaog">
+        <item quantity="one">Терезе %1$s секунд ішінде жабылады.</item>
+        <item quantity="other">Терезе %1$s секунд ішінде жабылады.</item>
+    </plurals>
+    <plurals name="hiad_no_prompt_in_days">
+        <item quantity="one">%1$s күн таңдауын есте сақтау</item>
+        <item quantity="other">%1$s күн таңдауын есте сақтау</item>
+    </plurals>
+    <plurals name="hiad_reward_countdown">
+        <item quantity="one">%1$d сек</item>
+        <item quantity="other">%1$d сек</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item quantity="one">ертең</item>
+        <item quantity="other">%d күн. соң</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item quantity="one">1 сағ. соң</item>
+        <item quantity="other">%d сағ. соң</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item quantity="one">1 мин. соң</item>
+        <item quantity="other">%d мин. соң</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item quantity="one">1 сек. соң</item>
+        <item quantity="other">%d сек. соң</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item quantity="one">кеше</item>
+        <item quantity="other">%d күн бұрын</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item quantity="one">1 сағ. бұрын</item>
+        <item quantity="other">%d сағ. бұрын</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item quantity="one">1 мин. бұрын</item>
+        <item quantity="other">%d мин. бұрын</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item quantity="one">1 сек. бұрын</item>
+        <item quantity="other">%d сек. бұрын</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item quantity="one">1 сағат</item>
+        <item quantity="other">%d сағат</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item quantity="one">1 минут</item>
+        <item quantity="other">%d минут</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item quantity="one">1 секунд</item>
+        <item quantity="other">%d секунд</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item quantity="one">ертең</item>
+        <item quantity="other">%d күннен соң</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item quantity="one">1 сағаттан соң</item>
+        <item quantity="other">%d сағаттан соң</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item quantity="one">1 минуттан соң</item>
+        <item quantity="other">%d минуттан соң</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item quantity="one">1 секундтан соң</item>
+        <item quantity="other">%d секундтан соң</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item quantity="one">кеше</item>
+        <item quantity="other">%d күн бұрын</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item quantity="one">1 сағат бұрын</item>
+        <item quantity="other">%d сағат бұрын</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item quantity="one">1 минут бұрын</item>
+        <item quantity="other">%d минут бұрын</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item quantity="one">1 секунд бұрын</item>
+        <item quantity="other">%d секунд бұрын</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d жаңа хабарландыру</item>
+        <item quantity="other">%d жаңа хабарландыру</item>
+    </plurals>
+</resources>

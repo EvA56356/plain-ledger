@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="39.0dp" android:layout_height="39.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_cat" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ImageView android:id="@id/iv_checked" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_widget_cat_normal" android:layout_centerInParent="true" />
+</RelativeLayout>

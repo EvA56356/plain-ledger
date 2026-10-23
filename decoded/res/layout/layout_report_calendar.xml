@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_calendar" android:background="@mipmap/bg_report_calendar" android:layout_width="312.0dp" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_week" android:layout_width="match_parent" android:layout_height="28.0dp" android:layout_marginTop="57.0dp" android:layout_marginStart="19.0dp" android:layout_marginEnd="24.0dp">
+            <TextView android:textSize="10.0sp" android:textColor="@color/color_8" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="日" android:layout_weight="1.0" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/color_8" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="一" android:layout_weight="1.0" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/color_8" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="二" android:layout_weight="1.0" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/color_8" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="三" android:layout_weight="1.0" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/color_8" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="四" android:layout_weight="1.0" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/color_8" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="五" android:layout_weight="1.0" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/color_8" android:gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="六" android:layout_weight="1.0" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rlv_calendar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:horizontalSpacing="2.0dp" android:verticalSpacing="2.0dp" android:numColumns="7" android:layout_below="@id/ll_week" android:layout_alignStart="@id/ll_week" android:layout_alignEnd="@id/ll_week" />
+    </RelativeLayout>
+    <com.lanniser.kittykeeping.widget.report.ReportTextView android:id="@id/tv_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:layout_below="@id/rl_calendar" android:layout_marginStart="25.0dp" app:line_height="19.0dp" app:line_spacing="15.0dp" app:text_color="@color/colorBlack" app:text_size="16.0dp" />
+    <ImageView android:id="@id/iv_cat" android:layout_width="206.0dp" android:layout_height="170.0dp" android:layout_marginBottom="32.0dp" android:src="@mipmap/ic_report_calendar_spring" android:layout_alignParentBottom="true" android:layout_marginEnd="12.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

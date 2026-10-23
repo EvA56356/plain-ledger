@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="285.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/bg_import_bill_cate_hint" android:paddingLeft="30.0dp" android:paddingTop="34.0dp" android:paddingRight="30.0dp" android:paddingBottom="34.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="30.0dp" android:paddingVertical="34.0dp">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_f6657d" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_tips" android:includeFontPadding="false" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_gravity="center_horizontal" android:id="@id/tv_cate_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:includeFontPadding="false" />
+        <com.lanniser.kittykeeping.view.recyclerview.MaxHeightRecyclerView android:id="@id/rv" android:background="@mipmap/bg_import_list_cate" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:overScrollMode="never" app:maxHeight="129.0dp" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/btnLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="19.0dp">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_create" android:background="@mipmap/accountbook_btn_red" android:layout_width="wrap_content" android:layout_height="42.0dp" android:text="@string/confirm_create" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_edit" android:background="@mipmap/accountbook_btn_yellow" android:layout_width="wrap_content" android:layout_height="42.0dp" android:text="@string/return_edit" android:layout_weight="1.0" android:layout_marginStart="12.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/close" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="32.0dp" app:srcCompat="@drawable/ic_dialog_close" />
+</LinearLayout>

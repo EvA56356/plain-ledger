@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mlethe.library.widget.layout.RatioRelativeLayout android:id="@id/shareCenterLayout" android:background="@drawable/bg_postcard_share" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutRatio="960:711"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mlethe.library.widget.layout.RatioRelativeLayout android:id="@id/rrl_postcard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginStart="17.0dp" android:layout_marginEnd="16.0dp" app:layoutRatio="912:509">
+        <ImageView android:id="@id/postcardIv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    </com.mlethe.library.widget.layout.RatioRelativeLayout>
+    <ImageView android:id="@id/imageView" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_below="@id/rrl_postcard" android:layout_alignParentBottom="true" android:layout_marginStart="18.0dp" app:srcCompat="@drawable/ic_about_app_loge" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@id/imageView" android:layout_below="@id/rrl_postcard" android:layout_marginStart="10.0dp">
+        <TextView android:textSize="14.0sp" android:textColor="@color/colorBlack" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_label_name" />
+        <TextView android:textSize="10.0sp" android:textColor="#929292" android:id="@id/textView35" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dp" android:text="敲可爱的记账APP" />
+    </LinearLayout>
+    <ImageView android:id="@id/imageView78" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_below="@id/rrl_postcard" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginEnd="12.0dp" app:srcCompat="@drawable/ic_micro_qr" />
+</com.mlethe.library.widget.layout.RatioRelativeLayout>

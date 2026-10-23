@@ -1,0 +1,6242 @@
+[
+  {
+    "tag": "manifest",
+    "attributes": {
+      "versionCode": 516,
+      "versionName": "5.1.6",
+      "compileSdkVersion": 35,
+      "compileSdkVersionCodename": "15",
+      "platformBuildVersionName": 15,
+      "platformBuildVersionCode": 35,
+      "package": "com.youqi.miaomiao"
+    }
+  },
+  {
+    "tag": "uses-sdk",
+    "attributes": {
+      "minSdkVersion": 21,
+      "targetSdkVersion": 35
+    }
+  },
+  {
+    "tag": "uses-feature",
+    "attributes": {
+      "name": "android.hardware.camera",
+      "required": 0
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.INTERNET"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.ACCESS_WIFI_STATE"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.ACCESS_NETWORK_STATE"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.READ_EXTERNAL_STORAGE"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.USE_BIOMETRIC"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.READ_MEDIA_IMAGES"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.USE_FINGERPRINT"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.CAMERA"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.WAKE_LOCK"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.POST_NOTIFICATIONS"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.READ_PHONE_STATE"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.READ_MEDIA_VISUAL_USER_SELECTED"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.READ_PRIVILEGED_PHONE_STATE"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.RECEIVE_BOOT_COMPLETED"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.MODIFY_AUDIO_SETTINGS"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.FOREGROUND_SERVICE"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "com.miui.systemAdSolution.adSwitch.PROVIDER"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.SYSTEM_ALERT_WINDOW"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.SYSTEM_OVERLAY_WINDOW"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.MEDIA_CONTENT_CONTROL"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.CAPTURE_VIDEO_OUTPUT"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.project_media"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.BIND_QUICK_SETTINGS_TILE"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.VIBRATE"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.READ_CALENDAR"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.WRITE_CALENDAR"
+    }
+  },
+  {
+    "tag": "queries",
+    "attributes": {
+      "package": "com.youqi.miaomiao"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.tencent.mm"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.tencent.mobileqq"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.tencent.minihd.qq"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.tencent.qqlite"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.tencent.tim"
+    }
+  },
+  {
+    "tag": "intent",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.media.action.IMAGE_CAPTURE"
+    }
+  },
+  {
+    "tag": "intent",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.media.action.ACTION_VIDEO_CAPTURE"
+    }
+  },
+  {
+    "tag": "intent",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.getui.sdk.action"
+    }
+  },
+  {
+    "tag": "intent",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.intent.action.MAIN"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.LAUNCHER"
+    }
+  },
+  {
+    "tag": "intent",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.intent.action.MAIN"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.smile.gifmaker"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.kuaishou.nebula"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.achievo.vipshop"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "air.tv.douyu.android.phone"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "cn.dxy.android.aspirin"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.alibaba.android.babylon"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.alibaba.android.rimet"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.alibaba.android.rimet.aliding"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.alipay.android.app"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.autonavi.minimap"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.babytree.apps.pregnancy"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.baidu.searchbox"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.booking"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.chinatelecom.bestpayclient"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.cmbchina.ccd.pluto.cmbActivity"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.coloros.gamespace"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.coloros.ocs"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.coloros.ocs.opencapabilityservice"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.coloros.opencapabilityservice"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.cubic.autohome"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.dragon.read"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.duowan.kiwi"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.duowan.mobile"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.eg.android.AlipayGphone"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.eg.android.AlipayGphoneRC"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.fengdu.read"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.gotokeep.keep"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.greenpoint.android.mc10086.activity"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.hexin.plat.android"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.hihonor.android.magicx.media.audioengine"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.hihonor.appmarket"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.hihonor.id"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.hihonor.systemappsupdater"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.homelink.android"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.hpbr.bosszhipin"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.huawei.android.pushagent"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.huawei.works"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.hunantv.imgo.activity"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.huajiao"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.immomo.momo"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.immomo.momo.timeline"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.jd.jrapp"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.jingdong.app.mall"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.kaixin001.activity"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.kmxs.reader"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.lemon.lv"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.lianjia.beike"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.lietou.mishu"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.mt.mtxx.mtxx"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.netease.cloudmusic"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.oplus.bracketspace"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.oplus.cosa"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.oplus.linker"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.oplus.ocs"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.oplus.ocs.openauthenticate"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.oplus.synergy"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.phoenix.read"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.qidian.QDReader"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.qimao.reader"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.qiyi.video"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.qzone"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.renren.mobile.android"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.sankuai.meituan"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.shizhuang.duapp"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.shuqi.android"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.sina.weibo"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.ss.android.article.news"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.ss.android.auto"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.ss.android.ugc.aweme"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.ss.android.ugc.aweme.lite"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.taobao.idlefish"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.taobao.litetao"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.taobao.live"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.taobao.taobao"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.taobao.trip"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.tecent.friend"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.tencent.WBlog"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.tencent.qqlive"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.tencent.tmgp.sgame"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.tianyancha.skyeye"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.tmall.wireless"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.tongcheng.android"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.UCMobile"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.uc.infoflow"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.umetrip.android.msky.app"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.unnoo.quan"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.vivo.daemonService"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.vivo.videowidgetmix"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.xingin.xhs"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.xunmeng.pinduoduo"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.yiyou.ga"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.youkuchild.android"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.youku.phone"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.youku.share.sdk.copy.link"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.youku.widget.vivo"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.zhihu.android"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "ctrip.android.view"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "hk.alipay.wallet"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "hk.alipay.walletRC"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "im.yixin"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "me.ele"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "sina.mobile.tianqitong"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "tv.danmaku.bili"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.hupu.games"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.quark.browser"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.ximalaya.ting.android"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "cn.soulapp.android"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.babycloud.hanju"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.chaozh.iReader"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.qq.reader"
+    }
+  },
+  {
+    "tag": "intent",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.intent.action.VIEW"
+    }
+  },
+  {
+    "tag": "data",
+    "attributes": {
+      "scheme": "*"
+    }
+  },
+  {
+    "tag": "intent",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "*"
+    }
+  },
+  {
+    "tag": "data",
+    "attributes": {
+      "scheme": "tbopen"
+    }
+  },
+  {
+    "tag": "intent",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.intent.action.VIEW"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.BROWSABLE"
+    }
+  },
+  {
+    "tag": "data",
+    "attributes": {
+      "scheme": "https"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.ss.android.article.lite"
+    }
+  },
+  {
+    "tag": "intent",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.getui.vendor.action.push"
+    }
+  },
+  {
+    "tag": "intent",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.sonymobile.action.service.DEVICE_SDK_INFO"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.google.android.gms"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.android.vending"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.android.creator"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.mdid.msa"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.samsung.android.deviceidservice"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.coolpad.deviceidsupport"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.heytap.openid"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.huawei.hwid"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.huawei.hwid.tv"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.huawei.hms"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.asus.msa.SupplementaryDID"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.zui.deviceidservice"
+    }
+  },
+  {
+    "tag": "package",
+    "attributes": {
+      "name": "com.qiku.id"
+    }
+  },
+  {
+    "tag": "intent",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.huawei.hms.core.aidlservice"
+    }
+  },
+  {
+    "tag": "intent",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.huawei.hms.core"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.CHANGE_NETWORK_STATE"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.REQUEST_INSTALL_PACKAGES"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.QUERY_ALL_PACKAGES"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.REORDER_TASKS"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "com.asus.msa.SupplementaryDID.ACCESS"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "com.youqi.miaomiao.openadsdk.permission.TT_PANGOLIN"
+    }
+  },
+  {
+    "tag": "permission",
+    "attributes": {
+      "name": "com.youqi.miaomiao.openadsdk.permission.TT_PANGOLIN",
+      "protectionLevel": 2
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.CHANGE_WIFI_STATE"
+    }
+  },
+  {
+    "tag": "permission",
+    "attributes": {
+      "name": "com.youqi.miaomiao.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "protectionLevel": 2
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "com.youqi.miaomiao.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE"
+    }
+  },
+  {
+    "tag": "supports-screens",
+    "attributes": {
+      "anyDensity": 4294967295,
+      "smallScreens": 4294967295,
+      "normalScreens": 4294967295,
+      "largeScreens": 4294967295,
+      "resizeable": 4294967295
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.GET_TASKS"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.SCHEDULE_EXACT_ALARM"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "getui.permission.GetuiService.com.youqi.miaomiao"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "com.vivo.notification.permission.BADGE_ICON"
+    }
+  },
+  {
+    "tag": "permission",
+    "attributes": {
+      "name": "getui.permission.GetuiService.com.youqi.miaomiao",
+      "protectionLevel": 2
+    }
+  },
+  {
+    "tag": "permission",
+    "attributes": {
+      "name": "com.youqi.miaomiao.permission.GYRECEIVER",
+      "protectionLevel": 2
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "com.youqi.miaomiao.permission.GYRECEIVER"
+    }
+  },
+  {
+    "tag": "permission",
+    "attributes": {
+      "name": "com.youqi.miaomiao.permission.PROCESS_PUSH_MSG",
+      "protectionLevel": 2
+    }
+  },
+  {
+    "tag": "permission",
+    "attributes": {
+      "name": "com.youqi.miaomiao.permission.PUSH_PROVIDER",
+      "protectionLevel": 2
+    }
+  },
+  {
+    "tag": "permission",
+    "attributes": {
+      "name": "com.youqi.miaomiao.permission.PUSH_WRITE_PROVIDER",
+      "protectionLevel": 2
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "com.youqi.miaomiao.permission.PROCESS_PUSH_MSG"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "com.youqi.miaomiao.permission.PUSH_PROVIDER"
+    }
+  },
+  {
+    "tag": "permission",
+    "attributes": {
+      "name": "com.youqi.miaomiao.permission.MIPUSH_RECEIVE",
+      "protectionLevel": 2
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "com.youqi.miaomiao.permission.MIPUSH_RECEIVE"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.WRITE_SETTINGS"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "com.google.android.gms.permission.AD_ID"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "freemme.permission.msa"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "android.permission.BROADCAST_STICKY"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "com.hihonor.permission.MANAGE_FOLD_SCREEN"
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "com.hihonor.permission.MANAGE_FOLD_SCREEN_PRIVILEGED"
+    }
+  },
+  {
+    "tag": "permission",
+    "attributes": {
+      "name": "com.youqi.miaomiao.com.huawei.openaliance.ad.app.ins",
+      "protectionLevel": 2
+    }
+  },
+  {
+    "tag": "uses-permission",
+    "attributes": {
+      "name": "com.youqi.miaomiao.com.huawei.openaliance.ad.app.ins"
+    }
+  },
+  {
+    "tag": "application",
+    "attributes": {
+      "theme": 2131951633,
+      "label": 2131886174,
+      "icon": 2131689489,
+      "name": "com.secneo.apkwrapper.AW",
+      "allowBackup": 0,
+      "hardwareAccelerated": 4294967295,
+      "largeHeap": 4294967295,
+      "supportsRtl": 4294967295,
+      "extractNativeLibs": 4294967295,
+      "usesCleartextTraffic": 4294967295,
+      "networkSecurityConfig": 2132082710,
+      "roundIcon": 2131689490,
+      "appComponentFactory": "com.secneo.apkwrapper.AP",
+      "requestLegacyExternalStorage": 4294967295
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.bill.SceneCateBillStatisticsActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.bill.SceneContactStatisticsActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.SystemPermissionActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.RevokePolicyActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.contact.ContactDetailActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.contact.AddContactActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.contact.ContactProfileActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.scene.SceneAddCateActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.scene.SceneCateManagerActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.scene.SceneManagerActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.act.NewYearActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.act.NewYearRecordActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.bill.TransferDetailsActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.chat.AiCatSettingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1,
+      "windowSoftInputMode": 32
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.chat.AiSettingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.chat.AiHistoryBillActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.chat.ChatActivity",
+      "exported": 0,
+      "launchMode": 2,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952525,
+      "name": "com.lanniser.kittykeeping.ui.activity.autobill.AutoBillDataActivity",
+      "exported": 0,
+      "process": ":autoBill",
+      "taskAffinity": "float.auto.bill",
+      "excludeFromRecents": 4294967295,
+      "launchMode": 2,
+      "configChanges": 1200,
+      "windowSoftInputMode": 32,
+      "noHistory": 4294967295
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952525,
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.AppWidgetClickActivity",
+      "exported": 0,
+      "process": ":appWidget",
+      "taskAffinity": "float.app.widget",
+      "excludeFromRecents": 4294967295,
+      "launchMode": 2
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.AdPersonalRecommendActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952528,
+      "name": "com.lanniser.kittykeeping.ui.activity.IntroduceActivity",
+      "exported": 0,
+      "launchMode": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952528,
+      "name": "com.lanniser.kittykeeping.ui.activity.CourseActivity",
+      "exported": 0,
+      "launchMode": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.autobill.BillIdentifiedActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.ocrbill.NewBillIdentifiedActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.autobill.SceneIdentifiedActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.autobill.AutoBillSettingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.ocrbill.OcrBillSettingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.save.ChangeRecordActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.save.SaveMoneyUpgradeActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.WidgetMineActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.HourglassWidgetSettingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.ticket.TicketSkinListActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.home.HomeBillMenuActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.home.CatHomeActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.home.MainActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1,
+      "windowSoftInputMode": 3
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.setting.IndividualizationActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.importbill.ImportBillActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.importbill.ImportBillDetailActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.importbill.ImportBillHelpActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.shopping.GoodsListPurchasedActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.user.VipPrivilegeActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.shopping.CreateShoppingListActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.shopping.ShoppingListActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.shopping.GoodsListActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.remind.RemindActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.remind.BillRemindSettingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1,
+      "windowSoftInputMode": 16
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.ReceiveSuccessActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.timedbill.TimedBillDetailActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.lanniser.kittykeeping.ui.activity.ImagePreviewActivity",
+      "exported": 0,
+      "launchMode": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.StatisticsActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.recycle.RecycleFundAccountActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.recycle.RecycleBillBookActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.recycle.RecycleBillActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.recycle.RecycleBinActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952528,
+      "name": "com.lanniser.kittykeeping.ui.activity.PayActivity",
+      "exported": 0,
+      "launchMode": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952527,
+      "name": "com.lanniser.kittykeeping.ui.activity.ticket.TicketDialogActivity",
+      "exported": 0,
+      "launchMode": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952527,
+      "name": "com.lanniser.kittykeeping.ui.activity.ticket.TicketHintDialogActivity",
+      "exported": 0,
+      "launchMode": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952527,
+      "name": "com.lanniser.kittykeeping.ui.activity.ticket.TicketPreviewDialogActivity",
+      "exported": 0,
+      "launchMode": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.exportbill.ExportBillActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.timedbill.TimedBillActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.CatAndIllustratedActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.book.BillBookDetailActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.book.BillBookEditActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.book.BillBookListActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.bill.CateStatisticsActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.bill.BillActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.budget.BudgetBillListActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.budget.CateBudgetActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.budget.AddBudgetActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.budget.BudgetActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.postcard.CollectingWindActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.rate.OptionRateActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.rate.ConverterActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1,
+      "windowSoftInputMode": 2
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.rate.ExchangeRateUpdateActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.rate.MyCurrencyActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "design_width_in_dp",
+      "value": 360
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "design_height_in_dp",
+      "value": 640
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.bill.BillEditActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1,
+      "windowSoftInputMode": 16
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.shop.ShopActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.user.MineActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.user.AboutActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.user.LoginActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.user.PhoneLoginActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1,
+      "windowSoftInputMode": 50
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.youqi.miaomiao.wxapi.WXEntryActivity",
+      "exported": 4294967295,
+      "launchMode": 1,
+      "noHistory": 4294967295
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.user.UpdateNameActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.achievement.AchievementActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.FieldGuildActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.youqi.miaomiao.wxapi.WXPayEntryActivity",
+      "exported": 4294967295,
+      "launchMode": 1,
+      "noHistory": 4294967295
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.intent.action.VIEW"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.DEFAULT"
+    }
+  },
+  {
+    "tag": "data",
+    "attributes": {
+      "scheme": "redacted-sdk-app-id"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.shop.WarehouseActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.theme.ThemeActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.home.FeedActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.user.UserInfoAct",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.user.WebViewActivity",
+      "exported": 0,
+      "screenOrientation": 1,
+      "windowSoftInputMode": 34,
+      "hardwareAccelerated": 4294967295
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.bill.cate.CateManagerAct",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.bill.cate.CustomCateAct",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1,
+      "windowSoftInputMode": 48
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.bill.search.BillSearchActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.bill.BillDetailActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.theme.ThemeAllActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.mailbox.MailboxActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.album.AlbumActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.album.AlbumDetailActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.fund.FundAccountTypeActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.fund.FundAccountAddActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1,
+      "windowSoftInputMode": 3
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.fund.FundAccountAddBorrowActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1,
+      "windowSoftInputMode": 32
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.fund.FundAccountTransferActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1,
+      "windowSoftInputMode": 3
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.fund.FundAccountDetailActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.user.VipActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952140,
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.AppWidgetSmallActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952140,
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.AppWidgetMiddleActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952140,
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.AppWidgetLargeActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952140,
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.TicketWidgetSettingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952140,
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.CalendarWidgetSettingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952140,
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.QuickBookkeepingWidgetSettingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.HelpActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952525,
+      "name": "com.lanniser.kittykeeping.ui.activity.PermissionActivity",
+      "exported": 0,
+      "launchMode": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952525,
+      "name": "com.lanniser.kittykeeping.ui.activity.InterstitialAdActivity",
+      "exported": 0,
+      "launchMode": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.timedbill.CreateTimedBillActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.timedbill.CateChooseActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.password.PasswordActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.password.PasswordInputActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.user.SettingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.bill.BillTableActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.save.SaveMoneyActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.save.PlanDetailActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.save.CreateSavePlanActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.save.ModifySavePlanActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.user.PhoneBindActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.WidgetBillSmallSettingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.SaveMoneyWidgetSettingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.TagsWidgetSettingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.LineChartMidWidgetSettingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.LineChartLargeWidgetSettingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.WebViewWidgetVideoActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.WidgetMainActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.user.VideoPlayerActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952528,
+      "name": "com.lanniser.kittykeeping.ui.dialog.save.SaveClockActivityDialog",
+      "exported": 0,
+      "launchMode": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.user.OauthActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.widget.SaveMoneyPotWidgetSettingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.clocking.ClockingActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.clocking.ClockingAuthActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1,
+      "windowSoftInputMode": 32
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.clocking.ClockingAuditActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.clocking.ClockingPaymentSuccessActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.clocking3.ClockingAuthV3Activity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1,
+      "windowSoftInputMode": 32
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.clocking3.ClockingAuditV3Activity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.clocking3.ClockingPaymentSuccessV3Activity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952140,
+      "name": "com.lanniser.kittykeeping.ui.activity.SplashActivity",
+      "exported": 4294967295,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.intent.action.MAIN"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.LAUNCHER"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.intent.action.VIEW"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.DEFAULT"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.BROWSABLE"
+    }
+  },
+  {
+    "tag": "data",
+    "attributes": {
+      "scheme": "miaomiao"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.intent.action.SEND"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.DEFAULT"
+    }
+  },
+  {
+    "tag": "data",
+    "attributes": {
+      "mimeType": "application/vnd.ms-excel"
+    }
+  },
+  {
+    "tag": "data",
+    "attributes": {
+      "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    }
+  },
+  {
+    "tag": "data",
+    "attributes": {
+      "mimeType": "text/comma-separated-values"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.intent.action.VIEW"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.DEFAULT"
+    }
+  },
+  {
+    "tag": "data",
+    "attributes": {
+      "mimeType": "application/vnd.ms-excel"
+    }
+  },
+  {
+    "tag": "data",
+    "attributes": {
+      "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    }
+  },
+  {
+    "tag": "data",
+    "attributes": {
+      "mimeType": "text/comma-separated-values"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952525,
+      "name": "com.lanniser.kittykeeping.ui.activity.SchemeStartActivity",
+      "exported": 4294967295,
+      "launchMode": 2
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.ui.activity.report.MonthlyReportActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952525,
+      "name": "com.lanniser.kittykeeping.ui.activity.ocrbill.OcrBillScreenCaptureActivity",
+      "exported": 4294967295,
+      "excludeFromRecents": 4294967295,
+      "launchMode": 3
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.service.quicksettings.action.QS_TILE_PREFERENCES"
+    }
+  },
+  {
+    "tag": "receiver",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.receiver.CloseScreenCaptureReceiver"
+    }
+  },
+  {
+    "tag": "receiver",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.appwidget.AppWidgetSmall",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.appwidget.action.APPWIDGET_UPDATE"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.appwidget.provider",
+      "resource": 2132082691
+    }
+  },
+  {
+    "tag": "receiver",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.appwidget.AppWidgetMiddle",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.appwidget.action.APPWIDGET_UPDATE"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.appwidget.provider",
+      "resource": 2132082690
+    }
+  },
+  {
+    "tag": "receiver",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.appwidget.AppWidgetLarge",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.appwidget.action.APPWIDGET_UPDATE"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.appwidget.provider",
+      "resource": 2132082689
+    }
+  },
+  {
+    "tag": "receiver",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.receiver.AutoBillBroadcastReceiver",
+      "exported": 0,
+      "process": ":autoBill"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.youqi.miaomiao.AUTO_BILL_CLICK"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "label": 2131887232,
+      "icon": 2131690413,
+      "name": "com.lanniser.kittykeeping.service.ScreenCaptureTileService",
+      "permission": "android.permission.BIND_QUICK_SETTINGS_TILE",
+      "exported": 4294967295,
+      "process": ":autoBill",
+      "description": 2131887225
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.service.quicksettings.ACTIVE_TILE",
+      "value": 4294967295
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.service.quicksettings.action.QS_TILE"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.service.ScreenCaptureService",
+      "permission": "android.permission.FOREGROUND_SERVICE",
+      "exported": 0,
+      "foregroundServiceType": 32
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.service.media.MediaProjectionService"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.service.PetFloatService",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.service.AutoBillService",
+      "process": ":autoBill"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "label": 2131886119,
+      "name": "com.google.android.accessibility.selecttospeak.SelectToSpeakService",
+      "permission": "android.permission.BIND_ACCESSIBILITY_SERVICE",
+      "persistent": 4294967295,
+      "exported": 4294967295,
+      "process": ":autoBill",
+      "stopWithTask": 0,
+      "isAccessibilityTool": 4294967295
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.accessibilityservice.AccessibilityService"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.accessibilityservice",
+      "resource": 2132082688
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "androidx.core.content.FileProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.fileprovider",
+      "grantUriPermissions": 4294967295
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.support.FILE_PROVIDER_PATHS",
+      "resource": 2132082694
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.notch_support",
+      "value": 4294967295
+    }
+  },
+  {
+    "tag": "uses-library",
+    "attributes": {
+      "name": "org.apache.http.legacy",
+      "required": 0
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.tencent.tauth.AuthActivity",
+      "exported": 4294967295,
+      "launchMode": 2,
+      "noHistory": 4294967295
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.intent.action.VIEW"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.DEFAULT"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.BROWSABLE"
+    }
+  },
+  {
+    "tag": "data",
+    "attributes": {
+      "scheme": "redacted-sdk-app-id"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.tencent.connect.common.AssistActivity",
+      "exported": 4294967295,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.bytedance.sdk.openadsdk.TTFileProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.TTFileProvider",
+      "grantUriPermissions": 4294967295
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.support.FILE_PROVIDER_PATHS",
+      "resource": 2132082693
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.qq.e.comm.GDTFileProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.gdt.fileprovider",
+      "grantUriPermissions": 4294967295
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.support.FILE_PROVIDER_PATHS",
+      "resource": 2132082695
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.meishu.sdk.core.service.MeishuFileProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.MeishuFileProvider",
+      "grantUriPermissions": 4294967295
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.support.FILE_PROVIDER_PATHS",
+      "resource": 2132082709
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "label": "PushService",
+      "name": "com.lanniser.kittykeeping.service.GTPushService",
+      "exported": 0,
+      "process": ":pushservice"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.lanniser.kittykeeping.service.MmIntentService"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.lanniser.kittykeeping.ui.activity.getui.KeepAliveActivity",
+      "exported": 4294967295,
+      "process": ":pushservice",
+      "taskAffinity": "com.youqi.miaomiao.SecondActivity",
+      "excludeFromRecents": 4294967295,
+      "launchMode": 2
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.lanniser.kittykeeping.service.KeepAliveService",
+      "exported": 4294967295,
+      "process": ":pushservice",
+      "excludeFromRecents": 4294967295
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "sync_data_to_system_service",
+      "value": 4294967295
+    }
+  },
+  {
+    "tag": "receiver",
+    "attributes": {
+      "name": "com.mlethe.library.accessibility.auto.MainProcessBroadcastReceiver",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.mlethe.library.accessibility.auto.OPEN_AUTO_BILL_SERVICE"
+    }
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.mlethe.library.accessibility.auto.ACTION_BIND_SERVICE"
+    }
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.mlethe.library.accessibility.auto.ACTION_SYNCHRONOUS_ACCESSIBILITY"
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.baidu.mobads.sdk.api.BdFileProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.bd.provider",
+      "grantUriPermissions": 4294967295
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.support.FILE_PROVIDER_PATHS",
+      "resource": 2132082692
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973830,
+      "name": "com.baidu.mobads.sdk.api.AppActivity",
+      "configChanges": 1200
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.baidu.oauth.sdkbqt.view.WebViewActivity",
+      "screenOrientation": 1,
+      "configChanges": 160,
+      "windowSoftInputMode": 2
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.baidu.mobads.sdk.api.MobRewardVideoActivity",
+      "configChanges": 1696
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.baidu.mobads.sdk.api.BdShellActivity",
+      "configChanges": 3504
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.qq.e.comm.DownloadService",
+      "exported": 0,
+      "multiprocess": 4294967295
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.qq.e.ads.ADActivity",
+      "exported": 0,
+      "multiprocess": 4294967295,
+      "configChanges": 1456
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973837,
+      "name": "com.qq.e.ads.PortraitADActivity",
+      "exported": 0,
+      "multiprocess": 4294967295,
+      "screenOrientation": 1,
+      "configChanges": 1456
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973837,
+      "name": "com.qq.e.ads.LandscapeADActivity",
+      "exported": 0,
+      "multiprocess": 4294967295,
+      "screenOrientation": 6,
+      "configChanges": 1456
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973837,
+      "name": "com.qq.e.ads.RewardvideoPortraitADActivity",
+      "exported": 0,
+      "multiprocess": 4294967295,
+      "configChanges": 1200
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.notch_support",
+      "value": 4294967295
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973837,
+      "name": "com.qq.e.ads.RewardvideoLandscapeADActivity",
+      "exported": 0,
+      "multiprocess": 4294967295,
+      "screenOrientation": 0,
+      "configChanges": 1200
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.notch_support",
+      "value": 4294967295
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973841,
+      "name": "com.qq.e.ads.DialogActivity",
+      "exported": 0,
+      "multiprocess": 4294967295
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131951950,
+      "name": "com.jd.ad.sdk.bl.adinteraction.deeplink.JADWebViewActivity",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.jd.ad.sdk.dl.cache.multiprocess.JADMultiProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.JADMultiProvider"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973837,
+      "name": "com.kwad.sdk.api.proxy.app.AdWebViewActivity",
+      "screenOrientation": 1,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973834,
+      "name": "com.kwad.sdk.api.proxy.app.KsFullScreenVideoActivity",
+      "screenOrientation": 1,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973834,
+      "name": "com.kwad.sdk.api.proxy.app.KsFullScreenLandScapeVideoActivity",
+      "screenOrientation": 0,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973834,
+      "name": "com.kwad.sdk.api.proxy.app.KsRewardVideoActivity",
+      "screenOrientation": 1,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973834,
+      "name": "com.kwad.sdk.api.proxy.app.KSRewardLandScapeVideoActivity",
+      "screenOrientation": 0,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973834,
+      "name": "com.kwad.sdk.api.proxy.app.FeedDownloadActivity",
+      "screenOrientation": 1,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973837,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$KsTrendsActivity",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ProfileHomeActivity",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ProfileVideoDetailActivity",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$TubeProfileActivity",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ChannelDetailActivity",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$TubeDetailActivity",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$EpisodeDetailActivity",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952529,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$RequestInstallPermissionActivity",
+      "exported": 0,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "intent.action.requestInstallPermission"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.DEFAULT"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973838,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity1",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$GoodsPlayBackActivity",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973838,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity2",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973838,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity3",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity4",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity5",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity6",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity7",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity8",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity9",
+      "screenOrientation": 1,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity10",
+      "screenOrientation": 3,
+      "configChanges": 1444,
+      "windowSoftInputMode": 34
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity11",
+      "screenOrientation": 3,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity12",
+      "screenOrientation": 3,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity13",
+      "screenOrientation": 1,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity14",
+      "screenOrientation": 1,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity15",
+      "screenOrientation": 1,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity16",
+      "screenOrientation": 1,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity17",
+      "screenOrientation": 1,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity18",
+      "screenOrientation": 1,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop1",
+      "launchMode": 1,
+      "screenOrientation": 1,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop2",
+      "launchMode": 1,
+      "screenOrientation": 1,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop3",
+      "launchMode": 1,
+      "screenOrientation": 1,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance1",
+      "launchMode": 3,
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance2",
+      "launchMode": 3,
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance3",
+      "launchMode": 3,
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952978,
+      "label": "handler",
+      "name": "com.kwad.auth.login.KwadRouteHandlerActivity",
+      "exported": 4294967295,
+      "screenOrientation": 3,
+      "configChanges": 1200
+    }
+  },
+  {
+    "tag": "activity-alias",
+    "attributes": {
+      "name": "com.youqi.miaomiao.kwad.KwadHandlerActivity",
+      "exported": 4294967295,
+      "screenOrientation": 3,
+      "configChanges": 1200,
+      "targetActivity": "com.kwad.auth.login.KwadRouteHandlerActivity"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973838,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$DeveloperConfigActivity",
+      "launchMode": 3,
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952320,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivity",
+      "screenOrientation": 0,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952320,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleTop1",
+      "launchMode": 1,
+      "screenOrientation": 0,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952320,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleTop2",
+      "launchMode": 1,
+      "screenOrientation": 0,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952320,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleTask1",
+      "launchMode": 2,
+      "screenOrientation": 0,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952320,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleTask2",
+      "launchMode": 2,
+      "screenOrientation": 0,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952320,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleInstance1",
+      "launchMode": 3,
+      "screenOrientation": 0,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952320,
+      "name": "com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleInstance2",
+      "launchMode": 3,
+      "screenOrientation": 0,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973837,
+      "name": "com.kwad.sdk.api.proxy.app.WebPageActivity",
+      "screenOrientation": 1,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973837,
+      "name": "com.kwad.sdk.api.proxy.app.PayResultActivity",
+      "screenOrientation": 1,
+      "configChanges": 1444
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.FileDownloadService$SharedMainProcessService"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.FileDownloadService$SeparateProcessService"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.DownloadService",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.ServiceProxyRemote",
+      "exported": 0,
+      "process": ":kssdk_remote"
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.kwad.sdk.api.proxy.app.AdSdkFileProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.adFileProvider",
+      "grantUriPermissions": 4294967295
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.support.FILE_PROVIDER_PATHS",
+      "resource": 2132082703
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973841,
+      "name": "com.meishu.sdk.activity.SdkInterstitialActivity",
+      "exported": 0,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952319,
+      "name": "com.meishu.sdk.activity.MeishuDownloadDetailActivity",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131951949,
+      "name": "com.meishu.sdk.activity.MeishuOpenDeepLinkActivity",
+      "exported": 0,
+      "configChanges": 3488
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131951973,
+      "name": "com.meishu.sdk.activity.MeishuRewardVideoPlayerActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 3,
+      "configChanges": 1152
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131951973,
+      "name": "com.meishu.sdk.activity.MeishuRewardH5Activity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 3,
+      "configChanges": 1152
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952319,
+      "name": "com.meishu.sdk.activity.MeishuWebviewActivity",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131951981,
+      "name": "com.meishu.sdk.meishu_ad.view.DownLoadDialogActivity",
+      "exported": 0,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131951972,
+      "name": "com.meishu.sdk.activity.MeishuAlertDialogActivity",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952319,
+      "name": "com.meishu.sdk.activity.MeishuDetailActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "screenOrientation": 1,
+      "configChanges": 1152
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.meishu.sdk.core.service.MsLifeCycleContent",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.MsLifeCycleContent"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131951934,
+      "name": "com.insightvision.openadsdk.view.web.WebViewActivity",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.intent.action.VIEW"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.DEFAULT"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.BROWSABLE"
+    }
+  },
+  {
+    "tag": "data",
+    "attributes": {
+      "scheme": "fanti",
+      "host": "webview"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131951937,
+      "name": "com.insightvision.openadsdk.download.DownloadAppActivity",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.intent.action.VIEW"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.DEFAULT"
+    }
+  },
+  {
+    "tag": "data",
+    "attributes": {
+      "scheme": "fanti",
+      "host": "download"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131951937,
+      "name": "com.insightvision.openadsdk.template.rendering.reward.activity.RewardAdActivity",
+      "exported": 0,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131951937,
+      "name": "com.insightvision.openadsdk.template.rendering.table.activity.TableScreenActivity",
+      "exported": 0,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.insightvision.openadsdk.FanTiApkProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.FanTiApkProvider",
+      "grantUriPermissions": 4294967295
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.support.FILE_PROVIDER_PATHS",
+      "resource": 2132082697
+    }
+  },
+  {
+    "tag": "receiver",
+    "attributes": {
+      "name": "com.byazt.za.Collector",
+      "enabled": 4294967295,
+      "exported": 0
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.ss.android.downloadlib.activity.TTDelegateActivity",
+      "exported": 0,
+      "launchMode": 2
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.byazt.bm.JumpKllkActivity",
+      "exported": 0,
+      "launchMode": 2
+    }
+  },
+  {
+    "tag": "receiver",
+    "attributes": {
+      "name": "com.byazt.zs.DownloadReceiver",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.ss.android.socialbase.appdownloader.view.DownloadHandleNotificationActivity",
+      "exported": 0,
+      "launchMode": 2
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.byazt.z.DownloadHandlerService",
+      "exported": 0,
+      "stopWithTask": 4294967295
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973835,
+      "name": "com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity",
+      "exported": 0,
+      "launchMode": 2
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973835,
+      "name": "com.byazt.y.JumpUnknownSourceActivity",
+      "exported": 0,
+      "launchMode": 2
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.byazt.z.RetryJobSchedulerService",
+      "permission": "android.permission.BIND_JOB_SERVICE",
+      "enabled": 4294967295,
+      "exported": 0,
+      "stopWithTask": 4294967295
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.byazt.n.DownloadNotificationService",
+      "exported": 0,
+      "stopWithTask": 4294967295
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.byazt.zz.CSJDownloadService",
+      "exported": 0,
+      "stopWithTask": 4294967295
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.byazt.b.DownloadHandleService",
+      "exported": 0,
+      "stopWithTask": 4294967295
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.byazt.zz.SqlDownloadCacheService",
+      "exported": 0,
+      "stopWithTask": 4294967295
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.byazt.zz.CSJIndependentProcessDownloadService",
+      "exported": 0,
+      "process": ":downloader",
+      "stopWithTask": 4294967295
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.ss.android.socialbase.downloader.remote"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.bytedance.sdk.openadsdk.core.activity.base.TTNativePageActivity",
+      "exported": 0,
+      "launchMode": 0,
+      "configChanges": 1184,
+      "windowSoftInputMode": 2
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.bytedance.sdk.openadsdk.core.activity.base.TTWebPageActivity",
+      "exported": 0,
+      "launchMode": 0,
+      "configChanges": 1184,
+      "windowSoftInputMode": 2
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.bytedance.sdk.openadsdk.core.activity.base.TTSevenScreenWebPageActivity",
+      "exported": 0,
+      "launchMode": 0,
+      "configChanges": 1184,
+      "windowSoftInputMode": 2
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.bytedance.sdk.openadsdk.core.activity.base.TTVideoWebPageActivity",
+      "exported": 0,
+      "launchMode": 0,
+      "configChanges": 1184,
+      "windowSoftInputMode": 2
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.bytedance.sdk.openadsdk.core.activity.base.TTVideoScrollWebPageActivity",
+      "exported": 0,
+      "launchMode": 0,
+      "configChanges": 1184,
+      "windowSoftInputMode": 2
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.bytedance.sdk.openadsdk.core.activity.base.TTDelegateActivity",
+      "exported": 0,
+      "launchMode": 0
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.bytedance.sdk.openadsdk.core.component.reward.activity.TTRewardVideoActivity",
+      "exported": 0,
+      "launchMode": 0,
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity",
+      "exported": 0,
+      "launchMode": 0,
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.bytedance.sdk.openadsdk.core.component.reward.activity.TTRewardVideoLandscapeActivity",
+      "exported": 0,
+      "launchMode": 0,
+      "screenOrientation": 0,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoLandscapeActivity",
+      "exported": 0,
+      "launchMode": 0,
+      "screenOrientation": 0,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.byazt.wzi.BinderPoolService",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973830,
+      "name": "com.byazt.qde.Stub_Standard_Activity",
+      "exported": 0,
+      "launchMode": 0,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973830,
+      "name": "com.byazt.qde.Stub_Standard_Portrait_Activity",
+      "exported": 0,
+      "launchMode": 0,
+      "screenOrientation": 1,
+      "configChanges": 1760,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973839,
+      "name": "com.byazt.qde.Stub_Standard_Activity_T",
+      "exported": 0,
+      "launchMode": 0,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973830,
+      "name": "com.byazt.qde.Stub_Standard_Landscape_Activity",
+      "exported": 0,
+      "launchMode": 0,
+      "screenOrientation": 0,
+      "configChanges": 1760,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973830,
+      "name": "com.byazt.qde.Stub_Activity",
+      "exported": 0,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973839,
+      "name": "com.byazt.qde.Stub_SingleTask_Activity_T",
+      "exported": 0,
+      "launchMode": 2,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byazt.qde.Stub_SingleTask_Activity",
+      "exported": 0,
+      "launchMode": 2,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.byazt.gg.DownloaderServerManager",
+      "exported": 0,
+      "process": ":downloader",
+      "authorities": "com.youqi.miaomiao.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost"
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.byazt.gg.MainServerManager",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.pangle.servermanager.main"
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.byazt.vf.TTMultiProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.TTMultiProvider"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.byazt.nu.ApiDownloadHandlerService",
+      "exported": 0,
+      "stopWithTask": 4294967295
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byazt.nu.ApiDownloadHandleNotificationActivity",
+      "exported": 0,
+      "launchMode": 2
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.byazt.quv.MainServerManager",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.pangle.servermanager.main"
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.byazt.sj.MainProcessProviderProxy",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.pangle.provider.proxy.main"
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.byazt.uk.FileProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.pangle.fileprovider",
+      "grantUriPermissions": 4294967295
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.bytedance.android.openliveplugin.stub.activity.DouyinAuthorizeActivityProxy",
+      "exported": 4294967295
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.bytedance.android.openliveplugin.stub.activity.DouyinAuthorizeActivityLiveProcessProxy",
+      "exported": 4294967295,
+      "process": ":bytelive"
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.bytedance.android.openliveplugin.process.server.LiveServerManager",
+      "exported": 0,
+      "process": ":bytelive",
+      "authorities": "com.youqi.miaomiao.bytedance.android.openliveplugin.process.server.LiveServerManager"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973837,
+      "name": "com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait",
+      "exported": 0,
+      "screenOrientation": 1,
+      "configChanges": 17056
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973837,
+      "name": "com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait2",
+      "exported": 0,
+      "screenOrientation": 1,
+      "configChanges": 17056
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973837,
+      "name": "com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait3",
+      "exported": 0,
+      "screenOrientation": 1,
+      "configChanges": 17056
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973837,
+      "name": "com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait4",
+      "exported": 0,
+      "screenOrientation": 1,
+      "configChanges": 17056
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973837,
+      "name": "com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait5",
+      "exported": 0,
+      "screenOrientation": 1,
+      "configChanges": 17056
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_bytelive_singleTask4",
+      "exported": 0,
+      "process": ":bytelive",
+      "launchMode": 2,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_bytelive_singleTop3",
+      "exported": 0,
+      "process": ":bytelive",
+      "launchMode": 1,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_bytelive_singleTop2",
+      "exported": 0,
+      "process": ":bytelive",
+      "launchMode": 1,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_bytelive_singleTop5",
+      "exported": 0,
+      "process": ":bytelive",
+      "launchMode": 1,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_bytelive_singleTop4",
+      "exported": 0,
+      "process": ":bytelive",
+      "launchMode": 1,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_bytelive_standard",
+      "exported": 0,
+      "process": ":bytelive",
+      "launchMode": 0,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_bytelive_singleTop1",
+      "exported": 0,
+      "process": ":bytelive",
+      "launchMode": 1,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_bytelive_singleTask1",
+      "exported": 0,
+      "process": ":bytelive",
+      "launchMode": 2,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_bytelive_singleTop6",
+      "exported": 0,
+      "process": ":bytelive",
+      "launchMode": 1,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_bytelive_singleTask2",
+      "exported": 0,
+      "process": ":bytelive",
+      "launchMode": 2,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_bytelive_singleTask3",
+      "exported": 0,
+      "process": ":bytelive",
+      "launchMode": 2,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_main_singleTask1",
+      "exported": 0,
+      "launchMode": 2,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_main_singleTask2",
+      "exported": 0,
+      "launchMode": 2,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_main_singleTask3",
+      "exported": 0,
+      "launchMode": 2,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_main_singleTask4",
+      "exported": 0,
+      "launchMode": 2,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_main_standard",
+      "exported": 0,
+      "launchMode": 0,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_main_singleTop1",
+      "exported": 0,
+      "launchMode": 1,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_main_singleTop2",
+      "exported": 0,
+      "launchMode": 1,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_main_singleInstance1",
+      "exported": 0,
+      "launchMode": 3,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_main_singleTop5",
+      "exported": 0,
+      "launchMode": 1,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_main_singleTop6",
+      "exported": 0,
+      "launchMode": 1,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_main_singleTop3",
+      "exported": 0,
+      "launchMode": 1,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_main_singleTop4",
+      "exported": 0,
+      "launchMode": 1,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.byted.live.lite.Activity_bytelive_singleInstance1",
+      "exported": 0,
+      "process": ":bytelive",
+      "launchMode": 3,
+      "configChanges": 1248,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.byted.live.lite.ServerManager_bytelive",
+      "exported": 0,
+      "process": ":bytelive",
+      "authorities": "com.youqi.miaomiao.pangle.servermanager.bytelive.com.byted.live.lite"
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.byted.live.lite.ServerManager_push",
+      "exported": 0,
+      "process": ":push",
+      "authorities": "com.youqi.miaomiao.pangle.servermanager.push.com.byted.live.lite"
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.byted.live.lite.ServerManager_downloader",
+      "exported": 0,
+      "process": ":downloader",
+      "authorities": "com.youqi.miaomiao.pangle.servermanager.downloader.com.byted.live.lite"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.bytedance.msdk.api.activity.TTDelegateActivity",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.bytedance.msdk.api.activity.TTTransparentActivity",
+      "exported": 0,
+      "configChanges": 1168
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952532,
+      "name": "com.ioio.rewardhub.ui.activity.WzHomeActivity",
+      "exported": 4294967295,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952532,
+      "name": "com.ioio.rewardhub.ui.activity.WzExtractMoneyActivity",
+      "exported": 4294967295,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952532,
+      "name": "com.ioio.rewardhub.ui.activity.WzRulesAtivity",
+      "exported": 4294967295,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952532,
+      "name": "com.ioio.rewardhub.ui.activity.WzRevenueListActivity",
+      "exported": 4294967295,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952532,
+      "name": "com.ioio.rewardhub.ui.activity.WzTakeoutSubsidyActivity",
+      "exported": 4294967295,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952533,
+      "name": "com.ioio.rewardhub.ui.activity.PermissionWZActivity",
+      "exported": 0,
+      "launchMode": 1,
+      "configChanges": 3456
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952532,
+      "name": "com.ioio.rewardhub.ui.activity.WzWidgetSettingActivity",
+      "exported": 4294967295,
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "receiver",
+    "attributes": {
+      "name": "com.ioio.rewardhub.widget.WzAppWidgetProvider",
+      "exported": 4294967295
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.appwidget.action.APPWIDGET_UPDATE"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.appwidget.provider",
+      "resource": 2132082713
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "cn.aiyo.fne.tarot.ui.TarotGameActivity",
+      "screenOrientation": 1,
+      "windowSoftInputMode": 16
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "cn.aiyo.fne.tarot.ui.TarotInterpretResultActivity",
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.luck.picture.lib.basic.PictureFileProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.luckProvider",
+      "grantUriPermissions": 4294967295
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.support.FILE_PROVIDER_PATHS",
+      "resource": 2132082712
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.luck.picture.lib.service.ForegroundService",
+      "enabled": 4294967295,
+      "foregroundServiceType": 8
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131951743,
+      "name": "com.luck.picture.lib.basic.PictureSelectorSupporterActivity",
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131951985,
+      "name": "com.luck.picture.lib.basic.PictureSelectorTransparentActivity",
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952319,
+      "name": "com.yalantis.ucrop.UCropActivity",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952319,
+      "name": "com.yalantis.ucrop.UCropMultipleActivity",
+      "screenOrientation": 1,
+      "configChanges": 1184
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "androidx.startup.InitializationProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.androidx-startup"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "androidx.emoji2.text.EmojiCompatInitializer",
+      "value": "androidx.startup"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "androidx.lifecycle.ProcessLifecycleInitializer",
+      "value": "androidx.startup"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "androidx.profileinstaller.ProfileInstallerInitializer",
+      "value": "androidx.startup"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "androidx.room.MultiInstanceInvalidationService",
+      "exported": 0,
+      "directBootAware": 4294967295
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hume_convert.AppConvert.sdk.version",
+      "value": "2.0.2.0"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952526,
+      "name": "com.bytedance.ads.convert.BDBridgeActivity",
+      "exported": 4294967295
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.squareup.picasso.PicassoProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.com.squareup.picasso"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "OPPOPUSH_APPKEY",
+      "value": "REDACTED_EMBEDDED_SERVICE_VALUE"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "OPPOPUSH_APPSECRET",
+      "value": "REDACTED_EMBEDDED_SERVICE_VALUE"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.igexin.sdk.OppoPushService",
+      "permission": "com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE",
+      "exported": 4294967295,
+      "process": ":pushservice"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.igexin.sdk.OppoAppPushService",
+      "permission": "com.heytap.mcs.permission.RECIEVE_PUSH_MESSAGE",
+      "exported": 4294967295,
+      "process": ":pushservice"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"
+    }
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.heytap.msp.push.RECEIVE_MCS_MESSAGE"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "sdkVersion",
+      "value": 3503
+    }
+  },
+  {
+    "tag": "receiver",
+    "attributes": {
+      "name": "androidx.profileinstaller.ProfileInstallReceiver",
+      "permission": "android.permission.DUMP",
+      "enabled": 4294967295,
+      "exported": 4294967295,
+      "directBootAware": 0
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "androidx.profileinstaller.action.INSTALL_PROFILE"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "androidx.profileinstaller.action.SKIP_FILE"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "androidx.profileinstaller.action.SAVE_PROFILE"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973830,
+      "name": "com.alipay.sdk.app.H5PayActivity",
+      "exported": 0,
+      "configChanges": 1073757684
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973830,
+      "name": "com.alipay.sdk.app.H5AuthActivity",
+      "exported": 0,
+      "configChanges": 1073757684
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.alipay.sdk.app.PayResultActivity",
+      "exported": 4294967295,
+      "launchMode": 3,
+      "configChanges": 1073757684
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.alipay.sdk.app.AlipayResultActivity",
+      "exported": 4294967295,
+      "launchMode": 2,
+      "configChanges": 1073757684
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.alipay.sdk.app.H5OpenAuthActivity",
+      "exported": 0,
+      "screenOrientation": 3,
+      "configChanges": 1073757684,
+      "windowSoftInputMode": 18
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.alipay.sdk.app.APayEntranceActivity",
+      "exported": 0,
+      "configChanges": 1073757684
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.facebook.sdk.AutoInitEnabled",
+      "value": 0
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.mlethe.library.imagepreview.GPreviewActivity"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973834,
+      "name": "com.mlethe.library.imagepreview.GPVideoPlayerActivity"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "GETUI_APPID",
+      "value": "REDACTED_EMBEDDED_SERVICE_VALUE"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "ZX_CHANNEL_ID",
+      "value": "C01-GEztJH0JLdBC"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "ZX_APPID_GETUI",
+      "value": "REDACTED_EMBEDDED_SERVICE_VALUE"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "label": "NotificationCenter",
+      "name": "com.igexin.sdk.PushService",
+      "exported": 0,
+      "process": ":pushservice"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.igexin.sdk.GTIntentService",
+      "exported": 4294967295
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.igexin.sdk.GService",
+      "exported": 4294967295,
+      "process": ":pushservice"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.getui.sdk.action"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.igexin.sdk.GetuiActivity",
+      "exported": 4294967295,
+      "process": ":pushservice"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.getui.sdk.action"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.igexin.sdk.PopupActivity",
+      "exported": 0,
+      "process": ":pushservice",
+      "configChanges": 1152
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "GTSDK_VERSION",
+      "value": "3.3.7.0"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "GT_INSTALL_CHANNEL",
+      "value": "umeng"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.getui.gtc.GtcService",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.getui.gtc.sdk.service.action"
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.getui.gtc.base.GtcProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.getui.gtc.provider"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.client.appid",
+      "value": "REDACTED_EMBEDDED_SERVICE_VALUE"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.igexin.sdk.HmsPushMessageService",
+      "exported": 0,
+      "process": ":pushservice"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.huawei.push.action.MESSAGING_EVENT"
+    }
+  },
+  {
+    "tag": "receiver",
+    "attributes": {
+      "name": "com.huawei.hms.support.api.push.PushMsgReceiver",
+      "permission": "com.youqi.miaomiao.permission.PROCESS_PUSH_MSG",
+      "exported": 4294967295,
+      "directBootAware": 4294967295
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.huawei.intent.action.PUSH_DELAY_NOTIFY"
+    }
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.huawei.intent.action.PUSH"
+    }
+  },
+  {
+    "tag": "receiver",
+    "attributes": {
+      "name": "com.huawei.hms.support.api.push.PushReceiver",
+      "permission": "com.youqi.miaomiao.permission.PROCESS_PUSH_MSG",
+      "exported": 4294967295,
+      "directBootAware": 4294967295
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.huawei.android.push.intent.REGISTRATION"
+    }
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.huawei.android.push.intent.RECEIVE"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.huawei.hms.support.api.push.service.HmsMsgService",
+      "enabled": 4294967295,
+      "exported": 4294967295,
+      "process": ":pushservice",
+      "directBootAware": 4294967295
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.huawei.push.msg.NOTIFY_MSG"
+    }
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.huawei.push.msg.PASSBY_MSG"
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.huawei.hms.support.api.push.PushProvider",
+      "readPermission": "com.youqi.miaomiao.permission.PUSH_PROVIDER",
+      "writePermission": "com.youqi.miaomiao.permission.PUSH_WRITE_PROVIDER",
+      "exported": 4294967295,
+      "authorities": "com.youqi.miaomiao.huawei.push.provider"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.client.service.name:push",
+      "value": "push:6.12.0.300"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.min_api_level:push:push",
+      "value": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.huawei.hms.support.api.push.TransActivity",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "MIPUSH_SDK_VERSION_CODE",
+      "value": 60001
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "MIPUSH_SDK_VERSION_NAME",
+      "value": "6_0_1-C"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "MIPUSH_APPID",
+      "value": "REDACTED_EMBEDDED_SERVICE_VALUE"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "MIPUSH_APPKEY",
+      "value": "REDACTED_EMBEDDED_SERVICE_VALUE"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.xiaomi.mipush.sdk.PushMessageHandler",
+      "permission": "com.xiaomi.xmsf.permission.MIPUSH_RECEIVE",
+      "enabled": 4294967295,
+      "exported": 4294967295,
+      "process": ":pushservice"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.xiaomi.mipush.sdk.MessageHandleService",
+      "enabled": 4294967295,
+      "process": ":pushservice"
+    }
+  },
+  {
+    "tag": "receiver",
+    "attributes": {
+      "name": "com.igexin.sdk.MiuiPushReceiver",
+      "exported": 4294967295,
+      "process": ":pushservice"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.xiaomi.mipush.RECEIVE_MESSAGE"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.xiaomi.mipush.MESSAGE_ARRIVED"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.xiaomi.mipush.ERROR"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.xiaomi.mipush.sdk.NotificationClickedActivity",
+      "enabled": 4294967295,
+      "exported": 4294967295,
+      "excludeFromRecents": 4294967295,
+      "launchMode": 3
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "supportStyle",
+      "value": "scene|voip"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "api_key",
+      "value": "REDACTED_EMBEDDED_SERVICE_VALUE"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "app_id",
+      "value": "REDACTED_EMBEDDED_SERVICE_VALUE"
+    }
+  },
+  {
+    "tag": "receiver",
+    "attributes": {
+      "name": "com.igexin.sdk.VivoPushMessageReceiver",
+      "exported": 0,
+      "process": ":pushservice"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.vivo.pushclient.action.RECEIVE"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "sdk_version_vivo",
+      "value": 506
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.vivo.push.sdk.service.CommandClientService",
+      "permission": "com.push.permission.UPSTAGESERVICE",
+      "exported": 4294967295,
+      "process": ":pushservice"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "local_iv",
+      "value": "REDACTED_EMBEDDED_SERVICE_VALUE"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.vivo.push.support_monitor",
+      "value": 1
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.igexin.assist.control.stp.StpService",
+      "permission": "com.getui.vendor.push.permission",
+      "exported": 4294967295,
+      "process": ":pushservice"
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.DEFAULT"
+    }
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.sdk.ups.action.com.youqi.miaomiao"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hw_ads_sdk_type",
+      "value": 6
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.client.service.name:ads-lite",
+      "value": "ads-lite:13.4.75.300"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.client.service.name:ads-consent",
+      "value": "ads-consent:3.4.77.300"
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "cn.thinkingdata.analytics.persistence.storage.contentProvider.ThinkingDataContentProvider",
+      "enabled": 4294967295,
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.ThinkingDataContentProvider"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952307,
+      "name": "com.library.zt.ad.activity.ZTDouYinMallActivity",
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952948,
+      "name": "com.library.zt.ad.activity.ZTInteractionAdActivity"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952307,
+      "name": "com.library.zt.ad.activity.ZTJTWebViewActivity",
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131952307,
+      "name": "com.library.zt.ad.activity.ZTWebViewActivity",
+      "launchMode": 1,
+      "screenOrientation": 1
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.library.zt.ad.provider.DownloadFileProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.ad.download.fileProvider",
+      "grantUriPermissions": 4294967295
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "android.support.FILE_PROVIDER_PATHS",
+      "resource": 2132082714
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.huawei.hms.aaid.InitProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.aaidinitprovider",
+      "initOrder": 500
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.client.service.name:opendevice",
+      "value": "opendevice:6.12.0.300"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.min_api_level:opendevice:push",
+      "value": 1
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.client.service.name:ads-banner",
+      "value": "ads-banner:13.4.75.300"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.client.service.name:ads-native",
+      "value": "ads-native:13.4.75.300"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.huawei.openalliance.ad.activity.FeedbackActivity",
+      "exported": 0,
+      "multiprocess": 4294967295,
+      "excludeFromRecents": 4294967295,
+      "configChanges": 4000
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hwc-theme",
+      "value": "androidhwext:style/Theme.Emui.Translucent.NoTitleBar"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hnc-theme",
+      "value": "androidhnext:style/Theme.Magic.Translucent.NoTitleBar"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.client.service.name:ads-interstitial",
+      "value": "ads-interstitial:13.4.75.300"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.client.service.name:ads-reward",
+      "value": "ads-reward:13.4.75.300"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.client.service.name:ads-lang",
+      "value": "ads-lang:13.4.75.300"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.client.service.name:ads-splash",
+      "value": "ads-splash:13.4.75.300"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.client.service.name:ads-instream",
+      "value": "ads-instream:13.4.75.300"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.client.service.name:ads-jsbridge",
+      "value": "ads-jsbridge:3.4.75.300"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.min_api_level:pps-phone:adsbrainkit",
+      "value": 1
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.client.service.name:ads-identifier",
+      "value": "ads-identifier:3.4.62.300"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.client.service.name:base",
+      "value": "base:6.11.0.302"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.min_api_level:base:hmscore",
+      "value": 1
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "availableLoaded",
+      "value": "yes"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.client.service.name:ads-base",
+      "value": "ads-base:13.4.75.300"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.huawei.openalliance.ad.activity.PPSLauncherActivity",
+      "exported": 4294967295
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "android.intent.action.VIEW"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.DEFAULT"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.BROWSABLE"
+    }
+  },
+  {
+    "tag": "data",
+    "attributes": {
+      "scheme": "hwpps",
+      "host": "com.youqi.miaomiao"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hwc-theme",
+      "value": "androidhwext:style/Theme.Emui.Translucent.NoTitleBar"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hnc-theme",
+      "value": "androidhnext:style/Theme.Magic.Translucent.NoTitleBar"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.huawei.openalliance.ad.activity.PPSBridgeActivity",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hwc-theme",
+      "value": "androidhwext:style/Theme.Emui.Translucent.NoTitleBar"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hnc-theme",
+      "value": "androidhnext:style/Theme.Magic.Translucent.NoTitleBar"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.huawei.openalliance.ad.activity.PPSNotificationActivity",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hwc-theme",
+      "value": "androidhwext:style/Theme.Emui.Translucent.NoTitleBar"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hnc-theme",
+      "value": "androidhnext:style/Theme.Magic.Translucent.NoTitleBar"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.huawei.openalliance.ad.activity.AgProtocolActivity",
+      "exported": 0,
+      "excludeFromRecents": 4294967295,
+      "configChanges": 1152
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hwc-theme",
+      "value": "androidhwext:style/Theme.Emui.Translucent.NoTitleBar"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hnc-theme",
+      "value": "androidhnext:style/Theme.Magic.Translucent.NoTitleBar"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "com.huawei.hms.min_api_level:pps-phone:adsuiengine",
+      "value": 1
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.huawei.openalliance.ad.activity.TemplateStubActivity",
+      "exported": 0,
+      "excludeFromRecents": 4294967295,
+      "configChanges": 3488
+    }
+  },
+  {
+    "tag": "intent-filter",
+    "attributes": {}
+  },
+  {
+    "tag": "action",
+    "attributes": {
+      "name": "com.huawei.hms.pps.action.PPS_STUB"
+    }
+  },
+  {
+    "tag": "category",
+    "attributes": {
+      "name": "android.intent.category.DEFAULT"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hwc-theme",
+      "value": "androidhwext:style/Theme.Emui.Translucent.NoTitleBar"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hnc-theme",
+      "value": "androidhnext:style/Theme.Magic.Translucent.NoTitleBar"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.huawei.openalliance.ad.activity.ComplianceActivity",
+      "exported": 0,
+      "excludeFromRecents": 4294967295,
+      "configChanges": 1073745824
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hwc-theme",
+      "value": "androidhwext:style/Theme.Emui.Translucent.NoTitleBar"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hnc-theme",
+      "value": "androidhnext:style/Theme.Magic.Translucent.NoTitleBar"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 16973840,
+      "name": "com.huawei.openalliance.ad.activity.PPSShareActivity",
+      "exported": 0,
+      "excludeFromRecents": 4294967295,
+      "launchMode": 1,
+      "configChanges": 1073745824
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hwc-theme",
+      "value": "androidhwext:style/Theme.Emui.Translucent.NoTitleBar"
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hnc-theme",
+      "value": "androidhnext:style/Theme.Magic.Translucent.NoTitleBar"
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.huawei.openalliance.ad.provider.PPSECProvider",
+      "exported": 4294967295,
+      "authorities": "com.youqi.miaomiao.pps.ecprovider"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "theme": 2131951915,
+      "name": "com.huawei.hms.activity.BridgeActivity",
+      "exported": 0,
+      "excludeFromRecents": 4294967295,
+      "screenOrientation": 3,
+      "configChanges": 1073753988,
+      "hardwareAccelerated": 4294967295
+    }
+  },
+  {
+    "tag": "meta-data",
+    "attributes": {
+      "name": "hwc-theme",
+      "value": "androidhwext:style/Theme.Emui.Translucent"
+    }
+  },
+  {
+    "tag": "activity",
+    "attributes": {
+      "name": "com.huawei.hms.activity.EnableServiceActivity",
+      "exported": 0,
+      "configChanges": 3488
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.huawei.agconnect.core.provider.AGConnectInitializeProvider",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.AGCInitializeProvider"
+    }
+  },
+  {
+    "tag": "service",
+    "attributes": {
+      "name": "com.huawei.agconnect.core.ServiceDiscovery",
+      "exported": 0
+    }
+  },
+  {
+    "tag": "provider",
+    "attributes": {
+      "name": "com.secneo.apkwrapper.CP",
+      "exported": 0,
+      "authorities": "com.youqi.miaomiao.CP",
+      "initOrder": 2147483647
+    }
+  }
+]

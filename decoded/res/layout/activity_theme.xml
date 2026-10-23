@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.lanniser.kittykeeping.widget.AbsoluteFrameLayout android:id="@id/themeLayout" android:background="@drawable/ic_theme_default" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <View android:id="@id/toolbarView" android:layout_width="match_parent" android:layout_height="1.0px" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="23.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbarView" app:srcCompat="@drawable/ic_back_sl" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/bugContainer" android:background="@drawable/ic_shop_buy_bg" android:layout_width="135.0dp" android:layout_height="52.0dp" android:layout_marginBottom="30.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ImageView android:id="@id/buyImg" android:layout_width="28.0dp" android:layout_height="25.0dp" android:layout_marginBottom="3.0dp" android:src="@drawable/ic_shop_theme_buy" android:layout_marginEnd="10.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/bugTxt" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@id/bugTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@id/buyImg" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.535" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/bugContainer" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/downloadBtn" android:background="@mipmap/bg_btn_theme_buy_money" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下载原图" android:layout_marginEnd="20.0dp" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/usingBtn" android:background="@mipmap/bg_btn_theme_using" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hiad_dismiss_dilaog">
+        <item quantity="one">Vinduet lukkes om %1$s sekund.</item>
+        <item quantity="other">Vinduet lukkes om %1$s sekunder.</item>
+    </plurals>
+    <plurals name="hiad_no_prompt_in_days">
+        <item quantity="one">Husk valget i %1$s dag</item>
+        <item quantity="other">Husk valget i %1$s dage</item>
+    </plurals>
+    <plurals name="hiad_reward_countdown">
+        <item quantity="one">%1$d sek.</item>
+        <item quantity="other">%1$d sek.</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item quantity="one">i morgen</item>
+        <item quantity="other">om %d dage</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item quantity="one">om 1 time</item>
+        <item quantity="other">om %d timer</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item quantity="one">om 1 min.</item>
+        <item quantity="other">om %d min.</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item quantity="one">om 1 sek.</item>
+        <item quantity="other">om %d sekunder</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item quantity="one">i går</item>
+        <item quantity="other">for %d dage siden</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item quantity="one">for 1 time siden</item>
+        <item quantity="other">for %d timer siden</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item quantity="one">for 1 min. siden</item>
+        <item quantity="other">for %d min. siden</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item quantity="one">for 1 sek. siden</item>
+        <item quantity="other">for %d sek. siden</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item quantity="one">Én time</item>
+        <item quantity="other">%d timer</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item quantity="one">Ét minut</item>
+        <item quantity="other">%d minutter</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item quantity="one">Ét sekund</item>
+        <item quantity="other">%d sekunder</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item quantity="one">i morgen</item>
+        <item quantity="other">om %d dage</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item quantity="one">om 1 time</item>
+        <item quantity="other">om %d timer</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item quantity="one">om 1 minut</item>
+        <item quantity="other">om %d minutter</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item quantity="one">om 1 sekund</item>
+        <item quantity="other">om %d sekunder</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item quantity="one">i går</item>
+        <item quantity="other">for %d dage siden</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item quantity="one">for 1 time siden</item>
+        <item quantity="other">for %d timer siden</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item quantity="one">for 1 minut siden</item>
+        <item quantity="other">for %d minutter siden</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item quantity="one">for 1 sekund siden</item>
+        <item quantity="other">for %d sekunder siden</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ny notifikation</item>
+        <item quantity="other">%d nye notifikationer</item>
+    </plurals>
+</resources>

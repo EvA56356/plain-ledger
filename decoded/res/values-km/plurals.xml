@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hiad_dismiss_dilaog">
+        <item quantity="other">វិនដូនឹង​បិទ​ក្នុងរយៈពេល %1$s វិនាទីទៀត។</item>
+    </plurals>
+    <plurals name="hiad_no_prompt_in_days">
+        <item quantity="other">ចងចាំជម្រើសរយៈពេល %1$s ថ្ងៃ</item>
+    </plurals>
+    <plurals name="hiad_reward_countdown">
+        <item quantity="other">%1$d វិនាទី</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item quantity="one">ថ្ងៃស្អែក</item>
+        <item quantity="other">ក្នុង​រយៈ​ពេល %d ថ្ងៃ</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item quantity="one">ក្នុង​រយៈ​ពេល ១ ម៉ោង</item>
+        <item quantity="other">ក្នុង​រយៈ​ពេល %d ម៉ោង</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item quantity="one">ក្នុង​ពេល 1 នាទី</item>
+        <item quantity="other">នៅ​រយៈពេល %d នាទី</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item quantity="one">ក្នុង​ពេល​ 1 វិនាទី</item>
+        <item quantity="other">ក្នុង​ពេល %d វិនាទី</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item quantity="one">ម្សិលមិញ</item>
+        <item quantity="other">%d ថ្ងៃ​​មុន</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item quantity="one">១ ម៉ោង​មុន</item>
+        <item quantity="other">%d ម៉ោង​មុន</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item quantity="one">១ នាទី​មុន</item>
+        <item quantity="other">%d នាទី​​មុន</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item quantity="one">១ វិនាទី​មុន</item>
+        <item quantity="other">%d វិនាទី​មុន</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item quantity="one">១ ម៉ោង</item>
+        <item quantity="other">%d ម៉ោង</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item quantity="one">១ នាទី</item>
+        <item quantity="other">%d នាទី</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item quantity="one">1 វិនាទី</item>
+        <item quantity="other">%d វិនាទី</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item quantity="one">ថ្ងៃស្អែក</item>
+        <item quantity="other">រយៈពេល %d ថ្ងៃ</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item quantity="one">រយៈពេល ១ ម៉ោង</item>
+        <item quantity="other">រយៈពេល %d ម៉ោង</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item quantity="one">ក្នុង​រយៈពេល ១ នាទី</item>
+        <item quantity="other">រយៈពេល %d នាទី</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item quantity="one">ក្នុង​រយៈ​ពេល ១ វិនាទី</item>
+        <item quantity="other">ក្នុង​រយៈ​ពេល %d វិនាទី</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item quantity="one">ម្សិលមិញ</item>
+        <item quantity="other">%d ថ្ងៃ​មុន</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item quantity="one">១ ម៉ោង​មុន</item>
+        <item quantity="other">%d ម៉ោង​មុន</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item quantity="one">១ នាទី​មុន</item>
+        <item quantity="other">%d នាទី​​មុន</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item quantity="one">១ វិនាទី​មុន</item>
+        <item quantity="other">%d វិនាទី​មុន</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">ការជូនដំណឹងថ្មី %d</item>
+        <item quantity="other">ការជូនដំណឹងថ្មី %d</item>
+    </plurals>
+</resources>

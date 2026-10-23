@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ioio.rewardhub.utils.gif.GifImageView android:layout_gravity="center" android:id="@id/gif_view" android:layout_width="@dimen/dp_300" android:layout_height="433.0dp" />
+        <FrameLayout android:layout_gravity="end|top" android:id="@id/ff_close" android:padding="@dimen/dp_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_78" android:translationX="@dimen/dp_15">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp_17" android:layout_height="@dimen/dp_17" android:src="@mipmap/wz_ic_close_round" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

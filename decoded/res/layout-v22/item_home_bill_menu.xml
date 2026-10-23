@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_layout" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="60.0dp" android:paddingHorizontal="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_icon" android:layout_width="44.0dp" android:layout_height="44.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/iv_icon" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_cate_label_drag" />
+    <ImageView android:id="@id/iv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dp" android:layout_marginStart="31.0dp" app:layout_constraintBottom_toBottomOf="@id/iv_icon" app:layout_constraintStart_toStartOf="@id/iv_icon" app:srcCompat="@drawable/ic_red_delete" />
+</androidx.constraintlayout.widget.ConstraintLayout>

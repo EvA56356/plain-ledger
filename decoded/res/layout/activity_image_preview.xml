@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/ltAddDot" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12.0dp" android:text="1/2" />
+    <com.mlethe.library.imagepreview.wight.BezierBannerView android:layout_gravity="center|bottom" android:id="@id/bezierBannerView" android:paddingBottom="10.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:selectedColor="@android:color/white" app:selectedRaduis="4.0dp" app:spacing="6.0dp" app:unSelectedColor="@android:color/darker_gray" app:unSelectedRaduis="4.0dp" />
+</FrameLayout>

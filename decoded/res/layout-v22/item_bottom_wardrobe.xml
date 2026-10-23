@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="120.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_cat" android:layout_width="72.0dp" android:layout_height="75.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="12.0dp" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:layout_marginHorizontal="12.0dp" />
+    <ImageView android:id="@id/iv_select" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:src="@mipmap/ic_cat_skin_select" android:layout_marginEnd="-5.0dp" android:layout_alignEnd="@id/iv_cat" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/colorBlack" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:lines="1" android:includeFontPadding="false" android:layout_below="@id/iv_cat" android:layout_centerHorizontal="true" />
+</RelativeLayout>

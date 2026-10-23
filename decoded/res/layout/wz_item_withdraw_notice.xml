@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_10" android:paddingEnd="@dimen/dp_14"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.utils.widget.ImageFilterView android:id="@id/iv_avatar" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:scaleType="centerCrop" app:round="9.0dp" />
+    <TextView android:textSize="@dimen/sp_9" android:textColor="@color/white" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_4" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wz_ic_wechat" android:scaleType="centerCrop" android:layout_marginStart="@dimen/dp_4" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.5dp" android:src="@drawable/ic_mine_diveder" android:scaleType="fitXY" />
+    <RelativeLayout android:paddingTop="7.0dp" android:paddingBottom="7.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="@color/frontBlack" android:gravity="center_vertical" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11.01" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_alignParentStart="true" />
+        <View android:id="@id/view" android:background="@drawable/line_radius" android:layout_width="3.0dp" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:layout_marginBottom="3.0dp" android:layout_alignTop="@id/textView" android:layout_alignBottom="@id/textView" android:layout_alignParentStart="true" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/colorGreyText" android:gravity="end|center" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:layout_toEndOf="@id/textView" android:layout_alignParentEnd="true" app:autoSizeMaxTextSize="14.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" />
+    </RelativeLayout>
+</LinearLayout>

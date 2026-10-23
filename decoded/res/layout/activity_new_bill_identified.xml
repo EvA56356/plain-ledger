@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/repeat_bg2" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/toolbarView" android:layout_width="match_parent" android:layout_height="0.0dp" />
+    <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/toolbarView" android:layout_marginStart="20.0dp" app:srcCompat="@drawable/ic_back_sl" />
+    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center_vertical" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="6.0dp" android:layout_alignTop="@id/back" android:layout_alignBottom="@id/back" android:layout_centerVertical="true" android:layout_marginEnd="26.0dp" android:layout_alignParentEnd="true" app:drawableRightCompat="@drawable/simple_calc_date" />
+    <RelativeLayout android:id="@id/rl_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_below="@id/back" android:layout_centerHorizontal="true">
+        <ImageView android:background="@mipmap/bill_identified_switch_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_auto" android:background="@mipmap/bill_identified_switch_selected" android:layout_width="90.5dp" android:layout_height="37.5dp" android:text="@string/auto_bill" />
+            <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/color_939393" android:gravity="center" android:id="@id/tv_ocr" android:layout_width="90.5dp" android:layout_height="37.5dp" android:text="@string/ocr_bill" />
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rl_layout" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="316.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_top" android:background="@mipmap/bg_report_expend_trend_top" android:layout_width="match_parent" android:layout_height="69.0dp" />
+    <View android:id="@id/view_center" android:background="@mipmap/bg_report_expend_trend_center" android:layout_width="match_parent" android:layout_height="434.6953dp" android:layout_marginTop="-1.0dp" android:layout_below="@id/view_top" />
+    <View android:id="@id/view_bottom" android:background="@mipmap/bg_report_expend_trend_bottom" android:layout_width="match_parent" android:layout_height="37.399994dp" android:layout_marginTop="-1.0dp" android:layout_below="@id/view_center" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="56.0dp" android:layout_marginBottom="30.0dp" android:layout_alignTop="@id/view_top" android:layout_alignBottom="@id/view_bottom" android:overScrollMode="never" android:layout_marginStart="26.0dp" android:layout_marginEnd="30.0dp" />
+</RelativeLayout>

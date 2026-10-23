@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:background="@drawable/kitty_calendar_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="80.0dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/calendarToolbar" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="20.0dp">
+            <ImageView android:id="@id/iv_left" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/kitty_calendar_btn_left_sl" />
+            <TextView android:textSize="18.0sp" android:textColor="#09181f" android:gravity="center" android:id="@id/tv_date" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/iv_right" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/kitty_calendar_btn_right_sl" />
+        </LinearLayout>
+        <com.mlethe.library.calendarview.CalendarView android:id="@id/calendarView" android:background="#fff" android:layout_width="match_parent" android:layout_height="280.0dp" app:calendar_item_height="40.0dp" app:calendar_padding="0.0dp" app:current_day_text_color="#f6657d" app:day_text_size="14.0sp" app:max_year_month="7" app:min_year="2015" app:min_year_month="7" app:month_view="com.lanniser.kittykeeping.widget.SimpleMonthView" app:month_view_auto_select_mode="last_select_day_ignore_current" app:month_view_show_mode="mode_all" app:other_month_text_color="#b9b9b9" app:selected_text_color="#ffffff" app:selected_theme_color="#f6657d" app:week_bar_view="com.lanniser.kittykeeping.widget.SimpleWeekBar" app:week_start_with="mon" app:week_text_color="#f6657d" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_cat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kitty_calendar_search_cat" android:layout_marginEnd="40.0dp" android:layout_alignParentEnd="true" app:layout_constraintEnd_toEndOf="parent" />
+</RelativeLayout>

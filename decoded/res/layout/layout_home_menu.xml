@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_menu" android:layout_width="wrap_content" android:layout_height="56.69998dp" android:layout_marginBottom="10.0dp" android:scaleType="fitXY" />
+    <ImageView android:id="@id/iv_menu_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_red_dot" android:layout_alignTop="@id/iv_menu" android:layout_alignEnd="@id/iv_menu" />
+    <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_hint" android:background="@mipmap/ic_home_menu_obtain" android:visibility="gone" android:layout_width="46.0dp" android:layout_height="wrap_content" android:layout_marginBottom="-10.0dp" android:layout_alignBottom="@id/iv_menu" android:layout_centerHorizontal="true" />
+</RelativeLayout>

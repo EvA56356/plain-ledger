@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/ic_bg_dialog_pink" android:layout_width="261.0dp" android:layout_height="188.0dp">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_f77088" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dp" android:text="@string/string_delete_contact" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_delete_contact_only" android:background="@mipmap/bg_delete_contact_only" android:paddingBottom="3.0dp" android:layout_width="212.0dp" android:layout_height="42.0dp" android:layout_marginTop="14.0dp" android:text="@string/string_delete_contact_only" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_delete_contact_with_bill" android:background="@mipmap/bg_delete_contact" android:layout_width="212.0dp" android:layout_height="42.0dp" android:layout_marginTop="14.0dp">
+            <com.lanniser.kittykeeping.view.NoPaddingTextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/string_delete_contact_with_bill" />
+            <com.lanniser.kittykeeping.view.NoPaddingTextView android:textSize="10.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/string_beyond_retrieve" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34.0dp" android:src="@drawable/ic_dialog_close" />
+</LinearLayout>

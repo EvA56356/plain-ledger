@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_layout" android:background="@mipmap/bg_share_card_dialog" android:layout_width="300.0dp" android:layout_height="384.0dp" android:layout_centerInParent="true">
+        <TextView android:textSize="31.0sp" android:textStyle="bold" android:textColor="@color/color_070707" android:id="@id/tv_invitation_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="202.0dp" android:includeFontPadding="false" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/shareBottomLayout" android:background="#fed55e" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/iv_wx" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/iv_qq" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_share_wechat" />
+        <ImageView android:id="@id/iv_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/iv_pyq" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@id/iv_wx" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_share_qq" />
+        <ImageView android:id="@id/iv_pyq" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/iv_picture" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@id/iv_qq" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_share_circle" />
+        <ImageView android:id="@id/iv_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toEndOf="@id/iv_pyq" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_share_local" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

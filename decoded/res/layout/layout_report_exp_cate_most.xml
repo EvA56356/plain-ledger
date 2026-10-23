@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_cate" android:background="@mipmap/bg_report_exp_most" android:layout_width="311.0dp" android:layout_height="148.0dp" android:layout_marginLeft="25.0dp" android:layout_marginTop="33.0dp" android:layout_marginRight="25.0dp">
+        <ImageView android:id="@id/iv_cate_cat" android:layout_width="74.0dp" android:layout_height="74.0dp" android:layout_marginTop="49.0dp" android:layout_marginStart="24.0dp" />
+        <com.lanniser.kittykeeping.widget.report.ReportTextView android:id="@id/tv_cate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="56.0dp" android:layout_toRightOf="@id/iv_cate_cat" android:layout_marginStart="31.0dp" app:line_height="20.0dp" app:line_spacing="14.0dp" app:text_color="@color/colorBlack" app:text_size="16.0dp" />
+    </RelativeLayout>
+    <com.lanniser.kittykeeping.widget.report.ReportTextView android:id="@id/tv_contrast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dp" android:layout_below="@id/rl_cate" android:layout_marginStart="24.0dp" app:line_height="19.0dp" app:line_spacing="17.0dp" app:text_color="@color/colorBlack" app:text_size="16.0dp" />
+    <ImageView android:layout_width="177.0dp" android:layout_height="164.0dp" android:layout_marginBottom="77.0dp" android:src="@mipmap/ic_report_exp_cake" android:layout_alignParentBottom="true" android:layout_marginEnd="8.0dp" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/iv_cat" android:layout_width="147.0dp" android:layout_height="135.0dp" android:layout_marginBottom="38.0dp" android:src="@mipmap/ic_report_exp_most_cat" android:layout_alignParentBottom="true" android:layout_marginEnd="145.0dp" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/iv_ribbon" android:layout_width="66.0dp" android:layout_height="41.0dp" android:layout_marginBottom="186.0dp" android:src="@mipmap/ic_report_exp_most_ribbon" android:layout_alignParentBottom="true" android:layout_marginEnd="162.0dp" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/iv_ribbon_yellow" android:layout_width="74.0dp" android:layout_height="33.0dp" android:layout_marginBottom="76.0dp" android:src="@mipmap/ic_report_exp_most_ribbon_yellow" android:layout_alignParentBottom="true" android:layout_marginEnd="10.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

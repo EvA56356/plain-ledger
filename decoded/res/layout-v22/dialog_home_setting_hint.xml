@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="272.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_wind_doubt" android:layout_width="match_parent" android:layout_height="315.0dp">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="40.0dp" android:layout_marginTop="4.0dp" android:text="下次可以在这里找到我哦~" />
+        <ImageView android:id="@id/iv_main" android:paddingTop="20.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:paddingStart="20.0dp" android:paddingEnd="10.0dp" android:paddingVertical="20.0dp" app:srcCompat="@mipmap/ic_home_setting_hint" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn_know" android:background="@mipmap/ic_bg_know_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="我知道啦" />
+</LinearLayout>

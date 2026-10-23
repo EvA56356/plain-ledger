@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="162.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/item_img" android:background="@drawable/ic_shop_recharge_bg" android:layout_width="150.0dp" android:layout_height="108.0dp" android:layout_marginTop="9.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/coinsImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_shop_coin_1350" />
+        <com.lanniser.kittykeeping.view.StrokeTextView android:textSize="16.0sp" android:textColor="#ff251f0e" android:id="@id/coins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="9.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/money" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" android:layout_below="@id/item_img" android:layout_alignStart="@id/item_img" android:layout_alignEnd="@id/item_img" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/present" android:background="@drawable/ic_shop_coin_give_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赠送\n150" android:layout_alignParentEnd="true" />
+</RelativeLayout>

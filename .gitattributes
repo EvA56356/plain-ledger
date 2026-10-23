@@ -1,0 +1,2 @@
+# Preserve the exact reviewed bytes recorded in evidence/FILE_SHA256.json.
+* -text

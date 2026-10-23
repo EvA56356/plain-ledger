@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="37.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的账本" android:layout_marginEnd="10.0dp" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="13.0sp" android:textColor="#f6657d" android:gravity="end" android:id="@id/moneyTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:layout_marginEnd="3.0dp" app:autoSizeMaxTextSize="13.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" />
+</LinearLayout>

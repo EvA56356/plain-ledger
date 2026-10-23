@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/repeat_bg2" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbarView" layout="@layout/layout_common_title" />
+    <RadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/rg_title" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="12.0dp" android:layout_below="@id/toolbarView">
+        <RadioButton android:textSize="18.0sp" android:textStyle="bold" android:textColor="@drawable/bill_expense_or_earning_font_sl" android:gravity="center" android:id="@id/rb_expense" android:paddingTop="6.0dp" android:paddingBottom="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="支出" android:paddingStart="12.0dp" android:paddingEnd="15.0dp" />
+        <RadioButton android:textSize="18.0sp" android:textStyle="bold" android:textColor="@drawable/bill_expense_or_earning_font_sl" android:gravity="left|center" android:id="@id/rb_earning" android:background="@drawable/af_circle" android:paddingTop="6.0dp" android:paddingBottom="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="收入" android:paddingStart="12.0dp" android:paddingEnd="15.0dp" android:layout_marginStart="24.0dp" />
+    </RadioGroup>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rlv_bill_edit" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="12.0dp" android:layout_marginBottom="42.0dp" android:layout_above="@id/rlv_indicator" android:layout_below="@id/rg_title" />
+    <com.lanniser.kittykeeping.widget.Indicator android:id="@id/rlv_indicator" android:layout_width="match_parent" android:layout_height="7.0dp" android:layout_marginBottom="42.0dp" android:layout_alignParentBottom="true" app:indicatorStyle="custom" app:selectedRes="@drawable/ic_pager_indicator_sel" app:space="5.0dp" app:unselectedRes="@drawable/ic_pager_indicator_nor" />
+</RelativeLayout>

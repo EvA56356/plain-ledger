@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_item" android:background="@mipmap/ic_plan_detail_done" android:layout_width="99.0dp" android:layout_height="118.0dp" android:layout_marginLeft="6.0dp" android:layout_marginTop="13.0dp" android:layout_marginRight="6.0dp" android:layout_alignParentEnd="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/colorBlack" android:id="@id/tv_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/colorBlack" android:id="@id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_below="@id/tv_state" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="10.0sp" android:textColor="#888888" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="93.0dp" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_get" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_save_money_plan_get" android:layout_marginEnd="-6.0dp" android:layout_alignEnd="@id/rl_item" />
+</RelativeLayout>

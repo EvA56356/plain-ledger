@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="285.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/bg_import_bill_cate_hint" android:paddingLeft="30.0dp" android:paddingTop="34.0dp" android:paddingRight="30.0dp" android:paddingBottom="34.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="30.0dp">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_f6657d" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_gravity="center_horizontal" android:id="@id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:includeFontPadding="false" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_only" android:background="@mipmap/btn_bg_import_bill_cate" android:paddingBottom="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="19.0dp" android:text="@string/string_modify_only" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_all" android:background="@mipmap/btn_bg_import_bill_cate" android:paddingBottom="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:text="@string/string_modify_all" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/close" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="32.0dp" app:srcCompat="@drawable/ic_dialog_close" />
+</LinearLayout>

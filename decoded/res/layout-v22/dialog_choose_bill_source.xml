@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/iv_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="88.0dp" android:src="@mipmap/ic_dialog_line_bg" android:scaleType="fitXY" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/rlv_source_list" android:background="@color/colorWhite" android:paddingLeft="21.0dp" android:paddingRight="21.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-60.0dp" android:layout_below="@id/iv_top" android:paddingHorizontal="21.0dp" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-82.5dp" android:src="@drawable/kitty_calendar_search_cat" android:layout_alignTop="@id/iv_top" android:layout_marginEnd="37.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

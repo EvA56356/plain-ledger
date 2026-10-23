@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="37.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_content" android:background="@mipmap/bg_bill_edit_scene" android:layout_width="wrap_content" android:layout_height="31.0dp" android:layout_marginEnd="5.0dp">
+        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#1d2b23" android:gravity="center_vertical" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="31.0dp" android:drawablePadding="5.0dp" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_select" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@mipmap/ic_bill_edit_scene_select_tag" android:layout_marginEnd="-5.0dp" android:layout_alignEnd="@id/ll_content" />
+</RelativeLayout>

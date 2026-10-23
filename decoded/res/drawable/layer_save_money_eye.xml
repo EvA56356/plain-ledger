@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:height="9.0dp" android:width="14.0dp" android:drawable="@mipmap/eye_open_icon" />
+        </layer-list>
+    </item>
+    <item android:state_checked="false">
+        <layer-list>
+            <item android:height="9.0dp" android:width="14.0dp" android:drawable="@mipmap/eye_close_icon" />
+        </layer-list>
+    </item>
+</selector>

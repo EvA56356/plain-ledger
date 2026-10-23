@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="260.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/bg_import_bill_cate_hint" android:paddingLeft="30.0dp" android:paddingTop="34.0dp" android:paddingRight="30.0dp" android:paddingBottom="34.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="30.0dp">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_vip_voice" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="语音记账" android:includeFontPadding="false" />
+        <com.lanniser.kittykeeping.view.AlignTextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_gravity="center_horizontal" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="19.0dp" android:layout_marginRight="4.0dp" android:includeFontPadding="false" android:layout_marginHorizontal="4.0dp" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_vip" android:background="@mipmap/btn_bg_import_bill_cate" android:paddingBottom="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:text="了解VIP权益" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_close" android:layout_width="45.0dp" android:layout_height="45.0dp" android:layout_marginTop="32.0dp" app:srcCompat="@drawable/ic_dialog_close" />
+</LinearLayout>

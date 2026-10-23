@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_content" android:background="@mipmap/bg_voice_dialog" android:layout_width="320.0dp" android:layout_height="146.0dp" android:layout_marginTop="6.0dp" android:layout_marginStart="20.0dp">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:text="您可以说：“昨天充话费100元”" android:layout_marginStart="40.0dp" />
+        <ImageView android:background="@drawable/ic_login_line" android:layout_width="215.0dp" android:layout_height="2.0dp" android:layout_marginTop="10.0dp" android:layout_below="@id/tv_hint" android:layout_marginStart="13.0dp" />
+        <ImageView android:id="@id/iv_recognition" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginTop="77.0dp" android:src="@mipmap/ic_voice_recognition" android:layout_marginStart="112.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="#f97087" android:gravity="center" android:id="@id/tv_failed" android:background="@drawable/shape_bug_pro" android:layout_width="214.0dp" android:layout_height="29.0dp" android:layout_marginTop="75.0dp" android:text="喵喵没有听清，请重试哦～" android:layout_marginStart="13.0dp" />
+    </RelativeLayout>
+    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_talk" android:background="@mipmap/ic_voice_dialog_talk" android:paddingBottom="6.0dp" android:layout_width="78.0dp" android:layout_height="46.0dp" android:layout_marginTop="-4.0dp" android:layout_alignTop="@id/rl_content" android:layout_marginEnd="34.0dp" android:layout_alignEnd="@id/rl_content" />
+</RelativeLayout>

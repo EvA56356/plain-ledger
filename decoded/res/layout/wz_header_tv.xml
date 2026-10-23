@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wz_ic_arrow" android:layout_marginEnd="@dimen/dp_16" />
+    <ImageView android:id="@id/iv_loading" android:visibility="gone" android:layout_width="@dimen/dp_34" android:layout_height="@dimen/dp_34" android:src="@drawable/wz_anim_loading_view" android:layout_marginEnd="@dimen/dp_16" />
+    <TextView android:textSize="@dimen/sp_11" android:textColor="@color/white" android:id="@id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wz_pull_to_refresh" />
+</LinearLayout>

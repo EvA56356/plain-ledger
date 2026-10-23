@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_sample_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="试试下边的这些清单吧" android:layout_marginStart="23.0dp" />
+    <com.lanniser.kittykeeping.view.recyclerview.RecyclerViewAtViewPager2 android:id="@id/rlv_sample" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_below="@id/tv_sample_title" />
+</RelativeLayout>

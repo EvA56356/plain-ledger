@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imageView" android:background="@mipmap/accountbook_cover_selected" android:padding="3.0dp" android:layout_width="70.0dp" android:layout_height="89.0dp" android:src="@mipmap/accountbook_cover_default" />
+    <TextView android:textSize="13.0sp" android:textColor="#f6657d" android:layout_gravity="center_horizontal" android:id="@id/nameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="180.0dp" android:layout_marginTop="14.0dp" android:overScrollMode="never" />
+    <com.lanniser.kittykeeping.widget.Indicator android:id="@id/rvIndicator" android:visibility="gone" android:layout_width="match_parent" android:layout_height="7.0dp" android:layout_marginTop="17.0dp" android:layout_below="@id/vp" app:indicatorStyle="custom" app:selectedRes="@drawable/ic_pager_indicator_sel" app:space="5.0dp" app:unselectedRes="@drawable/ic_pager_indicator_nor" />
+    <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_save_schedule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="攒钱日程" android:layout_below="@id/rvIndicator" android:layout_marginStart="20.0dp" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#f96e88" android:gravity="center_vertical" android:id="@id/tv_widget_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_to_mobile_desktop" android:drawablePadding="5.0dp" android:layout_alignTop="@id/tv_save_schedule" android:layout_alignBottom="@id/tv_save_schedule" android:drawableEnd="@mipmap/ic_arrows_pink" android:layout_marginEnd="20.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

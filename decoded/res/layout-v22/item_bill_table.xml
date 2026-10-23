@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="37.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="7.0dp" android:layout_marginEnd="18.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_month" android:layout_width="48.0dp" android:layout_height="match_parent" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_exp" android:layout_width="0.0dp" android:layout_height="match_parent" android:lines="1" android:layout_weight="1.0" app:autoSizeMaxTextSize="12.0sp" app:autoSizeMinTextSize="7.0sp" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_income" android:layout_width="0.0dp" android:layout_height="match_parent" android:lines="1" android:layout_weight="1.0" app:autoSizeMaxTextSize="12.0sp" app:autoSizeMinTextSize="7.0sp" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_surplus" android:layout_width="0.0dp" android:layout_height="match_parent" android:lines="1" android:layout_weight="1.0" app:autoSizeMaxTextSize="12.0sp" app:autoSizeMinTextSize="7.0sp" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="8.0dp" android:layout_height="10.0dp" android:src="@drawable/ic_mine_arraw" android:layout_marginStart="2.0dp" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dp" android:layout_marginRight="18.0dp" android:src="@drawable/ic_mine_diveder" android:scaleType="centerCrop" android:layout_alignParentBottom="true" android:layout_marginHorizontal="18.0dp" />
+</RelativeLayout>

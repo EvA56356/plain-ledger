@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_chat_setting_name_guide" android:layout_centerHorizontal="true" android:layout_marginEnd="30.0dp" />
+    <ImageView android:id="@id/iv_arraw" android:layout_width="37.0dp" android:layout_height="29.0dp" android:layout_marginTop="-20.0dp" android:layout_marginBottom="15.0dp" android:src="@drawable/ic_big_arraw" android:layout_below="@id/iv_content" android:layout_marginStart="85.0dp" android:layout_alignStart="@id/iv_content" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_container" android:background="@mipmap/bg_goods_priority" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dp" android:layout_marginRight="21.0dp">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_f6657d" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dp" android:text="·购买优先级·" android:layout_centerHorizontal="true" />
+        <CheckBox android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/cb_null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:button="@null" android:text="无" android:drawablePadding="8.0dp" android:layout_below="@id/tv_title" android:drawableStart="@drawable/selector_bill_book" android:layout_marginStart="32.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dp" android:layout_below="@id/cb_null" android:layout_marginStart="32.0dp">
+            <CheckBox android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/cb_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="中优先级" android:drawablePadding="8.0dp" android:drawableStart="@drawable/selector_bill_book" android:layout_marginEnd="8.0dp" />
+            <ImageView android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/ic_album_star_select" />
+            <ImageView android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/ic_album_star_select" android:layout_marginStart="3.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/cb_null" android:layout_marginEnd="32.0dp" android:layout_alignParentEnd="true">
+            <CheckBox android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/cb_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="高优先级" android:drawablePadding="8.0dp" android:drawableStart="@drawable/selector_bill_book" android:layout_marginEnd="8.0dp" />
+            <ImageView android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/ic_album_star_select" />
+            <ImageView android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginLeft="3.0dp" android:layout_marginRight="3.0dp" android:src="@drawable/ic_album_star_select" />
+            <ImageView android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/ic_album_star_select" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/ll_two" android:layout_marginEnd="32.0dp" android:layout_alignParentEnd="true">
+            <CheckBox android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/cb_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="低优先级" android:drawablePadding="8.0dp" android:drawableStart="@drawable/selector_bill_book" android:layout_marginEnd="8.0dp" />
+            <ImageView android:layout_width="12.0dp" android:layout_height="12.0dp" android:src="@drawable/ic_album_star_select" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" android:src="@drawable/ic_dialog_close" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="63.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageView89" android:layout_width="46.0dp" android:layout_height="46.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/statistics_beibao" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/textView92" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_marginStart="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/imageView89" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/addIv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dp" android:layout_marginStart="31.0dp" app:layout_constraintBottom_toBottomOf="@id/imageView89" app:layout_constraintStart_toStartOf="@id/imageView89" app:srcCompat="@mipmap/ic_cate_add" />
+</androidx.constraintlayout.widget.ConstraintLayout>

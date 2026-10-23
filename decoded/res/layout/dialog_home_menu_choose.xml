@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="88.0dp" android:src="@mipmap/ic_dialog_line_bg" android:scaleType="fitXY" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/rv" android:background="@color/colorWhite" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-60.0dp" android:layout_below="@id/iv_top" android:overScrollMode="never" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-82.5dp" android:src="@drawable/kitty_calendar_search_cat" android:layout_alignTop="@id/iv_top" android:layout_marginEnd="37.0dp" android:layout_alignParentEnd="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_bottom" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/rv">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_submit" android:background="@mipmap/accountbook_btn_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dp" android:layout_marginBottom="22.0dp" android:text="@string/confirm_add" />
+    </LinearLayout>
+</RelativeLayout>

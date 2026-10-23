@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/rl_main" android:layout_width="322.0dp" android:layout_height="148.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <RelativeLayout android:background="@mipmap/ic_widget_no_data_middle_current_month_balance" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14.0dp" android:textColor="@color/colorBlack" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dp" android:layout_marginStart="30.0dp" />
+        <TextView android:textSize="21.0dp" android:textColor="#fb6464" android:id="@id/tv_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_below="@id/tv_title" android:layout_alignStart="@id/tv_title" />
+        <TextView android:textSize="12.0dp" android:textColor="#888888" android:id="@id/tv_exp_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="支出" android:layout_below="@id/tv_total" android:layout_alignStart="@id/tv_title" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/colorBlack" android:id="@id/tv_exp" android:layout_width="72.0dp" android:layout_height="wrap_content" android:layout_below="@id/tv_exp_title" android:layout_alignStart="@id/tv_total" />
+        <TextView android:textSize="12.0dp" android:textColor="#888888" android:id="@id/tv_income_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收入" android:layout_toRightOf="@id/tv_exp" android:layout_alignTop="@id/tv_exp_title" android:layout_marginStart="10.0dp" />
+        <TextView android:textSize="12.0dp" android:textColor="#fb6464" android:id="@id/tv_income" android:layout_width="72.0dp" android:layout_height="wrap_content" android:layout_below="@id/tv_income_title" android:layout_alignStart="@id/tv_income_title" />
+    </RelativeLayout>
+</RelativeLayout>

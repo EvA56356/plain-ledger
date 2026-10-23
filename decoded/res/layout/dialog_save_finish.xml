@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_main" android:background="@mipmap/ic_save_finish_dialog_bg" android:layout_width="280.0dp" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dp" android:text="·计划完成·" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#f55a72" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="220.0dp" android:text="·荣誉证书·" android:drawablePadding="16.0dp" />
+        <com.lanniser.kittykeeping.view.AlignTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#0d0d0d" android:id="@id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="34.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="34.0dp" android:text="恭喜喵！你在" />
+    </LinearLayout>
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_share" android:background="@mipmap/ic_share_save_achievement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33.0dp" />
+</LinearLayout>

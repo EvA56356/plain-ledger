@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/toolbarView" android:layout_width="match_parent" android:layout_height="0.0dp" />
+    <ImageView android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back_sl" android:layout_below="@id/toolbarView" android:layout_marginStart="22.0dp" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240.0dp" android:text="@string/ticket_skin" android:maxLines="1" android:layout_alignTop="@id/iv_close" android:layout_alignBottom="@id/iv_close" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#1a221d" android:gravity="center" android:id="@id/tv_hint" android:background="@mipmap/bg_edit_bills_bottom" android:layout_width="match_parent" android:layout_height="60.0dp" android:text="升级VIP小票皮肤免费用" android:layout_alignParentBottom="true" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20.0dp" android:layout_marginTop="10.0dp" android:layout_marginRight="20.0dp" android:layout_above="@id/tv_hint" android:layout_below="@id/tv_center" android:overScrollMode="never" />
+</RelativeLayout>

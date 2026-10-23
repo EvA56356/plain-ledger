@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@mipmap/bg_money_much" android:layout_width="281.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#f6657d" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dp" android:text="攒钱计划金额过大" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/colorBlack" android:id="@id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dp" android:layout_marginTop="17.0dp" android:layout_marginRight="28.0dp" android:text="@string/string_save_plan_money_much" android:includeFontPadding="false" android:layout_below="@id/tv_title" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_modify" android:background="@mipmap/btn_bg_plan_red" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dp" android:text="去修改" android:includeFontPadding="false" android:layout_below="@id/tv_content" android:layout_centerHorizontal="true" />
+</RelativeLayout>

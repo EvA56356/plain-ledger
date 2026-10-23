@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_bg" android:background="@mipmap/ic_dialog_pro_buy_bg" android:layout_width="278.0dp" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_pro" android:background="@drawable/shape_bug_pro" android:layout_width="65.0dp" android:layout_height="65.0dp" android:layout_marginTop="100.0dp" android:layout_marginStart="30.0dp" />
+        <TextView android:textSize="16.0sp" android:textColor="#fff6657d" android:id="@id/tv_pro_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_toRightOf="@id/iv_pro" android:layout_alignTop="@id/iv_pro" android:layout_marginStart="12.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff787878" android:id="@id/tv_pro_des" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_below="@id/tv_pro_name" android:layout_marginEnd="24.0dp" android:layout_alignStart="@id/tv_pro_name" />
+        <RelativeLayout android:id="@id/rl_use" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_below="@id/iv_pro" android:layout_alignStart="@id/iv_pro">
+            <TextView android:textSize="11.0sp" android:textColor="@color/colorWhite" android:id="@id/tv_use_text" android:background="@drawable/shape_pro_use" android:paddingLeft="8.0dp" android:paddingTop="2.0dp" android:paddingRight="8.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff2c2c2c" android:id="@id/tv_use_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="6.0dp" android:layout_marginEnd="24.0dp" android:layout_toEndOf="@id/tv_use_text" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_confirm" android:background="@mipmap/ic_dialog_pro_buy_btn" android:layout_width="131.0dp" android:layout_height="47.0dp" android:layout_marginTop="16.0dp" android:layout_below="@id/rl_use" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/imageView" android:visibility="visible" android:layout_width="21.0dp" android:layout_height="19.0dp" android:src="@drawable/ic_shop_theme_buy" android:layout_marginStart="24.0dp" android:layout_marginEnd="3.0dp" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@id/tv_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dp" android:text="150  购买" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_use" android:background="@mipmap/ic_use_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_below="@id/rl_use" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34.0dp" app:srcCompat="@drawable/ic_dialog_close" />
+</LinearLayout>

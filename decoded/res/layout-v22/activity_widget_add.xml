@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/repeat_bg2" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbarView" layout="@layout/layout_common_title" />
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#1b2620" android:gravity="center" android:id="@id/tv_vip" android:background="@mipmap/bg_edit_bills_bottom" android:layout_width="match_parent" android:layout_height="58.0dp" android:text="升级VIP解锁所有小组件" android:layout_alignParentBottom="true" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/cl_main" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/tv_vip" android:layout_below="@id/toolbarView">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+            <com.to.aboomy.pager2banner.Banner android:id="@id/banner" android:layout_width="match_parent" android:layout_height="168.0dp" android:layout_marginTop="20.0dp" app:layout_scrollFlags="scroll" />
+            <com.to.aboomy.pager2banner.IndicatorView android:layout_gravity="center" android:id="@id/indicator_view" android:paddingTop="1.0dp" android:paddingBottom="1.0dp" android:layout_width="wrap_content" android:layout_height="8.0dp" android:layout_marginTop="12.0dp" android:paddingVertical="1.0dp" app:layout_scrollFlags="scroll" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dp" app:layout_scrollFlags="scroll">
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/color_1c2720" android:id="@id/tv_widget_shop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小组件商店" android:layout_marginStart="21.0dp" />
+                <View android:id="@id/tv_bg_color_line" android:background="@drawable/shape_yellow_line" android:layout_width="wrap_content" android:layout_height="2.0dp" android:layout_marginTop="2.0dp" android:layout_below="@id/tv_widget_shop" android:layout_alignStart="@id/tv_widget_shop" android:layout_alignEnd="@id/tv_widget_shop" />
+            </RelativeLayout>
+            <com.google.android.material.tabs.TabLayout android:id="@id/tab_type" android:layout_width="match_parent" android:layout_height="28.0dp" android:layout_marginTop="14.0dp" app:tabGravity="center" app:tabIndicator="@null" app:tabMinWidth="53.0dp" app:tabMode="scrollable" app:tabPaddingEnd="8.0dp" app:tabPaddingStart="0.0dp" app:tabRippleColor="@color/transparent" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp_widget" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="13.0dp" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <ImageView android:id="@id/iv_my_widget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="90.0dp" android:src="@mipmap/ic_my_widget" android:layout_marginEnd="-10.0dp" app:layout_anchor="@id/vp_widget" app:layout_anchorGravity="end|bottom" app:layout_behavior="com.lanniser.kittykeeping.ui.activity.widget.MyWidgetBehavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

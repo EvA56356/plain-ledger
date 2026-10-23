@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" package="com.youqi.miaomiao" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="com.miui.systemAdSolution.adSwitch.PROVIDER"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION"/>
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT"/>
+    <uses-permission android:name="android.permission.project_media"/>
+    <uses-permission android:name="android.permission.BIND_QUICK_SETTINGS_TILE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <queries package="com.youqi.miaomiao">
+        <package android:name="com.tencent.mm"/>
+        <package android:name="com.tencent.mobileqq"/>
+        <package android:name="com.tencent.minihd.qq"/>
+        <package android:name="com.tencent.qqlite"/>
+        <package android:name="com.tencent.tim"/>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="com.getui.sdk.action"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <package android:name="com.smile.gifmaker"/>
+        <package android:name="com.kuaishou.nebula"/>
+        <package android:name="com.achievo.vipshop"/>
+        <package android:name="air.tv.douyu.android.phone"/>
+        <package android:name="cn.dxy.android.aspirin"/>
+        <package android:name="com.alibaba.android.babylon"/>
+        <package android:name="com.alibaba.android.rimet"/>
+        <package android:name="com.alibaba.android.rimet.aliding"/>
+        <package android:name="com.alipay.android.app"/>
+        <package android:name="com.autonavi.minimap"/>
+        <package android:name="com.babytree.apps.pregnancy"/>
+        <package android:name="com.baidu.searchbox"/>
+        <package android:name="com.booking"/>
+        <package android:name="com.chinatelecom.bestpayclient"/>
+        <package android:name="com.cmbchina.ccd.pluto.cmbActivity"/>
+        <package android:name="com.coloros.gamespace"/>
+        <package android:name="com.coloros.ocs"/>
+        <package android:name="com.coloros.ocs.opencapabilityservice"/>
+        <package android:name="com.coloros.opencapabilityservice"/>
+        <package android:name="com.cubic.autohome"/>
+        <package android:name="com.dragon.read"/>
+        <package android:name="com.duowan.kiwi"/>
+        <package android:name="com.duowan.mobile"/>
+        <package android:name="com.eg.android.AlipayGphone"/>
+        <package android:name="com.eg.android.AlipayGphoneRC"/>
+        <package android:name="com.fengdu.read"/>
+        <package android:name="com.gotokeep.keep"/>
+        <package android:name="com.greenpoint.android.mc10086.activity"/>
+        <package android:name="com.hexin.plat.android"/>
+        <package android:name="com.hihonor.android.magicx.media.audioengine"/>
+        <package android:name="com.hihonor.appmarket"/>
+        <package android:name="com.hihonor.id"/>
+        <package android:name="com.hihonor.systemappsupdater"/>
+        <package android:name="com.homelink.android"/>
+        <package android:name="com.hpbr.bosszhipin"/>
+        <package android:name="com.huawei.android.pushagent"/>
+        <package android:name="com.huawei.works"/>
+        <package android:name="com.hunantv.imgo.activity"/>
+        <package android:name="com.huajiao"/>
+        <package android:name="com.immomo.momo"/>
+        <package android:name="com.immomo.momo.timeline"/>
+        <package android:name="com.jd.jrapp"/>
+        <package android:name="com.jingdong.app.mall"/>
+        <package android:name="com.kaixin001.activity"/>
+        <package android:name="com.kmxs.reader"/>
+        <package android:name="com.lemon.lv"/>
+        <package android:name="com.lianjia.beike"/>
+        <package android:name="com.lietou.mishu"/>
+        <package android:name="com.mt.mtxx.mtxx"/>
+        <package android:name="com.netease.cloudmusic"/>
+        <package android:name="com.oplus.bracketspace"/>
+        <package android:name="com.oplus.cosa"/>
+        <package android:name="com.oplus.linker"/>
+        <package android:name="com.oplus.ocs"/>
+        <package android:name="com.oplus.ocs.openauthenticate"/>
+        <package android:name="com.oplus.synergy"/>
+        <package android:name="com.phoenix.read"/>
+        <package android:name="com.qidian.QDReader"/>
+        <package android:name="com.qimao.reader"/>
+        <package android:name="com.qiyi.video"/>
+        <package android:name="com.qzone"/>
+        <package android:name="com.renren.mobile.android"/>
+        <package android:name="com.sankuai.meituan"/>
+        <package android:name="com.shizhuang.duapp"/>
+        <package android:name="com.shuqi.android"/>
+        <package android:name="com.sina.weibo"/>
+        <package android:name="com.ss.android.article.news"/>
+        <package android:name="com.ss.android.auto"/>
+        <package android:name="com.ss.android.ugc.aweme"/>
+        <package android:name="com.ss.android.ugc.aweme.lite"/>
+        <package android:name="com.taobao.idlefish"/>
+        <package android:name="com.taobao.litetao"/>
+        <package android:name="com.taobao.live"/>
+        <package android:name="com.taobao.taobao"/>
+        <package android:name="com.taobao.trip"/>
+        <package android:name="com.tecent.friend"/>
+        <package android:name="com.tencent.WBlog"/>
+        <package android:name="com.tencent.qqlive"/>
+        <package android:name="com.tencent.tmgp.sgame"/>
+        <package android:name="com.tianyancha.skyeye"/>
+        <package android:name="com.tmall.wireless"/>
+        <package android:name="com.tongcheng.android"/>
+        <package android:name="com.UCMobile"/>
+        <package android:name="com.uc.infoflow"/>
+        <package android:name="com.umetrip.android.msky.app"/>
+        <package android:name="com.unnoo.quan"/>
+        <package android:name="com.vivo.daemonService"/>
+        <package android:name="com.vivo.videowidgetmix"/>
+        <package android:name="com.xingin.xhs"/>
+        <package android:name="com.xunmeng.pinduoduo"/>
+        <package android:name="com.yiyou.ga"/>
+        <package android:name="com.youkuchild.android"/>
+        <package android:name="com.youku.phone"/>
+        <package android:name="com.youku.share.sdk.copy.link"/>
+        <package android:name="com.youku.widget.vivo"/>
+        <package android:name="com.zhihu.android"/>
+        <package android:name="ctrip.android.view"/>
+        <package android:name="hk.alipay.wallet"/>
+        <package android:name="hk.alipay.walletRC"/>
+        <package android:name="im.yixin"/>
+        <package android:name="me.ele"/>
+        <package android:name="sina.mobile.tianqitong"/>
+        <package android:name="tv.danmaku.bili"/>
+        <package android:name="com.hupu.games"/>
+        <package android:name="com.quark.browser"/>
+        <package android:name="com.ximalaya.ting.android"/>
+        <package android:name="cn.soulapp.android"/>
+        <package android:name="com.babycloud.hanju"/>
+        <package android:name="com.chaozh.iReader"/>
+        <package android:name="com.qq.reader"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="*"/>
+        </intent>
+        <intent>
+            <action android:name="*"/>
+            <data android:scheme="tbopen"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="com.ss.android.article.lite"/>
+        <intent>
+            <action android:name="com.getui.vendor.action.push"/>
+        </intent>
+        <intent>
+            <action android:name="com.sonymobile.action.service.DEVICE_SDK_INFO"/>
+        </intent>
+        <package android:name="com.google.android.gms"/>
+        <package android:name="com.android.vending"/>
+        <package android:name="com.android.creator"/>
+        <package android:name="com.mdid.msa"/>
+        <package android:name="com.samsung.android.deviceidservice"/>
+        <package android:name="com.coolpad.deviceidsupport"/>
+        <package android:name="com.heytap.openid"/>
+        <package android:name="com.huawei.hwid"/>
+        <package android:name="com.huawei.hwid.tv"/>
+        <package android:name="com.huawei.hms"/>
+        <package android:name="com.asus.msa.SupplementaryDID"/>
+        <package android:name="com.zui.deviceidservice"/>
+        <package android:name="com.qiku.id"/>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+    <uses-permission android:name="com.youqi.miaomiao.openadsdk.permission.TT_PANGOLIN"/>
+    <permission android:name="com.youqi.miaomiao.openadsdk.permission.TT_PANGOLIN" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <permission android:name="com.youqi.miaomiao.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.youqi.miaomiao.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="getui.permission.GetuiService.com.youqi.miaomiao"/>
+    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON"/>
+    <permission android:name="getui.permission.GetuiService.com.youqi.miaomiao" android:protectionLevel="signature"/>
+    <permission android:name="com.youqi.miaomiao.permission.GYRECEIVER" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.youqi.miaomiao.permission.GYRECEIVER"/>
+    <permission android:name="com.youqi.miaomiao.permission.PROCESS_PUSH_MSG" android:protectionLevel="signature"/>
+    <permission android:name="com.youqi.miaomiao.permission.PUSH_PROVIDER" android:protectionLevel="signature"/>
+    <permission android:name="com.youqi.miaomiao.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.youqi.miaomiao.permission.PROCESS_PUSH_MSG"/>
+    <uses-permission android:name="com.youqi.miaomiao.permission.PUSH_PROVIDER"/>
+    <permission android:name="com.youqi.miaomiao.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.youqi.miaomiao.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="freemme.permission.msa"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="com.hihonor.permission.MANAGE_FOLD_SCREEN"/>
+    <uses-permission android:name="com.hihonor.permission.MANAGE_FOLD_SCREEN_PRIVILEGED"/>
+    <permission android:name="com.youqi.miaomiao.com.huawei.openaliance.ad.app.ins" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.youqi.miaomiao.com.huawei.openaliance.ad.app.ins"/>
+    <application android:allowBackup="false" android:appComponentFactory="com.secneo.apkwrapper.AP" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@mipmap/app_logo" android:label="@string/app_name" android:largeHeap="true" android:name="com.secneo.apkwrapper.AW" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/app_logo_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.bill.SceneCateBillStatisticsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.bill.SceneContactStatisticsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.SystemPermissionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.RevokePolicyActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.contact.ContactDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.contact.AddContactActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.contact.ContactProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.scene.SceneAddCateActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.scene.SceneCateManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.scene.SceneManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.act.NewYearActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.act.NewYearRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.bill.TransferDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.chat.AiCatSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.chat.AiSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.chat.AiHistoryBillActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.lanniser.kittykeeping.ui.activity.chat.ChatActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.lanniser.kittykeeping.ui.activity.autobill.AutoBillDataActivity" android:noHistory="true" android:process=":autoBill" android:taskAffinity="float.auto.bill" android:theme="@style/TranslateTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.lanniser.kittykeeping.ui.activity.widget.AppWidgetClickActivity" android:process=":appWidget" android:taskAffinity="float.app.widget" android:theme="@style/TranslateTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.AdPersonalRecommendActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.IntroduceActivity" android:theme="@style/TransparentDialog"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.CourseActivity" android:theme="@style/TransparentDialog"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.autobill.BillIdentifiedActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.ocrbill.NewBillIdentifiedActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.autobill.SceneIdentifiedActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.autobill.AutoBillSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.ocrbill.OcrBillSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.save.ChangeRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.save.SaveMoneyUpgradeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.widget.WidgetMineActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.widget.HourglassWidgetSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.ticket.TicketSkinListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.home.HomeBillMenuActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.home.CatHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.home.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.setting.IndividualizationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.importbill.ImportBillActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.importbill.ImportBillDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.importbill.ImportBillHelpActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.shopping.GoodsListPurchasedActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.user.VipPrivilegeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.shopping.CreateShoppingListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.shopping.ShoppingListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.shopping.GoodsListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.remind.RemindActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.remind.BillRemindSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.ReceiveSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.timedbill.TimedBillDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.ImagePreviewActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.StatisticsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.recycle.RecycleFundAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.recycle.RecycleBillBookActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.recycle.RecycleBillActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.recycle.RecycleBinActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.PayActivity" android:theme="@style/TransparentDialog"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.ticket.TicketDialogActivity" android:theme="@style/TransparentAlphaDialog"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.ticket.TicketHintDialogActivity" android:theme="@style/TransparentAlphaDialog"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.ticket.TicketPreviewDialogActivity" android:theme="@style/TransparentAlphaDialog"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.exportbill.ExportBillActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.timedbill.TimedBillActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.CatAndIllustratedActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.book.BillBookDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.book.BillBookEditActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.book.BillBookListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.bill.CateStatisticsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.bill.BillActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.budget.BudgetBillListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.budget.CateBudgetActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.budget.AddBudgetActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.budget.BudgetActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.postcard.CollectingWindActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.rate.OptionRateActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.rate.ConverterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.rate.ExchangeRateUpdateActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.rate.MyCurrencyActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="design_width_in_dp" android:value="360"/>
+        <meta-data android:name="design_height_in_dp" android:value="640"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.bill.BillEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.shop.ShopActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.user.MineActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.user.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.user.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.user.PhoneLoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.youqi.miaomiao.wxapi.WXEntryActivity" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.user.UpdateNameActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.achievement.AchievementActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.FieldGuildActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.youqi.miaomiao.wxapi.WXPayEntryActivity" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="redacted-sdk-app-id"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.shop.WarehouseActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.theme.ThemeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.home.FeedActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.user.UserInfoAct" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:name="com.lanniser.kittykeeping.ui.user.WebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.bill.cate.CateManagerAct" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.bill.cate.CustomCateAct" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.bill.search.BillSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.bill.BillDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.theme.ThemeAllActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.mailbox.MailboxActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.album.AlbumActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.album.AlbumDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.fund.FundAccountTypeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.fund.FundAccountAddActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.fund.FundAccountAddBorrowActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.fund.FundAccountTransferActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.fund.FundAccountDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.user.VipActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.widget.AppWidgetSmallActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.widget.AppWidgetMiddleActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.widget.AppWidgetLargeActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.widget.TicketWidgetSettingActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.widget.CalendarWidgetSettingActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.widget.QuickBookkeepingWidgetSettingActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.HelpActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.PermissionActivity" android:theme="@style/TranslateTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.InterstitialAdActivity" android:theme="@style/TranslateTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.timedbill.CreateTimedBillActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.timedbill.CateChooseActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.password.PasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.password.PasswordInputActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.user.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.bill.BillTableActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.save.SaveMoneyActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.save.PlanDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.save.CreateSavePlanActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.save.ModifySavePlanActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.user.PhoneBindActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.widget.WidgetBillSmallSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.widget.SaveMoneyWidgetSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.widget.TagsWidgetSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.widget.LineChartMidWidgetSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.widget.LineChartLargeWidgetSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.widget.WebViewWidgetVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.widget.WidgetMainActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.user.VideoPlayerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.dialog.save.SaveClockActivityDialog" android:theme="@style/TransparentDialog"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.user.OauthActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.widget.SaveMoneyPotWidgetSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.clocking.ClockingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.clocking.ClockingAuthActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.clocking.ClockingAuditActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.clocking.ClockingPaymentSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.clocking3.ClockingAuthV3Activity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.clocking3.ClockingAuditV3Activity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.clocking3.ClockingPaymentSuccessV3Activity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.SplashActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="miaomiao"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.ms-excel"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+                <data android:mimeType="text/comma-separated-values"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.ms-excel"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+                <data android:mimeType="text/comma-separated-values"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.lanniser.kittykeeping.ui.activity.SchemeStartActivity" android:theme="@style/TranslateTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.lanniser.kittykeeping.ui.activity.report.MonthlyReportActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.lanniser.kittykeeping.ui.activity.ocrbill.OcrBillScreenCaptureActivity" android:theme="@style/TranslateTheme">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.lanniser.kittykeeping.receiver.CloseScreenCaptureReceiver"/>
+        <receiver android:exported="false" android:name="com.lanniser.kittykeeping.appwidget.AppWidgetSmall">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_small"/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.lanniser.kittykeeping.appwidget.AppWidgetMiddle">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_middle"/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.lanniser.kittykeeping.appwidget.AppWidgetLarge">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_large"/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.lanniser.kittykeeping.receiver.AutoBillBroadcastReceiver" android:process=":autoBill">
+            <intent-filter>
+                <action android:name="com.youqi.miaomiao.AUTO_BILL_CLICK"/>
+            </intent-filter>
+        </receiver>
+        <service android:description="@string/screen_capture_and_app" android:exported="true" android:icon="@mipmap/ic_screen_captur" android:label="@string/screen_capture_title" android:name="com.lanniser.kittykeeping.service.ScreenCaptureTileService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:process=":autoBill">
+            <meta-data android:name="android.service.quicksettings.ACTIVE_TILE" android:value="true"/>
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="mediaProjection" android:name="com.lanniser.kittykeeping.service.ScreenCaptureService" android:permission="android.permission.FOREGROUND_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.media.MediaProjectionService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.lanniser.kittykeeping.service.PetFloatService"/>
+        <service android:name="com.lanniser.kittykeeping.service.AutoBillService" android:process=":autoBill"/>
+        <service android:exported="true" android:isAccessibilityTool="true" android:label="@string/accessibility_hint" android:name="com.google.android.accessibility.selecttospeak.SelectToSpeakService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:persistent="true" android:process=":autoBill" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibility_service_config"/>
+        </service>
+        <provider android:authorities="com.youqi.miaomiao.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="redacted-sdk-app-id"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.tencent.connect.common.AssistActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.youqi.miaomiao.TTFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.bytedance.sdk.openadsdk.TTFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/csj_ad_file_path"/>
+        </provider>
+        <provider android:authorities="com.youqi.miaomiao.gdt.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.qq.e.comm.GDTFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/gdt_ad_file_path"/>
+        </provider>
+        <provider android:authorities="com.youqi.miaomiao.MeishuFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.meishu.sdk.core.service.MeishuFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ms_ad_file_path"/>
+        </provider>
+        <service android:exported="false" android:label="PushService" android:name="com.lanniser.kittykeeping.service.GTPushService" android:process=":pushservice"/>
+        <service android:name="com.lanniser.kittykeeping.service.MmIntentService"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.lanniser.kittykeeping.ui.activity.getui.KeepAliveActivity" android:process=":pushservice" android:taskAffinity="com.youqi.miaomiao.SecondActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:excludeFromRecents="true" android:exported="true" android:name="com.lanniser.kittykeeping.service.KeepAliveService" android:process=":pushservice" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="sync_data_to_system_service" android:value="true"/>
+        <receiver android:exported="false" android:name="com.mlethe.library.accessibility.auto.MainProcessBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.mlethe.library.accessibility.auto.OPEN_AUTO_BILL_SERVICE"/>
+                <action android:name="com.mlethe.library.accessibility.auto.ACTION_BIND_SERVICE"/>
+                <action android:name="com.mlethe.library.accessibility.auto.ACTION_SYNCHRONOUS_ACCESSIBILITY"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.youqi.miaomiao.bd.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.baidu.mobads.sdk.api.BdFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/bd_file_paths"/>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.baidu.mobads.sdk.api.AppActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.baidu.oauth.sdkbqt.view.WebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:name="com.baidu.mobads.sdk.api.MobRewardVideoActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.baidu.mobads.sdk.api.BdShellActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:multiprocess="true" android:name="com.qq.e.comm.DownloadService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:multiprocess="true" android:name="com.qq.e.ads.ADActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:multiprocess="true" android:name="com.qq.e.ads.PortraitADActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:multiprocess="true" android:name="com.qq.e.ads.LandscapeADActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:multiprocess="true" android:name="com.qq.e.ads.RewardvideoPortraitADActivity" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <meta-data android:name="android.notch_support" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:multiprocess="true" android:name="com.qq.e.ads.RewardvideoLandscapeADActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <meta-data android:name="android.notch_support" android:value="true"/>
+        </activity>
+        <activity android:exported="false" android:multiprocess="true" android:name="com.qq.e.ads.DialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:exported="false" android:name="com.jd.ad.sdk.bl.adinteraction.deeplink.JADWebViewActivity" android:theme="@style/JadWebTheme"/>
+        <provider android:authorities="com.youqi.miaomiao.JADMultiProvider" android:exported="false" android:name="com.jd.ad.sdk.dl.cache.multiprocess.JADMultiProvider"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.AdWebViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.KsFullScreenVideoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.KsFullScreenLandScapeVideoActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.KsRewardVideoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.KSRewardLandScapeVideoActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.FeedDownloadActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$KsTrendsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ProfileHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ProfileVideoDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$TubeProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ChannelDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$TubeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$EpisodeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$RequestInstallPermissionActivity" android:theme="@style/TransparentDialogActivity">
+            <intent-filter>
+                <action android:name="intent.action.requestInstallPermission"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity1" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$GoodsPlayBackActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity2" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity3" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity4" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity5" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity6" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity7" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity8" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity9" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity10" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity11" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity12" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity13" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity14" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity15" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity16" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity17" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity18" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop1" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop2" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop3" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleInstance" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance1" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleInstance" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance2" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleInstance" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance3" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="true" android:label="handler" android:name="com.kwad.auth.login.KwadRouteHandlerActivity" android:screenOrientation="behind" android:theme="@style/ksad_Theme.CustomTranslucent"/>
+        <activity-alias android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.youqi.miaomiao.kwad.KwadHandlerActivity" android:screenOrientation="behind" android:targetActivity="com.kwad.auth.login.KwadRouteHandlerActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleInstance" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$DeveloperConfigActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivity" android:screenOrientation="landscape" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleTop1" android:screenOrientation="landscape" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleTop2" android:screenOrientation="landscape" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleTask1" android:screenOrientation="landscape" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleTask2" android:screenOrientation="landscape" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleInstance" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleInstance1" android:screenOrientation="landscape" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleInstance" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleInstance2" android:screenOrientation="landscape" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.WebPageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.kwad.sdk.api.proxy.app.PayResultActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <service android:name="com.kwad.sdk.api.proxy.app.FileDownloadService$SharedMainProcessService"/>
+        <service android:name="com.kwad.sdk.api.proxy.app.FileDownloadService$SeparateProcessService"/>
+        <service android:exported="false" android:name="com.kwad.sdk.api.proxy.app.DownloadService"/>
+        <service android:exported="false" android:name="com.kwad.sdk.api.proxy.app.ServiceProxyRemote" android:process=":kssdk_remote"/>
+        <provider android:authorities="com.youqi.miaomiao.adFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.kwad.sdk.api.proxy.app.AdSdkFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ksad_file_paths"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.meishu.sdk.activity.SdkInterstitialActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:exported="false" android:name="com.meishu.sdk.activity.MeishuDownloadDetailActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.meishu.sdk.activity.MeishuOpenDeepLinkActivity" android:theme="@style/InstitialTranspant"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.meishu.sdk.activity.MeishuRewardVideoPlayerActivity" android:screenOrientation="behind" android:theme="@style/MeishuFullScreen"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.meishu.sdk.activity.MeishuRewardH5Activity" android:screenOrientation="behind" android:theme="@style/MeishuFullScreen"/>
+        <activity android:exported="false" android:name="com.meishu.sdk.activity.MeishuWebviewActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.meishu.sdk.meishu_ad.view.DownLoadDialogActivity" android:theme="@style/MyTranslucentTheme"/>
+        <activity android:exported="false" android:name="com.meishu.sdk.activity.MeishuAlertDialogActivity" android:theme="@style/MeishuDownloadDialog"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.meishu.sdk.activity.MeishuDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <provider android:authorities="com.youqi.miaomiao.MsLifeCycleContent" android:exported="false" android:name="com.meishu.sdk.core.service.MsLifeCycleContent"/>
+        <activity android:exported="false" android:name="com.insightvision.openadsdk.view.web.WebViewActivity" android:theme="@style/Fanti_AppTheme_NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="webview" android:scheme="fanti"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.insightvision.openadsdk.download.DownloadAppActivity" android:theme="@style/Fanti_Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="download" android:scheme="fanti"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.insightvision.openadsdk.template.rendering.reward.activity.RewardAdActivity" android:screenOrientation="portrait" android:theme="@style/Fanti_Theme.Transparent"/>
+        <activity android:exported="false" android:name="com.insightvision.openadsdk.template.rendering.table.activity.TableScreenActivity" android:screenOrientation="portrait" android:theme="@style/Fanti_Theme.Transparent"/>
+        <provider android:authorities="com.youqi.miaomiao.FanTiApkProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.insightvision.openadsdk.FanTiApkProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/insight_file_paths"/>
+        </provider>
+        <receiver android:enabled="true" android:exported="false" android:name="com.byazt.za.Collector"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.ss.android.downloadlib.activity.TTDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.byazt.bm.JumpKllkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="false" android:name="com.byazt.zs.DownloadReceiver"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.ss.android.socialbase.appdownloader.view.DownloadHandleNotificationActivity"/>
+        <service android:exported="false" android:name="com.byazt.z.DownloadHandlerService" android:stopWithTask="true"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.byazt.y.JumpUnknownSourceActivity" android:theme="@android:style/Theme.Dialog"/>
+        <service android:enabled="true" android:exported="false" android:name="com.byazt.z.RetryJobSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:stopWithTask="true"/>
+        <service android:exported="false" android:name="com.byazt.n.DownloadNotificationService" android:stopWithTask="true"/>
+        <service android:exported="false" android:name="com.byazt.zz.CSJDownloadService" android:stopWithTask="true"/>
+        <service android:exported="false" android:name="com.byazt.b.DownloadHandleService" android:stopWithTask="true"/>
+        <service android:exported="false" android:name="com.byazt.zz.SqlDownloadCacheService" android:stopWithTask="true"/>
+        <service android:exported="false" android:name="com.byazt.zz.CSJIndependentProcessDownloadService" android:process=":downloader" android:stopWithTask="true">
+            <intent-filter>
+                <action android:name="com.ss.android.socialbase.downloader.remote"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTNativePageActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTWebPageActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTSevenScreenWebPageActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTVideoWebPageActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTVideoScrollWebPageActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.component.reward.activity.TTRewardVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.component.reward.activity.TTRewardVideoLandscapeActivity" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.component.reward.activity.TTFullScreenVideoLandscapeActivity" android:screenOrientation="landscape"/>
+        <service android:exported="false" android:name="com.byazt.wzi.BinderPoolService"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.byazt.qde.Stub_Standard_Activity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|uiMode|screenSize" android:exported="false" android:launchMode="standard" android:name="com.byazt.qde.Stub_Standard_Portrait_Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.byazt.qde.Stub_Standard_Activity_T" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|uiMode|screenSize" android:exported="false" android:launchMode="standard" android:name="com.byazt.qde.Stub_Standard_Landscape_Activity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.byazt.qde.Stub_Activity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byazt.qde.Stub_SingleTask_Activity_T" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byazt.qde.Stub_SingleTask_Activity" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <provider android:authorities="com.youqi.miaomiao.pangle.servermanager.downloader.com.bytedance.sdk.openadsdk.adhost" android:exported="false" android:name="com.byazt.gg.DownloaderServerManager" android:process=":downloader"/>
+        <provider android:authorities="com.youqi.miaomiao.pangle.servermanager.main" android:exported="false" android:name="com.byazt.gg.MainServerManager"/>
+        <provider android:authorities="com.youqi.miaomiao.TTMultiProvider" android:exported="false" android:name="com.byazt.vf.TTMultiProvider"/>
+        <service android:exported="false" android:name="com.byazt.nu.ApiDownloadHandlerService" android:stopWithTask="true"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.byazt.nu.ApiDownloadHandleNotificationActivity"/>
+        <provider android:authorities="com.youqi.miaomiao.pangle.servermanager.main" android:exported="false" android:name="com.byazt.quv.MainServerManager"/>
+        <provider android:authorities="com.youqi.miaomiao.pangle.provider.proxy.main" android:exported="false" android:name="com.byazt.sj.MainProcessProviderProxy"/>
+        <provider android:authorities="com.youqi.miaomiao.pangle.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.byazt.uk.FileProvider"/>
+        <activity android:exported="true" android:name="com.bytedance.android.openliveplugin.stub.activity.DouyinAuthorizeActivityProxy"/>
+        <activity android:exported="true" android:name="com.bytedance.android.openliveplugin.stub.activity.DouyinAuthorizeActivityLiveProcessProxy" android:process=":bytelive"/>
+        <provider android:authorities="com.youqi.miaomiao.bytedance.android.openliveplugin.process.server.LiveServerManager" android:exported="false" android:name="com.bytedance.android.openliveplugin.process.server.LiveServerManager" android:process=":bytelive"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|colorMode" android:exported="false" android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|colorMode" android:exported="false" android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait2" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|colorMode" android:exported="false" android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait3" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|colorMode" android:exported="false" android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait4" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|colorMode" android:exported="false" android:name="com.bytedance.android.openliveplugin.stub.activity.StubActivity$Activity_Portrait5" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byted.live.lite.Activity_bytelive_singleTask4" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_bytelive_singleTop3" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_bytelive_singleTop2" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_bytelive_singleTop5" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_bytelive_singleTop4" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.byted.live.lite.Activity_bytelive_standard" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_bytelive_singleTop1" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byted.live.lite.Activity_bytelive_singleTask1" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_bytelive_singleTop6" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byted.live.lite.Activity_bytelive_singleTask2" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byted.live.lite.Activity_bytelive_singleTask3" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byted.live.lite.Activity_main_singleTask1" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byted.live.lite.Activity_main_singleTask2" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byted.live.lite.Activity_main_singleTask3" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.byted.live.lite.Activity_main_singleTask4" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.byted.live.lite.Activity_main_standard" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_main_singleTop1" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_main_singleTop2" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleInstance" android:name="com.byted.live.lite.Activity_main_singleInstance1" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_main_singleTop5" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_main_singleTop6" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_main_singleTop3" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byted.live.lite.Activity_main_singleTop4" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:launchMode="singleInstance" android:name="com.byted.live.lite.Activity_bytelive_singleInstance1" android:process=":bytelive" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <provider android:authorities="com.youqi.miaomiao.pangle.servermanager.bytelive.com.byted.live.lite" android:exported="false" android:name="com.byted.live.lite.ServerManager_bytelive" android:process=":bytelive"/>
+        <provider android:authorities="com.youqi.miaomiao.pangle.servermanager.push.com.byted.live.lite" android:exported="false" android:name="com.byted.live.lite.ServerManager_push" android:process=":push"/>
+        <provider android:authorities="com.youqi.miaomiao.pangle.servermanager.downloader.com.byted.live.lite" android:exported="false" android:name="com.byted.live.lite.ServerManager_downloader" android:process=":downloader"/>
+        <activity android:exported="false" android:name="com.bytedance.msdk.api.activity.TTDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|orientation|screenSize" android:exported="false" android:name="com.bytedance.msdk.api.activity.TTTransparentActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.ioio.rewardhub.ui.activity.WzHomeActivity" android:screenOrientation="portrait" android:theme="@style/WZTheme.Common"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.ioio.rewardhub.ui.activity.WzExtractMoneyActivity" android:screenOrientation="portrait" android:theme="@style/WZTheme.Common"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.ioio.rewardhub.ui.activity.WzRulesAtivity" android:screenOrientation="portrait" android:theme="@style/WZTheme.Common"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.ioio.rewardhub.ui.activity.WzRevenueListActivity" android:screenOrientation="portrait" android:theme="@style/WZTheme.Common"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.ioio.rewardhub.ui.activity.WzTakeoutSubsidyActivity" android:screenOrientation="portrait" android:theme="@style/WZTheme.Common"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.ioio.rewardhub.ui.activity.PermissionWZActivity" android:theme="@style/WZTranslateTheme"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.ioio.rewardhub.ui.activity.WzWidgetSettingActivity" android:screenOrientation="portrait" android:theme="@style/WZTheme.Common"/>
+        <receiver android:exported="true" android:name="com.ioio.rewardhub.widget.WzAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/wz_app_widget_info"/>
+        </receiver>
+        <activity android:name="cn.aiyo.fne.tarot.ui.TarotGameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="cn.aiyo.fne.tarot.ui.TarotInterpretResultActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="com.youqi.miaomiao.luckProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.luck.picture.lib.basic.PictureFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ps_file_paths"/>
+        </provider>
+        <service android:enabled="true" android:foregroundServiceType="location" android:name="com.luck.picture.lib.service.ForegroundService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.luck.picture.lib.basic.PictureSelectorSupporterActivity" android:theme="@style/Base.Theme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.luck.picture.lib.basic.PictureSelectorTransparentActivity" android:theme="@style/Picture.Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.yalantis.ucrop.UCropMultipleActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <provider android:authorities="com.youqi.miaomiao.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <meta-data android:name="hume_convert.AppConvert.sdk.version" android:value="2.0.2.0"/>
+        <activity android:exported="true" android:name="com.bytedance.ads.convert.BDBridgeActivity" android:theme="@style/TranslucentTheme"/>
+        <provider android:authorities="com.youqi.miaomiao.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <meta-data android:name="OPPOPUSH_APPKEY" android:value="REDACTED_EMBEDDED_SERVICE_VALUE"/>
+        <meta-data android:name="OPPOPUSH_APPSECRET" android:value="REDACTED_EMBEDDED_SERVICE_VALUE"/>
+        <service android:exported="true" android:name="com.igexin.sdk.OppoPushService" android:permission="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.igexin.sdk.OppoAppPushService" android:permission="com.heytap.mcs.permission.RECIEVE_PUSH_MESSAGE" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"/>
+                <action android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="sdkVersion" android:value="3503"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="false" android:name="com.alipay.sdk.app.H5AuthActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="true" android:launchMode="singleInstance" android:name="com.alipay.sdk.app.PayResultActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="true" android:launchMode="singleTask" android:name="com.alipay.sdk.app.AlipayResultActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="false" android:name="com.alipay.sdk.app.H5OpenAuthActivity" android:screenOrientation="behind" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|layoutDirection|fontScale" android:exported="false" android:name="com.alipay.sdk.app.APayEntranceActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.facebook.sdk.AutoInitEnabled" android:value="false"/>
+        <activity android:name="com.mlethe.library.imagepreview.GPreviewActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.mlethe.library.imagepreview.GPVideoPlayerActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="GETUI_APPID" android:value="REDACTED_EMBEDDED_SERVICE_VALUE"/>
+        <meta-data android:name="ZX_CHANNEL_ID" android:value="C01-GEztJH0JLdBC"/>
+        <meta-data android:name="ZX_APPID_GETUI" android:value="REDACTED_EMBEDDED_SERVICE_VALUE"/>
+        <service android:exported="false" android:label="NotificationCenter" android:name="com.igexin.sdk.PushService" android:process=":pushservice"/>
+        <service android:exported="true" android:name="com.igexin.sdk.GTIntentService"/>
+        <service android:exported="true" android:name="com.igexin.sdk.GService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.getui.sdk.action"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:name="com.igexin.sdk.GetuiActivity" android:process=":pushservice" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.getui.sdk.action"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.igexin.sdk.PopupActivity" android:process=":pushservice" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="GTSDK_VERSION" android:value="3.3.7.0"/>
+        <meta-data android:name="GT_INSTALL_CHANNEL" android:value="umeng"/>
+        <service android:exported="false" android:name="com.getui.gtc.GtcService">
+            <intent-filter>
+                <action android:name="com.getui.gtc.sdk.service.action"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.youqi.miaomiao.getui.gtc.provider" android:exported="false" android:name="com.getui.gtc.base.GtcProvider"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="REDACTED_EMBEDDED_SERVICE_VALUE"/>
+        <service android:exported="false" android:name="com.igexin.sdk.HmsPushMessageService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:permission="com.youqi.miaomiao.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.huawei.hms.support.api.push.PushReceiver" android:permission="com.youqi.miaomiao.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:enabled="true" android:exported="true" android:name="com.huawei.hms.support.api.push.service.HmsMsgService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.push.msg.NOTIFY_MSG"/>
+                <action android:name="com.huawei.push.msg.PASSBY_MSG"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.youqi.miaomiao.huawei.push.provider" android:exported="true" android:name="com.huawei.hms.support.api.push.PushProvider" android:readPermission="com.youqi.miaomiao.permission.PUSH_PROVIDER" android:writePermission="com.youqi.miaomiao.permission.PUSH_WRITE_PROVIDER"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:push" android:value="push:6.12.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:push:push" android:value="1"/>
+        <activity android:exported="false" android:name="com.huawei.hms.support.api.push.TransActivity"/>
+        <meta-data android:name="MIPUSH_SDK_VERSION_CODE" android:value="60001"/>
+        <meta-data android:name="MIPUSH_SDK_VERSION_NAME" android:value="6_0_1-C"/>
+        <meta-data android:name="MIPUSH_APPID" android:value="REDACTED_EMBEDDED_SERVICE_VALUE"/>
+        <meta-data android:name="MIPUSH_APPKEY" android:value="REDACTED_EMBEDDED_SERVICE_VALUE"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE" android:process=":pushservice"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService" android:process=":pushservice"/>
+        <receiver android:exported="true" android:name="com.igexin.sdk.MiuiPushReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="supportStyle" android:value="scene|voip"/>
+        </activity>
+        <meta-data android:name="api_key" android:value="REDACTED_EMBEDDED_SERVICE_VALUE"/>
+        <meta-data android:name="app_id" android:value="REDACTED_EMBEDDED_SERVICE_VALUE"/>
+        <receiver android:exported="false" android:name="com.igexin.sdk.VivoPushMessageReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.vivo.pushclient.action.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="sdk_version_vivo" android:value="506"/>
+        <service android:exported="true" android:name="com.vivo.push.sdk.service.CommandClientService" android:permission="com.push.permission.UPSTAGESERVICE" android:process=":pushservice"/>
+        <meta-data android:name="local_iv" android:value="REDACTED_EMBEDDED_SERVICE_VALUE"/>
+        <meta-data android:name="com.vivo.push.support_monitor" android:value="1"/>
+        <service android:exported="true" android:name="com.igexin.assist.control.stp.StpService" android:permission="com.getui.vendor.push.permission" android:process=":pushservice">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.sdk.ups.action.com.youqi.miaomiao"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="hw_ads_sdk_type" android:value="6"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-lite" android:value="ads-lite:13.4.75.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-consent" android:value="ads-consent:3.4.77.300"/>
+        <provider android:authorities="com.youqi.miaomiao.ThinkingDataContentProvider" android:enabled="true" android:exported="false" android:name="cn.thinkingdata.analytics.persistence.storage.contentProvider.ThinkingDataContentProvider"/>
+        <activity android:name="com.library.zt.ad.activity.ZTDouYinMallActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="com.library.zt.ad.activity.ZTInteractionAdActivity" android:theme="@style/ZTTransparentThemeDialog"/>
+        <activity android:launchMode="singleTop" android:name="com.library.zt.ad.activity.ZTJTWebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:launchMode="singleTop" android:name="com.library.zt.ad.activity.ZTWebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <provider android:authorities="com.youqi.miaomiao.ad.download.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.library.zt.ad.provider.DownloadFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/zt_ad_file_path"/>
+        </provider>
+        <provider android:authorities="com.youqi.miaomiao.aaidinitprovider" android:exported="false" android:initOrder="500" android:name="com.huawei.hms.aaid.InitProvider"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:6.12.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-banner" android:value="ads-banner:13.4.75.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-native" android:value="ads-native:13.4.75.300"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="false" android:multiprocess="true" android:name="com.huawei.openalliance.ad.activity.FeedbackActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data android:name="hnc-theme" android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-interstitial" android:value="ads-interstitial:13.4.75.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-reward" android:value="ads-reward:13.4.75.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-lang" android:value="ads-lang:13.4.75.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-splash" android:value="ads-splash:13.4.75.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-instream" android:value="ads-instream:13.4.75.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-jsbridge" android:value="ads-jsbridge:3.4.75.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:pps-phone:adsbrainkit" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-identifier" android:value="ads-identifier:3.4.62.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:6.11.0.302"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+        <meta-data android:name="availableLoaded" android:value="yes"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-base" android:value="ads-base:13.4.75.300"/>
+        <activity android:exported="true" android:name="com.huawei.openalliance.ad.activity.PPSLauncherActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.youqi.miaomiao" android:scheme="hwpps"/>
+            </intent-filter>
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data android:name="hnc-theme" android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <activity android:exported="false" android:name="com.huawei.openalliance.ad.activity.PPSBridgeActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data android:name="hnc-theme" android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <activity android:exported="false" android:name="com.huawei.openalliance.ad.activity.PPSNotificationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data android:name="hnc-theme" android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.huawei.openalliance.ad.activity.AgProtocolActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data android:name="hnc-theme" android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <meta-data android:name="com.huawei.hms.min_api_level:pps-phone:adsuiengine" android:value="1"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.huawei.openalliance.ad.activity.TemplateStubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.huawei.hms.pps.action.PPS_STUB"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data android:name="hnc-theme" android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:excludeFromRecents="true" android:exported="false" android:name="com.huawei.openalliance.ad.activity.ComplianceActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data android:name="hnc-theme" android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.huawei.openalliance.ad.activity.PPSShareActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+            <meta-data android:name="hnc-theme" android:value="androidhnext:style/Theme.Magic.Translucent.NoTitleBar"/>
+        </activity>
+        <provider android:authorities="com.youqi.miaomiao.pps.ecprovider" android:exported="true" android:name="com.huawei.openalliance.ad.provider.PPSECProvider"/>
+        <activity android:configChanges="locale|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.huawei.hms.activity.BridgeActivity" android:screenOrientation="behind" android:theme="@style/Base_Translucent">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.huawei.hms.activity.EnableServiceActivity"/>
+        <provider android:authorities="com.youqi.miaomiao.AGCInitializeProvider" android:exported="false" android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"/>
+        <service android:exported="false" android:name="com.huawei.agconnect.core.ServiceDiscovery"/>
+        <provider android:authorities="com.youqi.miaomiao.CP" android:exported="false" android:initOrder="2147483647" android:name="com.secneo.apkwrapper.CP"/>
+    </application>
+</manifest>

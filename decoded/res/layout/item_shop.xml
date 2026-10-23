@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/itemLayout" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.lanniser.kittykeeping.view.SquareFrameLayout android:id="@id/propBg" android:background="@drawable/ic_item_prop" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10.0dp" android:layout_marginStart="8.0dp">
+        <ImageView android:layout_gravity="center" android:id="@id/propImg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_placeholder" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside" />
+        <LinearLayout android:layout_gravity="center|bottom" android:orientation="horizontal" android:id="@id/ll_price" android:layout_width="wrap_content" android:layout_height="27.0dp" android:layout_marginBottom="10.0dp">
+            <ImageView android:id="@id/iv_coin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_shop_theme_buy" />
+            <com.lanniser.kittykeeping.view.StrokeTextView android:textSize="17.0sp" android:textColor="#251f0e" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30" android:layout_marginStart="3.0dp" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_new_prop" />
+    </com.lanniser.kittykeeping.view.SquareFrameLayout>
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_marginBottom="12.0dp" android:layout_below="@id/propBg" android:layout_alignStart="@id/propBg" android:layout_alignEnd="@id/propBg" />
+    <ImageView android:id="@id/iv_vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0dp" android:src="@mipmap/ic_pro_theme_vip" android:layout_alignTop="@id/propBg" android:layout_marginStart="-8.0dp" android:layout_alignStart="@id/propBg" />
+</RelativeLayout>

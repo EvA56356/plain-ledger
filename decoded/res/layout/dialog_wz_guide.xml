@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.libpag.PAGView android:id="@id/pag_view" android:layout_width="match_parent" android:layout_height="624.0dp" />
+    <RelativeLayout android:id="@id/rl_dialog" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/bg_dialog_wz_guide" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_withdraw_deposit_user" android:background="@drawable/shape_circle_f6657d" android:layout_width="wrap_content" android:layout_height="21.0dp" android:layout_marginTop="120.0dp" android:paddingStart="4.0dp" android:paddingEnd="12.0dp" android:layout_marginStart="14.0dp" android:backgroundTint="#40000000">
+            <androidx.constraintlayout.utils.widget.ImageFilterView android:id="@id/iv_avatar" android:layout_width="14.0dp" android:layout_height="14.0dp" android:scaleType="centerCrop" app:round="9.0dp" />
+            <TextView android:textSize="7.0sp" android:textColor="@color/white" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dp" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wz_ic_wechat" android:layout_marginStart="4.0dp" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rl_withdraw_deposit_succeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:layout_alignBottom="@id/iv_bg" android:layout_centerHorizontal="true">
+            <androidx.constraintlayout.utils.widget.ImageFilterView android:id="@id/iv_user_one" android:visibility="gone" android:layout_width="19.0dp" android:layout_height="19.0dp" android:foreground="@mipmap/bg_friend_header" android:src="@mipmap/app_logo_round" android:foregroundTint="@color/white" app:round="10.0dp" />
+            <androidx.constraintlayout.utils.widget.ImageFilterView android:id="@id/iv_user_two" android:visibility="gone" android:layout_width="19.0dp" android:layout_height="19.0dp" android:foreground="@mipmap/bg_friend_header" android:src="@mipmap/app_logo_round" android:layout_marginStart="-10.0dp" android:layout_toEndOf="@id/iv_user_one" android:foregroundTint="@color/white" app:round="10.0dp" />
+            <androidx.constraintlayout.utils.widget.ImageFilterView android:id="@id/iv_user_three" android:visibility="gone" android:layout_width="19.0dp" android:layout_height="19.0dp" android:foreground="@mipmap/bg_friend_header" android:src="@mipmap/app_logo_round" android:layout_marginStart="-10.0dp" android:layout_toEndOf="@id/iv_user_two" android:foregroundTint="@color/white" app:round="10.0dp" />
+            <TextView android:textSize="9.0dp" android:textStyle="bold" android:textColor="#545454" android:id="@id/tv_rl_withdraw_deposit_succeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="6.0dp" android:layout_toEndOf="@id/iv_user_three" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_close" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:src="@mipmap/ic_dialog_cancel_top_right" android:layout_above="@id/rl_dialog" android:layout_centerHorizontal="true" android:layout_alignEnd="@id/rl_dialog" />
+</RelativeLayout>

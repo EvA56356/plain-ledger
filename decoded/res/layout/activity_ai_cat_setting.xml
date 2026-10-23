@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/repeat_bg2" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbarView" layout="@layout/layout_common_title" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_confirm" android:background="@mipmap/btn_role_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="30.0dp" android:text="@string/ok" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/tv_confirm" android:layout_below="@id/toolbarView" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dp" android:layout_marginRight="22.0dp" android:layout_marginBottom="14.0dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="42.0dp" android:layout_marginTop="4.0dp">
+                <View android:background="@drawable/shape_circle_ffabc4" android:layout_width="5.0dp" android:layout_height="9.0dp" android:layout_marginEnd="5.0dp" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cat_name" />
+            </LinearLayout>
+            <com.lanniser.kittykeeping.view.AppEditText android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:textColorHint="@color/color_75" android:gravity="center_vertical" android:id="@id/et_name" android:background="@mipmap/bg_ai_more_settings" android:paddingLeft="17.0sp" android:paddingRight="17.0sp" android:layout_width="match_parent" android:layout_height="51.0dp" android:hint="@string/please_name_your_cat" android:maxLines="1" android:lines="1" android:maxLength="20" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="42.0dp" android:layout_marginTop="4.0dp">
+                <View android:background="@drawable/shape_circle_ffabc4" android:layout_width="5.0dp" android:layout_height="9.0dp" android:layout_marginEnd="5.0dp" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cat_personality" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:textColorHint="@color/color_75" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_personality" android:background="@mipmap/bg_ai_more_settings" android:paddingLeft="17.0dp" android:paddingRight="17.0dp" android:layout_width="match_parent" android:layout_height="51.0dp" android:hint="@string/please_select" android:maxLines="1" android:lines="1" android:drawablePadding="8.0dp" app:drawableEndCompat="@drawable/ic_mine_arraw" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="42.0dp" android:layout_marginTop="4.0dp">
+                <View android:background="@drawable/shape_circle_ffabc4" android:layout_width="5.0dp" android:layout_height="9.0dp" android:layout_marginEnd="5.0dp" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cat_relationship" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:textColorHint="@color/color_75" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_relationship" android:background="@mipmap/bg_ai_more_settings" android:paddingLeft="17.0dp" android:paddingRight="17.0dp" android:layout_width="match_parent" android:layout_height="51.0dp" android:hint="@string/please_select" android:maxLines="1" android:lines="1" android:drawablePadding="8.0dp" app:drawableEndCompat="@drawable/ic_mine_arraw" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="42.0dp" android:layout_marginTop="4.0dp">
+                <View android:background="@drawable/shape_circle_ffabc4" android:layout_width="5.0dp" android:layout_height="9.0dp" android:layout_marginEnd="5.0dp" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cat_call_you" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:textColorHint="@color/color_75" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_call" android:background="@mipmap/bg_ai_more_settings" android:paddingLeft="17.0dp" android:paddingRight="17.0dp" android:layout_width="match_parent" android:layout_height="51.0dp" android:hint="@string/please_select" android:maxLines="1" android:lines="1" android:drawablePadding="8.0dp" app:drawableEndCompat="@drawable/ic_mine_arraw" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

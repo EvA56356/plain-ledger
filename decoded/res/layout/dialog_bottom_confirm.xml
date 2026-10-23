@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_dialog_line_bg" android:scaleType="fitXY" />
+    <View android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/iv_top" android:layout_alignBottom="@id/rl_content" />
+    <RelativeLayout android:id="@id/rl_content" android:paddingTop="28.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/iv_top">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_051922" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp" android:text="@string/warm_tips" android:includeFontPadding="false" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_051922" android:id="@id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dp" android:layout_marginRight="28.0dp" android:layout_below="@id/tv_title" android:lineSpacingExtra="3.0dp" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_left" android:background="@mipmap/btn_confirm_yellow" android:paddingBottom="3.0dp" android:layout_width="106.0dp" android:layout_height="42.0dp" android:layout_marginTop="24.0dp" android:layout_marginBottom="30.0dp" android:text="@string/confirm" android:layout_below="@id/tv_content" android:layout_marginStart="22.0dp" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_right" android:background="@mipmap/btn_bg_plan_red" android:paddingBottom="3.0dp" android:layout_width="201.0dp" android:layout_height="42.0dp" android:text="@string/cancel" android:layout_alignTop="@id/tv_left" android:layout_marginEnd="22.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

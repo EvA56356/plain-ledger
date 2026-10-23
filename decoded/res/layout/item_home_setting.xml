@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_img" android:layout_width="191.0dp" android:layout_height="408.0dp" android:src="@mipmap/ic_meow_city_preview" />
+    <CheckBox android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/accuracy_time" android:id="@id/cb_item" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="60.0dp" android:button="@drawable/selector_bill_book" android:paddingStart="7.0dp" />
+</LinearLayout>

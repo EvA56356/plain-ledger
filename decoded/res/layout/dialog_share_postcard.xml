@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/dialog_share_new" android:layout_width="match_parent" android:layout_height="50.0dp" app:layout_constraintBottom_toBottomOf="parent" layout="@layout/dialog_share_new" />
+    <include android:id="@id/share_postcard" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" app:layout_constraintBottom_toTopOf="@id/dialog_share_new" app:layout_constraintDimensionRatio="h,960:711" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/share_postcard" />
+</androidx.constraintlayout.widget.ConstraintLayout>

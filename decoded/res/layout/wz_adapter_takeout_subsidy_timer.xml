@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/part" android:layout_width="wrap_content" android:layout_height="@dimen/dp_114"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/zong" android:background="@mipmap/wz_ic_subsidy_timer_write" android:layout_width="wrap_content" android:layout_height="@dimen/dp_90">
+        <com.ioio.rewardhub.ui.widget.AlibabaTextView android:textSize="@dimen/sp_12" android:textStyle="bold" android:textColor="@color/color_FA2C5A" android:layout_gravity="center_horizontal" android:id="@id/tv_gold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_21" android:text="+???" />
+        <com.ioio.rewardhub.ui.widget.AlibabaTextView android:textSize="@dimen/sp_8" android:textColor="@color/white" android:layout_gravity="center|bottom" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_24" android:includeFontPadding="false" />
+        <com.ioio.rewardhub.ui.widget.AlibabaTextView android:textSize="@dimen/sp_7" android:textStyle="bold" android:textColor="@color/color_414141" android:layout_gravity="center|bottom" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_6" android:includeFontPadding="false" />
+    </FrameLayout>
+</FrameLayout>

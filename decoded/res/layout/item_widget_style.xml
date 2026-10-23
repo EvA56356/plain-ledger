@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="59.0dp" android:layout_height="59.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_cover" android:padding="1.0dp" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:background="@mipmap/bg_shopping_list_temp_cover" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <View android:id="@id/mask_view" android:background="@drawable/mask_widget_grey" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="1.0dp" />
+    <ImageView android:id="@id/iv_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_widget_cat_checked" android:layout_centerInParent="true" />
+</RelativeLayout>

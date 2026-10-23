@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/statusBarView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <FrameLayout android:id="@id/navigationBarView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <VideoView android:id="@id/gpVideo" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/navigationBarView" android:layout_below="@id/statusBarView" android:foregroundGravity="center" />
+</RelativeLayout>

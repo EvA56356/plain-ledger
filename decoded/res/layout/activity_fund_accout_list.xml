@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/repeat_bg2" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbarView" layout="@layout/layout_common_title" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rlv_fund_account_type" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbarView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="15.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/rl_gold_coin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/color_ff6589" android:gravity="center_vertical" android:id="@id/tv_gold_coin_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5.0dp" android:layout_centerVertical="true" android:drawableStart="@mipmap/wz_ic_gold" android:layout_marginStart="15.0dp" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_2c2c2c" android:id="@id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_toStartOf="@id/tv_gold_coin_num" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/color_b5b5b5" android:id="@id/tv_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:includeFontPadding="false" android:layout_below="@id/tv_title" android:layout_toStartOf="@id/tv_gold_coin_num" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_cash" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+        <RelativeLayout android:gravity="end|center" android:id="@id/rl_cash_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/color_ff6589" android:id="@id/tv_cash_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignEnd="@id/tv_cash_details" />
+            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/color_2c2c2c" android:gravity="center_vertical" android:id="@id/tv_cash_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/wz_look_details" android:layout_below="@id/tv_cash_num" android:paddingStart="30.0dp" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_cash_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toStartOf="@id/rl_cash_num">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_2c2c2c" android:id="@id/tv_cash_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="9.0sp" android:textColor="@color/color_4d212c" android:gravity="center" android:id="@id/tv_status" android:background="@drawable/wz_shape_circle_fff08f" android:paddingLeft="6.0dp" android:paddingTop="3.0dp" android:paddingRight="6.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="待审核" android:includeFontPadding="false" android:layout_toRightOf="@id/tv_cash_title" android:layout_centerVertical="true" android:layout_marginStart="10.0dp" android:paddingHorizontal="6.0dp" android:paddingVertical="3.0dp" />
+        </RelativeLayout>
+        <TextView android:textSize="10.0dp" android:textColor="@color/color_b5b5b5" android:id="@id/tv_cash_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_below="@id/rl_cash_title" android:layout_toStartOf="@id/rl_cash_num" />
+    </RelativeLayout>
+    <View android:id="@id/v_line" android:background="@color/color_ffeaf4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15.0dp" />
+</LinearLayout>

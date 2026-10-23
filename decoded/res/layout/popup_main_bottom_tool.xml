@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/mainBottomToolViewPager" android:background="@mipmap/ic_cat_bottom_bg" android:layout_width="match_parent" android:layout_height="123.0dp" android:layout_marginTop="34.5dp" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:layout_width="match_parent" android:layout_height="40.0dp" app:tabBackground="@drawable/selector_tab_bg" app:tabIndicatorHeight="0.0dp" app:tabMaxWidth="77.0dp" app:tabMinWidth="77.0dp" app:tabMode="scrollable" app:tabPaddingBottom="0.0dp" app:tabPaddingEnd="5.0dp" app:tabPaddingStart="0.0dp" app:tabPaddingTop="2.0dp" app:tabRippleColor="@android:color/transparent" app:tabSelectedTextColor="#ff1d2b23" app:tabTextAppearance="@style/TabTextMainBottomTool" app:tabTextColor="#ff1d2b23" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="5.0dp" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/doubtIv" android:padding="3.0dp" android:layout_width="35.0dp" android:layout_height="35.0dp" android:src="@drawable/ic_wind_doubt" android:scaleType="fitXY" />
+    </FrameLayout>
+</RelativeLayout>

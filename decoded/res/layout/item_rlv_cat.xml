@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@mipmap/bg_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_cat" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_cat" android:background="@drawable/shape_bug_pro" android:padding="4.0dp" android:layout_width="58.0dp" android:layout_height="58.0dp" android:layout_marginTop="5.0dp" android:layout_marginBottom="5.0dp" android:scaleType="centerInside" android:layout_marginStart="5.0dp" />
+        <TextView android:textSize="13.0sp" android:textColor="#fff6657d" android:id="@id/tv_cat_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/iv_cat" android:layout_marginStart="6.0dp" android:layout_toEndOf="@id/iv_cat" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/colorWhite" android:id="@id/tv_use_text" android:background="@drawable/shape_pro_use" android:paddingLeft="8.0dp" android:paddingTop="2.0dp" android:paddingRight="8.0dp" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="当前所在场景" android:layout_alignBottom="@id/iv_cat" android:layout_alignStart="@id/tv_cat_name" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_theme_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/tv_use_text" android:layout_alignBottom="@id/tv_use_text" android:layout_marginStart="8.0dp" android:layout_toEndOf="@id/tv_use_text" />
+        <ImageView android:id="@id/iv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_more_close" android:layout_alignTop="@id/tv_use_text" android:layout_alignBottom="@id/tv_use_text" android:layout_marginEnd="5.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_theme" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_below="@id/rl_cat">
+        <ImageView android:id="@id/iv_line" android:background="@drawable/ic_mailbox_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="5.0dp" android:layout_marginEnd="5.0dp" />
+        <TextView android:textSize="11.0sp" android:textColor="#ff888888" android:id="@id/tv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:text="@string/string_cat_list_hint" android:layout_alignStart="@id/iv_line" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rlv_cat_theme" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:layout_below="@id/tv_hint" android:layout_alignStart="@id/iv_line" android:layout_alignEnd="@id/iv_line" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_root" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ZTWebViewNavigationToolBarTheme" android:id="@id/toolbar" android:layout_width="match_parent" app:navigationIcon="@drawable/ic_zt_baseline_arrow_back" app:popupTheme="@style/ZTWebViewNavigationOverflowMenuStyle" style="@style/ZTWebViewNavigationToolBarStyle">
+        <TextView android:textStyle="bold" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/toolbarTitleTv" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxWidth="250.0dp" android:maxLines="1" style="@style/ZTWebViewNavigationTitleStyle" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:gravity="center_vertical" android:layout_gravity="end" android:id="@id/toolbarRightTv" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:layout_marginEnd="15.0dp" />
+    </androidx.appcompat.widget.Toolbar>
+    <WebView android:id="@id/webView" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

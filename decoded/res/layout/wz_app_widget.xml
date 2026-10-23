@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/wz_ic_widget_100" />
+    <RelativeLayout android:id="@id/rl_today_withdraw" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="14.0dp">
+        <TextView android:textSize="30.0dp" android:textColor="@color/white" android:id="@id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <TextView android:textSize="11.0dp" android:textColor="@color/white" android:id="@id/tv_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.5dp" android:text="@string/wz_currency_unit" android:layout_toRightOf="@id/tv_amount" android:layout_alignBottom="@id/tv_amount" android:layout_marginStart="2.0dp" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_today_earn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="14.0dp">
+        <ImageView android:id="@id/iv_coin" android:layout_width="23.5dp" android:layout_height="22.5dp" android:layout_marginTop="4.0dp" android:src="@mipmap/wz_ic_widget_coin" />
+        <TextView android:textSize="22.0dp" android:textColor="@color/white" android:id="@id/tv_coin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="4.0dp" android:layout_toEndOf="@id/iv_coin" />
+        <ImageView android:id="@id/iv_packet" android:layout_width="23.0dp" android:layout_height="26.0dp" android:layout_marginTop="7.0dp" android:src="@mipmap/wz_ic_widget_packet" android:layout_below="@id/iv_coin" />
+        <TextView android:textSize="22.0dp" android:textColor="@color/white" android:id="@id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dp" android:includeFontPadding="false" android:layout_below="@id/iv_coin" android:layout_marginStart="4.0dp" android:layout_toEndOf="@id/iv_packet" />
+        <TextView android:textSize="11.0dp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:text="@string/wz_currency_unit" android:layout_alignBottom="@id/tv_money" android:layout_marginStart="1.0dp" android:layout_toEndOf="@id/tv_money" />
+    </RelativeLayout>
+</RelativeLayout>

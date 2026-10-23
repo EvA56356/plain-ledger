@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_hint" android:background="@drawable/bg_recycle_bill_radius" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#333333" android:gravity="center_vertical" android:id="@id/tv_bills_num" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:layout_marginTop="17.0dp" android:layout_marginRight="14.0dp" android:includeFontPadding="false" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#333333" android:gravity="center_vertical" android:id="@id/tv_bills_money" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dp" android:layout_marginTop="9.0dp" android:layout_marginRight="14.0dp" android:layout_marginBottom="16.0dp" android:includeFontPadding="false" />
+    </LinearLayout>
+</LinearLayout>

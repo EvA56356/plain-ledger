@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alipay_standard_sdk_loading">正在加载</string>
+    <string name="alipay_standard_sdk_loading_go_auth">去支付宝授权</string>
+    <string name="alipay_standard_sdk_loading_go_pay">去支付宝付款</string>
+    <string name="cv_app_name">CalendarView</string>
+    <string name="fri">五</string>
+    <string name="listview_header_hint_normal">下拉刷新</string>
+    <string name="listview_header_hint_release">释放立即刷新</string>
+    <string name="listview_header_last_time">上次更新时间：</string>
+    <string name="listview_loading">正在加载...</string>
+    <string name="loading_done">加载完成</string>
+    <string name="mon">一</string>
+    <string name="nomore_loading">没有了</string>
+    <string name="refresh_done">刷新完成</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="sat">六</string>
+    <string name="sun">日</string>
+    <string name="thu">四</string>
+    <string name="tue">二</string>
+    <string name="wed">三</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hiad_dismiss_dilaog">
+        <item quantity="other">%1$s초 후 창이 닫힙니다.</item>
+    </plurals>
+    <plurals name="hiad_no_prompt_in_days">
+        <item quantity="other">%1$s일간 다시 알리지 않음</item>
+    </plurals>
+    <plurals name="hiad_reward_countdown">
+        <item quantity="other">%1$d초</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item quantity="one">내일</item>
+        <item quantity="other">%d일 후</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item quantity="one">1시간 후</item>
+        <item quantity="other">%d시간 후</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item quantity="one">1분 후</item>
+        <item quantity="other">%d분 후</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item quantity="one">1초 후</item>
+        <item quantity="other">%d초 후</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item quantity="one">어제</item>
+        <item quantity="other">%d일 전</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item quantity="one">1시간 전</item>
+        <item quantity="other">%d시간 전</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item quantity="one">1분 전</item>
+        <item quantity="other">%d분 전</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item quantity="one">1초 전</item>
+        <item quantity="other">%d초 전</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item quantity="one">1시간</item>
+        <item quantity="other">%d시간</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item quantity="one">1분</item>
+        <item quantity="other">%d분</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item quantity="one">1초</item>
+        <item quantity="other">%d초</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item quantity="one">내일</item>
+        <item quantity="other">%d일 후</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item quantity="one">1시간 후</item>
+        <item quantity="other">%d시간 후</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item quantity="one">1분 후</item>
+        <item quantity="other">%d분 후</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item quantity="one">1초 내</item>
+        <item quantity="other">%d초 후</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item quantity="one">어제</item>
+        <item quantity="other">%d일 전</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item quantity="one">1시간 전</item>
+        <item quantity="other">%d시간 전</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item quantity="one">1분 전</item>
+        <item quantity="other">%d분 전</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item quantity="one">1초 전</item>
+        <item quantity="other">%d초 전</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">새 알림 %d개</item>
+        <item quantity="other">새 알림 %d개</item>
+    </plurals>
+</resources>

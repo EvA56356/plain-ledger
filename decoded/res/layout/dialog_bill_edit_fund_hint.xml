@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_line_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="82.0dp" android:src="@mipmap/ic_dialog_line_bg" android:scaleType="fitXY" />
+    <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="如何管理我的资产账户" android:layout_below="@id/iv_cat" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_hint" android:background="@color/colorWhite" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0dp" android:src="@mipmap/ic_bill_edit_fund" android:scaleType="fitXY" android:layout_below="@id/tv_title" />
+    <RelativeLayout android:id="@id/rl_bottom" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/iv_hint">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_known" android:background="@mipmap/ic_calendar_confirm" android:paddingBottom="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="20.0dp" android:layout_marginBottom="31.0dp" android:text="我知道啦" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_cat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kitty_calendar_search_cat" android:layout_marginEnd="32.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

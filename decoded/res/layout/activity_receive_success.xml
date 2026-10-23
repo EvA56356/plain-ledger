@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@mipmap/bg_skin_receive_success" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_light_center" android:layout_width="273.0dp" android:layout_height="244.0dp" android:src="@mipmap/ic_skin_receive_light" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_light_left" android:layout_width="328.0dp" android:layout_height="244.0dp" android:src="@mipmap/ic_skin_receive_light" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:paddingEnd="55.0dp" />
+    <ImageView android:id="@id/iv_light_right" android:layout_width="328.0dp" android:layout_height="244.0dp" android:src="@mipmap/ic_skin_receive_light" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:paddingStart="55.0dp" />
+    <FrameLayout android:id="@id/fl_layout" android:background="@mipmap/ic_skin_receive_xinxinwuta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="153.0dp" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center|bottom" android:id="@id/iv_cat" android:layout_width="wrap_content" android:layout_height="168.0dp" android:layout_marginBottom="58.0dp" android:scaleType="fitEnd" />
+    </FrameLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="84.0dp" android:src="@mipmap/ic_skin_receive_title" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_skin_receive_call" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/iv_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="70.0dp" android:src="@mipmap/ic_skin_receive_camera" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="36.0dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_confirm" android:background="@mipmap/btn_skin_receive_confirm" android:layout_width="112.0dp" android:layout_height="46.0dp" android:text="确定" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_change" android:background="@mipmap/btn_skin_receive_change" android:layout_width="112.0dp" android:layout_height="46.0dp" android:text="换装" android:layout_marginStart="30.0dp" />
+    </LinearLayout>
+    <com.lanniser.kittykeeping.widget.FlowerView android:id="@id/flower_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

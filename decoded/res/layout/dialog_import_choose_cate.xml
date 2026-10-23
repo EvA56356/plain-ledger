@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:background="@mipmap/bg_choose_cate" android:layout_width="320.0dp" android:layout_height="wrap_content">
+        <RadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/rg_title" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="24.0dp">
+            <RadioButton android:textSize="18.0sp" android:textStyle="bold" android:textColor="@drawable/bill_expense_or_earning_font_sl" android:gravity="center" android:id="@id/rb_expense" android:paddingTop="6.0dp" android:paddingBottom="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="支出" android:paddingStart="12.0dp" android:paddingEnd="15.0dp" />
+            <RadioButton android:textSize="18.0sp" android:textStyle="bold" android:textColor="@drawable/bill_expense_or_earning_font_sl" android:gravity="left|center" android:id="@id/rb_earning" android:background="@drawable/af_circle" android:paddingTop="6.0dp" android:paddingBottom="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="收入" android:paddingStart="12.0dp" android:paddingEnd="15.0dp" android:layout_marginStart="24.0dp" />
+        </RadioGroup>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rlv_cate" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="284.0dp" android:layout_marginLeft="10.0dp" android:layout_marginTop="21.0dp" android:layout_marginRight="10.0dp" android:layout_below="@id/rg_title" android:overScrollMode="never" />
+        <com.lanniser.kittykeeping.widget.Indicator android:id="@id/rlv_indicator" android:layout_width="match_parent" android:layout_height="7.0dp" android:layout_marginTop="16.0dp" android:layout_below="@id/rlv_cate" app:indicatorStyle="custom" app:selectedRes="@drawable/ic_pager_indicator_sel" app:space="5.0dp" app:unselectedRes="@drawable/ic_pager_indicator_nor" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_close" android:layout_width="45.0dp" android:layout_height="45.0dp" android:layout_marginTop="32.0dp" android:src="@drawable/ic_dialog_close" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="88.0dp" android:layout_height="86.0dp" android:minWidth="88.0dp" android:minHeight="86.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/wz_ic_extract_money_select" />
+    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="30.0dp" android:layout_marginTop="17.0dp">
+        <com.ioio.rewardhub.ui.widget.AlibabaTextView android:textSize="22.0sp" android:textColor="@color/white" android:id="@id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <com.ioio.rewardhub.ui.widget.AlibabaTextView android:textSize="9.0dp" android:textColor="@color/white" android:id="@id/tv_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.5dp" android:text="@string/wz_currency_unit" android:layout_toRightOf="@id/tv_amount" android:layout_alignBottom="@id/tv_amount" android:layout_marginStart="3.0dp" />
+    </RelativeLayout>
+    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.0dp" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentBottom="true" />
+</RelativeLayout>

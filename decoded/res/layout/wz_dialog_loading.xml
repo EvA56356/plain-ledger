@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black_alpha_25" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/color_FFF5B6" android:padding="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wz_ic_loading" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:text="@string/wz__loading" />
+        <ImageView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:src="@mipmap/wz_ic_gold_big" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

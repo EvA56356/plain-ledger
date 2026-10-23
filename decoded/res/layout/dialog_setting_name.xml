@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:background="@mipmap/bg_chat_setting_name" android:layout_width="321.0dp" android:layout_height="170.0dp" android:layout_marginTop="80.0dp">
+        <com.lanniser.kittykeeping.view.AppEditText android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_19" android:textColorHint="@color/color_75" android:gravity="center_vertical" android:id="@id/et_content" android:background="@mipmap/bg_chat_setting_name_input" android:paddingLeft="17.0dp" android:paddingRight="17.0dp" android:layout_width="match_parent" android:layout_height="51.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="31.0dp" android:layout_marginRight="20.0dp" android:hint="@string/please_name_your_cat" android:maxLines="1" android:lines="1" android:maxLength="20" android:inputType="text" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_confirm" android:background="@mipmap/btn_chat_dialog_setting_confirm" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="@string/ok" />
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-80.0dp" android:src="@mipmap/ic_chat_setting_name_cat" android:layout_alignTop="@id/ll_content" android:layout_marginStart="35.0dp" android:layout_alignStart="@id/ll_content" />
+</RelativeLayout>

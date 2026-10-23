@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/item1" android:paddingTop="17.0dp" android:paddingBottom="13.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15.0dp">
+        <FrameLayout android:layout_width="86.0dp" android:layout_height="86.0dp">
+            <com.lanniser.kittykeeping.view.SquareImageView android:id="@id/avatar1" android:background="@drawable/ic_item_prop_other" android:padding="2.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/noodles" />
+            <com.lanniser.kittykeeping.view.StrokeTextView android:textSize="9.0sp" android:textColor="#000000" android:gravity="center_vertical" android:layout_gravity="center|bottom" android:id="@id/name1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" />
+        </FrameLayout>
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/opt1" android:background="@drawable/ic_feed_buy" android:layout_width="60.0dp" android:layout_height="28.0dp" android:layout_marginTop="8.0dp" android:drawablePadding="2.0dp" android:paddingStart="14.0dp" android:paddingEnd="10.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/item2" android:paddingTop="17.0dp" android:paddingBottom="13.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp">
+        <FrameLayout android:layout_width="86.0dp" android:layout_height="86.0dp">
+            <com.lanniser.kittykeeping.view.SquareImageView android:id="@id/avatar2" android:background="@drawable/ic_item_prop_other" android:padding="2.0dp" android:layout_width="86.0dp" android:layout_height="86.0dp" android:src="@drawable/noodles" />
+            <com.lanniser.kittykeeping.view.StrokeTextView android:textSize="9.0sp" android:textColor="#000000" android:gravity="center_vertical" android:layout_gravity="center|bottom" android:id="@id/name2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" />
+        </FrameLayout>
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/opt2" android:background="@drawable/ic_feed_buy" android:layout_width="60.0dp" android:layout_height="28.0dp" android:layout_marginTop="8.0dp" android:paddingStart="14.0dp" android:paddingEnd="10.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/item3" android:paddingTop="17.0dp" android:paddingBottom="13.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="15.0dp">
+        <FrameLayout android:layout_width="86.0dp" android:layout_height="86.0dp">
+            <com.lanniser.kittykeeping.view.SquareImageView android:id="@id/avatar3" android:background="@drawable/ic_item_prop_other" android:padding="2.0dp" android:layout_width="86.0dp" android:layout_height="86.0dp" android:src="@drawable/noodles" />
+            <com.lanniser.kittykeeping.view.StrokeTextView android:textSize="9.0sp" android:textColor="#000000" android:gravity="center_vertical" android:layout_gravity="center|bottom" android:id="@id/name3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" />
+        </FrameLayout>
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/opt3" android:background="@drawable/ic_feed_buy" android:layout_width="60.0dp" android:layout_height="28.0dp" android:layout_marginTop="8.0dp" android:paddingStart="14.0dp" android:paddingEnd="10.0dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbarView" layout="@layout/layout_common_title" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_ad_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/tv_ad_recommend" android:layout_alignBottom="@id/tv_ad_recommend" android:layout_marginEnd="23.0dp" android:layout_alignParentEnd="true">
+        <Switch android:id="@id/switch_ad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:thumb="@drawable/ic_swith_circle" android:track="@drawable/selector_swith" />
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/tv_ad_recommend" android:layout_width="match_parent" android:layout_height="61.0dp" android:layout_marginTop="9.0dp" android:text="@string/ad_personal_recommend" android:layout_below="@id/toolbarView" android:layout_marginStart="23.0dp" android:layout_toStartOf="@id/ll_ad_switch" />
+    <TextView android:textSize="12.0sp" android:textColor="#a6a6a6" android:background="@drawable/shape_rectangle_corner_16_f9f9f9" android:paddingLeft="15.0dp" android:paddingTop="20.0dp" android:paddingRight="15.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dp" android:layout_marginRight="23.0dp" android:text="@string/ad_personal_recommend_hint" android:layout_below="@id/tv_ad_recommend" />
+</RelativeLayout>

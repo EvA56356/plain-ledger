@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_keyboard_key_pressed" />
+    <item>
+        <bitmap android:gravity="center" android:src="@mipmap/ic_key_board_delete" android:tileMode="disabled" />
+    </item>
+</layer-list>

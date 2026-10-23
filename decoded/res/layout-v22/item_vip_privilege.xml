@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dp" android:layout_marginBottom="11.0dp" android:layout_marginVertical="11.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/vip_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:background="@mipmap/bg_vip_privilege_text" android:paddingLeft="20.0dp" android:paddingTop="15.0dp" android:paddingRight="20.0dp" android:paddingBottom="19.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/vip_iv" android:layout_alignStart="@id/vip_iv" android:layout_alignEnd="@id/vip_iv" android:paddingHorizontal="20.0dp">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#f5647c" android:id="@id/title_tv" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.lanniser.kittykeeping.view.AlignTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" />
+    </LinearLayout>
+</RelativeLayout>

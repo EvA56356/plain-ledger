@@ -1,0 +1,586 @@
+{
+  "value_policy": "No original credential values or secret-value hashes are recorded.",
+  "fields": [
+    {
+      "source": "AndroidManifest.xml",
+      "field": "OPPOPUSH_APPKEY",
+      "action": "replace embedded service value"
+    },
+    {
+      "source": "AndroidManifest.xml",
+      "field": "OPPOPUSH_APPSECRET",
+      "action": "replace embedded service value"
+    },
+    {
+      "source": "AndroidManifest.xml",
+      "field": "GETUI_APPID",
+      "action": "replace embedded service value"
+    },
+    {
+      "source": "AndroidManifest.xml",
+      "field": "ZX_APPID_GETUI",
+      "action": "replace embedded service value"
+    },
+    {
+      "source": "AndroidManifest.xml",
+      "field": "com.huawei.hms.client.appid",
+      "action": "replace embedded service value"
+    },
+    {
+      "source": "AndroidManifest.xml",
+      "field": "MIPUSH_APPID",
+      "action": "replace embedded service value"
+    },
+    {
+      "source": "AndroidManifest.xml",
+      "field": "MIPUSH_APPKEY",
+      "action": "replace embedded service value"
+    },
+    {
+      "source": "AndroidManifest.xml",
+      "field": "api_key",
+      "action": "replace embedded service value"
+    },
+    {
+      "source": "AndroidManifest.xml",
+      "field": "app_id",
+      "action": "replace embedded service value"
+    },
+    {
+      "source": "AndroidManifest.xml",
+      "field": "local_iv",
+      "action": "replace embedded service value"
+    },
+    {
+      "source": "res/values/strings.xml",
+      "field": "multi_api_access_token_acquisition_failed",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values/strings.xml",
+      "field": "multi_api_access_token_expired",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values/strings.xml",
+      "field": "path_password_eye",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values/strings.xml",
+      "field": "path_password_eye_mask_strike_through",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values/strings.xml",
+      "field": "path_password_eye_mask_visible",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values/strings.xml",
+      "field": "path_password_strike_through",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values/strings.xml",
+      "field": "vip_password_hint",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-af/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-am/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-ar/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-as/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-az/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-b+es+419/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-b+sr+Latn/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-be/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-bg/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-bn/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-bs/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-ca/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-cs/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-da/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-de/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-el/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-en-rGB/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-es/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-es-rUS/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-et/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-eu/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-fa/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-fi/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-fr/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-fr-rCA/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-gl/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-gu/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-hi/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-hr/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-hu/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-hy/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-in/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-is/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-it/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-iw/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-ja/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-ka/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-kk/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-km/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-kn/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-ky/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-lo/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-lt/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-lv/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-mk/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-ml/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-mn/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-mr/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-ms/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-my/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-nb/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-ne/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-nl/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-or/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-pa/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-pl/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-pt-rBR/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-pt-rPT/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-ro/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-ru/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-si/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-sk/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-sl/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-sq/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-sr/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-sv/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-sw/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-ta/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-te/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-th/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-tl/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-tr/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-uk/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-ur/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-uz/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-vi/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "res/values-zu/strings.xml",
+      "field": "password_toggle_content_description",
+      "action": "replace conservatively selected resource value"
+    },
+    {
+      "source": "AndroidManifest.xml",
+      "field": "SDK callback scheme",
+      "action": "replace public SDK application identifier"
+    },
+    {
+      "source": "AndroidManifest.xml",
+      "field": "SDK callback scheme",
+      "action": "replace public SDK application identifier"
+    },
+    {
+      "source": "res/values/strings.xml",
+      "field": "privateKeyP2",
+      "action": "replace potential key fragment or published contact/template value"
+    },
+    {
+      "source": "res/values/strings.xml",
+      "field": "about_email",
+      "action": "replace potential key fragment or published contact/template value"
+    },
+    {
+      "source": "res/values/strings.xml",
+      "field": "wz_income_statement_details",
+      "action": "replace potential key fragment or published contact/template value"
+    }
+  ],
+  "changed_text_files": [
+    "decoded/AndroidManifest.xml",
+    "decoded/res/values-af/strings.xml",
+    "decoded/res/values-am/strings.xml",
+    "decoded/res/values-ar/strings.xml",
+    "decoded/res/values-as/strings.xml",
+    "decoded/res/values-az/strings.xml",
+    "decoded/res/values-b+es+419/strings.xml",
+    "decoded/res/values-b+sr+Latn/strings.xml",
+    "decoded/res/values-be/strings.xml",
+    "decoded/res/values-bg/strings.xml",
+    "decoded/res/values-bn/strings.xml",
+    "decoded/res/values-bs/strings.xml",
+    "decoded/res/values-ca/strings.xml",
+    "decoded/res/values-cs/strings.xml",
+    "decoded/res/values-da/strings.xml",
+    "decoded/res/values-de/strings.xml",
+    "decoded/res/values-el/strings.xml",
+    "decoded/res/values-en-rGB/strings.xml",
+    "decoded/res/values-es-rUS/strings.xml",
+    "decoded/res/values-es/strings.xml",
+    "decoded/res/values-et/strings.xml",
+    "decoded/res/values-eu/strings.xml",
+    "decoded/res/values-fa/strings.xml",
+    "decoded/res/values-fi/strings.xml",
+    "decoded/res/values-fr-rCA/strings.xml",
+    "decoded/res/values-fr/strings.xml",
+    "decoded/res/values-gl/strings.xml",
+    "decoded/res/values-gu/strings.xml",
+    "decoded/res/values-hi/strings.xml",
+    "decoded/res/values-hr/strings.xml",
+    "decoded/res/values-hu/strings.xml",
+    "decoded/res/values-hy/strings.xml",
+    "decoded/res/values-in/strings.xml",
+    "decoded/res/values-is/strings.xml",
+    "decoded/res/values-it/strings.xml",
+    "decoded/res/values-iw/strings.xml",
+    "decoded/res/values-ja/strings.xml",
+    "decoded/res/values-ka/strings.xml",
+    "decoded/res/values-kk/strings.xml",
+    "decoded/res/values-km/strings.xml",
+    "decoded/res/values-kn/strings.xml",
+    "decoded/res/values-ky/strings.xml",
+    "decoded/res/values-lo/strings.xml",
+    "decoded/res/values-lt/strings.xml",
+    "decoded/res/values-lv/strings.xml",
+    "decoded/res/values-mk/strings.xml",
+    "decoded/res/values-ml/strings.xml",
+    "decoded/res/values-mn/strings.xml",
+    "decoded/res/values-mr/strings.xml",
+    "decoded/res/values-ms/strings.xml",
+    "decoded/res/values-my/strings.xml",
+    "decoded/res/values-nb/strings.xml",
+    "decoded/res/values-ne/strings.xml",
+    "decoded/res/values-nl/strings.xml",
+    "decoded/res/values-or/strings.xml",
+    "decoded/res/values-pa/strings.xml",
+    "decoded/res/values-pl/strings.xml",
+    "decoded/res/values-pt-rBR/strings.xml",
+    "decoded/res/values-pt-rPT/strings.xml",
+    "decoded/res/values-ro/strings.xml",
+    "decoded/res/values-ru/strings.xml",
+    "decoded/res/values-si/strings.xml",
+    "decoded/res/values-sk/strings.xml",
+    "decoded/res/values-sl/strings.xml",
+    "decoded/res/values-sq/strings.xml",
+    "decoded/res/values-sr/strings.xml",
+    "decoded/res/values-sv/strings.xml",
+    "decoded/res/values-sw/strings.xml",
+    "decoded/res/values-ta/strings.xml",
+    "decoded/res/values-te/strings.xml",
+    "decoded/res/values-th/strings.xml",
+    "decoded/res/values-tl/strings.xml",
+    "decoded/res/values-tr/strings.xml",
+    "decoded/res/values-uk/strings.xml",
+    "decoded/res/values-ur/strings.xml",
+    "decoded/res/values-uz/strings.xml",
+    "decoded/res/values-vi/strings.xml",
+    "decoded/res/values-zu/strings.xml",
+    "decoded/res/values/strings.xml"
+  ]
+}

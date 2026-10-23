@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_cate" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginTop="8.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/colorBlack" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/iv_cate" android:layout_marginStart="12.0dp" android:layout_toEndOf="@id/iv_cate" />
+    <TextView android:textSize="12.0sp" android:textColor="#888888" android:id="@id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/iv_cate" android:layout_alignParentEnd="true" />
+    <ProgressBar android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="6.0dp" android:layout_marginTop="4.0dp" android:max="100" android:progress="50" android:layout_below="@id/tv_name" android:layout_alignStart="@id/tv_name" android:layout_alignEnd="@id/tv_money" style="@style/ProgressBar_Surplus_Expend" />
+</RelativeLayout>

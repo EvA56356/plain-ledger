@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="end" android:orientation="vertical" android:background="@mipmap/bg_shopping_operation" android:layout_width="135.0dp" android:layout_height="232.0dp" android:layout_marginBottom="-15.0dp" android:layout_marginEnd="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_rename" android:layout_width="match_parent" android:layout_height="38.0dp" android:layout_marginTop="24.0dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_shopping_rename" android:layout_marginStart="19.0dp" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rename" android:includeFontPadding="false" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_commodity_sorting" android:layout_width="match_parent" android:layout_height="38.0dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_shopping_commodity_sorting" android:layout_marginStart="19.0dp" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/commodity_sorting" android:includeFontPadding="false" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_clear_list" android:layout_width="match_parent" android:layout_height="38.0dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_shopping_clear_list" android:layout_marginStart="19.0dp" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clear_list" android:includeFontPadding="false" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_delete_list" android:layout_width="match_parent" android:layout_height="38.0dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_shopping_delete_list" android:layout_marginStart="19.0dp" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_delete_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete_list" android:includeFontPadding="false" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_share_list" android:layout_width="match_parent" android:layout_height="38.0dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_shopping_share_list" android:layout_marginStart="19.0dp" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_list" android:includeFontPadding="false" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/iv_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="88.0dp" android:src="@mipmap/ic_dialog_line_bg" android:scaleType="fitXY" />
+        <ImageView android:id="@id/iv_cat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-82.5dp" android:src="@drawable/kitty_calendar_search_cat" android:layout_alignTop="@id/iv_top" android:layout_marginEnd="37.0dp" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/iv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="108.0dp" android:src="@mipmap/ic_export_time_picker_cancel" android:layout_marginStart="22.0dp" />
+        <ImageView android:id="@id/iv_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="108.0dp" android:src="@mipmap/ic_export_time_picker_confirm" android:layout_marginEnd="22.0dp" android:layout_alignParentEnd="true" />
+        <RelativeLayout android:id="@id/rl_bill_book" android:background="@color/colorWhite" android:paddingLeft="22.0dp" android:paddingRight="22.0dp" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="3.0dp" android:layout_below="@id/iv_confirm">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#17221d" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账本" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#888888" android:gravity="center" android:id="@id/tv_bill_book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawablePadding="4.0dp" android:layout_centerVertical="true" android:drawableEnd="@drawable/ic_mine_arraw" android:layout_alignParentEnd="true" />
+            <ImageView android:layout_width="match_parent" android:layout_height="1.0dp" android:src="@drawable/ic_mine_diveder" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_cate" android:background="@color/colorWhite" android:paddingLeft="22.0dp" android:paddingRight="22.0dp" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_below="@id/rl_bill_book">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#17221d" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分类" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#888888" android:gravity="center" android:id="@id/tv_cate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawablePadding="4.0dp" android:layout_centerVertical="true" android:drawableEnd="@drawable/ic_mine_arraw" android:layout_alignParentEnd="true" />
+            <ImageView android:layout_width="match_parent" android:layout_height="1.0dp" android:src="@drawable/ic_mine_diveder" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_fund" android:background="@color/colorWhite" android:paddingLeft="22.0dp" android:paddingRight="22.0dp" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_below="@id/rl_cate">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#17221d" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="资产" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#888888" android:gravity="center" android:id="@id/tv_fund" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawablePadding="4.0dp" android:layout_centerVertical="true" android:drawableEnd="@drawable/ic_mine_arraw" android:layout_alignParentEnd="true" />
+            <ImageView android:layout_width="match_parent" android:layout_height="1.0dp" android:src="@drawable/ic_mine_diveder" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_time" android:background="@color/colorWhite" android:paddingLeft="22.0dp" android:paddingRight="22.0dp" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_below="@id/rl_fund">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#17221d" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="日期" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#888888" android:gravity="center" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawablePadding="4.0dp" android:layout_centerVertical="true" android:drawableEnd="@drawable/ic_mine_arraw" android:layout_alignParentEnd="true" />
+            <ImageView android:layout_width="match_parent" android:layout_height="1.0dp" android:src="@drawable/ic_mine_diveder" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:id="@id/view_space" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="36.0dp" android:layout_below="@id/rl_time" />
+    </RelativeLayout>
+</RelativeLayout>

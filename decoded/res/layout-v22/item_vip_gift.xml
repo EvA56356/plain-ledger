@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@mipmap/bg_vip_gift_border" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:layout_width="wrap_content" android:layout_height="31.0dp" android:layout_marginTop="9.0dp" android:paddingHorizontal="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="14.0dp" android:layout_height="14.0dp" android:src="@mipmap/ic_vip_gift_tag" android:layout_marginEnd="4.0dp" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:id="@id/img" android:background="@drawable/wz_shape_rectangle_corner_15_fff1fb" android:layout_width="0.0dp" android:layout_height="80.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/iv_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wz_ic_home_widget_red_packet_coin" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/color_ff6589" android:gravity="center" android:id="@id/tv_coin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_below="@id/iv_bg" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/ll_min" android:paddingTop="@dimen/dp_11" android:paddingBottom="@dimen/dp_5" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/img">
+        <FrameLayout android:id="@id/v_line_start" android:background="@color/color_FF8DA5" android:layout_width="0.0dp" android:layout_height="@dimen/dp_1" android:layout_weight="1.0" />
+        <ImageView android:gravity="center" android:id="@id/iv_current_status" android:layout_width="@dimen/dp_11" android:layout_height="@dimen/dp_11" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/wz_round_ffe0ec" />
+        <FrameLayout android:id="@id/v_line_end" android:background="@color/color_FF8DA5" android:layout_width="0.0dp" android:layout_height="@dimen/dp_1" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/fl_get" android:background="@mipmap/wz_ic_home_widget_current_day" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_min">
+        <TextView android:textSize="@dimen/sp_8" android:textColor="@color/color_FF8DA5" android:id="@id/tv_get" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_1" android:text="@string/wz_go_get" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

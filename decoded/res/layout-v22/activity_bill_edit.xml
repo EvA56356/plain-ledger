@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rootLayout" android:background="@drawable/repeat_bg2" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/toolbarView" android:layout_width="match_parent" android:layout_height="0.0dp" />
+    <ImageButton android:id="@id/btnBack" android:background="@null" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back_sl" android:layout_below="@id/toolbarView" />
+    <RelativeLayout android:id="@id/rl_bill_book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/btnBack" android:layout_alignBottom="@id/btnBack" android:layout_toEndOf="@id/btnBack" android:layout_alignParentEnd="true">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/billBookTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="8.0dp" android:layout_centerVertical="true" android:layout_marginEnd="23.0dp" android:layout_alignParentEnd="true" app:drawableEndCompat="@mipmap/accountbook_cover_btn" />
+    </RelativeLayout>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/rv_scene" android:layout_below="@id/btnBack" android:overScrollMode="never" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_scene" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="37.0dp" android:layout_marginBottom="9.0dp" android:layout_above="@id/simpleCalculateView" android:overScrollMode="never" />
+    <com.lanniser.kittykeeping.view.SimpleCalculateView android:id="@id/simpleCalculateView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/iv_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_fucking_line_1" android:scaleType="fitXY" android:layout_above="@id/simpleCalculateView" />
+    <FrameLayout android:id="@id/labelLayout" android:background="#99000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/simpleCalculateView">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="bottom" android:id="@id/rv_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/rl_contact_choose" android:background="@color/colorCalcBg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/simpleCalculateView" android:layout_alignBottom="@id/simpleCalculateView">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_contact" android:background="@mipmap/bg_bill_edit_contact" android:paddingLeft="22.0dp" android:paddingTop="23.0dp" android:paddingRight="22.0dp" android:paddingBottom="12.0dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4.0dp" android:overScrollMode="never" android:paddingHorizontal="22.0dp" />
+        <ImageView android:id="@id/iv_contact_close" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:src="@mipmap/ic_bill_edit_contact_close" android:layout_marginEnd="2.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

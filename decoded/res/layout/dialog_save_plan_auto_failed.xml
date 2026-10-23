@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_line_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="64.0dp" android:src="@mipmap/ic_dialog_line_bg" android:scaleType="fitXY" />
+    <ImageView android:id="@id/iv_cat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_save_money_cat" android:layout_marginEnd="32.0dp" android:layout_alignParentEnd="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="38.0dp" android:layout_alignTop="@id/iv_line_bg">
+        <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="#f6657d" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自动攒开通失败" android:layout_marginStart="22.0dp" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dp" android:layout_marginTop="17.0dp" android:layout_marginRight="21.0dp" android:text="嗷呜，自动攒开通失败！喵喵已经帮您将本计划转换为手动攒的攒钱计划啦~在攒钱计划详情页面点击待攒入卡片即可进行攒钱打卡哦~" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_known" android:background="@mipmap/ic_calendar_confirm" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dp" android:layout_marginBottom="25.0dp" android:text="我知道啦" />
+    </LinearLayout>
+</RelativeLayout>

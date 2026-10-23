@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/iv_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="88.0dp" android:src="@mipmap/ic_dialog_line_bg" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:background="@color/colorWhite" android:paddingLeft="21.0dp" android:paddingRight="21.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-50.0dp" android:layout_below="@id/iv_top" android:paddingHorizontal="21.0dp">
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_f6657d" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/goods_sort_mode_title" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_create_time" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginTop="5.0dp">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_17221d" android:id="@id/tv_create_time" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/by_creation_time" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv_create_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_save_money_wish" />
+            </LinearLayout>
+            <View android:background="@drawable/layer_user_info" android:layout_width="match_parent" android:layout_height="1.5dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_priority" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_17221d" android:id="@id/tv_priority" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/by_priority" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv_priority" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_save_money_wish" />
+            </LinearLayout>
+            <View android:background="@drawable/layer_user_info" android:layout_width="match_parent" android:layout_height="1.5dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_price" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_17221d" android:id="@id/tv_price" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/by_price" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_save_money_wish" />
+            </LinearLayout>
+            <View android:background="@drawable/layer_user_info" android:layout_width="match_parent" android:layout_height="1.5dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_goods_number" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_17221d" android:id="@id/tv_goods_number" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/by_goods_number" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv_goods_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_save_money_wish" />
+            </LinearLayout>
+            <View android:background="@drawable/layer_user_info" android:layout_width="match_parent" android:layout_height="1.5dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_custom_sort" android:layout_width="match_parent" android:layout_height="60.0dp">
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_17221d" android:id="@id/tv_custom_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/by_custom_sort" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_8" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/by_custom_sort_hint" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv_custom_sort" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_save_money_wish" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-88.0dp" android:src="@mipmap/ic_shopping_cat" android:layout_alignTop="@id/iv_top" android:layout_marginEnd="37.0dp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

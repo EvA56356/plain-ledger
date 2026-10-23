@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_empty" />
+    <TextView android:gravity="center" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:text="抱歉当前时间没有记录哦喵~" />
+    <TextView android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_button" android:background="@drawable/img_bg_empty_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:layout_marginBottom="20.0dp" android:text="去记账!" />
+</LinearLayout>

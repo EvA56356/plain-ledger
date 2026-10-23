@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@mipmap/wz_ic_revenuse_bg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/space_bar" android:layout_width="wrap_content" android:layout_height="0.0dp" />
+    <RelativeLayout android:id="@id/rl_head" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_below="@id/space_bar">
+        <ImageView android:id="@id/iv_back" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@mipmap/wz_ic_white_back" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_41282e" android:ellipsize="marquee" android:gravity="center" android:id="@id/tv_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/wz_my_revenue_amount" android:scrollHorizontally="true" android:singleLine="true" android:layout_centerHorizontal="true" android:marqueeRepeatLimit="marquee_forever" />
+        <LinearLayout android:id="@id/ll_revenue" android:paddingTop="11.5dp" android:paddingBottom="11.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="7.0dp" android:layout_centerVertical="true" android:layout_marginEnd="12.0dp" android:layout_alignParentEnd="true">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wz_ic_extract_money_list" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_53" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wz_revenue_list" android:includeFontPadding="false" android:layout_marginStart="7.0dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rl_head">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="18.0dp" android:paddingRight="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.ioio.rewardhub.ui.widget.RecyclableFlipper android:layout_gravity="center_horizontal" android:id="@id/withdraw_flipper" android:background="@drawable/wz_shape_circle_black_alpha_25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:inAnimation="@anim/wz_slide_in_bottom" android:outAnimation="@anim/wz_slide_out_top" android:flipInterval="2500" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@mipmap/wz_ic_extract_money_top_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:weightSum="2.0">
+                        <RelativeLayout android:gravity="center" android:id="@id/rl_gold_coin" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableStart="@mipmap/wz_ic_gold_balance" android:drawableEnd="@mipmap/wz_ic_extract_money_info" />
+                        </RelativeLayout>
+                        <RelativeLayout android:gravity="center" android:id="@id/rl_cash" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableStart="@mipmap/wz_ic_cash_balance" android:drawableEnd="@mipmap/wz_ic_extract_money_info" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginRight="20.0dp" android:weightSum="2.0">
+                        <com.ioio.rewardhub.ui.widget.rollingtextview.WzRollingTextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/color_FC4E77" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_gold_balance" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="@string/wz_zero" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1.0" app:autoSizeMaxTextSize="@dimen/sp_30" app:autoSizeMinTextSize="10.0sp" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" />
+                        <FrameLayout android:layout_gravity="center" android:background="@mipmap/wz_ic_vector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <LinearLayout android:gravity="center" android:id="@id/ll_cash_balance" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <com.ioio.rewardhub.ui.widget.rollingtextview.WzRollingTextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/color_FC4E77" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_cash_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wz_zero" android:maxLines="2" android:includeFontPadding="false" android:layout_marginStart="5.0dp" app:autoSizeMaxTextSize="@dimen/sp_30" app:autoSizeMinTextSize="10.0sp" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" />
+                            <com.ioio.rewardhub.ui.widget.AlibabaTextView android:textSize="@dimen/sp_11" android:textColor="@color/color_FC4E77" android:ellipsize="end" android:gravity="bottom" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_3" android:text="@string/wz_currency_unit" android:maxLines="1" android:includeFontPadding="false" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dp_25" android:paddingRight="@dimen/dp_25" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+                        <FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/color_4D212C" android:layout_gravity="center" android:id="@id/tv_cash_exchange_balance" android:background="@drawable/wz_shape_rectangle_corner_11_fff5b6" android:paddingLeft="12.0dp" android:paddingTop="4.0dp" android:paddingRight="12.0dp" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="23.0dp" android:text="@string/wz_zero" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                            <TextView android:textSize="9.0sp" android:textStyle="bold" android:textColor="@color/color_61" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_withdrawal_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="8.0sp" android:textColor="@color/color_8c" android:layout_gravity="center" android:id="@id/tv_question_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/wz_every_day" android:drawablePadding="@dimen/dp_3" android:drawableEnd="@mipmap/wz_ic_question_mark" />
+                </LinearLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginBottom="15.0dp">
+                    <ImageView android:background="@mipmap/wz_ic_extract_money_config_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/rl_wx_amount" android:layout_alignBottom="@id/rl_wx_amount" android:layout_alignStart="@id/rl_wx_amount" android:layout_alignEnd="@id/rl_wx_amount" />
+                    <RelativeLayout android:orientation="vertical" android:id="@id/rl_wx_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="297.0dp">
+                        <RelativeLayout android:id="@id/rl_wx_info" android:paddingLeft="15.0dp" android:paddingRight="15.0dp" android:layout_width="match_parent" android:layout_height="59.0dp" android:layout_alignParentTop="true">
+                            <androidx.constraintlayout.utils.widget.ImageFilterView android:id="@id/iv_avatar_my" android:visibility="gone" android:layout_width="34.0dp" android:layout_height="34.0dp" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_marginEnd="10.0dp" app:round="17.0dp" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_user_name" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wz_bind_wx_account_can_withdrawal" android:includeFontPadding="false" android:layout_toRightOf="@id/iv_avatar_my" android:layout_centerVertical="true" />
+                            <ImageView android:id="@id/iv_bind_wx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wz_ic_extract_money_wx" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_amount" android:paddingLeft="18.0dp" android:paddingRight="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="20.0dp" android:minHeight="230.0dp" android:layout_below="@id/rl_wx_info" android:nestedScrollingEnabled="false" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:id="@id/rl_immediately_withdrawal" android:background="@mipmap/wz_ic_immediately_withdrawal" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginBottom="15.0dp">
+                    <LinearLayout android:id="@id/ll_immediately_withdrawal_title" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wz_ic_receive_cash_video" android:layout_marginEnd="@dimen/dp_5" app:tint="@color/white" />
+                        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_withdrawal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wz_immediately_withdrawal" android:includeFontPadding="false" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:id="@id/rl_receive_cash" android:background="@mipmap/wz_ic_receive_cash_bg" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_marginBottom="15.0dp">
+                    <LinearLayout android:id="@id/ll_receive_cash_title" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wz_ic_receive_cash_video" android:layout_marginEnd="@dimen/dp_5" />
+                        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_523b41" android:id="@id/tv_cash_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wz_receive_cash" android:includeFontPadding="false" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_41282e" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:text="@string/wz_warm_reminder" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/color_60" android:id="@id/tv_tips_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0dp" android:lineSpacingExtra="6.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

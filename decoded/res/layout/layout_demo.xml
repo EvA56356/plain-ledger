@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="#16231a" android:gravity="end|bottom" android:id="@id/textView55" android:background="@drawable/ic_timer" android:paddingRight="25.0dp" android:paddingBottom="8.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="92.0dp" android:text="01:48" android:paddingEnd="25.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:gravity="center" android:id="@id/textView98" android:layout_width="120.0dp" android:layout_height="40.0dp" android:text="TextView" android:drawablePadding="2.0dp" android:drawableStart="@drawable/ic_shop_theme_buy" android:paddingStart="12.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/textView55" />
+</androidx.constraintlayout.widget.ConstraintLayout>

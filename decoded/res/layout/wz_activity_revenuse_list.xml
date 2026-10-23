@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_fce3f4" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/wz_ic_revenuse_bg" android:scaleType="centerCrop" />
+    <View android:id="@id/space_bar" android:layout_width="wrap_content" android:layout_height="0.0dp" />
+    <RelativeLayout android:id="@id/rl_head" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="38.0dp" android:layout_marginTop="10.0dp" android:layout_below="@id/space_bar">
+        <ImageView android:id="@id/iv_back" android:paddingLeft="18.0dp" android:paddingRight="18.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@mipmap/wz_ic_white_back" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_41282e" android:gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/wz_revenue_list" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.google.android.material.tabs.TabLayout android:id="@id/tab_type" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_head" android:overScrollMode="never" app:tabGravity="center" app:tabIndicator="@null" app:tabIndicatorGravity="center" app:tabIndicatorHeight="0.0dp" app:tabMode="fixed" app:tabRippleColor="@color/transparent" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_below="@id/tab_type" />
+</RelativeLayout>

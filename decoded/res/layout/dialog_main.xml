@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/rl_main_menu" android:background="@mipmap/ic_main_menu_bg" android:layout_width="260.0dp" android:layout_height="306.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="#010101" android:gravity="center" android:id="@id/tv_title" android:paddingTop="8.0dp" android:layout_width="wrap_content" android:layout_height="53.0dp" android:text="暂时没有新鲜的事情发生～" android:drawablePadding="8.0dp" android:layout_centerHorizontal="true" app:drawableStartCompat="@drawable/ic_small_placeholder_cat" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="18.0dp" android:layout_below="@id/tv_title">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#203127" android:gravity="center_horizontal" android:id="@id/tv_theme" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="·场景·" android:drawableTop="@drawable/ic_theme" android:drawablePadding="-3.0dp" android:layout_weight="1.0" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#203127" android:gravity="center_horizontal" android:id="@id/tv_warehouse" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="·仓库·" android:drawableTop="@drawable/ic_warehouse" android:drawablePadding="-3.0dp" android:layout_weight="1.0" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#203127" android:gravity="center_horizontal" android:id="@id/tv_cat" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="·猫咪·" android:drawableTop="@drawable/ic_main_menu_cat" android:drawablePadding="-3.0dp" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#203127" android:gravity="center_horizontal" android:id="@id/tv_album" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="·相册·" android:drawableTop="@drawable/ic_album" android:drawablePadding="-3.0dp" android:layout_weight="1.0" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#203127" android:gravity="center_horizontal" android:id="@id/tv_out" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="·外出·" android:drawableTop="@drawable/ic_out" android:drawablePadding="-3.0dp" android:layout_weight="1.0" />
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#203127" android:gravity="center_horizontal" android:id="@id/tv_achievement" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="·成就·" android:drawableTop="@drawable/ic_achievement" android:drawablePadding="-3.0dp" android:layout_weight="1.0" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <ImageView android:id="@id/iv_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_main_menu_photo" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

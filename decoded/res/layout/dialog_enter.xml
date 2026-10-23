@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="66.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/linearLayout" android:background="@drawable/ic_enter_bg" android:layout_width="302.0dp" android:layout_height="468.0dp">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="#f6657d" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dp" android:text="温馨提示" android:layout_centerHorizontal="true" />
+        <ScrollView android:id="@id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="17.0dp" android:layout_marginBottom="20.0dp" android:layout_above="@id/textView43" android:layout_below="@id/tv_title">
+            <com.lanniser.kittykeeping.view.AlignTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#000000" android:id="@id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dp" android:layout_marginStart="26.0dp" android:layout_marginEnd="26.0dp" />
+        </ScrollView>
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/textView43" android:background="@mipmap/ic_evaluate_btn_bg" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="44.0dp" android:layout_marginBottom="6.0dp" android:text="同意并继续" android:includeFontPadding="false" android:layout_above="@id/textView40" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#c2c2c2" android:id="@id/textView40" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="不同意" android:layout_above="@id/view_line" android:layout_centerHorizontal="true" />
+        <View android:id="@id/view_line" android:background="#c2c2c2" android:layout_width="wrap_content" android:layout_height="1.0dp" android:layout_marginTop="-1.0dp" android:layout_marginBottom="32.0dp" android:layout_alignParentBottom="true" android:layout_alignStart="@id/textView40" android:layout_alignEnd="@id/textView40" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_television" android:layout_width="230.0dp" android:layout_height="233.0dp" android:layout_marginTop="35.0dp" android:src="@mipmap/ic_monthly_report_has_plan_item_television" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_gold_coin" android:layout_width="280.0dp" android:layout_height="86.0dp" android:layout_marginTop="48.0dp" android:src="@mipmap/ic_monthly_report_has_plan_item_gold_coin" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_cat_left" android:layout_width="135.0dp" android:layout_height="130.0dp" android:layout_marginBottom="-15.0dp" android:src="@mipmap/ic_monthly_report_has_plan_item_cat_left" android:layout_alignBottom="@id/iv_television" android:layout_marginStart="-60.0dp" android:layout_alignStart="@id/iv_television" />
+    <ImageView android:id="@id/iv_cat_right" android:layout_width="135.0dp" android:layout_height="130.0dp" android:layout_marginTop="48.0dp" android:layout_marginBottom="-15.0dp" android:src="@mipmap/ic_monthly_report_has_plan_item_cat_right" android:layout_alignBottom="@id/iv_television" android:layout_marginEnd="-75.0dp" android:layout_alignEnd="@id/iv_television" />
+    <com.lanniser.kittykeeping.widget.report.ReportTextView android:id="@id/tv_report" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dp" android:layout_below="@id/iv_television" app:line_height="21.0dp" app:line_spacing="20.0dp" app:text_align="center" app:text_color="@color/colorBlack" app:text_size="18.0dp" />
+</RelativeLayout>

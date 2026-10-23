@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.libpag.PAGView android:id="@id/pag_view" android:layout_width="298.0dp" android:layout_height="298.0dp" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/zong" android:background="@mipmap/wz_ic_bg_subsidy_type" android:paddingLeft="@dimen/dp_14" android:paddingRight="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_7" android:layout_marginBottom="@dimen/dp_7"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ff_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wz_ic_meituan" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/dp_10">
+        <TextView android:textSize="@dimen/sp_13" android:textStyle="bold" android:textColor="@color/color_2c2c2c" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wz_meituan" />
+        <TextView android:textSize="@dimen/sp_10" android:textStyle="bold" android:textColor="@color/color_b5b5b5" android:id="@id/tv_subtile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wz_meituan" />
+    </LinearLayout>
+    <com.ioio.rewardhub.ui.widget.AlibabaTextView android:textSize="@dimen/sp_10" android:textStyle="bold" android:textColor="@color/color_323232" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_button" android:background="@mipmap/wz_ic_yellow_button" android:paddingBottom="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wz_meituan" />
+</LinearLayout>

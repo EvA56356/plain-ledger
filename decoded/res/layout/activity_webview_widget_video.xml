@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layerType="hardware"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer android:layout_gravity="center_horizontal" android:id="@id/video_view" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/toolbarView" layout="@layout/layout_common_title" />
+</RelativeLayout>

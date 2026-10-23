@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_content" android:background="@drawable/kitty_calendar_bg" android:layout_width="match_parent" android:layout_height="300.0dp" android:layout_marginTop="82.0dp">
+        <RadioGroup android:orientation="horizontal" android:id="@id/rg_title" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginTop="15.0dp" android:layout_centerHorizontal="true">
+            <RadioButton android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/bills_tab_text_color" android:gravity="bottom" android:id="@id/rb_day" android:background="@color/transparent" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:checked="true" android:button="@null" android:text="每天" android:paddingHorizontal="20.0dp" />
+            <RadioButton android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/bills_tab_text_color" android:gravity="bottom" android:id="@id/rb_week" android:background="@color/transparent" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:button="@null" android:text="每周" android:paddingHorizontal="20.0dp" />
+            <RadioButton android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/bills_tab_text_color" android:gravity="bottom" android:id="@id/rb_month" android:background="@color/transparent" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:button="@null" android:text="每月" android:paddingHorizontal="20.0dp" />
+        </RadioGroup>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/vp_time" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/rg_title" />
+    </RelativeLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-116.0dp" android:src="@drawable/kitty_calendar_search_cat" android:layout_above="@id/rl_content" android:layout_marginEnd="36.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

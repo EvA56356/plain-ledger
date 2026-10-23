@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="60.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_book" android:layout_width="21.0dp" android:layout_height="26.0dp" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#17221d" android:id="@id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="17.0dp" android:layout_toEndOf="@id/iv_book" />
+    <CheckBox android:textSize="13.0sp" android:textStyle="bold" android:textColor="#09181f" android:id="@id/cb_choose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="" android:drawablePadding="8.0dp" android:layout_centerVertical="true" android:drawableEnd="@drawable/selector_bill_book" android:layout_alignParentEnd="true" />
+</RelativeLayout>

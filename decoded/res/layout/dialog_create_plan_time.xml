@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_content" android:background="@drawable/kitty_calendar_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="82.0dp" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-116.0dp" android:src="@drawable/kitty_calendar_search_cat" android:layout_above="@id/fl_content" android:layout_marginEnd="36.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

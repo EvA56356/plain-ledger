@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hiad_dismiss_dilaog">
+        <item quantity="one">"La finestra es tancarà d'aquí a %1$s segon."</item>
+        <item quantity="other">"La finestra es tancarà d'aquí a %1$s segons."</item>
+    </plurals>
+    <plurals name="hiad_no_prompt_in_days">
+        <item quantity="one">"Recordar l'opció durant %1$s dia"</item>
+        <item quantity="other">"Recordar l'opció durant %1$s dies"</item>
+    </plurals>
+    <plurals name="hiad_reward_countdown">
+        <item quantity="one">%1$d s</item>
+        <item quantity="other">%1$d s</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item quantity="one">demà</item>
+        <item quantity="other">"d'aquí a %d dies"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item quantity="one">"d'aquí a 1 hora"</item>
+        <item quantity="other">"d'aquí a %d hores"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item quantity="one">"d'aquí a 1 min"</item>
+        <item quantity="other">"d'aquí a %d minuts"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item quantity="one">"d'aquí a 1 s"</item>
+        <item quantity="other">"d'aquí a %d s"</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item quantity="one">ahir</item>
+        <item quantity="other">Fa %d dies</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item quantity="one">Fa 1 hora</item>
+        <item quantity="other">Fa %d hores</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item quantity="one">fa 1 min</item>
+        <item quantity="other">Fa %d min</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item quantity="one">Fa 1 s</item>
+        <item quantity="other">Fa %d s</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item quantity="one">1 hora</item>
+        <item quantity="other">%d hores</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item quantity="one">1 minut</item>
+        <item quantity="other">%d minuts</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item quantity="one">1 segon</item>
+        <item quantity="other">%d segons</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item quantity="one">demà</item>
+        <item quantity="other">"d'aquí a %d dies"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item quantity="one">"d'aquí a 1 hora"</item>
+        <item quantity="other">"d'aquí a %d hores"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item quantity="one">"d'aquí a 1 minut"</item>
+        <item quantity="other">"d'aquí a %d minuts"</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item quantity="one">"d'aquí a 1 segon"</item>
+        <item quantity="other">"d'aquí a %d segons"</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item quantity="one">Ahir</item>
+        <item quantity="other">Fa %d dies</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item quantity="one">Fa 1 hora</item>
+        <item quantity="other">Fa %d hores</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item quantity="one">Fa 1 minut</item>
+        <item quantity="other">Fa %d minuts</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item quantity="one">Fa 1 segon</item>
+        <item quantity="other">Fa %d segons</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notificació nova</item>
+        <item quantity="other">%d notificacions noves</item>
+    </plurals>
+</resources>

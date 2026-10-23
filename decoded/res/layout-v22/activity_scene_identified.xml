@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/repeat_bg2" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/toolbarView" android:layout_width="match_parent" android:layout_height="0.0dp" />
+    <ImageView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/toolbarView" android:layout_marginStart="20.0dp" app:srcCompat="@drawable/ic_back_sl" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/frontBlack" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identify_scenarios" android:layout_alignTop="@id/back" android:layout_alignBottom="@id/back" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_save" android:background="#fed55e" android:layout_width="match_parent" android:layout_height="52.0dp" android:text="保存修改" android:layout_alignParentBottom="true" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="22.0dp" android:layout_marginRight="22.0dp" android:layout_above="@id/tv_save" android:layout_below="@id/back" android:overScrollMode="never" android:layout_marginHorizontal="22.0dp" />
+</RelativeLayout>

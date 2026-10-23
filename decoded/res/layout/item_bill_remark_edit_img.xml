@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_img" android:padding="2.399994dp" android:layout_width="96.0dp" android:layout_height="96.0dp" android:layout_marginTop="5.0dp" android:scaleType="centerCrop" android:layout_marginEnd="13.0dp" />
+    <ImageView android:background="@mipmap/ic_bill_img_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/iv_img" android:layout_alignBottom="@id/iv_img" android:layout_alignStart="@id/iv_img" android:layout_alignEnd="@id/iv_img" />
+    <ImageView android:id="@id/iv_del" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_red_delete" android:paddingStart="10.0dp" android:layout_marginEnd="-8.0dp" android:layout_alignEnd="@id/iv_img" />
+</RelativeLayout>

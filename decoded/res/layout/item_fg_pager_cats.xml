@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/item1" android:paddingTop="15.0dp" android:paddingBottom="9.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15.0dp">
+        <com.lanniser.kittykeeping.view.SquareImageView android:id="@id/avatar1" android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_canyin_mao" />
+        <TextView android:textSize="12.0sp" android:textColor="#1d2b23" android:id="@id/name1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/item2" android:paddingTop="15.0dp" android:paddingBottom="9.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15.0dp" android:layout_marginEnd="15.0dp">
+        <com.lanniser.kittykeeping.view.SquareImageView android:id="@id/avatar2" android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_canyin_mao" />
+        <TextView android:textSize="12.0sp" android:textColor="#1d2b23" android:id="@id/name2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/item3" android:paddingTop="15.0dp" android:paddingBottom="9.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="15.0dp">
+        <com.lanniser.kittykeeping.view.SquareImageView android:id="@id/avatar3" android:padding="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_canyin_mao" />
+        <TextView android:textSize="12.0sp" android:textColor="#1d2b23" android:id="@id/name3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+    </LinearLayout>
+</LinearLayout>

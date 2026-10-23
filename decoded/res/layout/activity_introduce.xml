@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_video" android:layout_width="318.0dp" android:layout_height="283.0dp" android:layout_centerHorizontal="true">
+        <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer android:layout_gravity="center_horizontal" android:id="@id/video_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2.0dp" />
+    </FrameLayout>
+    <View android:id="@id/view_bg" android:background="@mipmap/bg_border_course" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/fl_video" android:layout_alignBottom="@id/fl_video" android:layout_alignStart="@id/fl_video" android:layout_alignEnd="@id/fl_video" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dp" android:layout_below="@id/fl_video" android:layout_alignStart="@id/fl_video" android:layout_alignEnd="@id/fl_video">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_close" android:background="@mipmap/bg_introduce_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关闭" />
+        <View android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center_vertical" android:id="@id/tv_gift_pack_open" android:background="@mipmap/bg_introduce_gift_pack_open" android:layout_width="193.0dp" android:layout_height="wrap_content" android:text="开启自动记账" android:paddingStart="68.0dp" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_open" android:background="@mipmap/bg_introduce_open" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启自动记账" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/tv_i_know" android:background="@mipmap/bg_introduce_open" android:visibility="gone" android:layout_width="170.0dp" android:layout_height="50.0dp" android:layout_marginTop="19.0dp" android:text="我知道了" android:layout_below="@id/fl_video" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/repeat_bg2" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/toolbarView" android:layout_width="match_parent" android:layout_height="1.0px" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="23.0dp" android:layout_marginEnd="23.0dp">
+        <ImageView android:id="@id/closeIv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_back_sl" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="37.0dp" android:layout_marginStart="22.0dp" android:layout_marginEnd="22.0dp">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的账本" />
+                <TextView android:textSize="14.0sp" android:textColor="#787878" android:gravity="end" android:id="@id/createTimeTv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <RelativeLayout android:background="@mipmap/bg_border" android:paddingTop="21.0dp" android:paddingBottom="20.0dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:paddingStart="18.0dp" android:paddingEnd="12.0dp" android:layout_marginStart="21.0dp" android:layout_marginEnd="21.0dp">
+                <ImageView android:id="@id/coverIv" android:layout_width="61.0dp" android:layout_height="80.0dp" android:layout_centerVertical="true" android:layout_marginEnd="15.0dp" />
+                <TextView android:textSize="16.0sp" android:textColor="#787878" android:id="@id/bookNameHintTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账本名称" android:layout_toEndOf="@id/coverIv" />
+                <ImageView android:id="@id/imageView" android:padding="7.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_below="@id/bookNameHintTv" android:layout_marginStart="3.0dp" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_bill_edit" />
+                <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/bookNameTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:singleLine="true" android:layout_below="@id/bookNameHintTv" android:layout_toStartOf="@id/imageView" android:layout_toEndOf="@id/coverIv" />
+                <TextView android:textSize="13.0sp" android:textColor="#f6657d" android:gravity="end" android:id="@id/billCountTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignBottom="@id/coverIv" android:layout_marginEnd="6.0dp" android:layout_alignParentEnd="true" />
+                <TextView android:textSize="13.0sp" android:textColor="#787878" android:gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已记录：" android:layout_alignBottom="@id/coverIv" android:layout_toStartOf="@id/billCountTv" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="31.0dp" android:layout_marginStart="22.0dp" android:layout_marginEnd="22.0dp">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收支信息" />
+                <TextView android:textSize="14.0sp" android:textColor="#787878" android:gravity="end" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="总结余：" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="#f6657d" android:gravity="end" android:id="@id/totalBalanceTv" android:layout_width="wrap_content" android:layout_height="wrap_content" app:autoSizeMaxTextSize="13.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dp" android:layout_marginStart="22.0dp" android:layout_marginEnd="22.0dp">
+                <TextView android:textSize="13.0sp" android:textColor="#888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总支出" />
+                <ProgressBar android:id="@id/expendProgressBar" android:layout_width="0.0dp" android:layout_height="11.0dp" android:layout_weight="1.0" android:layout_marginStart="7.0dp" android:layout_marginEnd="7.0dp" style="@style/ProgressBar_Surplus_Expend" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/colorBlack" android:id="@id/expendMoneyTv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginStart="22.0dp" android:layout_marginEnd="22.0dp">
+                <TextView android:textSize="13.0sp" android:textColor="#888888" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总收入" />
+                <ProgressBar android:id="@id/incomeProgressBar" android:layout_width="0.0dp" android:layout_height="11.0dp" android:layout_weight="1.0" android:layout_marginStart="7.0dp" android:layout_marginEnd="7.0dp" style="@style/ProgressBar_Surplus_Income" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/colorBlack" android:id="@id/incomeMoneyTv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="31.0dp" android:text="基础信息" android:layout_marginStart="22.0dp" android:layout_marginEnd="22.0dp" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dp" android:layout_marginStart="22.0dp">
+                <TextView android:textSize="13.0sp" android:textColor="#787878" android:id="@id/currencyTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="本位币" />
+                <View android:background="#fecf53" android:layout_width="wrap_content" android:layout_height="2.0dp" android:layout_below="@id/currencyTv" android:layout_alignStart="@id/currencyTv" android:layout_alignEnd="@id/currencyTv" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/currencyLayout" android:layout_width="match_parent" android:layout_height="50.0dp" android:layout_marginStart="22.0dp" android:layout_marginEnd="22.0dp">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#1b2620" android:id="@id/currencyNameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人民币" />
+                <TextView android:textSize="14.0sp" android:textColor="#1b2620" android:id="@id/currencyShortNameTv" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="CNY" android:layout_weight="1.0" android:layout_marginStart="7.0dp" />
+                <ImageView android:id="@id/currencyImgIv" android:layout_width="27.0dp" android:layout_height="27.0dp" android:src="@drawable/ic_exchange_rate_cny" />
+            </LinearLayout>
+            <ImageView android:layout_width="match_parent" android:layout_height="1.5dp" android:src="@drawable/ic_mine_diveder" android:scaleType="fitXY" android:layout_marginStart="22.0dp" android:layout_marginEnd="22.0dp" />
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dp" android:layout_marginStart="22.0dp">
+                <TextView android:textSize="13.0sp" android:textColor="#787878" android:id="@id/timeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="月起始日" />
+                <View android:background="#fecf53" android:layout_width="wrap_content" android:layout_height="2.0dp" android:layout_below="@id/timeTv" android:layout_alignStart="@id/timeTv" android:layout_alignEnd="@id/timeTv" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#1b2620" android:gravity="center_vertical" android:id="@id/monthStartTimeTv" android:layout_width="match_parent" android:layout_height="50.0dp" android:text="每月1号" android:layout_marginStart="22.0dp" android:layout_marginEnd="22.0dp" />
+            <ImageView android:layout_width="match_parent" android:layout_height="1.5dp" android:src="@drawable/ic_mine_diveder" android:scaleType="fitXY" android:layout_marginStart="22.0dp" android:layout_marginEnd="22.0dp" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/btnLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="62.0dp" android:layout_marginBottom="53.0dp">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:gravity="center" android:id="@id/deleteTv" android:background="@mipmap/accountbook_btn_yellow" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除账本" />
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/switchTv" android:background="@mipmap/accountbook_btn_red" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="切换进入" android:layout_marginStart="21.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

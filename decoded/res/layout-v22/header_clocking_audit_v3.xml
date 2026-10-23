@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_clocking_audit_top_v3" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/color_fd4c8a" android:gravity="center" android:id="@id/tv_msg" android:background="@drawable/shape_rectangle_corner_24_ffe9f1" android:paddingLeft="19.0dp" android:paddingRight="19.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="103.0dp" android:layout_marginLeft="17.0dp" android:layout_marginTop="36.0dp" android:layout_marginRight="17.0dp" android:text="@string/clock_365_payment_failed" android:layout_marginHorizontal="17.0dp" android:paddingHorizontal="19.0dp" />
+    <Space android:layout_width="match_parent" android:layout_height="29.0dp" />
+</LinearLayout>

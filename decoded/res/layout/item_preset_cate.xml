@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/container" android:layout_width="66.0dp" android:layout_height="66.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivCategory" android:layout_width="66.0dp" android:layout_height="66.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/colorFontCategory" android:id="@id/tvCategory" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="餐饮" app:layout_constraintBottom_toBottomOf="@id/ivCategory" app:layout_constraintEnd_toEndOf="@id/ivCategory" app:layout_constraintStart_toStartOf="@id/ivCategory" />
+</androidx.constraintlayout.widget.ConstraintLayout>

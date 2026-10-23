@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_horizontal" android:id="@id/fl_bg" android:background="@mipmap/wz_ic_flip_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:layout_marginEnd="@dimen/dp_18">
+        <com.ioio.rewardhub.ui.widget.AlibabaTextView android:textSize="@dimen/sp_30" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tv_gold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" />
+        <com.ioio.rewardhub.ui.widget.AlibabaTextView android:textSize="@dimen/sp_8" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center|bottom" android:id="@id/tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_13" android:text="@string/wz_kilobit_digit_card2" />
+    </FrameLayout>
+    <com.ioio.rewardhub.ui.widget.AlibabaTextView android:textSize="@dimen/sp_6" android:textColor="@color/color_414141" android:gravity="center" android:layout_gravity="end" android:id="@id/tv_right" android:background="@mipmap/wz_ic_flip_right" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wz_flip_card_claim" />
+</FrameLayout>
